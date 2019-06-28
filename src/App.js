@@ -76,9 +76,8 @@ class App extends Component {
     }
 
     getComponent = (urlArray, params) => {
-        // let language = urlArray[1];
-        // let component = urlArray[2];
-        let component = urlArray[1];
+        let language = urlArray[1];
+        let component = urlArray[2];
 
         if (component) {
             // console.log(params);
@@ -154,7 +153,7 @@ class App extends Component {
             </div >
         );
         */
-       return this.renderSwitch(this.props.route);
+        return this.renderSwitch(this.props.route);
     }
 }
 
