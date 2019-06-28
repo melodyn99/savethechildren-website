@@ -1,17 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-import { withTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
 function Footer(props) {
-	// const { t, i18n } = props;
-
+	let { html } = props;
+	if (!html) {
+		html = 'Sample footer content';
+	}
 	return (
-		<div className="wrapper-footer">
-			<div className="footer">
-				Footer
-			</div>
-		</div >
+		<div className="stc-footer">{html}</div >
 	);
 }
 
-export default withTranslation()(Footer);
+Footer.propTypes = {
+	html: PropTypes.string
+};
+
+export default Footer;

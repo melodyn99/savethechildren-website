@@ -35,6 +35,10 @@ import SeatingPlan from './containers/08SeatingPlan/SeatingPlan';
 // 404
 import PageNotFound from './containers/PageNotFound';
 
+import CommonPage from './components/103Pages/CommonPage';
+import QuizPage from './components/103Pages/QuizPage';
+import GamePage from './components/103Pages/GamePage';
+
 class App extends Component {
 
     componentDidMount = () => {
@@ -72,16 +76,14 @@ class App extends Component {
     }
 
     getComponent = (urlArray, params) => {
-        // let language = urlArray[1],
-        let component = urlArray[2];
+        // let language = urlArray[1];
+        // let component = urlArray[2];
+        let component = urlArray[1];
 
         if (component) {
             // console.log(params);
 
             switch (component) {
-                case 'home': {
-                    return <Home />;
-                }
 
                 // Notes Taking
                 case 'notes-taking': {
@@ -107,18 +109,35 @@ class App extends Component {
                     return <SeatingPlan />;
                 }
 
+                case 'common': {
+                    return <CommonPage />;
+                }
+
+                case 'home': {
+                    return <CommonPage />;
+                }
+
+                case 'game': {
+                    return <GamePage />;
+                }
+
+                case 'quiz': {
+                    return <QuizPage />;
+                }
+
                 default: {
                     return <PageNotFound />;
                 }
             }
         } else {
-            return <Home />
+            return <CommonPage />
         }
     }
 
     render() {
         // console.log(this.props.route.location.pathname);
 
+        /*
         return (
             <div>
                 <MobileMenu />
@@ -134,6 +153,8 @@ class App extends Component {
                 </div>
             </div >
         );
+        */
+       return this.renderSwitch(this.props.route);
     }
 }
 

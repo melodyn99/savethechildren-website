@@ -1,24 +1,29 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sintony:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans|Sintony:400,700');
 
 // Plugins
 // @import "~slick-carousel/slick/slick";
 // @import "~slick-carousel/slick/slick-theme.css";
 // @import "~react-datepicker/dist/react-datepicker.css";
 // @import "~react-big-calendar/lib/css/react-big-calendar.css";
+@import "~react-responsive-carousel/lib/styles/carousel.css";
 
 // variables
 @import "100Global/variables";
 
 // mixin
-@import "100Global/mixin";
+// @import "100Global/mixin";
 
 // normalize
-@import "~normalize.css/normalize";
+// @import "~normalize.css/normalize";
+
+// css framework
+@import "~bootstrap/scss/bootstrap";
 
 // structure
-@import "100Global/global";
-@import "100Global/structure";
+// @import "100Global/global";
+@import "100Global/common";
+// @import "100Global/structure";
 // @import "100Global/gridSystem";
 
 // components
@@ -35,7 +40,8 @@
 // @import "101Components/fullCalendar";
 // @import "101Components/rangeSlider";
 // @import "101Components/clusterMap";
-@import "101Components/calendar";
+// @import "101Components/calendar";
+@import "101Components/component";
 
 // page specific
-@import "00Home/home";
+// @import "00Home/home";

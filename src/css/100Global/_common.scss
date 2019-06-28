@@ -1,0 +1,11 @@
+html {
+    cursor: url('images/schk_web-cursor.cur'), auto;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+a {
+    cursor: url('images/schk_web-cursor.cur'), auto !important;
+}

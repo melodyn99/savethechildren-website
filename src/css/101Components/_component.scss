@@ -1,0 +1,194 @@
+.stc-mainmenubar {
+    .stc-mainmenubar-logo {
+        max-height: 4rem;
+    }
+
+    //TODO: broken the to only use the arrow part and use pure css for the round button effect
+    .mainMenuBarLoginButton {
+        color: white !important;
+        padding-left: 4.1rem !important;
+        padding-right: 1rem !important;
+        background: center / contain no-repeat url('images/btn_header_Login_default.png');
+
+        &:hover,
+        &:active {
+            background-image: url('images/btn_header_Login_active.png');
+        }
+    }
+}
+
+.stc-common-page {
+    padding-top: 5.6rem;
+    .stc-common-page-container {
+        background: url('images/bg_content.png');
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: red solid thick;
+        .carousel .slide {
+            background-color: transparent;
+        }
+    }
+    .stc-common-page-content {
+        min-height: 10rem;
+        background-color: white;
+    }
+}
+
+.stc-game-page-content {
+    min-height: 10rem;
+    background-color: black;
+    color: white;
+}
+
+.login-popup-form {
+    padding: 1rem;
+}
+
+.forget-your-password {
+    display: block;
+    margin-top: 1rem;
+}
+
+$aboutUsColor: #153568;
+$aboutUsColorLight: #4C689A;
+$resourcesForYouColor: #D50100;
+$resourcesForYouColorLight: #FF5353;
+$featuredIssuesColor: #C45503;
+$featuredIssuesColorLight: #E67F00;
+$researchFindingsColor: #2D5E2F;
+$researchFindingsColorLight: #418643;
+$ourEventsColor: #BE9601;
+$ourEventsColorLight: #EEA000;
+$externalResourcesColor: #008D96;
+$externalResourcesColorLight: #41A8AF;
+
+$activeTextColor: #F5182A;
+$activeBgColorInner: #FFCB41;
+$activeBgColorOuter: #F1F268;
+
+.stc-menubar {
+    padding-left: 0;
+    padding-right: 0;
+    .stc-menubar-navbar-nav {
+        display: flex;
+        width: 100%;
+
+        .dropdown {
+            text-align: center;
+            flex-basis: 100%;
+            
+            .dropdown-toggle {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                border-top-width: 1rem;
+                border-top-style: solid;
+                color: white;
+            }
+        }
+
+        .about-us-dropdown {
+            .dropdown-toggle {
+                background-color: $aboutUsColor;
+                border-top-color: $aboutUsColorLight;
+            }
+        }
+
+        .resources-for-you-dropdown {
+            .dropdown-toggle {
+                background-color: $resourcesForYouColor;
+                border-top-color: $resourcesForYouColorLight;
+            }
+        }
+
+        .featured-issues-dropdown {
+            .dropdown-toggle {
+                background-color: $featuredIssuesColor;
+                border-top-color: $featuredIssuesColorLight;
+            }
+        }
+
+        .research-finding-dropdown {
+            .dropdown-toggle {
+                background-color: $researchFindingsColor;
+                border-top-color: $researchFindingsColorLight;
+            }
+        }
+
+        .our-events-dropdown {
+            .dropdown-toggle {
+                background-color: $ourEventsColor;
+                border-top-color: $ourEventsColorLight;
+            }
+        }
+
+        .external-resources-dropdown {
+            .dropdown-toggle {
+                background-color: $externalResourcesColor;
+                border-top-color: $externalResourcesColorLight;
+            }
+        }
+
+        .dropdown.active,
+        .dropdown.show {
+            .dropdown-toggle {
+                background-color: $activeBgColorInner;
+                background-image: radial-gradient($activeBgColorInner, $activeBgColorOuter);
+                color: $activeTextColor;
+            }
+        }
+    }
+}
+
+.stc-homemenubar {
+    .about-us-dropdown::before {
+        
+    }
+    .about-us-dropdown.active::before,
+    .about-us-dropdown.show::before {
+
+    }
+
+    .resources-for-you-dropdown {
+        .dropdown-toggle {
+            background-color: $resourcesForYouColor;
+            border-top-color: $resourcesForYouColorLight;
+        }
+    }
+
+    .featured-issues-dropdown {
+        .dropdown-toggle {
+            background-color: $featuredIssuesColor;
+            border-top-color: $featuredIssuesColorLight;
+        }
+    }
+
+    .research-finding-dropdown {
+        .dropdown-toggle {
+            background-color: $researchFindingsColor;
+            border-top-color: $researchFindingsColorLight;
+        }
+    }
+
+    .our-events-dropdown {
+        .dropdown-toggle {
+            background-color: $ourEventsColor;
+            border-top-color: $ourEventsColorLight;
+        }
+    }
+
+    .external-resources-dropdown {
+        .dropdown-toggle {
+            background-color: $externalResourcesColor;
+            border-top-color: $externalResourcesColorLight;
+        }
+    }
+
+    .dropdown.active,
+    .dropdown.show {
+        .dropdown-toggle {
+            background-color: $activeBgColorInner;
+            background-image: radial-gradient($activeBgColorInner, $activeBgColorOuter);
+            color: $activeTextColor;
+        }
+    }
+}
