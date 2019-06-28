@@ -1,6 +1,6 @@
 html, 
 body { font-family:$font-family-body; font-size:$font-size-base; font-weight:normal; color:$bodyColor; line-height:$line-height-base;
-        margin:0; padding:0; border:0; vertical-align:baseline; height:100%; word-break:break-word; -webkit-text-size-adjust:100%; cursor: url('images/schk_web-cursor.cur'), auto; }
+        margin:0; padding:0; border:0; vertical-align:baseline; height:100%; word-break:break-word; -webkit-text-size-adjust:100%; cursor: url('../images/schk_web-cursor.cur'), auto; }
 
 body { -webkit-text-size-adjust:none; background:$bodyBgColor; overflow-y:scroll; opacity:1; 
 	&.active{ opacity:1; }
