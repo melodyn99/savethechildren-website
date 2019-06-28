@@ -4,8 +4,8 @@ import { withTranslation } from 'react-i18next';
 import { map } from 'lodash-es';
 import { Carousel } from 'react-responsive-carousel';
 import Footer from '../100Include/footer';
-import MainMenuBar from '../100Include/MainMenuBar';
-import MenuBar from '../100Include/MenuBar';
+
+
 import 'holderjs';
 
 function renderCarouselImage(image) {
@@ -24,14 +24,16 @@ class CommonPage extends Component {
         if (!images || images.length === 0) {
             images = [{
                 url: 'holder.js/640x480'
+            }, {
+                url: 'holder.js/640x480'
             }];
         }
         if (!content) {
             content = 'Sample page content';
         }
         return <div className="stc-common-page">
-            <MainMenuBar/>
-            <MenuBar menuData={{}}/>
+
+
             <div className="stc-common-page-container">
                 {/*<NavBreadCrumb/>*/}
                 <div className="container">
@@ -40,16 +42,13 @@ class CommonPage extends Component {
                     >
                         {map(images, renderCarouselImage)}
                     </Carousel>
-                    <div className="stc-common-page-content" dangerouslySetInnerHTML={{__html: content}}></div>
+                    <div className="stc-common-page-content" dangerouslySetInnerHTML={{ __html: content }}></div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>;
     }
 }
 
-MenuBar.propTypes = {
-    menuData: PropTypes.object.isRequired
-};
 
 export default withTranslation()(CommonPage);

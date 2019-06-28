@@ -58,7 +58,7 @@ class MainMenuBar extends Component {
 }
 
 MainMenuBar.propTypes = {
-    menuData: PropTypes.object.isRequired
+    menuData: PropTypes.object
 };
 
 export default withTranslation()(MainMenuBar);

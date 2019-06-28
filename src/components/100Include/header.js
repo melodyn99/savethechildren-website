@@ -28,7 +28,7 @@ class Header extends Component {
         return (
             <div className="wrapper-header">
                 <div className="header">
-                    <div className="mobile-menu-btn">MENU</div>
+                    12312313
                 </div>
             </div>
         );

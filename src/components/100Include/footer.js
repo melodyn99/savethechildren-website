@@ -2,12 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Footer(props) {
-	let { html } = props;
-	if (!html) {
-		html = 'Sample footer content';
-	}
 	return (
-		<div className="stc-footer">{html}</div >
+		<div className="stc-footer">123</div >
 	);
 }
 

@@ -9,9 +9,9 @@ import { connect } from 'react-redux';
 
 import querySearch from "stringquery";
 
-import MobileMenu from './components/100Include/mobileMenu';
 import Header from './components/100Include/header';
 import Footer from './components/100Include/footer';
+import MainMenu from './components/100Include/MainMenu';
 
 import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
 import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
@@ -20,24 +20,12 @@ import * as HelperPopup from './utils/00JqueryControl/Popup';
 // Home
 import Home from './containers/00Home/Home';
 
-// Notes
-import NotesTaking from './containers/06Notes/NotesTaking';
-import NotesContent from './containers/06Notes/NotesContent';
-import NewNoteTitle from './containers/06Notes/NewNoteTitle';
-import NewNoteContent from './containers/06Notes/NewNoteContent';
-
-// Scheduling
-import Scheduling from './containers/07Schedule/Scheduling';
-
-// Seating Plan
-import SeatingPlan from './containers/08SeatingPlan/SeatingPlan';
-
-// 404
-import PageNotFound from './containers/PageNotFound';
-
 import CommonPage from './components/103Pages/CommonPage';
 import QuizPage from './components/103Pages/QuizPage';
 import GamePage from './components/103Pages/GamePage';
+
+// 404
+import PageNotFound from './containers/PageNotFound';
 
 class App extends Component {
 
@@ -63,50 +51,36 @@ class App extends Component {
     }
 
     // change URL
-    renderSwitch = (route) => {
-        let pathname = route.location.pathname,
-            search = route.location.search,
-            urlArray = pathname.split("/"),
-            params = null;
-
-        if (search !== "")
-            params = querySearch(search);
-
-        return this.getComponent(urlArray, params);
+    constructor(props) {
+        super(props);
+        this.state = {
+            debug: false
+        }
     }
 
-    getComponent = (urlArray, params) => {
-        let language = urlArray[1];
-        let component = urlArray[2];
+    componentDidMount = () => {
+        HelperDesktopHandle.DesktopHandle.init();
+        HelperMobileHandle.MobileHandle.init();
+        HelperMobileHandle.MobileHandle.containersSize();
+        window.addEventListener("resize", this.windowResize);
+    }
 
-        if (component) {
+    componentDidUpdate = () => {
+        window.scrollTo(0, 0);
+    }
+
+    windowResize = () => {
+        HelperDesktopHandle.DesktopHandle.resetDesktopMenu();
+        HelperDesktopHandle.DesktopHandle.maxHeightDesktopMenu();
+        HelperMobileHandle.MobileHandle.containersSize();
+    }
+
+    getComponent = (currentURL, params) => {
+
+        if (currentURL) {
             // console.log(params);
 
-            switch (component) {
-
-                // Notes Taking
-                case 'notes-taking': {
-                    return <NotesTaking />;
-                }
-                case 'notes-content': {
-                    return <NotesContent params={params} />;
-                }
-                case 'new-note': {
-                    return <NewNoteTitle />
-                }
-                case 'new-note-content': {
-                    return <NewNoteContent />
-                }
-
-                // Scheduling
-                case 'scheduling': {
-                    return <Scheduling />;
-                }
-
-                // Seating Plan
-                case 'seating-plan': {
-                    return <SeatingPlan />;
-                }
+            switch (currentURL) {
 
                 case 'common': {
                     return <CommonPage />;
@@ -136,24 +110,29 @@ class App extends Component {
     render() {
         // console.log(this.props.route.location.pathname);
 
-        /*
+        let pathname = this.props.route.location.pathname,
+            search = this.props.route.location.search,
+            urlArray = pathname.split("/"),
+            currentURL = urlArray[2],
+            params = null;
+
+        if (search !== "")
+            params = querySearch(search);
+
         return (
             <div>
-                <MobileMenu />
-
                 <div id="wrap">
                     <Header />
 
-                    <div className="blackPlane"></div>
+                    <MainMenu />
 
-                    {this.renderSwitch(this.props.route)}
+                    {this.getComponent(currentURL, params)}
 
                     <Footer />
+                    {/* <Sitemap /> */}
                 </div>
             </div >
         );
-        */
-        return this.renderSwitch(this.props.route);
     }
 }
 

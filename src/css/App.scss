@@ -12,18 +12,18 @@
 @import "100Global/variables";
 
 // mixin
-// @import "100Global/mixin";
+@import "100Global/mixin";
 
 // normalize
-// @import "~normalize.css/normalize";
+@import "~normalize.css/normalize";
 
 // css framework
 @import "~bootstrap/scss/bootstrap";
 
 // structure
-// @import "100Global/global";
+@import "100Global/global";
 @import "100Global/common";
-// @import "100Global/structure";
+@import "100Global/structure";
 // @import "100Global/gridSystem";
 
 // components

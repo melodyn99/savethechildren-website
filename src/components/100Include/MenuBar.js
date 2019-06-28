@@ -4,7 +4,7 @@ import { withTranslation } from 'react-i18next';
 import { get, map, some } from 'lodash-es';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown'; 
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 let nextInstanceId = 1;
 
@@ -19,7 +19,14 @@ function renderDropdownMenuItem(item) {
 
 function renderDropdown(data, name, className, id) {
     // TODO: implement scss of className
-    const items = get(data, 'items');
+    //const items = get(data, 'items');
+    const items = [{
+        label: 'About us item 1',
+        url: 'https://www.google.com'
+    }, {
+        label: 'About us item 2',
+        url: 'game'
+    }];
     return <NavDropdown
         id={id}
         key={id || name || className}
