@@ -9,8 +9,8 @@ import { connect } from 'react-redux';
 
 import querySearch from "stringquery";
 
-import Header from './components/100Include/header';
-import Footer from './components/100Include/footer';
+import Header from './components/100Include/Header';
+import Footer from './components/100Include/Footer';
 import MainMenu from './components/100Include/MainMenu';
 
 import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import { map } from 'lodash-es';
 import { Carousel } from 'react-responsive-carousel';
-import Footer from '../100Include/footer';
+import Footer from '../100Include/Footer';
 
 
 import 'holderjs';

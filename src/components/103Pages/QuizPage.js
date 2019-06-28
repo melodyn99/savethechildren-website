@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import { map } from 'lodash-es';
 import { Carousel } from 'react-responsive-carousel';
-import Footer from '../100Include/footer';
+import Footer from '../100Include/Footer';
 import MainMenuBar from '../100Include/MainMenuBar';
 import MenuBar from '../100Include/MenuBar';
 import 'holderjs';
@@ -45,8 +45,8 @@ class QuizPage extends Component {
             }];
         }
         return <div className="stc-common-page stc-quiz-page">
-            <MainMenuBar/>
-            <MenuBar menuData={{}}/>
+            <MainMenuBar />
+            <MenuBar menuData={{}} />
             <div className="stc-common-page-container">
                 {/*<NavBreadCrumb/>*/}
                 <div className="container">
@@ -73,7 +73,7 @@ class QuizPage extends Component {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>;
     }
 }
