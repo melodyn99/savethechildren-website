@@ -2,10 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
-// import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-// import * as AnimationsActionCreators from '../../actions/animations';
-
 function MainMenu(props) {
     // const { t, i18n } = props;
 

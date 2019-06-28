@@ -8,12 +8,8 @@ import { withTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
 
 class CommonPage extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
-
         return (
             <div>
                 <div className="wrapper-container-main">
