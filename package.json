@@ -1,13 +1,11 @@
 {
-  "name": "save-the-children-react-client",
+  "name": "letspark-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/save-the-children",
   "dependencies": {
     "@material-ui/core": "^3.1.1",
     "@material-ui/icons": "^3.0.1",
     "axios": "^0.18.0",
-    "bootstrap": "^4.3.1",
     "btoa": "^1.2.1",
     "clsx": "^1.0.4",
     "cross-fetch": "^3.0.1",
@@ -17,23 +15,19 @@
     "fuzzy-search": "^3.0.1",
     "google-maps-react": "^2.0.2",
     "history": "^4.7.2",
-    "holderjs": "^2.9.6",
     "i18next": "^15.0.7",
     "immutable": "^4.0.0-rc.12",
     "jquery": "^3.3.1",
     "jspdf": "^1.5.3",
-    "lodash-es": "^4.17.11",
     "md5": "^2.2.1",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
-    "normalize.css": "^8.0.1",
     "pusher-js": "^4.3.1",
-    "qs": "^6.7.0",
     "react": "^16.8.4",
     "react-accessible-accordion": "^2.4.5",
     "react-app-polyfill": "^0.2.0",
     "react-big-calendar": "^0.20.2",
-    "react-bootstrap": "^1.0.0-beta.9",
+    "react-bootstrap": "^0.32.4",
     "react-color": "^2.17.3",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.8.4",
@@ -46,14 +40,14 @@
     "react-input-range": "^1.3.0",
     "react-places-autocomplete": "^7.2.0",
     "react-progress-button": "^5.1.0",
-    "react-redux": "^5.0.7",
+    "react-redux": "^5.1.1",
     "react-responsive-carousel": "^3.1.49",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "2.0.4",
-    "react-slick": "^0.23.1",
+    "react-slick": "^0.23.2",
     "react-streetview": "^1.1.1",
-    "redux": "^4.0.0",
+    "redux": "^4.0.1",
     "redux-form": "^7.4.2",
     "redux-persist": "^5.10.0",
     "redux-socket.io-middleware": "^1.0.4",
@@ -65,15 +59,14 @@
     "socket.io-client": "^2.1.1",
     "stringquery": "^1.0.8",
     "text-encoding": "^0.7.0",
-    "whatwg-fetch": "^3.0.0",
-    "yup": "^0.26.6"
+    "yup": "^0.26.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && rm -rf deploy && cp -R build deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "pm2 start ./server.sh --name LetsPark"
+    "deploy": "pm2 start ./server.sh --name FFA"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -85,6 +78,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "netlify-cli": "^2.11.22",
+    "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8"
   }
 }
