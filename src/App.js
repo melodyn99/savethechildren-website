@@ -67,8 +67,8 @@ import OurResearch from './containers/04ResearchFindings/OurResearch';
 import OtherFindings from './containers/04ResearchFindings/OtherFindings';
 
 /*** Our Events ***/
-import SaferInternetDay2019 from './containers/05OurEvents/SaferInternetDay2019';
-import SmartNetizenCompetition from './containers/05OurEvents/SmartNetizenCompetition';
+import EventsSaferInternetDay2019 from './containers/05OurEvents/EventsSaferInternetDay2019';
+import EventsSmartNetizenCompetition from './containers/05OurEvents/EventsSmartNetizenCompetition';
 import EventsTrainingWorkshops from './containers/05OurEvents/EventsTrainingWorkshops';
 
 /*** External Resources ***/
@@ -251,11 +251,11 @@ class App extends Component {
                 }
 
                 /*** OUR EVENTS ***/
-                case 'safer-internet-day-2019': {
-                    return <SaferInternetDay2019 />;
+                case 'events-safer-internet-day-2019': {
+                    return <EventsSaferInternetDay2019 />;
                 }
-                case 'smart-netizen-competition': {
-                    return <SmartNetizenCompetition />;
+                case 'events-smart-netizen-competition': {
+                    return <EventsSmartNetizenCompetition />;
                 }
                 case 'events-training-workshops': {
                     return <EventsTrainingWorkshops />;

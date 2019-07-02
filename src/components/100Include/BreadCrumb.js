@@ -103,6 +103,39 @@ class Breadcrumb extends Component {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>More resources on parenting</span></div >);
             }
 
+            /*** FEATURED ISSUES ***/
+            case 'online-grooming': {
+                return (<div><span><Link to="/">Featured Issues</Link></span> > <span>Online grooming</span></div >);
+            }
+            case 'sexting': {
+                return (<div><span><Link to="/">Featured Issues</Link></span> > <span>Sexting</span></div >);
+            }
+            case 'personal-privacy': {
+                return (<div><span><Link to="/">Featured Issues</Link></span> > <span>Personal privacy</span></div >);
+            }
+            case 'legislations': {
+                return (<div><span><Link to="/">Featured Issues</Link></span> > <span>Legislations</span></div >);
+            }
+
+            /*** RESEARCH FINDINGS ***/
+            case 'our-research': {
+                return (<div><span><Link to="/">Research Findings</Link></span> > <span>Our research</span></div >);
+            }
+            case 'other-findings': {
+                return (<div><span><Link to="/">Research Findings</Link></span> > <span>Other findings</span></div >);
+            }
+            
+            /*** OUR EVENTS ***/
+            case 'events-safer-internet-day-2019': {
+                return (<div><span><Link to="/">Our Events</Link></span> > <span>Safer Inernet Day 2019</span></div >);
+            }
+            case 'events-smart-netizen-competition': {
+                return (<div><span><Link to="/">Our Events</Link></span> > <span>"The Smart Netizen" Character Design Competition</span></div >);
+            }
+            case 'events-training-workshops': {
+                return (<div><span><Link to="/">Our Events</Link></span> > <span>Training workshops</span></div >);
+            }
+
             default: {
                 return (<div><span> <Link to="/">主頁</Link></span></div>);
             }

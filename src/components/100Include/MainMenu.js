@@ -46,8 +46,8 @@ function MainMenu(props) {
 
                     <li><Link to={"/" + i18n.language + "/hello"}>Our Events</Link>
                         <ul>
-                            <li><Link to={"/" + i18n.language + "/safer-internet-day-2019"}>Safer Internet Day 2019</Link></li>
-                            <li><Link to={"/" + i18n.language + "/smart-netizen-competition"}>"The Smart Netizen" Character Design Competition</Link></li>
+                            <li><Link to={"/" + i18n.language + "/events-safer-internet-day-2019"}>Safer Internet Day 2019</Link></li>
+                            <li><Link to={"/" + i18n.language + "/events-smart-netizen-competition"}>"The Smart Netizen" Character Design Competition</Link></li>
                             <li><Link to={"/" + i18n.language + "/events-training-workshops"}>Training Workshops</Link></li>
                         </ul>
                     </li>
