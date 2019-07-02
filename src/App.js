@@ -17,9 +17,6 @@ import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
 import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
 import * as HelperPopup from './utils/00JqueryControl/Popup';
 
-// Home
-import Home from './containers/00Home/Home';
-
 import CommonPage from './components/103Pages/CommonPage';
 import QuizPage from './components/103Pages/QuizPage';
 import GamePage from './components/103Pages/GamePage';
