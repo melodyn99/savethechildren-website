@@ -7,11 +7,13 @@ body { -webkit-text-size-adjust:none; background:$bodyBgColor; overflow-y:scroll
     * { outline:none; box-sizing:border-box; }
 }
 
-a { margin:0; padding:0; border:0; text-decoration:none; color:$aColor; word-wrap:break-word; font-size:13px;
+a { margin:0; padding:0; border:0; text-decoration:none; color:$aColor; word-wrap:break-word; font-size:13px; cursor: url('../images/schk_web-cursor.cur'), auto;
     &:hover,
     &:active,
     &:focus { color:$aHoverColor; text-decoration:none; }
     img { display:block; border:none; }
+
+    &:hover { cursor: url('../images/schk_web-cursor.cur'), auto; }
 }
 
 h1, 

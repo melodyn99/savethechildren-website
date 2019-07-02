@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // import { bindActionCreators } from 'redux';
@@ -23,12 +23,27 @@ class Header extends Component {
     }
 
     render() {
-        // const { t, i18n } = this.props;
+        const {
+            // t, 
+            i18n } = this.props;
 
         return (
             <div className="wrapper-header">
-                <div className="header">
-                    12312313
+                <div className="header clearfix">
+                    <h1 className="logo-NA">
+                        <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
+                    </h1>
+
+                    <Link to={"/" + i18n.language + '/'} className="desktop-login">Login</Link>
+
+                    <ul className="desktop-language clearfix">
+                        <li><Link to={"/" + i18n.language + '/'}>中</Link></li>
+                        <li><Link to={"/" + i18n.language + '/'} className="active">EN</Link></li>
+                    </ul>
+
+                    <h1 className="logo-schk">
+                        <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-schk.png')} alt="" /></Link>
+                    </h1>
                 </div>
             </div>
         );

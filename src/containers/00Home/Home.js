@@ -23,7 +23,7 @@ import { login, verifyToken } from '../../Redux/Action/authAction';
 // Utils
 
 // Children components
-import BreadCrumb from '../../components/100Include/BreadCrumb';
+// import BreadCrumb from '../../components/100Include/BreadCrumb';
 
 class Home extends Component {
     constructor(props) {
@@ -38,16 +38,9 @@ class Home extends Component {
         // const { classes } = this.props;
 
         return (
-            <div className="wrapper-container-main">
-                <div className="container-main">
-                    <BreadCrumb />
-                    <div className="wrapper-content">
-                        <div className="content">
-                            Home
-                            </div>
-                    </div>
+            <div>
 
-                </div>
+
             </div>
         );
     }
