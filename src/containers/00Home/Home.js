@@ -10,11 +10,11 @@ import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
 
 // Api
-import { apiAuth } from '../../Api/ApiAuth';
-import { apiConferences } from '../../Api/ApiConferences';
+// import { apiAuth } from '../../Api/ApiAuth';
+// import { apiConferences } from '../../Api/ApiConferences';
 
 // Redux
 import { connect } from 'react-redux';
@@ -35,15 +35,13 @@ class Home extends Component {
     }
 
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
 
         return (
             <div className="wrapper-container-main">
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-
-
                         <div className="content">
                             Home
                             </div>
