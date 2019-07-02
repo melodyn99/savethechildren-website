@@ -3,11 +3,76 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 function MainMenu(props) {
-    // const { t, i18n } = props;
+    const {
+        // t, 
+        i18n } = props;
 
     return (
-        <div className="mainMenu">
-            <span><Link to="/">主頁</Link></span> / <span><Link to="/">報名歷史</Link></span> > <span>報名</span>
+        <div className="wrapper-MainMenu">
+            <div className="MainMenu">
+                <ul>
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                    <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
+                        <ul>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                            <li><Link to={"/" + i18n.language + "/hello"}>hello</Link></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     );
 }
