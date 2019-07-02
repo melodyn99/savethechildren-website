@@ -136,6 +136,10 @@ class Breadcrumb extends Component {
                 return (<div><span><Link to="/">Our Events</Link></span> > <span>Training workshops</span></div >);
             }
 
+            case 'external-resources': {
+                return (<div><span>External Resources</span></div>)
+            }
+
             default: {
                 return (<div><span> <Link to="/">主頁</Link></span></div>);
             }
