@@ -9,7 +9,7 @@ function MainMenu(props) {
 
     return (
         <div className="wrapper-MainMenu">
-            <div className="MainMenu">
+            <div className="MainMenu clearfix">
                 <ul>
                     <li><Link to={"/" + i18n.language + "/hello"}>hello</Link>
                         <ul>

@@ -37,11 +37,7 @@
 	}
 
 	.header { width:100%; max-width:1640px; height:100px; margin:0 auto; padding:10px 20px; position:relative;
-		@media (max-width: 980px) { height:50px; } 
-
-		.mobile-menu-btn { display:none; 
-			@media (max-width: 980px) { display:block; } 
-		}
+		@media (max-width: 980px) { height:50px; }
 
 		.logo-NA { width:204px; position:relative; display:inline-block; margin:3px 0 0 0; padding:0; 
 			a { display:block; 
@@ -55,11 +51,11 @@
 			}
 		}
 
-		.desktop-language { float:right; list-style:none; display:block; margin:29px 20px; padding:0; 
+		.desktop-language { float:right; list-style:none; display:block; margin:35px 20px; padding:0; 
 			>li { display:block; float:left; border-left:solid 1px #000; 
 				&:first-child { border:none; }
 
-				a { display:block; line-height:1em; padding: 0 15px; font-size:24px; color:#DEDDDF;
+				a { display:block; line-height:1em; padding: 0 15px; font-size:20px; color:#DEDDDF;
 					&:hover,
 					&.active { color:#289bf7; }
 				}
@@ -146,8 +142,36 @@
 
 // MainMenu
 .wrapper-MainMenu { position:relative; width:100%; background:pink; 
-	.MainMenu { position:relative; padding:20px; max-width:1640px; margin:0 auto; background:red;
+	.MainMenu { position:relative; padding:20px; max-width:1640px; margin:0 auto;
+		>ul { list-style:none; display:block; margin:0; padding: 0; 
+			>li { display:block; float:left; width: calc(100% / 6); 
+				>a { display:block; text-align:center; }
 
+				>ul { list-style:none; display:block; margin:0; padding:0; background:white; 
+					>li { display:block; 
+						
+
+						>a { display:block; padding: 10px; text-align:center;  
+
+							&.about { background:#153568; }
+							&.about { background:#d40000; }
+							&.about { background:#c45502; }
+							&.about { background:#2d5e30; }
+							&.about { background:#be9500; }
+							&.about { background:#018d96; }
+						
+						// #153568 #4b689a
+						// #d40000 #fe5353
+						// #c45502 #e67e00
+						// #2d5e30 #428644
+						// #be9500 #efa007
+						// #018d96 #42a8b0
+						
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
