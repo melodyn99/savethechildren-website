@@ -125,44 +125,21 @@
 	}
 }
 
+// MainMenu
+.wrapper-MainMenu { position:relative; width:100%;
+	.MainMenu { position:relative; padding:20px; max-width:1640px; margin:0 auto; background:red;
+
+	}
+}
+
 // CONTAINER
 .wrapper-container-main { position:relative; width:100%; background-size:100%;
 
 	.container-main { position:relative; padding:20px; max-width:1640px; margin:0 auto; min-height:750px; 
-		&.home { background:#e6e400; max-width:100%; }
-		
-		.pageTitle { font-size:60px; color:#fff; }
-		
-		.Breadcrumb { color:#fff; background-color:#000; margin:0; padding:5px 15px; border-radius:0; border-bottom:solid 1px #fff;
+
+		.Breadcrumb { color:#000; margin:0; padding:5px 0; border-radius:0; 
 			span { display:inline-block; font-size:12px; padding:5px;
 				a { display:block; color:#fff; font-size:12px; }
-			}
-		}
-
-		.subMenu { background-color:#383234;
-			ul { list-style:none; display:block; margin:0; padding:0;
-				>li { display:block; float:left;
-					a { display:inline-block; padding: 10px 20px; color:#fff; background:#383234; 
-						&.active,
-						&:hover{ color:#000; background: #DCFE00; }
-					}
-				}
-			}	
-		}
-
-		.toolBar { margin-bottom:20px; 
-			&.noMargin { margin:0; }
-
-			button { margin-left:10px; 
-				&:first-child { margin-left:0; } 
-			}
-		}
-
-		.bottomControl { margin-top:20px;
-			.right { float:right; }
-			
-			button { margin-left:10px; 
-				&:first-child { margin-left:0; } 
 			}
 		}
 

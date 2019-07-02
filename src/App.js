@@ -20,9 +20,9 @@ import * as HelperPopup from './utils/00JqueryControl/Popup';
 // Home
 import Home from './containers/00Home/Home';
 
-import CommonPage from './components/103Pages/CommonPage';
-import QuizPage from './components/103Pages/QuizPage';
-import GamePage from './components/103Pages/GamePage';
+// import CommonPage from './components/103Pages/CommonPage';
+// import QuizPage from './components/103Pages/QuizPage';
+// import GamePage from './components/103Pages/GamePage';
 
 // 404
 import PageNotFound from './containers/PageNotFound';
@@ -82,28 +82,28 @@ class App extends Component {
 
             switch (currentURL) {
 
-                case 'common': {
-                    return <CommonPage />;
-                }
-
                 case 'home': {
-                    return <CommonPage />;
+                    return <Home />;
                 }
 
-                case 'game': {
-                    return <GamePage />;
-                }
+                // case 'home': {
+                //     return <CommonPage />;
+                // }
 
-                case 'quiz': {
-                    return <QuizPage />;
-                }
+                // case 'game': {
+                //     return <GamePage />;
+                // }
+
+                // case 'quiz': {
+                //     return <QuizPage />;
+                // }
 
                 default: {
                     return <PageNotFound />;
                 }
             }
         } else {
-            return <CommonPage />
+            return <Home />
         }
     }
 
@@ -123,7 +123,6 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
-
                     <MainMenu />
 
                     {this.getComponent(currentURL, params)}

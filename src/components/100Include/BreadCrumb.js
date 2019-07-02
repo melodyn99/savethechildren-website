@@ -6,7 +6,7 @@ function Breadcrumb(props) {
     // const { t, i18n } = props;
 
     return (
-        <div className="breadcrumb">
+        <div className="Breadcrumb">
             <span><Link to="/">主頁</Link></span> / <span><Link to="/">報名歷史</Link></span> > <span>報名</span>
         </div>
     );
