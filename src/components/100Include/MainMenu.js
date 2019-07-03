@@ -11,7 +11,7 @@ function MainMenu(props) {
         <div className="wrapper-MainMenu">
             <div className="MainMenu clearfix">
                 <ul>
-                    <li><Link to={"/" + i18n.language + "/hello"} className="about">About Us</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="about"><span>About Us</span></Link>
                         <ul className="leftOne">
                             <div className="top"></div>
                             <div className="middle">
@@ -24,7 +24,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="resource">Resources<br />For You</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="resource"><span>Resources<br />For You</span></Link>
                         <ul className="leftTwo">
                             <div className="top"></div>
                             <div className="middle clearfix">
@@ -51,7 +51,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="featured">Featured<br />Issues</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="featured"><span>Featured<br />Issues</span></Link>
                         <ul>
                             <div className="top"></div>
                             <div className="middle">
@@ -64,7 +64,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="research">Research<br />Findings</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="research"><span>Research<br />Findings</span></Link>
                         <ul>
                             <div className="top"></div>
                             <div className="middle">
@@ -76,7 +76,7 @@ function MainMenu(props) {
 
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="event">Our Events</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="event"><span>Our Events</span></Link>
                         <ul>
                             <div className="top"></div>
                             <div className="middle">
@@ -88,7 +88,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/external-resources"} className="external">External<br />Resources</Link>
+                    <li><Link to={"/" + i18n.language + "/external-resources"} className="external"><span>External<br />Resources</span></Link>
                         {/* <ul>
                             <li><Link to={"/" + i18n.language + "/external-resources"}>External Resources</Link></li>
                         </ul> */}
