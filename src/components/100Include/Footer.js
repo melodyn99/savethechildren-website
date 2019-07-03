@@ -27,9 +27,9 @@ function Footer(props) {
 				<div className="col-xs-4 footer-column footer-contact">
 					<h2>Contact</h2>
 					<ul>
-						<li className="email"><span className="sr-only">Email: </span><a href="mailto:hk.program@savethchildren.org">hk.program@savethchildren.org</a></li>
-						<li className="tel"><span className="sr-only">Phone: </span><a href="tel:+852-2122-5640">(852) 2122-5640</a></li>
-						<li className="fax"><span className="sr-only">Fax: </span><a href="tel:tel:+852-3160-8685">(852) 3160-8685</a></li>
+						<li className="email"><span className="sr-only">Email: </span><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">hk.program@savethchildren.org</a></li>
+						<li className="tel"><span className="sr-only">Phone: </span><a target="_blank" rel="noopener noreferrer" href="tel:+852-2122-5640">(852) 2122-5640</a></li>
+						<li className="fax"><span className="sr-only">Fax: </span><a target="_blank" rel="noopener noreferrer" href="tel:tel:+852-3160-8685">(852) 3160-8685</a></li>
 					</ul>
 					<div className="footer-social-icon-div">
 						<a href="#facebook_link"><img className="footer-social-icon" src={facebookLinkIcon} alt="Facebook link"/></a>
