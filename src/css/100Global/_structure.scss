@@ -94,14 +94,12 @@
 					}
 				}
 
-				>ul { list-style:none; display:block; margin:0; padding:0; background:white; position:absolute; top:100%; left:50%; margin-left:-75%; width:150%; border-radius:15px; overflow:hidden; text-align:center;
-					&.leftOne { }
-					&.leftTwo { }
+				ul { list-style:none; display:none; margin:0; padding:0; background:white; position:absolute; top:100%; left:50%; margin-left:-75%; width:150%; border-radius:15px; overflow:hidden; text-align:center;
+					&.leftOne { margin-left:0%; }
+					&.leftTwo { margin-left:0%; }
 					
 					.top { background:yellow; }
-					.middle { background:cyan; padding:0 40px; 
-					
-					}
+					.middle { padding:0 40px; }
 					.bottom { background:green;}
 
 					li { display:block; 
@@ -111,6 +109,8 @@
 						}
 					}
 				}
+
+				&:hover > ul { display:block; }
 			}
 		}
 	}

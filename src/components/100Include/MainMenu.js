@@ -12,19 +12,27 @@ function MainMenu(props) {
             <div className="MainMenu clearfix">
                 <ul>
                     <li><Link to={"/" + i18n.language + "/hello"} className="about">About Us</Link>
-                        <ul className="LeftOne">
-                            <li><Link to={"/" + i18n.language + "/why-we-must-act"}>Why We Must Act</Link></li>
-                            <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}>Our Mission and Strategy</Link></li>
-                            <li><Link to={"/" + i18n.language + "/sitemap"}>Sitemap</Link></li>
-                            <li><Link to={"/" + i18n.language + "/contact-us"}>Contact Us</Link></li>
+                        <ul className="leftOne">
+                            <div className="top">top</div>
+                            <div className="middle">
+                                <li><Link to={"/" + i18n.language + "/why-we-must-act"}>Why We Must Act</Link></li>
+                                <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}>Our Mission and Strategy</Link></li>
+                                <li><Link to={"/" + i18n.language + "/sitemap"}>Sitemap</Link></li>
+                                <li><Link to={"/" + i18n.language + "/contact-us"}>Contact Us</Link></li>
+                            </div>
+                            <div className="bottom">bottom</div>
                         </ul>
                     </li>
 
                     <li><Link to={"/" + i18n.language + "/hello"} className="resource">Resources<br />For You</Link>
                         <ul className="LeftTwo">
-                            <li><Link to={"/" + i18n.language + "/primary-school-home"}>Primary School</Link></li>
-                            <li><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary School</Link></li>
-                            <li><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></li>
+                            <div className="top">top</div>
+                            <div className="middle">
+                                <li><Link to={"/" + i18n.language + "/primary-school-home"}>Primary School</Link></li>
+                                <li><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary School</Link></li>
+                                <li><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></li>
+                            </div>
+                            <div className="bottom">bottom</div>
                         </ul>
                     </li>
 
@@ -43,16 +51,25 @@ function MainMenu(props) {
 
                     <li><Link to={"/" + i18n.language + "/hello"} className="research">Research<br />Findings</Link>
                         <ul>
-                            <li><Link to={"/" + i18n.language + "/our-research"}>Our Research</Link></li>
-                            <li><Link to={"/" + i18n.language + "/other-findings"}>Other Findings</Link></li>
+                            <div className="top">top</div>
+                            <div className="middle">
+                                <li><Link to={"/" + i18n.language + "/our-research"}>Our Research</Link></li>
+                                <li><Link to={"/" + i18n.language + "/other-findings"}>Other Findings</Link></li>
+                            </div>
+                            <div className="bottom">bottom</div>
                         </ul>
+
                     </li>
 
                     <li><Link to={"/" + i18n.language + "/hello"} className="event">Our Events</Link>
                         <ul>
-                            <li><Link to={"/" + i18n.language + "/events-safer-internet-day-2019"}>Safer Internet Day 2019</Link></li>
-                            <li><Link to={"/" + i18n.language + "/events-smart-netizen-competition"}>"The Smart Netizen" Character Design Competition</Link></li>
-                            <li><Link to={"/" + i18n.language + "/events-training-workshops"}>Training Workshops</Link></li>
+                            <div className="top">top</div>
+                            <div className="middle">
+                                <li><Link to={"/" + i18n.language + "/events-safer-internet-day-2019"}>Safer Internet Day 2019</Link></li>
+                                <li><Link to={"/" + i18n.language + "/events-smart-netizen-competition"}>"The Smart Netizen" Character Design Competition</Link></li>
+                                <li><Link to={"/" + i18n.language + "/events-training-workshops"}>Training Workshops</Link></li>
+                            </div>
+                            <div className="bottom">bottom</div>
                         </ul>
                     </li>
 
