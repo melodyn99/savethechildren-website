@@ -42,18 +42,77 @@
 }
 
 // FOOTER
-.wrapper-footer { background:#1b1718; width:100%; height:auto; position:relative;
+.wrapper-footer {
+	background: white;
+	border-top: thick solid red;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
 
-	.footer { position:relative; max-width:1640px; margin:0 auto; padding:10px 20px; color:#fff;
-		>ul { list-style:none; display:block; margin:0 0 10px -10px; padding:0; text-align:left;
-			>li { display:inline-block; border-left:solid 1px #d7d7d7;
-				&:first-child { border:none; }
-
-				>a { list-style:none; display:block; margin:0; padding:0px 10px; color: #d7d7d7; font-size:12px; line-height:1em; }
+	.footer-subscription {
+		.footer-subscription-logo {
+			width: 80%;
+		}
+		label {
+			display: block;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		input {
+			background: dimgray;
+			color: white;
+			&::placeholder {
+				color: scale-color(dimgray, $lightness: 66%);
 			}
 		}
+		button {
+			background-color: #d9534f;
+			color: white;
+			&:focus,
+			&:hover,
+			&:active {
+				background-color: scale-color(#d9534f, $lightness: -10%);
+			}
+			&:active {
+				box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+				color: white;
+			}
+		}
+	}
 
-		.copyright { position:relative; color:#d7d7d7; font-size:12px;}
+	.footer-contact {
+		ul {
+			list-style-type: none;
+		}
+		li {
+			line-height: 1.6em;
+		}
+		li:before {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			float: left;
+			margin-top: 5px;
+		}
+		.email:before {
+			background-image: url('../images/Footer/ic_footer-contact-Email.png');
+		}
+		.tel:before {
+			background-image: url('../images/Footer/ic_footer-contact-Tel.png');
+		}
+		.fax:before {
+			background-image: url('../images/Footer/ic_footer-contact-Fax.png');
+		}
+		.footer-social-icon-div a {
+			display: inline-block;
+			margin: 0.5rem;
+		}
+		.footer-social-icon {
+			width: 32px;
+		}
 	}
 }
 
