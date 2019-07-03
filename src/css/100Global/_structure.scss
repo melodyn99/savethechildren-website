@@ -94,13 +94,13 @@
 					}
 				}
 
-				ul { list-style:none; display:none; margin:0; padding:0; background:white; position:absolute; top:100%; left:50%; margin-left:-75%; width:150%; border-radius:15px; overflow:hidden; text-align:center;
-					&.leftOne { margin-left:0%; }
+				ul { list-style:none; display:block; margin:0; padding:0; position:absolute; top:100%; left:50%; margin-left:-75%; width:394px; border-radius:15px; overflow:hidden; text-align:center;
+					&.leftOne { margin-left:-45%; }
 					&.leftTwo { margin-left:0%; }
 					
-					.top { background:yellow; }
-					.middle { padding:0 40px; }
-					.bottom { background:green;}
+					.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_2_center.png') center top no-repeat; }
+					.middle { background:url('../images/Menu/bubble_sub_menu-02center.png') center top repeat-y; padding:0 40px; }
+					.bottom { height:58px; background:url('../images/Menu/bubble_sub_menu-03bottom.png') center top no-repeat; }
 
 					li { display:block; 
 						&:first-child > a { border:none; }
