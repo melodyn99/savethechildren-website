@@ -42,18 +42,123 @@
 }
 
 // FOOTER
-.wrapper-footer { background:#1b1718; width:100%; height:auto; position:relative;
+.wrapper-footer {
+	background: white;
+	border-top: thick solid red;
+	padding: 1rem 0;
+	text-align: center;
 
-	.footer { position:relative; max-width:1640px; margin:0 auto; padding:10px 20px; color:#fff;
-		>ul { list-style:none; display:block; margin:0 0 10px -10px; padding:0; text-align:left;
-			>li { display:inline-block; border-left:solid 1px #d7d7d7;
-				&:first-child { border:none; }
+	.footer {
+		max-width: 1640px;
+		margin: auto;
+		padding: 10px 0;
+	}
 
-				>a { list-style:none; display:block; margin:0; padding:0px 10px; color: #d7d7d7; font-size:12px; line-height:1em; }
+	.footer-column {
+		padding-left: 20px;
+		padding-right: 20px;
+		h2 {
+			margin-top: 1.5rem;
+			margin-bottom: 1.8rem;
+		}
+	}
+
+	.footer-subscription {
+		.footer-subscription-logo {
+			width: 100%;
+		}
+		label {
+			display: block;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			font-size: 13px;
+			font-weight: normal;
+		}
+		input {
+			background: dimgray;
+			color: white;
+			&::placeholder {
+				color: scale-color(lightgray, $lightness: 66%);
+			}
+			border-color: dimgray;
+			border-radius: 0;
+		}
+		.input-group-btn,
+		button {
+			cursor: unset;
+			background-color: red;
+			color: white;
+			&:hover {
+				background-color: scale-color(red, $lightness: -20%);
+				border-color: scale-color(red, $lightness: -20%);
+			}
+			&:active {
+				background-color: scale-color(red, $lightness: -30%);
+				border-color: scale-color(red, $lightness: -30%);
+				color: white;
+			}
+			border-color: red;
+			border-radius: 0;
+		}
+		.input-group-btn:last-child > .btn {
+			margin-left: 0;
+		}
+	}
+
+	.footer-contact {
+		ul {
+			list-style-type: none;
+		}
+		li {
+			line-height: 1.6em;
+			margin: auto;
+			margin-bottom: 1rem;
+			font-size: 13px;
+			font-weight: normal;
+			max-width: 18rem;
+			position: relative;
+
+			a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
 			}
 		}
+		li:before {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			background: center / cover no-repeat;
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
+		}
+		.email:before {
+			background-image: url('../images/Footer/ic_footer-contact-Email.png');
+		}
+		.tel:before {
+			background-image: url('../images/Footer/ic_footer-contact-Tel.png');
+		}
+		.fax:before {
+			background-image: url('../images/Footer/ic_footer-contact-Fax.png');
+		}
+		.footer-social-icon-div a {
+			display: inline-block;
+			margin: 0.5rem;
+		}
+		.footer-social-icon {
+			width: 48px;
+			&:hover,
+			&:focus,
+			&:active {
+				opacity: 0.7;
+			}
+		}
+	}
 
-		.copyright { position:relative; color:#d7d7d7; font-size:12px;}
+	.footer-address p {
+		font-size: 13px;
 	}
 }
 
