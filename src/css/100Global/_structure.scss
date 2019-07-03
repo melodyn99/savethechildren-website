@@ -107,16 +107,17 @@
 			font-size: 13px;
 			font-weight: normal;
 			max-width: 18rem;
+			position: relative;
 		}
 		li:before {
 			content: '';
 			display: block;
 			width: 16px;
 			height: 16px;
-			background-size: cover;
-			background-repeat: no-repeat;
-			float: left;
-			margin-top: 5px;
+			background: center / cover no-repeat;
+			position: absolute;
+			top: 50%;
+			margin-top: -8px;
 		}
 		.email:before {
 			background-image: url('../images/Footer/ic_footer-contact-Email.png');
