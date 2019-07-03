@@ -80,19 +80,28 @@
 			&::placeholder {
 				color: scale-color(lightgray, $lightness: 66%);
 			}
+			border-color: dimgray;
+			border-radius: 0;
 		}
+		.input-group-btn,
 		button {
-			background-color: #d9534f;
+			cursor: unset;
+			background-color: red;
 			color: white;
-			&:focus,
-			&:hover,
-			&:active {
-				background-color: scale-color(#d9534f, $lightness: -10%);
+			&:hover {
+				background-color: scale-color(red, $lightness: -20%);
+				border-color: scale-color(red, $lightness: -20%);
 			}
 			&:active {
-				box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+				background-color: scale-color(red, $lightness: -30%);
+				border-color: scale-color(red, $lightness: -30%);
 				color: white;
 			}
+			border-color: red;
+			border-radius: 0;
+		}
+		.input-group-btn:last-child > .btn {
+			margin-left: 0;
 		}
 	}
 
