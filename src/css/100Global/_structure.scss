@@ -49,14 +49,27 @@
 	padding-bottom: 1rem;
 	text-align: center;
 
+	.footer {
+		max-width: 1640px;
+		margin: auto;
+		padding: 10px 20px;
+	}
+
+	.footer-column h2 {
+		margin-top: 1.5rem;
+		margin-bottom: 1.8rem;
+	}
+
 	.footer-subscription {
 		.footer-subscription-logo {
-			width: 80%;
+			width: 100%;
 		}
 		label {
 			display: block;
 			margin-top: 1rem;
 			margin-bottom: 1rem;
+			font-size: 13px;
+			font-weight: normal;
 		}
 		input {
 			background: dimgray;
@@ -86,6 +99,11 @@
 		}
 		li {
 			line-height: 1.6em;
+			margin: auto;
+			margin-bottom: 1rem;
+			font-size: 13px;
+			font-weight: normal;
+			max-width: 18rem;
 		}
 		li:before {
 			content: '';
@@ -111,8 +129,12 @@
 			margin: 0.5rem;
 		}
 		.footer-social-icon {
-			width: 32px;
+			width: 48px;
 		}
+	}
+
+	.footer-address p {
+		font-size: 13px;
 	}
 }
 

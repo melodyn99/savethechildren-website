@@ -11,33 +11,33 @@ function Footer(props) {
 
 	return (
 		<div className="wrapper-footer container-fluid">
-			<div class="row">
-				<div className="col-sm-4 footer-column footer-subscription">
+			<div className="row footer">
+				<div className="col-xs-4 footer-column footer-subscription">
 					<form>
 						<img className="footer-subscription-logo" src={footerLogo} alt="Logo of Save the Children"/>
-						<label for="signup_email">Sign up for exclusive Netizen Academy news and events</label>
-						<div class="input-group">
-							<input type="email" class="form-control" id="signup_email" placeholder="Email"/>
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="submit">Subscribe</button>
+						<label htmlFor="signup_email">Sign-up for exclusive Netizen Academy news and events.</label>
+						<div className="input-group">
+							<input type="email" className="form-control" id="signup_email" placeholder="Email"/>
+							<span className="input-group-btn">
+								<button className="btn btn-default" type="submit">Subscribe</button>
 							</span>
 						</div>
 					</form>
 				</div>
-				<div className="col-sm-4 footer-column footer-contact">
-					<h3>Contact</h3>
+				<div className="col-xs-4 footer-column footer-contact">
+					<h2>Contact</h2>
 					<ul>
-						<li className="email">hk.program@savethchildren.org</li>
-						<li className="tel">(852) 2122-5640</li>
-						<li className="fax">(852) 3160-8685</li>
+						<li className="email"><span className="sr-only">Email: </span><a href="mailto:hk.program@savethchildren.org">hk.program@savethchildren.org</a></li>
+						<li className="tel"><span className="sr-only">Phone: </span><a href="tel:+852-2122-5640">(852) 2122-5640</a></li>
+						<li className="fax"><span className="sr-only">Fax: </span><a href="tel:tel:+852-3160-8685">(852) 3160-8685</a></li>
 					</ul>
 					<div className="footer-social-icon-div">
 						<a href="#facebook_link"><img className="footer-social-icon" src={facebookLinkIcon} alt="Facebook link"/></a>
 						<a href="#instagram_link"><img className="footer-social-icon" src={instagramLinkIcon} alt="Instagram link"/></a>
 					</div>
 				</div>
-				<div className="col-sm-4 footer-column footer-address">
-					<h3>Address</h3>
+				<div className="col-xs-4 footer-column footer-address">
+					<h2>Address</h2>
 					<p>
 						8/F Pacific Plaza,<br/>
 						410-418 Des Voeux Root West,<br/>
