@@ -98,8 +98,29 @@
 					&.leftOne { margin-left:-76px; 
 						.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_1_left.png') center top no-repeat; }
 					}
-					&.leftTwo { margin-left:-76px; 
-						.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_1_left.png') center top no-repeat; }
+					&.leftTwo { margin-left:-76px; width:585px;
+						.top { height:54px; background:url('../images/Menu/bubble_sub_menu-resourcesforyou_01_top.png') center top no-repeat; }
+						.middle { background:url('../images/Menu/bubble_sub_menu-resourcesforyou_02_center.png') center top repeat-y;padding:0; }
+						.bottom { height:28px; background:url('../images/Menu/bubble_sub_menu-resourcesforyou_03_bottom.png') center top no-repeat; }
+
+						li { float:left; width:33.33%; padding:0px; border-left: solid 2px #c8c8c8;
+							&:first-child { border:none; }
+
+							a { border:none; display:block; margin:0 0 0 20px; padding:0; text-align:center;
+								&:first-child{ margin:0; }
+								
+								.thumb { display:inline-block; width:142px; height:135px;
+									&.one { background:url('../images/Menu/btn_resources_for_you-01.png') center top no-repeat;}
+									&.two { background:url('../images/Menu/btn_resources_for_you-02.png') center top no-repeat;}
+									&.three { background:url('../images/Menu/btn_resources_for_you-03.png') center top no-repeat;}
+
+									&:hover { background-position: center bottom; }
+								}
+
+								span { padding: 2px 10px; display:inline-block; }
+								&:hover span { background: none; }
+							}
+						}
 					}
 					
 					.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_2_center.png') center top no-repeat;}
@@ -108,7 +129,10 @@
 
 					li { display:block; 
 						&:first-child > a { border:none; }
-						>a { display:block; padding: 15px 0; text-align:center; border-top: solid 2px #c8c8c8; font-size:18px; line-height:1.3em; }
+						>a { display:block; padding: 15px 0; text-align:center; border-top: solid 2px #c8c8c8; font-size:18px; line-height:1.3em; 
+							span { padding: 2px 10px; display:inline-block; }
+							&:hover span { background:#fffeaf; }
+						}
 					}
 				}
 
