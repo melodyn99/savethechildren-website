@@ -241,7 +241,7 @@ class App extends Component {
                 case 'legislations': {
                     return <Legislations />;
                 }
-        
+
                 /*** RESEARCH FINDINGS ***/
                 case 'our-research': {
                     return <OurResearch />;

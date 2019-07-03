@@ -38,9 +38,16 @@ class Home extends Component {
         // const { classes } = this.props;
 
         return (
-            <div>
+            <div className="wrapper-container-main">
+                <div className="container-main">
+                    <div className="wrapper-content">
+                        <div className="content">
+                            {/* ImageText */}
+                            Home
+                            </div>
+                    </div>
 
-
+                </div>
             </div>
         );
     }
