@@ -100,8 +100,8 @@
 	.MainMenu { position:relative; padding:20px; max-width:1640px; margin:0 auto;
 		>ul { list-style:none; display:block; margin:0; padding: 0; 
 			>li { display:table; float:left; width: calc(100% / 6); position:relative; background:yellow;
-				>a { display:table-cell; text-align:center; vertical-align:middle; width:100%; padding:25px 10px 0; 
-					color:#fff; font-size:20px; line-height:1.2em; height:80px;
+				>a { display:table-cell; text-align:center; vertical-align:middle; width:100%; padding:20px 10px 0; 
+					color:#fff; font-size:20px; line-height:1.2em; height:85px;
 					
 					&.about { background:url('../images/Menu/img_Menu-01About_Us_01frame.jpg') left -20px repeat-x; }
 					&.resource { background:url('../images/Menu/img_Menu-02Resources_for_you_01frame.jpg') left -20px repeat-x; }
