@@ -108,14 +108,13 @@
 
 							a { border:none; display:block; margin:0 0 0 20px; padding:0; text-align:center;
 								&:first-child{ margin:0; }
-								
+
 								.thumb { display:inline-block; width:142px; height:135px;
 									&.one { background:url('../images/Menu/btn_resources_for_you-01.png') center top no-repeat;}
 									&.two { background:url('../images/Menu/btn_resources_for_you-02.png') center top no-repeat;}
 									&.three { background:url('../images/Menu/btn_resources_for_you-03.png') center top no-repeat;}
-
-									&:hover { background-position: center bottom; }
 								}
+								&:hover .thumb { background-position: center bottom; }
 
 								span { padding: 2px 10px; display:inline-block; }
 								&:hover span { background: none; }
