@@ -12,7 +12,7 @@ function MainMenu(props) {
             <div className="MainMenu clearfix">
                 <ul>
                     <li><Link to={"/" + i18n.language + "/hello"} className="about">About Us</Link>
-                        <ul>
+                        <ul className="LeftOne">
                             <li><Link to={"/" + i18n.language + "/why-we-must-act"}>Why We Must Act</Link></li>
                             <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}>Our Mission and Strategy</Link></li>
                             <li><Link to={"/" + i18n.language + "/sitemap"}>Sitemap</Link></li>
@@ -21,7 +21,7 @@ function MainMenu(props) {
                     </li>
 
                     <li><Link to={"/" + i18n.language + "/hello"} className="resource">Resources<br />For You</Link>
-                        <ul>
+                        <ul className="LeftTwo">
                             <li><Link to={"/" + i18n.language + "/primary-school-home"}>Primary School</Link></li>
                             <li><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary School</Link></li>
                             <li><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></li>
@@ -30,10 +30,14 @@ function MainMenu(props) {
 
                     <li><Link to={"/" + i18n.language + "/hello"} className="featured">Featured<br />Issues</Link>
                         <ul>
-                            <li><Link to={"/" + i18n.language + "/online-grooming"}>Online Grooming</Link></li>
-                            <li><Link to={"/" + i18n.language + "/sexting"}>Sexting</Link></li>
-                            <li><Link to={"/" + i18n.language + "/personal-privacy"}>Personal Privacy</Link></li>
-                            <li><Link to={"/" + i18n.language + "/legislations"}>Legislations</Link></li>
+                            <div className="top">top</div>
+                            <div className="middle">
+                                <li><Link to={"/" + i18n.language + "/online-grooming"}>Online Grooming</Link></li>
+                                <li><Link to={"/" + i18n.language + "/sexting"}>Sexting</Link></li>
+                                <li><Link to={"/" + i18n.language + "/personal-privacy"}>Personal Privacy</Link></li>
+                                <li><Link to={"/" + i18n.language + "/legislations"}>Legislations</Link></li>
+                            </div>
+                            <div className="bottom">bottom</div>
                         </ul>
                     </li>
 
