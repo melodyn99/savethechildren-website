@@ -12,15 +12,11 @@ class PageNotFound extends Component {
 				<div className="wrapper-container-main">
 					<div className="container-main">
 
-						<h2 className="pageTitle">Page Not Found</h2>
-
 						<div className="wrapper-content">
-
 							<div className="content">
 								Sorry!
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
