@@ -20,7 +20,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="resource">Resources <br />For You</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="resource">Resources<br />For You</Link>
                         <ul>
                             <li><Link to={"/" + i18n.language + "/primary-school-home"}>Primary School</Link></li>
                             <li><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary School</Link></li>
@@ -28,7 +28,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="featured">Featured Issues</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="featured">Featured<br />Issues</Link>
                         <ul>
                             <li><Link to={"/" + i18n.language + "/online-grooming"}>Online Grooming</Link></li>
                             <li><Link to={"/" + i18n.language + "/sexting"}>Sexting</Link></li>
@@ -37,7 +37,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/hello"} className="research">Research Findings</Link>
+                    <li><Link to={"/" + i18n.language + "/hello"} className="research">Research<br />Findings</Link>
                         <ul>
                             <li><Link to={"/" + i18n.language + "/our-research"}>Our Research</Link></li>
                             <li><Link to={"/" + i18n.language + "/other-findings"}>Other Findings</Link></li>
@@ -52,7 +52,7 @@ function MainMenu(props) {
                         </ul>
                     </li>
 
-                    <li><Link to={"/" + i18n.language + "/external-resources"} className="external">External Resources</Link>
+                    <li><Link to={"/" + i18n.language + "/external-resources"} className="external">External<br />Resources</Link>
                         {/* <ul>
                             <li><Link to={"/" + i18n.language + "/external-resources"}>External Resources</Link></li>
                         </ul> */}
