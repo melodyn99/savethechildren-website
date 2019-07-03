@@ -9,7 +9,7 @@
 // HEADER
 .wrapper-header { position:fixed; top:0; width:100%; z-index:1000; background:#f8f9fa; left:0; @include transition(0.1s); min-width:1024px; border-bottom: solid 5px red;
 
-	.header { width:100%; max-width:1640px; height:100px; margin:0 auto; padding:10px 20px; position:relative;
+	.header { width:100%; max-width:1680px; height:100px; margin:0 auto; padding:10px 20px; position:relative;
 
 		.logo-NA { width:204px; position:relative; display:inline-block; margin:3px 0 0 0; padding:0; 
 			a { display:block; 
@@ -131,7 +131,8 @@
 
 		.wrapper-content { position:relative; padding:20px 40px; 
 			.content { padding:20px; background:#fff;  min-height:200px;
-
+				&.no-padding { padding:0; }
+				&.no-background { background:none; }
 			}
 		}
 	}
