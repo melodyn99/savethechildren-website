@@ -97,7 +97,7 @@
 
 // MainMenu
 .wrapper-MainMenu { position:relative; width:100%; background:pink; 
-	.MainMenu { position:relative; padding:20px; max-width:1640px; margin:0 auto;
+	.MainMenu { position:relative; max-width:1640px; margin:0 auto;
 		>ul { list-style:none; display:block; margin:0; padding: 0; 
 			>li { display:table; float:left; width: calc(100% / 6); position:relative; background:yellow;
 				>a { display:table-cell; text-align:center; vertical-align:middle; width:100%; padding:20px 10px 0; 
