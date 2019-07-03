@@ -76,19 +76,19 @@
 					color:#fff; font-size:20px; line-height:1.3em; height:90px; 
 					
 					&.about { background:url('../images/Menu/img_Menu-01About_Us_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
-						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -20px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
 					}
 					&.resource { background:url('../images/Menu/img_Menu-02Resources_for_you_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
-						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -20px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2; }
+						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -15px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2; }
 					}
 					&.featured { background:url('../images/Menu/img_Menu-03Featured_Issues_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
-						&:before { content:''; background:url('../images/Menu/img_Menu-03Featured_Issues_02line.jpg') left -20px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-03Featured_Issues_02line.jpg') left -15px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
 					}
 					&.research { background:url('../images/Menu/img_Menu-04Research_Finding_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
-						&:before { content:''; background:url('../images/Menu/img_Menu-04Research_Finding_02line.jpg') left -20px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-04Research_Finding_02line.jpg') left -15px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
 					}
 					&.event { background:url('../images/Menu/img_Menu-05Our_Event_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
-						&:before { content:''; background:url('../images/Menu/img_Menu-05Our_Event_02line.jpg') left -20px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-05Our_Event_02line.jpg') left -15px repeat-x; position:absolute; right:-5px; top:0; height:100%; width:10px; z-index:2;}
 					}
 					&.external { background:url('../images/Menu/img_Menu-06External_Resources_01frame.jpg') left -15px repeat-x; position:relative; z-index:1;
 					
