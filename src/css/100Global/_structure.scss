@@ -45,19 +45,22 @@
 .wrapper-footer {
 	background: white;
 	border-top: thick solid red;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem 0;
 	text-align: center;
 
 	.footer {
 		max-width: 1640px;
 		margin: auto;
-		padding: 10px 20px;
+		padding: 10px 0;
 	}
 
-	.footer-column h2 {
-		margin-top: 1.5rem;
-		margin-bottom: 1.8rem;
+	.footer-column {
+		padding-left: 20px;
+		padding-right: 20px;
+		h2 {
+			margin-top: 1.5rem;
+			margin-bottom: 1.8rem;
+		}
 	}
 
 	.footer-subscription {
