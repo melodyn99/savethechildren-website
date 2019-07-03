@@ -17,8 +17,8 @@ function MainMenu(props) {
                             <div className="middle">
                                 <li><Link to={"/" + i18n.language + "/why-we-must-act"}>Why We Must Act</Link></li>
                                 <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}>Our Mission and Strategy</Link></li>
-                                <li><Link to={"/" + i18n.language + "/sitemap"}>Sitemap</Link></li>
                                 <li><Link to={"/" + i18n.language + "/contact-us"}>Contact Us</Link></li>
+                                <li><Link to={"/" + i18n.language + "/sitemap"}>Sitemap</Link></li>
                             </div>
                             <div className="bottom"></div>
                         </ul>
