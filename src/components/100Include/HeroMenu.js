@@ -16,7 +16,14 @@ class HeroMenu extends Component {
         return (
             <div className="wrapper-heroMenu">
                 <div className="heroMenu clearfix">
-                    <img src={require('../../images/bg_homepage_menu.png')} alt="" />
+                    <img src={require('../../images/HeroMenu/bg_homepage_menu.png')} alt="" />
+
+                    <div className="figure about"></div>
+                    <div className="figure resource"></div>
+                    <div className="figure featured"></div>
+                    <div className="figure research"></div>
+                    <div className="figure event"></div>
+                    <div className="figure external"></div>
                 </div>
             </div>
         );
