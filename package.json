@@ -1,5 +1,5 @@
 {
-  "name": "letspark-frontend",
+  "name": "save-the-children-react-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -66,7 +66,7 @@
     "build": "react-scripts build && rm -rf deploy && cp -R build deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "pm2 start ./server.sh --name FFA"
+    "deploy": "pm2 start ./server.sh --name 'Save the Children'"
   },
   "eslintConfig": {
     "extends": "react-app"
