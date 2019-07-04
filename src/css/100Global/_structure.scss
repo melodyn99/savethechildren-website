@@ -174,25 +174,25 @@
 
 // MainMenu
 .wrapper-MainMenu { position:relative; width:100%; z-index:100;
-	.MainMenu { position:relative; max-width:1640px; margin:0 auto;
+	.MainMenu { position:relative; max-width:1640px; margin:0 auto;background:#42a8b0; 
 		>ul { list-style:none; display:block; margin:0; padding: 0; 
 			>li { display:block; float:left; width: calc(100% / 6); position:relative;
 				>a { display:table; text-align:center; width:100%; padding:21px 0 0; color:#fff; font-size:20px; line-height:1.3em; height:90px; 
 					
 					&.about { background:url('../images/Menu/img_Menu-01About_Us_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-2px; top:0; height:100%; width:4px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-2%; top:0; height:100%; width:3%; z-index:2;}
 					}
 					&.resource { background:url('../images/Menu/img_Menu-02Resources_for_you_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -15px repeat-x; position:absolute; right:-2px; top:0; height:100%; width:4px; z-index:2; }
+						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -15px repeat-x; position:absolute; right:-2.3%; top:0; height:100%; width:3%; z-index:2; }
 					}
 					&.featured { background:url('../images/Menu/img_Menu-03Featured_Issues_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-03Featured_Issues_02line.jpg') left -15px repeat-x; position:absolute; right:-2px; top:0; height:100%; width:4px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-03Featured_Issues_02line.jpg') left -15px repeat-x; position:absolute; right:-1.8%; top:0; height:100%; width:2.5%; z-index:2;}
 					}
 					&.research { background:url('../images/Menu/img_Menu-04Research_Finding_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-04Research_Finding_02line.jpg') left -15px repeat-x; position:absolute; right:-2px; top:0; height:100%; width:4px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-04Research_Finding_02line.jpg') left -15px repeat-x; position:absolute; right:-2.5%; top:0; height:100%; width:3%; z-index:2;}
 					}
 					&.event { background:url('../images/Menu/img_Menu-05Our_Event_01frame.jpg') left -15px repeat-x; position:relative;
-						&:before { content:''; background:url('../images/Menu/img_Menu-05Our_Event_02line.jpg') left -15px repeat-x; position:absolute; right:-2px; top:0; height:100%; width:4px; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-05Our_Event_02line.jpg') left -15px repeat-x; position:absolute; right:-2%; top:0; height:100%; width:3%; z-index:2;}
 					}
 					&.external { background:url('../images/Menu/img_Menu-06External_Resources_01frame.jpg') left -15px repeat-x; position:relative; z-index:1; }
 					

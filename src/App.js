@@ -11,6 +11,7 @@ import querySearch from "stringquery";
 
 import Header from './components/100Include/Header';
 import Footer from './components/100Include/Footer';
+import HeroMenu from './components/100Include/HeroMenu';
 import MainMenu from './components/100Include/MainMenu';
 
 // import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
@@ -282,6 +283,7 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
+                    <HeroMenu />
                     <MainMenu />
 
                     {this.getComponent(currentURL, params)}
