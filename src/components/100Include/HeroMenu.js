@@ -18,23 +18,20 @@ class HeroMenu extends Component {
                 <div className="heroMenu clearfix">
                     <img src={require('../../images/HeroMenu/bg_homepage_menu.png')} alt="" />
 
-                    <div className="figure about"></div>
-                    <div className="figure resource"></div>
-                    <div className="figure featured"></div>
-                    <div className="figure research"></div>
-                    <div className="figure event"></div>
-                    <div className="figure external"></div>
+                    <div className={"figure about " + (this.props.effect.heroMenu.about ? 'active' : '')}></div>
+                    <div className={"figure resource " + (this.props.effect.heroMenu.resource ? 'active' : '')}></div>
+                    <div className={"figure featured " + (this.props.effect.heroMenu.featured ? 'active' : '')}></div>
+                    <div className={"figure research " + (this.props.effect.heroMenu.research ? 'active' : '')}></div>
+                    <div className={"figure event " + (this.props.effect.heroMenu.event ? 'active' : '')}></div>
+                    <div className={"figure external " + (this.props.effect.heroMenu.external ? 'active' : '')}></div>
                 </div>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => (
-    {
-        members: state.auth,
-        router: state.router
-    }
-);
+const mapStateToProps = (state) => ({
+    effect: state.effect
+});
 
 export default withTranslation()(connect(mapStateToProps)(HeroMenu));
