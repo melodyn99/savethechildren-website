@@ -24,18 +24,37 @@ import { login, verifyToken } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
+import Quiz from '../../../components/100Include/Quiz';
 
 class PrimaryQuiz extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            formSubmitted: false
-        }
+            formSubmitted: false,
+
+            testQuizData: {
+                aim: 'Aims of the quiz',
+                questions: [{
+                    text: 'Question 1',
+                    correctAnswer: true
+                }, {
+                    text: 'Question 2',
+                    correctAnswer: false
+                }, {
+                    text: 'Question 3',
+                    correctAnswer: true
+                }, {
+                    text: 'Question 4',
+                    correctAnswer: false
+                }]
+            }
+        };
     }
 
     render() {
         // const { classes } = this.props;
+        const { testQuizData } = this.state;
 
         return (
             <div className="wrapper-container-main">
@@ -44,9 +63,9 @@ class PrimaryQuiz extends Component {
                     <div className="wrapper-content">
                         <div className="content no-padding no-background">
                             {/* Quiz */}
-                            <div className="quiz">
-                                This is quiz
-                            </div>
+                            <Quiz
+                                quizData={testQuizData}
+                            />
                         </div>
                     </div>
                 </div>
