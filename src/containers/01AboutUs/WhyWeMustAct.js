@@ -44,11 +44,15 @@ class WhyWeMustAct extends Component {
                     <div className="wrapper-content">
                         <div className="content">
                             <div className="ImageText">
-                                <div className="upper">{/* ImageText */}
-                                    <img src={require('../../images/HeroMenu/banner_homepage_01_Netizen.png')} alt="" />
+                                <div className="upper">
+                                    <img src={require('../../images/AboutUs/banner_aboutus-01Whymemustact.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    hello
+                                    <div className="title">Why we must act</div>
+                                    <div className="text">
+                                        <div>TBC</div>
+                                        <div>abcabc</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

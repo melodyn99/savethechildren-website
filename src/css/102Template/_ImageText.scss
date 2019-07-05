@@ -1,8 +1,9 @@
 .ImageText {
-    .upper { background:green;
+    .upper { 
         img { width:100%; }
     }
-    .bottom {
-        padding:20px; background:blue;
+    .bottom { padding:20px; background:white;
+        .title { color:#b30000; font-size:20px; }
+        .text { font-size:16px; }
     }
 }

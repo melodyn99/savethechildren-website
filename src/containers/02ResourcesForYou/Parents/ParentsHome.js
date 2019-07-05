@@ -11,6 +11,7 @@ import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 
 // Api
@@ -44,14 +45,65 @@ class ParentsHome extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* Grid */}
-                            Parents Home
-                            <div><Link to={"/" + i18n.language + "/parents-blog"}>Blog</Link></div>
-                            <div><Link to={"/" + i18n.language + "/parents-tips"}>Parenting Tips</Link></div>
-                            <div><Link to={"/" + i18n.language + "/parents-videos-sc-nwb"}>Videos: SC NWB Parents</Link></div>
-                            <div><Link to={"/" + i18n.language + "/parents-videos-popa"}>Videos: POPA Channel</Link></div>
-                            <div><Link to={"/" + i18n.language + "/parents-training-workshop"}>Training Workshop</Link></div>
-                            <div><Link to={"/" + i18n.language + "/parents-more-resources"}>More Resources on Parenting</Link></div>
+                            <div className="ImageGrid">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourceforyou-Parents.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <Grid container spacing={16}>
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-blog"}>Blog</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_02_parentstis.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-tips"}>Parenting Tips</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_03_blog_video.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-videos-sc-nwb"}>Videos: SC NWB Parents</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_04_blog_video-POPA.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-videos-popa"}>Videos: POPA Channel</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_05_training_workshop.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-training-workshop"}>Training Workshop</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <div className="grid">
+                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_06_more_resources_on_parenting.png')} alt="" />
+                                                <div className="text">
+                                                    <Link to={"/" + i18n.language + "/parents-more-resources"}>More Resources on Parenting</Link>
+                                                </div>
+                                            </div>
+                                        </Grid>
+                                    </Grid>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
