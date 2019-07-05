@@ -4,39 +4,46 @@
 }
 
 // WRAP
-#wrap { position:relative; padding-top:105px; left:0; background: url('../images/bg_content.png') center top repeat; z-index:1; @include transition(0.1s); height:100%; min-width:1004px; }
+#wrap { position:relative; padding-top:75px; left:0; background: url('../images/bg_content.png') center top repeat; z-index:1; @include transition(0.1s); height:100%; min-width:1004px; }
 
 // HEADER
-.wrapper-header { position:fixed; top:0; width:100%; height:105px; z-index:1000; background:#f8f9fa; left:0; @include transition(0.1s); min-width:1004px; border-bottom: solid 5px red;
+.wrapper-header { position:fixed; top:0; width:100%; height:75px; z-index:1000; background:#f8f9fa; left:0; @include transition(0.1s); min-width:1004px; border-bottom: solid 5px $corporateRedColor;
 
-	.header { width:100%; max-width:1240px; height:100px; margin:0 auto; padding:10px 20px 0; position:relative;
+	.header { width:100%; max-width:1240px; height:100px; margin:0 auto; padding:0 20px; position:relative;
 
-		.logo-NA { width:204px; position:relative; display:inline-block; margin:3px 0 0 0; padding:0; 
+		.logo-NA-top { width:150px; position:relative; display:inline-block; margin:9px 0 0 0; padding:0; 
 			a { display:block; 
 				img { width:100%; }
 			}
 		}
 	
-		.logo-schk { width:322px; float:right; display:inline-block; margin-top:7px; padding:0;
+		.logo-schk { width:250px; float:right; display:inline-block; margin-top:10px; padding:0;
 			a { display:block; 
 				img { width:100%; }
 			}
 		}
 
-		.desktop-language { float:right; list-style:none; display:block; margin:35px 20px; padding:0; 
+		.desktop-language { float:right; list-style:none; display:block; margin:25px 20px; padding:0; 
 			>li { display:block; float:left; border-left:solid 1px #000; 
 				&:first-child { border:none; }
 
-				a { display:block; line-height:1em; padding: 0 15px; font-size:20px; color:#DEDDDF;
+				a { display:block; line-height:1em; padding: 0 15px; font-size:20px; color:#DEDDDF; font-size:20px;
 					&:hover,
 					&.active { color:#289bf7; }
 				}
 			}
 		}
 
-		.desktop-login { width:190px; height:66px;float:right; margin-top:7px; display:block; color:#fff; text-align:right;padding: 25px 20px; font-size:30px;
+		.desktop-login { width:140px; height:49px;float:right; margin-top:11px; display:block; color:#fff; text-align:right;padding: 15px 20px; font-size:16px;
 							background:url('../images/btn_header_Login.png') center top no-repeat; background-size:100%; 
 			&:hover { background-position:center bottom; }
+		}
+
+		.seekHelp { display:block; position:absolute; top:90%; right:9.3%; width:23.4%; padding-top:9.61%; background: url('../images/btn_Homepage-SeekHelp.png') center top no-repeat;  background-size:100%;
+			&:hover { background-position: center bottom; }
+			span { display:block; position:absolute; top:0; bottom:0; left:0; right:0; width:100%; padding: 19.5% 0; margin-left:14%; font-size:24px; color:#fff; text-align:center;
+				 @media (max-width: 1200px ) { font-size:20px;}
+			}
 		}
 	}
 }
@@ -44,7 +51,7 @@
 // FOOTER
 .wrapper-footer {
 	background: white;
-	border-top: thick solid red;
+	border-top: thick solid $corporateRedColor;
 	padding: 1rem 0;
 	text-align: center;
 
@@ -86,18 +93,18 @@
 		.input-group-btn,
 		button {
 			cursor: unset;
-			background-color: red;
+			background-color: $corporateRedColor;
 			color: white;
 			&:hover {
-				background-color: scale-color(red, $lightness: -20%);
-				border-color: scale-color(red, $lightness: -20%);
+				background-color: scale-color($corporateRedColor, $lightness: -20%);
+				border-color: scale-color($corporateRedColor, $lightness: -20%);
 			}
 			&:active {
-				background-color: scale-color(red, $lightness: -30%);
-				border-color: scale-color(red, $lightness: -30%);
+				background-color: scale-color($corporateRedColor, $lightness: -30%);
+				border-color: scale-color($corporateRedColor, $lightness: -30%);
 				color: white;
 			}
-			border-color: red;
+			border-color: $corporateRedColor;
 			border-radius: 0;
 		}
 		.input-group-btn:last-child > .btn {
@@ -181,7 +188,7 @@
 				>a { display:table; text-align:center; width:100%; padding:21px 0 0; color:#fff; font-size:20px; line-height:1.3em; height:90px; 
 					
 					&.about { background:url('../images/Menu/img_Menu-01About_Us_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-1.8%; top:0; height:100%; width:3%; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-1.8%; top:0; height:100%; width:2.9%; z-index:2;}
 					}
 					&.resource { background:url('../images/Menu/img_Menu-02Resources_for_you_01frame.jpg') left -15px repeat-x; position:relative; 
 						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -15px repeat-x; position:absolute; right:-2.3%; top:0; height:100%; width:2.8%; z-index:2; }

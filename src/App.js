@@ -284,7 +284,12 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
-                    <HeroMenu />
+
+                    {(
+                        (currentURL === '' || typeof currentURL === 'undefined')
+                    ) &&
+                        <HeroMenu />
+                    }
                     <MainMenu />
 
                     {this.getComponent(currentURL, params)}

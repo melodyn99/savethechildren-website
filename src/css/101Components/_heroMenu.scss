@@ -9,6 +9,12 @@
 
         img { position:relative; width:100%; z-index:2; }
 
+        .logo-NA-hero { width:28.3%; position:absolute; top:10px; left:20px; z-index:3;  
+			a { display:block; 
+				img { width:100%; }
+			}
+		}
+
         .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; z-index:3; 
             &.about { width:11.58%; padding-top:14.7%; background: url('../images/HeroMenu/img_homepage_menu_01-About.png') center top no-repeat; background-size:100% auto; left:8.2%; bottom:3%; }
             &.resource { width:13.3%; padding-top:14.14%; background: url('../images/HeroMenu/img_homepage_menu_02-Resource.png') center top no-repeat; background-size:100% auto; left:21.00%; bottom:0; }

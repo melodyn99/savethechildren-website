@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // import { bindActionCreators } from 'redux';
@@ -25,9 +25,9 @@ class HeroMenu extends Component {
     }
 
     render() {
-        // const {
-        //     // t, 
-        //     i18n } = this.props;
+        const {
+            // t, 
+            i18n } = this.props;
 
         return (
             <div className="wrapper-heroMenu">
@@ -47,6 +47,10 @@ class HeroMenu extends Component {
                     </div>
 
                     <img src={require('../../images/HeroMenu/bg_homepage_menu.png')} alt="" />
+
+                    <h1 className="logo-NA-hero">
+                        <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
+                    </h1>
 
                     <div className={"figure about " + (this.props.effect.heroMenu.about ? 'active' : '')}></div>
                     <div className={"figure resource " + (this.props.effect.heroMenu.resource ? 'active' : '')}></div>
