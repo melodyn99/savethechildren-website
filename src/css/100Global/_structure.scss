@@ -267,10 +267,8 @@
 			}
 		}
 
-		.wrapper-content { position:relative; padding:20px 40px; background:orange;
-			.content { padding:0; background:#fff;  min-height:200px;
-				&.no-padding { padding:0; }
-				&.no-background { background:none; }
+		.wrapper-content { position:relative; padding:20px; background:orange;
+			.content { padding:0; min-height:200px; max-width:1020px;margin: 0 auto; 
 			}
 		}
 	}

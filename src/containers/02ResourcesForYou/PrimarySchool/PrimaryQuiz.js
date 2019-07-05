@@ -42,7 +42,7 @@ class PrimaryQuiz extends Component {
                 <div className="container-main primary-quix">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content no-padding no-background">
+                        <div className="content no-padding">
                             {/* Quiz */}
                             <div className="quiz">
                                 This is quiz

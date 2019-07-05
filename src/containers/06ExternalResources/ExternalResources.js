@@ -46,7 +46,7 @@ class ExternalResources extends Component {
                     <div className="container-main">
                         <BreadCrumb />
                         <div className="wrapper-content">
-                            <div className="content no-background">
+                            <div className="content">
                                 <div className="GridGrid">
                                     <div className="upper">
                                         <img src={require('../../images/ExternalResources/banner-External_Resources.png')} alt="" />
