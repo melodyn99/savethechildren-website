@@ -44,7 +44,7 @@ class PrimarySchoolHome extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
+                        <div className="content no-background">
                             <div className="ImageGridPrimary">
                                     <div className="upper">
                                         <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School.png')} alt="" />

@@ -42,23 +42,20 @@ class ParentsBlogDetail extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
+                        <div className="content no-background">
                             <div className="BlogDetail">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <div className="title">儿童安全上网工作</div>
-                                    <div className="author">Hilary Yip (article and videos under production by SCHK)</div>
-                                    <div className="content">
-                                        <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
-                                        <p>官方网站: http://www.kidzui.com</p>
-                                    </div>
+                                    <h3>儿童安全上网工作</h3>
+                                    <h5>Hilary Yip (article and videos under production by SCHK)</h5>
+                                    <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
+                                    <p>官方网站: http://www.kidzui.com</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

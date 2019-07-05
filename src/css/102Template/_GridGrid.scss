@@ -1,4 +1,4 @@
-.GridGrid {
+.GridGrid { margin:0px 35px; 
     .upper { 
         img { width:100%; }
     }
@@ -12,8 +12,8 @@
                 }
             }
             .bottom { background:white; padding:20px;
-                .title { font-size:16px;} 
-                .text { font-size:12px; min-height:80px; }
+                h3 { font-size:16px; padding:0px; margin:0px; } 
+                h4 { font-size:12px; min-height:80px; margin:0px; }
             }
         }
     }

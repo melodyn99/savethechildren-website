@@ -1,10 +1,10 @@
-.BlogDetail { padding:20px; 
-    .upper { padding:20px 140px; 
+.BlogDetail { background-color:white; margin: 0px 35px; 
+    .upper { padding:40px 140px; 
         img { width:100%; }
     }
-    .bottom { padding:20px; position:relative;
-        .title { font-size:24px; padding-bottom:20px; }
-        .author { font-size:12px; padding-bottom:50px; color:grey; }
-        .content { font-size:16px; }
+    .bottom { padding:40px; position:relative; min-height:800px; 
+        h3 { font-size:24px; }
+        h5 { font-size:8px; padding-bottom:30px; color:grey; }
+        p { font-size:16px; }
     }
 }

@@ -46,7 +46,7 @@ class ExternalResources extends Component {
                     <div className="container-main">
                         <BreadCrumb />
                         <div className="wrapper-content">
-                            <div className="content">
+                            <div className="content no-background">
                                 <div className="GridGrid">
                                     <div className="upper">
                                         <img src={require('../../images/ExternalResources/banner-External_Resources.png')} alt="" />
@@ -62,8 +62,8 @@ class ExternalResources extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <div className="title">E-Help</div>
-                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
+                                                        <h3>E-Help</h3>
+                                                        <h4>_____________________________________________________________________________________________________________________________</h4>
                                                     </div>
                                                 </div>
                                             </Grid>
@@ -76,9 +76,8 @@ class ExternalResources extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <div className="title">ACA</div>
-                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
-                                                    </div>
+                                                        <h3>ACA</h3>
+                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
                                                 </div>
                                             </Grid>
 
@@ -91,9 +90,8 @@ class ExternalResources extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <div className="title">INHOPE</div>
-                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
-                                                    </div>
+                                                        <h3>INHOPE</h3>
+                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
                                                 </div>
                                             </Grid>
                                             <Grid item xs={6}>
@@ -105,9 +103,8 @@ class ExternalResources extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <div className="title">Other Resource</div>
-                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
-                                                    </div>
+                                                        <h3>Other Resource</h3>
+                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
                                                 </div>
                                             </Grid>
                                         </Grid>
