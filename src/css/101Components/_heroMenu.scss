@@ -1,8 +1,15 @@
-.wrapper-heroMenu {
-    .heroMenu { position: relative; max-width: 1200px; margin: 0 auto; 
-        img { width:100%; }
+.wrapper-heroMenu { 
 
-        .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; 
+    .heroMenu { position: relative; max-width: 1200px; margin: 0 auto; 
+        .heroSlider { position:absolute; width:83%; bottom:25.7%; left:0; right:0; margin:0 auto; z-index:1;
+            .slick-slider { 
+                img { width:100%; }
+            }
+        }
+
+        img { position:relative; width:100%; z-index:2; }
+
+        .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; z-index:3; 
             &.about { width:11.58%; padding-top:14.7%; background: url('../images/HeroMenu/img_homepage_menu_01-About.png') center top no-repeat; background-size:100% auto; left:8.2%; bottom:3%; }
             &.resource { width:13.3%; padding-top:14.14%; background: url('../images/HeroMenu/img_homepage_menu_02-Resource.png') center top no-repeat; background-size:100% auto; left:21.00%; bottom:0; }
             &.featured { width:13.3%; padding-top:14.62%; background: url('../images/HeroMenu/img_homepage_menu_03-Featured.png') center top no-repeat; background-size:100% auto; left:36.5%; bottom:0.5%; }
