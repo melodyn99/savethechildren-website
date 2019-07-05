@@ -12,16 +12,16 @@ function FooterSitemap(props) {
             <div className="sitemap clearfix">
                 <ul>
                     <h2>About us</h2>
-                    <li><Link to={'/' + i18n.language + '/why-we-must-act'}>Why We Must Act</Link></li>
-                    <li><Link to={'/' + i18n.language + '/our-mission-and-strategy'}>Our Mission and Strategy</Link></li>
+                    <li><Link to={'/' + i18n.language + '/why-we-must-act'}>Why We Must Act (done)</Link></li>
+                    <li><Link to={'/' + i18n.language + '/our-mission-and-strategy'}>Our Mission and Strategy (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/contact-us'}>Contact us</Link></li>
-                    <li><Link to={'/' + i18n.language + '/sitemap'}>Sitemap</Link></li>
+                    <li><Link to={'/' + i18n.language + '/sitemap'}>Sitemap (done)</Link></li>
 
                     <div className="sep-20"></div>
                     <h2>Resouces for you</h2>
 
                     <h3>Primary School</h3>
-                    <li><Link to={'/' + i18n.language + '/primary-school-home'}>Primary School Home</Link></li>
+                    <li><Link to={'/' + i18n.language + '/primary-school-home'}>Primary School Home (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-general-tips'}>Primary School General Tips</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-social-media-user-guide'}>Primary School Social Media User Guide</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-quiz'}>Primary School Quiz</Link></li>
@@ -30,7 +30,7 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/primary-netizen-pledge'}>Primary School Netizen Pledge</Link></li>
 
                     <h3>Secondary School</h3>
-                    <li><Link to={'/' + i18n.language + '/secondary-school-home'}>Secondary School Home</Link></li>
+                    <li><Link to={'/' + i18n.language + '/secondary-school-home'}>Secondary School Home (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/secondary-general-tips'}>Secondary School General Tips</Link></li>
                     <li><Link to={'/' + i18n.language + '/secondary-social-media-user-guide'}>Secondary School Social Media User Guide</Link></li>
                     <li><Link to={'/' + i18n.language + '/secondary-quiz'}>Secondary School Quiz</Link></li>
@@ -39,12 +39,12 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/secondary-netizen-pledge'}>Secondary School Netizen Pledge</Link></li>
 
                     <h3>Parents</h3>
-                    <li><Link to={'/' + i18n.language + '/parents-home'}>Parents Home</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-home'}>Parents Home (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-tips'}>Parents Tips</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-blog'}>Parents Blog</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-resource-management-homework'}>Parents Blog Detail</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-blog'}>Parents Blog (done)</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-resource-management-homework'}>Parents Blog Detail (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb'}>Parents Videos SC NWB</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb-detail'}>Parents Videos SC NWB Detail</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb-detail'}>Parents Videos SC NWB Detail (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-training-workshop'}>Parents Training Workshop</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-more-resources'}>Parents More Resources</Link></li>
 
@@ -56,7 +56,7 @@ function FooterSitemap(props) {
                     
                     <h2>Research Findings</h2>
                     <li><Link to={'/' + i18n.language + '/our-research'}>Our Research</Link></li>
-                    <li><Link to={'/' + i18n.language + '/other-findings'}>Other Findings</Link></li>
+                    <li><Link to={'/' + i18n.language + '/other-findings'}>Other Findings (done)</Link></li>
 
                     <h2>Our Events</h2>
                     <li><Link to={'/' + i18n.language + '/events-training-workshops'}>Events Training Workshops</Link></li>
@@ -64,7 +64,7 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/events-smart-netizen-competition'}>Events Smart Netizen Character Design Competition</Link></li>
 
                     <h2>External Resouces</h2>
-                    <li><Link to={'/' + i18n.language + '/external-resources'}>External Resources</Link></li>
+                    <li><Link to={'/' + i18n.language + '/external-resources'}>External Resources (done)</Link></li>
                 </ul>
             </div>
         </div >

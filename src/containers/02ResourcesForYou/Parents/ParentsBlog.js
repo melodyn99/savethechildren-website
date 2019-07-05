@@ -46,7 +46,7 @@ class ParentsBlog extends Component {
                         <div className="content no-background">
                             <Grid container spacing={16}>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2">
+                                    <div className="ImageGrid2 left">
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -59,34 +59,7 @@ class ParentsBlog extends Component {
                                     </div>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2">
-                                        <div className="upper">
-                                            <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
-                                        </div>
-                                        <div className="bottom">
-                                            <h3>儿童安全上网工作</h3>
-                                            <h5>Hilary Yip (article and videos under production by SCHK)</h5>
-                                            <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
-                                            <p>官方网站: http://www.kidzui.com</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-
-                                <Grid item xs={6}>
-                                    <div className="ImageGrid2">
-                                        <div className="upper">
-                                            <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
-                                        </div>
-                                        <div className="bottom">
-                                            <h3>儿童安全上网工作</h3>
-                                            <h5>Hilary Yip (article and videos under production by SCHK)</h5>
-                                            <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
-                                            <p>官方网站: http://www.kidzui.com</p>
-                                        </div>
-                                    </div>
-                                </Grid>
-                                <Grid item xs={6}>
-                                    <div className="ImageGrid2">
+                                    <div className="ImageGrid2 right">
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -100,7 +73,7 @@ class ParentsBlog extends Component {
                                 </Grid>
 
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2">
+                                    <div className="ImageGrid2 left">
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -113,7 +86,34 @@ class ParentsBlog extends Component {
                                     </div>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2">
+                                    <div className="ImageGrid2 right">
+                                        <div className="upper">
+                                            <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
+                                        </div>
+                                        <div className="bottom">
+                                            <h3>儿童安全上网工作</h3>
+                                            <h5>Hilary Yip (article and videos under production by SCHK)</h5>
+                                            <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
+                                            <p>官方网站: http://www.kidzui.com</p>
+                                        </div>
+                                    </div>
+                                </Grid>
+
+                                <Grid item xs={6}>
+                                    <div className="ImageGrid2 left">
+                                        <div className="upper">
+                                            <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
+                                        </div>
+                                        <div className="bottom">
+                                            <h3>儿童安全上网工作</h3>
+                                            <h5>Hilary Yip (article and videos under production by SCHK)</h5>
+                                            <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
+                                            <p>官方网站: http://www.kidzui.com</p>
+                                        </div>
+                                    </div>
+                                </Grid>
+                                <Grid item xs={6}>
+                                    <div className="ImageGrid2 right">
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -127,7 +127,6 @@ class ParentsBlog extends Component {
                                 </Grid>
                             </Grid>
                             {/* Grid */}
-                            Parents Blog
                             <div><Link to={"/" + i18n.language + "/parents-blog-detail"}>Parents Blog Detail</Link></div>
                         </div>
                     </div>

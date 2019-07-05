@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import Slider from "react-slick";
 
 // Styling
 import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
@@ -37,17 +38,45 @@ class EventsTrainingWorkshops extends Component {
     render() {
         // const { classes } = this.props;
 
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+    
+        }
+
         return (
             <div className="wrapper-container-main">
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText */}
-                            Events Training Workshops
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <Slider {...settings}>
+                                        <div>
+                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                        </div>
+                                    </Slider>
+                                </div>
+                                <div className="bottom">
+                                    <h3>Training workshops</h3>
+                                    <p>Training workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshops</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );
