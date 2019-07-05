@@ -1,0 +1,20 @@
+.GridGrid {
+    .upper { 
+        img { width:100%; }
+    }
+    .lower {
+        padding:50px 20px 120px 20px; background:$majorBlueGreen; 
+        .grid { position:relative; 
+            .top { position:relative; 
+                img { width:100%; }
+                .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                    a {color:white; font-size:20px; }
+                }
+            }
+            .bottom { background:white; padding:20px;
+                .title { font-size:16px;} 
+                .text { font-size:12px; min-height:80px; }
+            }
+        }
+    }
+}

@@ -4,12 +4,14 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 // Styling
 import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 
 // Api
@@ -24,6 +26,7 @@ import { login, verifyToken } from '../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../components/100Include/BreadCrumb';
+import { SSL_OP_TLS_ROLLBACK_BUG } from 'constants';
 
 class ExternalResources extends Component {
     constructor(props) {
@@ -35,6 +38,7 @@ class ExternalResources extends Component {
     }
 
     render() {
+        const { i18n } = this.props;
         // const { classes } = this.props;
 
         return (
@@ -44,8 +48,72 @@ class ExternalResources extends Component {
                         <BreadCrumb />
                         <div className="wrapper-content">
                             <div className="content">
-                                {/* Grid */}
-                                External Resources
+                                <div className="GridGrid">
+                                    <div className="upper">
+                                        <img src={require('../../images/ExternalResources/banner-External_Resources.png')} alt="" />
+                                    </div>
+                                    <div className="lower">
+                                        <Grid container spacing={16}>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_01_EHelp.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>E-Help</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <div className="title">E-Help</div>
+                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_02_ACA.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>ACA</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <div className="title">ACA</div>
+                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
+                                                    </div>
+                                                </div>
+                                            </Grid>
+
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_03_INHOPE.png')} alt="" />
+                                                        <div className="text" style={{backgroundColor:'rgba(128,128,128,0.2)'}}>
+                                                            <Link to={"/" + i18n.language + "/"}>INHOPE</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <div className="title">INHOPE</div>
+                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_04_Otherresource.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>Other Resource</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <div className="title">Other Resource</div>
+                                                        <div className="text">___________________________________________________________________________________________________________________________________________________________________</div>
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
