@@ -43,11 +43,17 @@ class SiteMap extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* ImageText */}
-                            Sitemap
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/AboutUs/banner_aboutus-04Sitemap.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <div className="title">Sitemap</div>
+                                    <div className="text">_____________________________________________________________________________________________________</div>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );
