@@ -1,12 +1,44 @@
-.ImageGrid {
-    .upper { background:green;
+.ImageGridParents { margin:0px 35px; 
+    .upper { 
         img { width:100%; }
     }
     .bottom {
-        padding:20px; background:blue;
+        padding:20px; background:$corporateRedColor; 
+        .grid { position:relative; 
+            img { width:100%; }
+            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                a {color:white; font-size:20px; }
+            }
+        }
+    }
+}
 
-        .hello {
- 
+.ImageGridPrimary { margin:0px 35px; 
+    .upper { 
+        img { width:100%; }
+    }
+    .bottom {
+        padding:20px; background:$majorGreenYellow; 
+        .grid { position:relative; 
+            img { width:100%; }
+            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                a {color:white; font-size:20px; }
+            }
+        }
+    }
+}
+
+.ImageGridSecondary { margin:0px 35px; 
+    .upper { 
+        img { width:100%; }
+    }
+    .bottom {
+        padding:20px; background:$majorGreenBlue; 
+        .grid { position:relative; 
+            img { width:100%; }
+            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                a {color:white; font-size:20px; }
+            }
         }
     }
 }

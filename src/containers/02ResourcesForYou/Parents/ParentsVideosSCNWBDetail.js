@@ -42,10 +42,18 @@ class ParentsVideosSCNWBDetail extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* Video */}
-                            Parents Videos SC NWB Detail
+                        <div className="content no-background">
+                            <div className="VideoDetail">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourceforyou-Parents.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>生活影片</h3>
+                                    <h5>Hilary Yip (article and videos under production by SCHK)</h5>
+                                    <p>健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
 
                 </div>

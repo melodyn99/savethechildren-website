@@ -42,12 +42,18 @@ class OurMissionAndStrategy extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText */}
-                            Our Mission And Strategy
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/AboutUs/banner_boutus-02Our-mission.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Our mission and strategy</h3>
+                                    <p>_____________________________________________________________________________________________________</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

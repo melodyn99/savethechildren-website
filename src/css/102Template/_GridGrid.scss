@@ -1,0 +1,20 @@
+.GridGrid { margin:0px 35px; 
+    .upper { 
+        img { width:100%; }
+    }
+    .lower {
+        padding:20px; background:$majorBlueGreen; 
+        .grid { position:relative; 
+            .top { position:relative; 
+                img { width:100%; }
+                .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                    a {color:white; font-size:20px; }
+                }
+            }
+            .bottom { background:white; padding:20px;
+                h3 { font-size:16px; padding:0px; margin:0px; } 
+                h4 { font-size:12px; min-height:80px; margin:0px; }
+            }
+        }
+    }
+}

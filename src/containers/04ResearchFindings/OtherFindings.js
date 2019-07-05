@@ -42,12 +42,18 @@ class OtherFindings extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText */}
-                            Other Findings
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/ResearchFindings/banner_researchfindings-Other_Finding.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Other findings</h3>
+                                    <p>_____________________________________________________________________________________________________</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

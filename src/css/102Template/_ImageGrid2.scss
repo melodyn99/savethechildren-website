@@ -1,0 +1,12 @@
+.ImageGrid2 { background-color:white; margin: 0px 35px; 
+    &.left { margin-right:0px; }
+    &.right { margin-left:0px; }
+    .upper {
+        img { width:100%; }
+    }
+    .bottom { padding:20px; position:relative;
+        h3 { font-size:24px; }
+        h5 { font-size:8px; padding-bottom:30px; color:grey; }
+        p { font-size:16px; }
+    }
+}
