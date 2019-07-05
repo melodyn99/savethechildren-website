@@ -1,5 +1,5 @@
 // Fonts
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans|Sintony:400,700');
+@import url('https://fonts.googleapis.com/css?family=Mitr|Palanquin+Dark&display=swap');
 
 // Plugins
 // @import "~slick-carousel/slick/slick";
@@ -26,6 +26,8 @@
 // @import "100Global/gridSystem";
 
 // components
+@import "101Components/heroMenu";
+@import "101Components/quiz";
 // @import "101Components/formElements";
 // @import "101Components/sharedElements";
 // @import "101Components/sharedRepeatingElements";

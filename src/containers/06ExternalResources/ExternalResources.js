@@ -38,16 +38,17 @@ class ExternalResources extends Component {
         // const { classes } = this.props;
 
         return (
-            <div className="wrapper-container-main">
-                <div className="container-main">
-                    <BreadCrumb />
-                    <div className="wrapper-content">
-                        <div className="content">
-                            {/* Grid */}
-                            External Resources
+            <div>
+                <div className="wrapper-container-main">
+                    <div className="container-main">
+                        <BreadCrumb />
+                        <div className="wrapper-content">
+                            <div className="content">
+                                {/* Grid */}
+                                External Resources
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

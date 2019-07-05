@@ -1,0 +1,16 @@
+.wrapper-heroMenu {
+    .heroMenu { position: relative; max-width: 1200px; margin: 0 auto; 
+        img { width:100%; }
+
+        .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; 
+            &.about { width:11.58%; padding-top:14.7%; background: url('../images/HeroMenu/img_homepage_menu_01-About.png') center top no-repeat; background-size:100% auto; left:8.2%; bottom:3%; }
+            &.resource { width:13.3%; padding-top:14.14%; background: url('../images/HeroMenu/img_homepage_menu_02-Resource.png') center top no-repeat; background-size:100% auto; left:21.00%; bottom:0; }
+            &.featured { width:13.3%; padding-top:14.62%; background: url('../images/HeroMenu/img_homepage_menu_03-Featured.png') center top no-repeat; background-size:100% auto; left:36.5%; bottom:0.5%; }
+            &.research { width:10.68%; padding-top:14.54%; background: url('../images/HeroMenu/img_homepage_menu_04-Research.png') center top no-repeat; background-size:100% auto; left:53%; bottom:1.5%; }
+            &.event { width:14.45%; padding-top:11.52%; background: url('../images/HeroMenu/img_homepage_menu_05-Ourevent.png') center top no-repeat; background-size:100% auto; left:65.9%; bottom:-1.2%;  }
+            &.external { width:8.30%; padding-top:10.55%; background: url('../images/HeroMenu/img_homepage_menu_06-External.png') center top no-repeat; background-size:100% auto; left:83.5%; bottom:1.5%; }
+
+            &.active { background-position: center bottom; }
+        }
+    }
+}

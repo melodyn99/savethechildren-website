@@ -39,15 +39,16 @@ class PrimaryQuiz extends Component {
 
         return (
             <div className="wrapper-container-main">
-                <div className="container-main">
+                <div className="container-main primary-quix">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
+                        <div className="content no-padding no-background">
                             {/* Quiz */}
-                            Primary School Quiz
+                            <div className="quiz">
+                                This is quiz
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

@@ -11,12 +11,13 @@ import querySearch from "stringquery";
 
 import Header from './components/100Include/Header';
 import Footer from './components/100Include/Footer';
+import HeroMenu from './components/100Include/HeroMenu';
 import MainMenu from './components/100Include/MainMenu';
 import FooterSitemap from './components/100Include/FooterSitemap';
 
-import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
-import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
-import * as HelperPopup from './utils/00JqueryControl/Popup';
+// import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
+// import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
+// import * as HelperPopup from './utils/00JqueryControl/Popup';
 
 // Home
 import Home from './containers/00Home/Home';
@@ -84,27 +85,6 @@ import PageNotFound from './containers/PageNotFound';
 
 class App extends Component {
 
-    componentDidMount = () => {
-        HelperDesktopHandle.DesktopHandle.init();
-        HelperMobileHandle.MobileHandle.init();
-        HelperMobileHandle.MobileHandle.containersSize();
-        HelperPopup.Popup.init();
-        HelperPopup.Popup.containersSize();
-        window.addEventListener("resize", this.windowResize);
-    }
-
-    componentDidUpdate = () => {
-        window.scrollTo(0, 0);
-        HelperPopup.Popup.init();
-    }
-
-    windowResize = () => {
-        HelperDesktopHandle.DesktopHandle.resetDesktopMenu();
-        HelperDesktopHandle.DesktopHandle.maxHeightDesktopMenu();
-        HelperMobileHandle.MobileHandle.containersSize();
-        HelperPopup.Popup.containersSize();
-    }
-
     // change URL
     constructor(props) {
         super(props);
@@ -114,10 +94,10 @@ class App extends Component {
     }
 
     componentDidMount = () => {
-        HelperDesktopHandle.DesktopHandle.init();
-        HelperMobileHandle.MobileHandle.init();
-        HelperMobileHandle.MobileHandle.containersSize();
-        window.addEventListener("resize", this.windowResize);
+        // HelperDesktopHandle.DesktopHandle.init();
+        // HelperMobileHandle.MobileHandle.init();
+        // HelperMobileHandle.MobileHandle.containersSize();
+        // window.addEventListener("resize", this.windowResize);
     }
 
     componentDidUpdate = () => {
@@ -125,9 +105,9 @@ class App extends Component {
     }
 
     windowResize = () => {
-        HelperDesktopHandle.DesktopHandle.resetDesktopMenu();
-        HelperDesktopHandle.DesktopHandle.maxHeightDesktopMenu();
-        HelperMobileHandle.MobileHandle.containersSize();
+        // HelperDesktopHandle.DesktopHandle.resetDesktopMenu();
+        // HelperDesktopHandle.DesktopHandle.maxHeightDesktopMenu();
+        // HelperMobileHandle.MobileHandle.containersSize();
     }
 
     getComponent = (currentURL, params) => {
@@ -242,7 +222,7 @@ class App extends Component {
                 case 'legislations': {
                     return <Legislations />;
                 }
-        
+
                 /*** RESEARCH FINDINGS ***/
                 case 'our-research': {
                     return <OurResearch />;
@@ -304,6 +284,7 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
+                    <HeroMenu />
                     <MainMenu />
 
                     {this.getComponent(currentURL, params)}
