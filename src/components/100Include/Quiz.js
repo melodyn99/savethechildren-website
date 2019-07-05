@@ -5,10 +5,15 @@ import { withTranslation } from 'react-i18next';
 import { capitalize, get, set, isFunction, reduce } from 'lodash-es';
 import correctRobotImage from '../../images/ResourcesForYou/Quiz/ic_Quiz-Correct.png';
 import incorrectRobotImage from '../../images/ResourcesForYou/Quiz/ic_Quiz-Incorrect.png';
+import nextQuestionImage from '../../images/ResourcesForYou/Quiz/btn_Quiz-Next.png';
+
+let nextInstanceId = 1;
 
 class Quiz extends Component {
     constructor(props) {
         super(props);
+        this.instanceId = nextInstanceId;
+        ++nextInstanceId;
         this.state = this.getInitialQuizState();
         this.handleRetryQuiz = this.handleRetryQuiz.bind(this);
         this.handleRadioButtonChange = this.handleRadioButtonChange.bind(this);
@@ -36,6 +41,7 @@ class Quiz extends Component {
     }
 
     renderQuestion() {
+        const instanceId = this.instanceId;
         const quizData = get(this, 'props.quizData');
         const questions = get(quizData, 'questions');
         const { currentQuestionIndex, selectedRadioButton, userAnswers } = this.state;
@@ -51,53 +57,64 @@ class Quiz extends Component {
             </div>
             <div className="quiz-content">
                 <h3>{questionNumber}. {get(currentQuestionData, 'text')}</h3>
-                <label>
-                    <input
-                        type="radio"
-                        name="quiz_answer"
-                        onChange={this.handleRadioButtonChange}
-                        value="true"
-                        checked={selectedRadioButton === 'true'}
-                    />
-                    True
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="quiz_answer"
-                        onChange={this.handleRadioButtonChange}
-                        value="false"
-                        checked={selectedRadioButton === 'false'}
-                    />
-                    False
-                </label>
-                <label>
-                    <input
-                        type="radio"
-                        name="quiz_answer"
-                        onChange={this.handleRadioButtonChange}
-                        value="do_not_know"
-                        checked={selectedRadioButton === 'do_not_know'}
-                    />
-                    Don't know
-                </label>
-                {currentUserAnswer && <div className="quiz-answer-feedback">
-                    {currentUserAnswer.userChoice === correctAnswer ? <Fragment>
+                <div className="quiz-answer-choices">
+                    <div className="quiz-answer-choice">
+                        <input
+                            type="radio"
+                            name="quiz_answer"
+                            onChange={this.handleRadioButtonChange}
+                            id={'quiz_answer_true_' + instanceId}
+                            value="true"
+                            checked={selectedRadioButton === 'true'}
+                        />
+                        <label htmlFor={'quiz_answer_true_' + instanceId}>
+                            True
+                        </label>
+                    </div>
+                    <div className="quiz-answer-choice">
+                        <input
+                            type="radio"
+                            name="quiz_answer"
+                            onChange={this.handleRadioButtonChange}
+                            id={'quiz_answer_false_' + instanceId}
+                            value="false"
+                            checked={selectedRadioButton === 'false'}
+                        />
+                        <label htmlFor={'quiz_answer_false_' + instanceId}>
+                            False
+                        </label>
+                    </div>
+                    <div className="quiz-answer-choice">
+                        <input
+                            type="radio"
+                            name="quiz_answer"
+                            onChange={this.handleRadioButtonChange}
+                            id={'quiz_answer_do_not_know_' + instanceId}
+                            value="do_not_know"
+                            checked={selectedRadioButton === 'do_not_know'}
+                        />
+                        <label htmlFor={'quiz_answer_do_not_know_' + instanceId}>
+                            Don't know
+                        </label>
+                    </div>
+                </div>
+                <div className={'quiz-answer-feedback' + (currentUserAnswer ? '' : ' hide-quiz-answer-feedback')}>
+                    {get(currentUserAnswer, 'userChoice') === correctAnswer ? <div className="answer">
                         <img src={correctRobotImage} alt="" />
-                        Correct!!
-                    </Fragment> : <Fragment>
+                        <span className="answer-text">Correct!!</span>
+                    </div> : <div className="answer">
                         <img src={incorrectRobotImage} alt="" />
-                        Incorrect: The correct answer is "{capitalize(correctAnswer)}"
-                    </Fragment>}
-                    <button
-                        className="next-question-button"
-                        onClick={this.handleGoToNextQuestion}
-                    >
-                        <span className="sr-only">Go to next question</span>
-                        &gt;
-                    </button>
-                </div>}
-                
+                        <span className="answer-text">Incorrect: The correct answer is "{capitalize(correctAnswer)}"</span>
+                    </div>}
+                    <div className="next-question-button-div">
+                        <img
+                            className="next-question-button"
+                            onClick={this.handleGoToNextQuestion}
+                            src={nextQuestionImage}
+                            alt="Go to next question"
+                        />
+                    </div>
+                </div>
             </div>
             <div className="quiz-footer">{questionNumber} / {get(questions, 'length')}</div>
         </div>;

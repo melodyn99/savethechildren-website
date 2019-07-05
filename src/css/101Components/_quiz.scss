@@ -29,6 +29,10 @@
             }
         }
 
+        .quiz-content {
+            color: white;
+        }
+
         .quiz-footer {
             padding-top: 2rem;
             padding-bottom: 2rem;
@@ -37,12 +41,57 @@
     .quiz-question {
         .quiz-content {
             background-image: url('../images/ResourcesForYou/Quiz/bg_Quiz-01.png');
+
+            h3 {
+                font-size: 2.25rem;
+                font-weight: normal;
+                color: white;
+                display: block;
+                min-height: 10rem;
+            }
+
+            .quiz-answer-choices {
+                display: flex;
+                text-align: center;
+            }
+
+            .quiz-answer-choice {
+                flex: 1;
+            }
+
+            .quiz-answer-feedback {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                display: flex;
+                align-items: center;
+
+                .answer {
+                    flex: 1;
+                }
+
+                .next-question-button-div {
+                    flex: 0;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .next-question-button {
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .hide-quiz-answer-feedback {
+                visibility: hidden;
+            }
         }
 
         .quiz-footer {
             text-align: center;
         }
     }
+
     .quiz-result {
         .quiz-title {
             text-align: center;
@@ -51,5 +100,46 @@
         .quiz-content {
             background-image: url('../images/ResourcesForYou/Quiz/bg_Quiz-Finish.png');
         }
+    }
+
+    input[type=radio] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    $radio-size: 2.5rem;
+
+    label {
+        display: inline-block;
+        position: relative;
+        padding-left: 1rem;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        line-height: 4rem;
+        cursor: url('../images/schk_web-cursor.cur'), auto;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -$radio-size / 2;
+            left: -$radio-size;
+            height: $radio-size;
+            width: $radio-size;
+            border-radius: 50%;
+            border: white solid thin;
+            background-color: white;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    input[type=radio]:checked + label::before {
+        border-color: darkblue;
+        background-color: darkblue;
     }
 }
