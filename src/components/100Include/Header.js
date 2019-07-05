@@ -53,6 +53,8 @@ class Header extends Component {
                     <h1 className="logo-schk">
                         <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-schk.png')} alt="" /></Link>
                     </h1>
+
+                    <Link to={"/" + i18n.language + '/'} className="seekHelp"><span>Seek Help</span></Link>
                 </div>
             </div>
         );
