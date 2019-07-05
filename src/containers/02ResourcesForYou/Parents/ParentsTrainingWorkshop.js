@@ -42,12 +42,17 @@ class ParentsTrainingWorkshop extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* Video */}
-                            Parents Training Workshop
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_reourceforyou-Parents-Training_Workshop.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Training workshop</h3>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

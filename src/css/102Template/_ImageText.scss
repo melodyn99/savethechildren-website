@@ -9,6 +9,7 @@
             ul { list-style:none; 
                 li::before {content: "•"; color: red; font-size:300%; display: inline-block; vertical-align:bottom; 
                 }
+                li { padding-bottom:20px; }
             }
         }
     }

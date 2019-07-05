@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import Slider from "react-slick";
 
 // Styling
 import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
@@ -37,15 +38,47 @@ class SaferInternetDay2019 extends Component {
     render() {
         // const { classes } = this.props;
 
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+        }
+
         return (
             <div className="wrapper-container-main">
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText */}
-                            Safer Internet Day 2019 was on 5th Feb 2019!
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper" style={{padding:'40px 200px', backgroundColor:'rgb(237,236,250)'}}>
+                                    <Slider {...settings}>
+                                        <div>
+                                            <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-01.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-02.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-03.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-04.png')} alt="" />
+                                        </div>
+                                        <div>
+                                            <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-05.png')} alt="" />
+                                        </div>
+                                    </Slider>
+                                </div>
+                                <div className="bottom">
+                                    <h3>Safer Internet Day 2019 was on 5th Feb 2019!</h3>
+                                    <p>Training workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshops</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
 
                 </div>
