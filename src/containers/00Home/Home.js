@@ -39,7 +39,7 @@ class Home extends Component {
 
         return (
             <div className="wrapper-container-main">
-                <div className="container-main">
+                <div className="container-main home">
                     <div className="wrapper-content">
                         <div className="content">
                             {/* ImageText */}
