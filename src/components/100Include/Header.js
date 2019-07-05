@@ -30,7 +30,7 @@ class Header extends Component {
         return (
             <div className="wrapper-header">
                 <div className="header clearfix">
-                    <h1 className="logo-NA">
+                    <h1 className="logo-NA-top">
                         <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
                     </h1>
 
