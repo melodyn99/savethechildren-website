@@ -59,7 +59,7 @@ class Quiz extends Component {
             <div className="quiz-content">
                 <h3>{questionNumber}. {get(currentQuestionData, 'text')}</h3>
                 <div className="quiz-answer-choices">
-                    <div className="quiz-answer-choice">
+                    <div className="quiz-answer-choice quiz-answer-choice-left">
                         <input
                             type="radio"
                             name="quiz_answer"
@@ -85,7 +85,7 @@ class Quiz extends Component {
                             False
                         </label>
                     </div>
-                    <div className="quiz-answer-choice">
+                    <div className="quiz-answer-choice quiz-answer-choice-right">
                         <input
                             type="radio"
                             name="quiz_answer"
@@ -101,10 +101,10 @@ class Quiz extends Component {
                 </div>
                 <div className={'quiz-answer-feedback' + (currentUserAnswer ? '' : ' hide-quiz-answer-feedback')}>
                     {get(currentUserAnswer, 'userChoice') === correctAnswer ? <div className="answer">
-                        <img src={correctRobotImage} alt="" />
+                        <img src={correctRobotImage} alt="" width="150" />
                         <span className="answer-text">Correct!!</span>
                     </div> : <div className="answer">
-                        <img src={incorrectRobotImage} alt="" />
+                        <img src={incorrectRobotImage} alt="" width="150" />
                         <span className="answer-text">Incorrect: The correct answer is "{capitalize(correctAnswer)}"</span>
                     </div>}
                     <div className="next-question-button-div">
@@ -113,6 +113,7 @@ class Quiz extends Component {
                             onClick={this.handleGoToNextQuestion}
                             src={nextQuestionImage}
                             alt="Go to next question"
+                            width="60"
                         />
                     </div>
                 </div>
