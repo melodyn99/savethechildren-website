@@ -267,7 +267,7 @@
 		}
 
 		.wrapper-content { position:relative; padding:20px 40px; 
-			.content { padding:20px; background:#fff;  min-height:200px;
+			.content { padding:0; background:#fff;  min-height:200px;
 				&.no-padding { padding:0; }
 				&.no-background { background:none; }
 			}
