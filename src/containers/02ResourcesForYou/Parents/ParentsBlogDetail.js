@@ -43,9 +43,20 @@ class ParentsBlogDetail extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* Grid */}
-                            Parents Blog Detail
+                            <div className="BlogDetail">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <div className="title">儿童安全上网工作</div>
+                                    <div className="author">Hilary Yip</div>
+                                    <div className="content">
+                                        <p>KidZu是适用</p>
+                                        <p>官方网站: http://www.kidzui.com</p>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                     </div>
 
                 </div>
