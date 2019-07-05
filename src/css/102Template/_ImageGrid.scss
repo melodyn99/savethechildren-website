@@ -1,9 +1,39 @@
-.ImageGrid {
+.ImageGridParents {
     .upper { 
         img { width:100%; }
     }
     .bottom {
         padding:20px 20px 100px 20px; background:$corporateRedColor; 
+        .grid { position:relative; 
+            img { width:100%; }
+            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                a {color:white; font-size:20px; }
+            }
+        }
+    }
+}
+
+.ImageGridPrimary {
+    .upper { 
+        img { width:100%; }
+    }
+    .bottom {
+        padding:20px 20px 100px 20px; background:$majorGreenYellow; 
+        .grid { position:relative; 
+            img { width:100%; }
+            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                a {color:white; font-size:20px; }
+            }
+        }
+    }
+}
+
+.ImageGridSecondary {
+    .upper { 
+        img { width:100%; }
+    }
+    .bottom {
+        padding:20px 20px 100px 20px; background:$majorGreenBlue; 
         .grid { position:relative; 
             img { width:100%; }
             .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 

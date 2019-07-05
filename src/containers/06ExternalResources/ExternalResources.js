@@ -26,7 +26,6 @@ import { login, verifyToken } from '../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../components/100Include/BreadCrumb';
-import { SSL_OP_TLS_ROLLBACK_BUG } from 'constants';
 
 class ExternalResources extends Component {
     constructor(props) {

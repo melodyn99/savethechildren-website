@@ -45,7 +45,7 @@ class ParentsHome extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            <div className="ImageGrid">
+                            <div className="ImageGridParents">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourceforyou-Parents.png')} alt="" />
                                 </div>
