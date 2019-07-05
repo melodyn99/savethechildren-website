@@ -181,7 +181,7 @@
 				>a { display:table; text-align:center; width:100%; padding:21px 0 0; color:#fff; font-size:20px; line-height:1.3em; height:90px; 
 					
 					&.about { background:url('../images/Menu/img_Menu-01About_Us_01frame.jpg') left -15px repeat-x; position:relative; 
-						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-1.8%; top:0; height:100%; width:3%; z-index:2;}
+						&:before { content:''; background:url('../images/Menu/img_Menu-01About_Us_02line.jpg') left -15px repeat-x; position:absolute; right:-1.8%; top:0; height:100%; width:2.9%; z-index:2;}
 					}
 					&.resource { background:url('../images/Menu/img_Menu-02Resources_for_you_01frame.jpg') left -15px repeat-x; position:relative; 
 						&:before { content:''; background:url('../images/Menu/img_Menu-02Resources_for_you_02line.jpg') left -15px repeat-x; position:absolute; right:-2.3%; top:0; height:100%; width:2.8%; z-index:2; }
