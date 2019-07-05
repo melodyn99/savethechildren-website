@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
@@ -6,6 +6,7 @@ import { capitalize, get, set, isFunction, reduce } from 'lodash-es';
 import correctRobotImage from '../../images/ResourcesForYou/Quiz/ic_Quiz-Correct.png';
 import incorrectRobotImage from '../../images/ResourcesForYou/Quiz/ic_Quiz-Incorrect.png';
 import nextQuestionImage from '../../images/ResourcesForYou/Quiz/btn_Quiz-Next.png';
+import retryQuizImage from '../../images/ResourcesForYou/Quiz/btn_Quiz-Retry.png';
 
 let nextInstanceId = 1;
 
@@ -148,7 +149,11 @@ class Quiz extends Component {
             </div>
             <div className="quiz-content">
                 <div className="score">
-                    <span className="score-number">{score.toFixed(0)}</span>%
+                    <div className="score-circle">
+                        <div className="score-value">
+                            <span className="score-number">{score.toFixed(0)}</span>%
+                        </div>
+                    </div>
                 </div>
                 <ul className="score-breakdown">
                     <li><b>{correctAnswerCount}</b> Correct Answer(s)</li>
@@ -157,7 +162,10 @@ class Quiz extends Component {
                 </ul>
             </div>
             <div className="quiz-footer">
-                <button onClick={this.handleRetryQuiz}>&lt; Retry Quiz</button>
+                <button onClick={this.handleRetryQuiz}>
+                    <img src={retryQuizImage} alt="" />
+                    Retry Quiz
+                </button>
             </div>
         </div>;
     }

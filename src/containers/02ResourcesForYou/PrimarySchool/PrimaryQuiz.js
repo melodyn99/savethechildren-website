@@ -36,16 +36,16 @@ class PrimaryQuiz extends Component {
             testQuizData: {
                 aim: 'Aims of the quiz',
                 questions: [{
-                    text: 'Question 1',
+                    text: 'Question 1 (answer is True)',
                     correctAnswer: true
                 }, {
-                    text: 'Question 2',
+                    text: 'Question 2 (answer is False) a long question a long question a long question a long question a long question a long question a long question a long question a long question a long question a long question',
                     correctAnswer: false
                 }, {
-                    text: 'Question 3',
+                    text: 'Question 3 (answer is True)',
                     correctAnswer: true
                 }, {
-                    text: 'Question 4',
+                    text: 'Question 4 (answer is False)',
                     correctAnswer: false
                 }]
             }
