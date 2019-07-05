@@ -40,12 +40,12 @@ function FooterSitemap(props) {
 
                     <h3>Parents</h3>
                     <li><Link to={'/' + i18n.language + '/parents-home'}>Parents Home (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-tips'}>Parents Tips</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-tips'}>Parents Tips (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-blog'}>Parents Blog (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-resource-management-homework'}>Parents Blog Detail (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb'}>Parents Videos SC NWB</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb'}>Parents Videos SC NWB (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb-detail'}>Parents Videos SC NWB Detail (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-training-workshop'}>Parents Training Workshop</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-training-workshop'}>Parents Training Workshop (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-more-resources'}>Parents More Resources</Link></li>
 
                     <h2>Featured Issues</h2>
