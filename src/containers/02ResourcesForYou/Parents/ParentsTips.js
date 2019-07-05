@@ -42,12 +42,31 @@ class ParentsTips extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText2 */}
-                            Parents Tips
+                        <div className="content no-background">
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourcesforyou-Parents_general_tips.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Parents tips</h3>
+                                    <h4>An adult's coring presence adult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presence</h4>
+                                    <h4>6+1 instructions for parents</h4>
+                                    <p>
+                                        <ul>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                            <li>Be positiveBe positiveBe positiveBe positive</li>
+                                        </ul>
+                                    </p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

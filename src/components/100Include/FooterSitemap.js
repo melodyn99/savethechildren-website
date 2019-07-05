@@ -55,11 +55,11 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/legislations'}>Legislations</Link></li>
                     
                     <h2>Research Findings</h2>
-                    <li><Link to={'/' + i18n.language + '/our-research'}>Our Research</Link></li>
+                    <li><Link to={'/' + i18n.language + '/our-research'}>Our Research (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/other-findings'}>Other Findings (done)</Link></li>
 
                     <h2>Our Events</h2>
-                    <li><Link to={'/' + i18n.language + '/events-training-workshops'}>Events Training Workshops</Link></li>
+                    <li><Link to={'/' + i18n.language + '/events-training-workshops'}>Events Training Workshops (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/events-safer-internet-day-2019'}>Events Safer Internet Day 2019</Link></li>
                     <li><Link to={'/' + i18n.language + '/events-smart-netizen-competition'}>Events Smart Netizen Character Design Competition</Link></li>
 
