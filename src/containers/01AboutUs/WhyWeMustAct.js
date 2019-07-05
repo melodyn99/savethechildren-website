@@ -42,10 +42,12 @@ class WhyWeMustAct extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* ImageText */}
-                            Why We Must Act
+                        <div className="FormatType1">
+                            <img src={require('../../images/AboutUs/banner_aboutus-01Whymemustact.png')} alt="" />
+                            <div className="content">
+                                <div className="title">Why We Must Act</div>
                             </div>
+                        </div>
                     </div>
 
                 </div>
