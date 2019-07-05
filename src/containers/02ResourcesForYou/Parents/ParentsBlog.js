@@ -43,7 +43,7 @@ class ParentsBlog extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content no-background">
+                        <div className="content">
                             <Grid container spacing={16}>
                                 <Grid item xs={6}>
                                     <div className="ImageGrid2 left">

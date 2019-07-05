@@ -13,7 +13,9 @@
 			a { display:block; 
 				img { width:100%; }
 			}
-		}
+        }
+        
+        .viewMore { display:inline-block; position:absolute; bottom:30%; width:100%; left:0; right:0; background:url('../images/HeroMenu/img_homepage_arrow-viewmore.png') center bottom no-repeat; text-align:center; color:#fff; font-size:20px; z-index:3; padding-bottom: 30px; }
 
         .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; z-index:3; 
             &.about { width:11.58%; padding-top:14.7%; background: url('../images/HeroMenu/img_homepage_menu_01-About.png') center top no-repeat; background-size:100% auto; left:8.2%; bottom:3%; }

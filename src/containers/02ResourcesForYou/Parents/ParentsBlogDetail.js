@@ -42,7 +42,7 @@ class ParentsBlogDetail extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content no-background">
+                        <div className="content">
                             <div className="BlogDetail">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />

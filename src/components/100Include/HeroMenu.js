@@ -52,6 +52,8 @@ class HeroMenu extends Component {
                         <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
                     </h1>
 
+                    <span className="viewMore">Press and view more</span>
+
                     <div className={"figure about " + (this.props.effect.heroMenu.about ? 'active' : '')}></div>
                     <div className={"figure resource " + (this.props.effect.heroMenu.resource ? 'active' : '')}></div>
                     <div className={"figure featured " + (this.props.effect.heroMenu.featured ? 'active' : '')}></div>
