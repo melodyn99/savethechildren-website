@@ -48,8 +48,8 @@ class SiteMap extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-04Sitemap.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <div className="title">Sitemap</div>
-                                    <div className="text">_____________________________________________________________________________________________________</div>
+                                    <h3>Sitemap</h3>
+                                    <p>_____________________________________________________________________________________________________</p>
                                 </div>
                             </div>
                         </div>

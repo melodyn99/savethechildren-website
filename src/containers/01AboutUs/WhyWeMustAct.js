@@ -48,16 +48,13 @@ class WhyWeMustAct extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-01Whymemustact.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <div className="title">Why we must act</div>
-                                    <div className="text">
-                                        <div>TBC</div>
-                                        <div>abcabc</div>
-                                    </div>
+                                    <h3>Why we must act</h3>
+                                    <p>TBC</p>
+                                    <p>abcabc</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

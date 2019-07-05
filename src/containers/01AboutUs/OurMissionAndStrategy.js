@@ -48,8 +48,8 @@ class OurMissionAndStrategy extends Component {
                                     <img src={require('../../images/AboutUs/banner_boutus-02Our-mission.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <div className="title">Our mission and strategy</div>
-                                    <div className="text">_____________________________________________________________________________________________________</div>
+                                    <h3>Our mission and strategy</h3>
+                                    <p>_____________________________________________________________________________________________________</p>
                                 </div>
                             </div>
                         </div>

@@ -48,11 +48,9 @@ class ParentsVideosSCNWBDetail extends Component {
                                     <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourceforyou-Parents.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <div className="title">生活影片</div>
-                                    <div className="author">Hilary Yip (article and videos under production by SCHK)</div>
-                                    <div className="content">
-                                        <p>健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
-                                    </div>
+                                    <h3>生活影片</h3>
+                                    <h5>Hilary Yip (article and videos under production by SCHK)</h5>
+                                    <p>健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
                                 </div>
                             </div>
                         </div>
