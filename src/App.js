@@ -13,6 +13,7 @@ import Header from './components/100Include/Header';
 import Footer from './components/100Include/Footer';
 import HeroMenu from './components/100Include/HeroMenu';
 import MainMenu from './components/100Include/MainMenu';
+import FooterSitemap from './components/100Include/FooterSitemap';
 
 // import * as HelperDesktopHandle from './utils/00JqueryControl/DesktopHandle';
 // import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
@@ -283,13 +284,18 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
-                    <HeroMenu />
+
+                    {(
+                        (currentURL === '' || typeof currentURL === 'undefined')
+                    ) &&
+                        <HeroMenu />
+                    }
                     <MainMenu />
 
                     {this.getComponent(currentURL, params)}
 
                     <Footer />
-                    {/* <Sitemap /> */}
+                    <FooterSitemap />
                 </div>
             </div >
         );

@@ -43,9 +43,15 @@ class WhyWeMustAct extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* ImageText */}
-                            Why We Must Act
+                            <div className="ImageText">
+                                <div className="upper">{/* ImageText */}
+                                    <img src={require('../../images/HeroMenu/banner_homepage_01_Netizen.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    hello
+                                </div>
                             </div>
+                        </div>
                     </div>
 
                 </div>

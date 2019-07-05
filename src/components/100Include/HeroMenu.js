@@ -1,22 +1,58 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 // import * as AnimationsActionCreators from '../../actions/animations';
 
+// Utils
+import Slider from "react-slick";
+
 class HeroMenu extends Component {
 
+    constructor(props) {
+        super(props);
+
+        this.settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true
+        };
+    }
+
     render() {
-        // const {
-        //     // t, 
-        //     i18n } = this.props;
+        const {
+            // t, 
+            i18n } = this.props;
 
         return (
             <div className="wrapper-heroMenu">
                 <div className="heroMenu clearfix">
+                    <div className="heroSlider">
+                        <Slider {...this.settings}>
+                            <div>
+                                <img src={require('../../images/HeroMenu/banner_homepage_01_Netizen.png')} alt="" />
+                            </div>
+                            <div>
+                                <img src={require('../../images/HeroMenu/banner_homepage_01_Netizen.png')} alt="" />
+                            </div>
+                            <div>
+                                <img src={require('../../images/HeroMenu/banner_homepage_01_Netizen.png')} alt="" />
+                            </div>
+                        </Slider>
+                    </div>
+
                     <img src={require('../../images/HeroMenu/bg_homepage_menu.png')} alt="" />
+
+                    <h1 className="logo-NA-hero">
+                        <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
+                    </h1>
+
+                    <span className="viewMore">Press and view more</span>
 
                     <div className={"figure about " + (this.props.effect.heroMenu.about ? 'active' : '')}></div>
                     <div className={"figure resource " + (this.props.effect.heroMenu.resource ? 'active' : '')}></div>

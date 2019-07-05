@@ -1,14 +1,29 @@
-.wrapper-heroMenu {
-    .heroMenu { position: relative; max-width: 1640px; margin: 0 auto; 
-        img { width:100%; }
+.wrapper-heroMenu { 
 
-        .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; 
+    .heroMenu { position: relative; max-width: 1200px; margin: 0 auto; 
+        .heroSlider { position:absolute; width:83%; bottom:25.7%; left:0; right:0; margin:0 auto; z-index:1;
+            .slick-slider { 
+                img { width:100%; }
+            }
+        }
+
+        img { position:relative; width:100%; z-index:2; }
+
+        .logo-NA-hero { width:28.3%; position:absolute; top:10px; left:20px; z-index:3;  
+			a { display:block; 
+				img { width:100%; }
+			}
+        }
+        
+        .viewMore { display:inline-block; position:absolute; bottom:30%; width:100%; left:0; right:0; background:url('../images/HeroMenu/img_homepage_arrow-viewmore.png') center bottom no-repeat; text-align:center; color:#fff; font-size:20px; z-index:3; padding-bottom: 30px; }
+
+        .figure { display:block; position:absolute; bottom:3%; left: 50%; width:100px; height:100px; z-index:3; 
             &.about { width:11.58%; padding-top:14.7%; background: url('../images/HeroMenu/img_homepage_menu_01-About.png') center top no-repeat; background-size:100% auto; left:8.2%; bottom:3%; }
             &.resource { width:13.3%; padding-top:14.14%; background: url('../images/HeroMenu/img_homepage_menu_02-Resource.png') center top no-repeat; background-size:100% auto; left:21.00%; bottom:0; }
             &.featured { width:13.3%; padding-top:14.62%; background: url('../images/HeroMenu/img_homepage_menu_03-Featured.png') center top no-repeat; background-size:100% auto; left:36.5%; bottom:0.5%; }
             &.research { width:10.68%; padding-top:14.54%; background: url('../images/HeroMenu/img_homepage_menu_04-Research.png') center top no-repeat; background-size:100% auto; left:53%; bottom:1.5%; }
             &.event { width:14.45%; padding-top:11.52%; background: url('../images/HeroMenu/img_homepage_menu_05-Ourevent.png') center top no-repeat; background-size:100% auto; left:65.9%; bottom:-1.2%;  }
-            &.external { width:8.30%; padding-top:10.51%; background: url('../images/HeroMenu/img_homepage_menu_06-External.png') center top no-repeat; background-size:100% auto; left:83.5%; bottom:1.5%; }
+            &.external { width:8.30%; padding-top:10.55%; background: url('../images/HeroMenu/img_homepage_menu_06-External.png') center top no-repeat; background-size:100% auto; left:83.5%; bottom:1.5%; }
 
             &.active { background-position: center bottom; }
         }
