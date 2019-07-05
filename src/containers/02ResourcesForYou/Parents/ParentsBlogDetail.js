@@ -49,9 +49,9 @@ class ParentsBlogDetail extends Component {
                                 </div>
                                 <div className="bottom">
                                     <div className="title">儿童安全上网工作</div>
-                                    <div className="author">Hilary Yip</div>
+                                    <div className="author">Hilary Yip (article and videos under production by SCHK)</div>
                                     <div className="content">
-                                        <p>KidZu是适用</p>
+                                        <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
                                         <p>官方网站: http://www.kidzui.com</p>
                                     </div>
                                 </div>
