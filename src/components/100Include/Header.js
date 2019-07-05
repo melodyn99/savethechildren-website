@@ -27,12 +27,21 @@ class Header extends Component {
             // t, 
             i18n } = this.props;
 
+        let pathname = this.props.route.location.pathname,
+            urlArray = pathname.split("/"),
+            currentURL = urlArray[2];
+
         return (
             <div className="wrapper-header">
                 <div className="header clearfix">
-                    <h1 className="logo-NA-top">
-                        <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
-                    </h1>
+
+                    {(
+                        (currentURL !== '' && typeof currentURL !== 'undefined')
+                    ) &&
+                        <h1 className="logo-NA-top">
+                            <Link to={"/" + i18n.language + '/'}><img src={require('../../images/img_homepage_logo-NA.png')} alt="" /></Link>
+                        </h1>
+                    }
 
                     <Link to={"/" + i18n.language + '/'} className="desktop-login">Login</Link>
 
@@ -53,7 +62,7 @@ class Header extends Component {
 const mapStateToProps = (state) => (
     {
         members: state.auth,
-        router: state.router
+        route: state.router
     }
 );
 
