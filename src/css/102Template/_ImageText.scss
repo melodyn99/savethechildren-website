@@ -4,6 +4,12 @@
     }
     .bottom { padding:10px 30px; background:white; min-height:1000px; 
         h3 { color:#b30000; font-size:30px; margin:0px; }
-        p { font-size:16px; margin:0px; }
+        h4 { color:#b30000; font-size:16px; padding:20px 0px; margin:0px; }
+        p { font-size:16px; margin:0px; 
+            ul { list-style:none; 
+                li::before {content: "•"; color: red; font-size:300%; display: inline-block; vertical-align:bottom; 
+                }
+            }
+        }
     }
 }
