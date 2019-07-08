@@ -24,8 +24,8 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/primary-school-home'}>Primary School Home (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-general-tips'}>Primary School General Tips (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-social-media-user-guide'}>Primary School Social Media User Guide</Link></li>
-                    <li><Link to={'/' + i18n.language + '/primary-quiz'}>Primary School Quiz</Link></li>
-                    <li><Link to={'/' + i18n.language + '/primary-risk-and-danger'}>Primary School Risk and Danger</Link></li>
+                    <li><Link to={'/' + i18n.language + '/primary-quiz'}>Primary School Quiz (done)</Link></li>
+                    <li><Link to={'/' + i18n.language + '/primary-risk-and-danger'}>Primary School Risk and Danger (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-game'}>Primary School Game</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-netizen-pledge'}>Primary School Netizen Pledge</Link></li>
 

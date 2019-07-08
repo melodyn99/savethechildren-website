@@ -45,6 +45,7 @@ class EventsTrainingWorkshops extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+            dotsClass: 'slickdots', 
         }
 
         return (

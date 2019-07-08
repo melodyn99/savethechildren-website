@@ -45,6 +45,7 @@ class SaferInternetDay2019 extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
+            dotsClass: 'slickdots1',
         }
 
         return (
