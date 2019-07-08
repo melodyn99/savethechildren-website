@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 // import { Redirect } from 'react-router';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // Styling
@@ -35,7 +35,7 @@ class ParentsTips extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { i18n } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -61,7 +61,7 @@ class ParentsTips extends Component {
                                         <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
                                         <li>Be positiveBe positiveBe positiveBe positive</li>
                                     </ul>
-                                    <p>Read more >></p>
+                                    <p><Link to={"/" + i18n.language + "/"}>Read more >></Link></p>
                                 </div>
                             </div>
                         </div>
