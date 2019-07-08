@@ -46,13 +46,13 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb'}>Parents Videos SC NWB (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-videos-sc-nwb-detail'}>Parents Videos SC NWB Detail (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/parents-training-workshop'}>Parents Training Workshop (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/parents-more-resources'}>Parents More Resources</Link></li>
+                    <li><Link to={'/' + i18n.language + '/parents-more-resources'}>Parents More Resources (done)</Link></li>
 
                     <h2>Featured Issues</h2>
                     <li><Link to={'/' + i18n.language + '/online-grooming'}>Online Grooming</Link></li>
                     <li><Link to={'/' + i18n.language + '/sexting'}>Sexting</Link></li>
-                    <li><Link to={'/' + i18n.language + '/personal-privacy'}>Personal Privacy</Link></li>
-                    <li><Link to={'/' + i18n.language + '/legislations'}>Legislations</Link></li>
+                    <li><Link to={'/' + i18n.language + '/personal-privacy'}>Personal Privacy (done)</Link></li>
+                    <li><Link to={'/' + i18n.language + '/legislations'}>Legislations (done)</Link></li>
                     
                     <h2>Research Findings</h2>
                     <li><Link to={'/' + i18n.language + '/our-research'}>Our Research (done)</Link></li>

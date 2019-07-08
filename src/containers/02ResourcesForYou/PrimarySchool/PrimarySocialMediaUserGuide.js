@@ -43,11 +43,17 @@ class PrimarySocialMediaUserGuide extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* Grid */}
-                            Primary School Social Media User Guide
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-Social_media_user_guide.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Social media user guide</h3>
+                                    <p>_____________</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

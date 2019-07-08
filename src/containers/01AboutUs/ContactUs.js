@@ -47,6 +47,7 @@ class ContactUs extends Component {
                                 <div className="upper">
                                     <img src={require('../../images/AboutUs/banner_aboutus-03Contact_us.png')} alt="" />
                                 </div>
+<<<<<<< HEAD
                                 <div className="narrow">
                                     {/* <div className="bottom"> */}
                                     {/* <img src={require('../../images/AboutUs/ContactUs/ic_contactus-01FB.png')} alt="" /> */}
@@ -69,6 +70,32 @@ class ContactUs extends Component {
 
                                     {/* <img src={require('../../images/AboutUs/ContactUs/ic_contactus-06Address.png')} alt="" /> */}
                                     <p className="address">8/F Pacific Plaza, 410-418 Des Voeux Road West, Sai Wan, Hong Kong</p>
+=======
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-01FB.png')} alt="" />
+                                        <p>https://www.facebook.com/savethechildrenhk/</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-02IG.png')} alt="" />
+                                        <p>https://www.instagram.com/savethechildrenhk/</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-03Tel.png')} alt="" />
+                                        <p>(852) 2112-5640</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-04Fax.png')} alt="" />
+                                        <p>(852 3160-8685</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-05Email.png')} alt="" />
+                                        <p>hk.program@savethechildren.org</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-06Address.png')} alt="" />
+                                        <p>8/F Pacific Plaza, 410-418 Des Voeux Road West,</p>
+                                        <p style={{'paddingLeft':'80px', 'paddingTop':'0px'}}>Sai Wan, Hong Kong</p>
+>>>>>>> 1c743c8e3fc16f876850fdb642573b9c0c21b345
                                 </div>
                             </div>
                         </div>
