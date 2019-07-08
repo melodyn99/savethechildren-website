@@ -48,15 +48,15 @@ class Sexting extends Component {
                                     <img src={require('../../images/FeaturedIssues/Sexting/banner_featured Issues-Sexting (1).png')} alt="" />
                                     <img src={require('../../images/FeaturedIssues/Sexting/img_featuredissues-sexting.png')} alt="" />
                                 </div>
-                                <div style={{'backgroundColor':'white'}}>
-                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                        Print
+                                <div style={{'backgroundColor':'white', 'paddingBottom':'30px'}}>
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../images/btn_print.png')} alt="" width="100%"/>
                                     </Button>
-                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                        Share
-                                    </Button>
-                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                        Download
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../images/btn_share.png')} alt="" width="100%"/>
+                                    </Button>"
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../images/btn_download.png')} alt="" width="100%"/>
                                     </Button>
                                 </div>
                             </div>

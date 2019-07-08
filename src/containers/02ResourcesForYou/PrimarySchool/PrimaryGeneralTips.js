@@ -78,15 +78,17 @@ class PrimaryGeneralTips extends Component {
                             <div className="ImageTextGrid">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-general_tips.png')} alt="" />
-                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                    Print
-                                </Button>
-                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                    Share
-                                </Button>
-                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
-                                    Download
-                                </Button>
+                                <div style={{'backgroundColor':'white', 'margin':'10px'}}>
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_print.png')} alt="" width="100%"/>
+                                    </Button>
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_share.png')} alt="" width="100%"/>
+                                    </Button>"
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_download.png')} alt="" width="100%"/>
+                                    </Button>
+                                </div>
                                 <h2>General Tips</h2>
                                 </div>
                                 <Grid container spacing={16}>
