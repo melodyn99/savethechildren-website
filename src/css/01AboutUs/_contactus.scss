@@ -1,28 +1,40 @@
 .contact { 
     .narrow{ max-width:440px; margin:0 auto; }
 
-    p { background:green; padding:0 0 0 60px; position:relative; 
-        &:before { content:''; width:30px; height:30px; background:yellow; position:absolute; top:0; left:0; }
+    p { padding:0 0 0 60px; position:relative; 
+        &:before { content:''; width:30px; height:30px; position:absolute; top:0; left:0; }
 
-        &.address { 
+        &.facebook { 
             &:before {
-                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+                background: url('../images/AboutUs/ContactUs/ic_contactus-01FB.png') left top no-repeat; background-size:100%; 
             } 
         }
 
-        &.address { 
+        &.instagram { 
             &:before {
-                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+                background: url('../images/AboutUs/ContactUs/ic_contactus-02IG.png') left top no-repeat; background-size:100%; 
             } 
         }
 
-        &.address { 
+        &.tel { 
             &:before {
-                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+                background: url('../images/AboutUs/ContactUs/ic_contactus-03Tel.png') left top no-repeat; background-size:100%; 
             } 
         }
 
-        &.address { 
+        &.fax { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-04Fax.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+
+        &.email { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-05Email.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+
+        &.address { padding-bottom:40px; 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
             } 
