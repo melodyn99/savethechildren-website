@@ -22,7 +22,7 @@ function FooterSitemap(props) {
 
                     <h3>Primary School</h3>
                     <li><Link to={'/' + i18n.language + '/primary-school-home'}>Primary School Home (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/primary-general-tips'}>Primary School General Tips</Link></li>
+                    <li><Link to={'/' + i18n.language + '/primary-general-tips'}>Primary School General Tips (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-social-media-user-guide'}>Primary School Social Media User Guide</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-quiz'}>Primary School Quiz</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-risk-and-danger'}>Primary School Risk and Danger</Link></li>

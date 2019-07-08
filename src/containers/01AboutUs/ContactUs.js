@@ -43,11 +43,38 @@ class ContactUs extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* ImageText */}
-                            Contact Us
+                            <div className="ImageTextGrid2">
+                                <div className="upper">
+                                    <img src={require('../../images/AboutUs/banner_aboutus-03Contact_us.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-01FB.png')} alt="" />
+                                        <p>https://www.facebook.com/savethechildrenhk/</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-02IG.png')} alt="" />
+                                        <p>https://www.instagram.com/savethechildrenhk/</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-03Tel.png')} alt="" />
+                                        <p>(852) 2112-5640</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-04Fax.png')} alt="" />
+                                        <p>(852 3160-8685</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-05Email.png')} alt="" />
+                                        <p>hk.program@savethechildren.org</p>
+                                </div>
+                                <div className="bottom">
+                                        <img src={require('../../images/AboutUs/ContactUs/ic_contactus-06Address.png')} alt="" />
+                                        <p>8/F Pacific Plaza, 410-418 Des Voeux Road West,</p>
+                                        <p style={{'padding-left':'80px', 'padding-top':'0px'}}>Sai Wan, Hong Kong</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

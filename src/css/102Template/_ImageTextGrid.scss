@@ -13,3 +13,13 @@
         }
     }
 }
+
+.ImageTextGrid2 { background:white;
+    .upper { margin-bottom:30px; 
+        img { width:100%; position:relative; }
+    }
+    .bottom { padding:10px 250px;
+        img { width:6%; display:inline-block; margin-right:50px; }
+        p { display:inline-block; font-size:18px; }
+    }
+}
