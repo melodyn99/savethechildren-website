@@ -1,0 +1,31 @@
+.contact { 
+    .narrow{ max-width:440px; margin:0 auto; }
+
+    p { background:green; padding:0 0 0 60px; position:relative; 
+        &:before { content:''; width:30px; height:30px; background:yellow; position:absolute; top:0; left:0; }
+
+        &.address { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+
+        &.address { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+
+        &.address { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+
+        &.address { 
+            &:before {
+                background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
+            } 
+        }
+    }
+}
