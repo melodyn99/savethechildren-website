@@ -23,7 +23,7 @@ function FooterSitemap(props) {
                     <h3>Primary School</h3>
                     <li><Link to={'/' + i18n.language + '/primary-school-home'}>Primary School Home (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-general-tips'}>Primary School General Tips (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/primary-social-media-user-guide'}>Primary School Social Media User Guide</Link></li>
+                    <li><Link to={'/' + i18n.language + '/primary-social-media-user-guide'}>Primary School Social Media User Guide (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-quiz'}>Primary School Quiz (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-risk-and-danger'}>Primary School Risk and Danger (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/primary-game'}>Primary School Game</Link></li>
@@ -49,8 +49,8 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/parents-more-resources'}>Parents More Resources (done)</Link></li>
 
                     <h2>Featured Issues</h2>
-                    <li><Link to={'/' + i18n.language + '/online-grooming'}>Online Grooming</Link></li>
-                    <li><Link to={'/' + i18n.language + '/sexting'}>Sexting</Link></li>
+                    <li><Link to={'/' + i18n.language + '/online-grooming'}>Online Grooming (done)</Link></li>
+                    <li><Link to={'/' + i18n.language + '/sexting'}>Sexting (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/personal-privacy'}>Personal Privacy (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/legislations'}>Legislations (done)</Link></li>
                     
