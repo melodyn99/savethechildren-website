@@ -45,7 +45,7 @@ class PrimaryNetizenPledge extends Component {
                     <div className="wrapper-content">
                         <div className="content lavender-background">
                             <h2 style={{'color':'#b30000', 'font-size':'30px', 'padding':'30px', 'backgroundColor':'white'}}>The Netizen Pledge</h2>
-                            <Grid container spacing={16}>
+                            <Grid container spacing={16} style={{'paddingBottom':'40px'}}>
                                 <Grid item xs={2}>
                                     <Button style={{'maxWidth':'150px'}}>
                                         <img src={require('../../../images/btn_print.png')} alt="" width="100%"/>
@@ -58,7 +58,7 @@ class PrimaryNetizenPledge extends Component {
                                     </Button>
                                 </Grid>
                                 <Grid item xs={10}>
-                                    <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="100%"/>
+                                    <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="90%"/>
                                 </Grid>
                             </Grid>
                         </div>
