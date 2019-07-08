@@ -70,7 +70,7 @@ class ContactUs extends Component {
                                 <div className="bottom">
                                         <img src={require('../../images/AboutUs/ContactUs/ic_contactus-06Address.png')} alt="" />
                                         <p>8/F Pacific Plaza, 410-418 Des Voeux Road West,</p>
-                                        <p style={{'padding-left':'80px', 'padding-top':'0px'}}>Sai Wan, Hong Kong</p>
+                                        <p style={{'paddingLeft':'80px', 'paddingTop':'0px'}}>Sai Wan, Hong Kong</p>
                                 </div>
                             </div>
                         </div>
