@@ -44,6 +44,7 @@ class PrimaryNetizenPledge extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content lavender-background">
+                            <h2 style={{'color':'#b30000', 'font-size':'30px', 'padding':'30px', 'backgroundColor':'white'}}>The Netizen Pledge</h2>
                             <Grid container spacing={16}>
                                 <Grid item xs={2}>
                                     <Button style={{'maxWidth':'150px'}}>
