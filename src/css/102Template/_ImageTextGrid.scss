@@ -1,0 +1,15 @@
+.ImageTextGrid { background:white; 
+    .upper { 
+        img { width:100%; position:relative; }
+        h2 { color:#b30000; font-size:50px; padding:10px; text-align:center; }
+    }
+    .bottom {
+        .left { display:inline-block; padding:10px; 
+            img { width:100%; }
+        }
+        .right { display:inline-block; padding:20px;
+            h4 { color:#b30000; font-size:20px; }
+            p { font-size:16px; }
+        }
+    }
+}
