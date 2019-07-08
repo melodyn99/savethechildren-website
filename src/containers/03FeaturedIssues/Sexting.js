@@ -10,7 +10,7 @@ import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
-// import { Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -43,9 +43,24 @@ class Sexting extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* not sure */}
-                            Sexting
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/FeaturedIssues/Sexting/banner_featured Issues-Sexting (1).png')} alt="" />
+                                    <img src={require('../../images/FeaturedIssues/Sexting/img_featuredissues-sexting.png')} alt="" />
+                                </div>
+                                <div style={{'backgroundColor':'white'}}>
+                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
+                                        Print
+                                    </Button>
+                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
+                                        Share
+                                    </Button>
+                                    <Button style={{'background-color':'orange', 'margin':'10px'}}>
+                                        Download
+                                    </Button>
+                                </div>
                             </div>
+                        </div>
                     </div>
 
                 </div>

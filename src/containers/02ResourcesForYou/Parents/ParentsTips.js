@@ -51,19 +51,17 @@ class ParentsTips extends Component {
                                     <h3>Parents tips</h3>
                                     <h4>An adult's coring presence adult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presenceadult's coring presence</h4>
                                     <h4>6+1 instructions for parents</h4>
-                                    <p>
-                                        <ul>
-                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
-                                            <li>Be positiveBe positiveBe positiveBe positive</li>
-                                        </ul>
-                                        Read more >>
-                                    </p>
+                                    <ul>
+                                        <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positiveBe positive</li>
+                                        <li>Be positiveBe positiveBe positiveBe positive</li>
+                                    </ul>
+                                    <p>Read more >></p>
                                 </div>
                             </div>
                         </div>
