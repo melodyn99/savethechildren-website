@@ -49,7 +49,11 @@ class OurMissionAndStrategy extends Component {
                                 </div>
                                 <div className="bottom">
                                     <h3>Our mission and strategy</h3>
-                                    <p>_____________________________________________________________________________________________________</p>
+                                    <ul>
+                                        <li>To enhance public awareness on the potential child protection risks in the digital world</li>
+                                        <li>To equip children and their parents/caregivers, and professionals like teachers and social workers, with knowledge and skills, and practical tips in coping with the challenges being encountered in the digital world</li>
+                                        <li>To promote smart use of internet and screen device, and social media</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

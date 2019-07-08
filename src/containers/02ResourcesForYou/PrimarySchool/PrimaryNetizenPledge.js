@@ -10,7 +10,8 @@ import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
-// import { Button } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -42,12 +43,25 @@ class PrimaryNetizenPledge extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                        <div className="content">
-                            {/* Game */}
-                            The Netizen Pledge
-                            </div>
+                        <div className="content lavender-background">
+                            <Grid container spacing={16}>
+                                <Grid item xs={2}>
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_print.png')} alt="" width="100%"/>
+                                    </Button>
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_share.png')} alt="" width="100%"/>
+                                    </Button>"
+                                    <Button style={{'maxWidth':'150px'}}>
+                                        <img src={require('../../../images/btn_download.png')} alt="" width="100%"/>
+                                    </Button>
+                                </Grid>
+                                <Grid item xs={10}>
+                                    <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="100%"/>
+                                </Grid>
+                            </Grid>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );
