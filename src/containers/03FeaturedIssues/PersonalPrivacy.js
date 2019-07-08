@@ -43,11 +43,17 @@ class PersonalPrivacy extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* ImageText */}
-                            Personal Privacy
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/FeaturedIssues/banner_featuredissues-Personalprivacy.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>Personal privacy</h3>
+                                    <p>_____________________________________________________________________________________________________</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

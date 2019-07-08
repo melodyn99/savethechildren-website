@@ -43,11 +43,16 @@ class ParentsMoreResources extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* Video */}
-                            Parents More Resources
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourcesforyou-Parents_More_resource_on_parenting.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <h3>More resources on parenting</h3>
+                                </div>
                             </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );
