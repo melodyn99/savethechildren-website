@@ -14,7 +14,7 @@ function FooterSitemap(props) {
                     <h2>About us</h2>
                     <li><Link to={'/' + i18n.language + '/why-we-must-act'}>Why We Must Act (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/our-mission-and-strategy'}>Our Mission and Strategy (done)</Link></li>
-                    <li><Link to={'/' + i18n.language + '/contact-us'}>Contact us</Link></li>
+                    <li><Link to={'/' + i18n.language + '/contact-us'}>Contact us (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/sitemap'}>Sitemap (done)</Link></li>
 
                     <div className="sep-20"></div>

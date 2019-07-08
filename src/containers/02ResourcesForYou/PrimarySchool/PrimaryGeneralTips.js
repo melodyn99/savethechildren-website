@@ -80,8 +80,14 @@ class PrimaryGeneralTips extends Component {
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-general_tips.png')} alt="" />
                                 <h2>General Tips</h2>
                                 </div>
-                                <Button color="orange">
+                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
                                     Print
+                                </Button>
+                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
+                                    Share
+                                </Button>
+                                <Button style={{'background-color':'orange', 'margin':'10px'}}>
+                                    Download
                                 </Button>
                                 <Grid container spacing={16}>
                                     <Grid item xs={6}>
