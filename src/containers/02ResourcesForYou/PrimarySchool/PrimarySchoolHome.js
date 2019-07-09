@@ -26,8 +26,35 @@ import { login, verifyToken } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
-// import ImageGrid from '../../../components/102Grids/ImageGrid';
+import ImageGrid from '../../../components/102Grids/ImageGrid';
 // import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
+
+// function Block(props) {
+//     return (
+//         <ImageGrid
+//             url={props.url}
+//             text={props.text}
+//             image={props.image}
+//         />
+//     )
+// }
+
+// function ClusterP(props) {
+//     let rows = [];
+//     for (let i = 0; i < 7; i++) {
+//         rows.push(
+//             <div key={i}>
+//                 <Block
+//                     key={i}
+//                     url={props.urlP}
+//                     text={props.textP}
+//                     image={props.imageP}
+//                 />
+//             </div>
+//         )
+//     }
+//     return (rows);
+// }
 
 class PrimarySchoolHome extends Component {
     constructor(props) {
@@ -35,7 +62,25 @@ class PrimarySchoolHome extends Component {
 
         this.state = {
             formSubmitted: false,
-            tabIndex: 1
+            tabIndex: 1, 
+            imageP: ['../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png', 
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png',
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png',
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png', 
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png',
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png',
+            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png'],
+            urlP: [''],
+            textP: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
+            imageS: ['../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png', 
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png',
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png',
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png', 
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png',
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png',
+            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png'],
+            urlS: [''],
+            textS: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
         }
     }
 
@@ -61,9 +106,23 @@ class PrimarySchoolHome extends Component {
         const { i18n } = this.props;
 
         let primaryData = [
-            { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: '', text: 'red' },
-            { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: '', text: 'blue' },
-            { id: 3, image: 'btn_primaryschool_04_onlinegrooming.png', url: '', text: 'black' },
+            { id: 1, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png', url: '', text: 'General tips' },
+            { id: 2, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
+            { id: 3, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png', url: '', text: 'Quiz' },
+            { id: 4, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png', url: '', text: 'Risk and danger' },
+            { id: 5, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png', url: '', text: 'Video' },
+            { id: 6, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png', url: '', text: 'Game' },
+            { id: 6, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
+        ]
+
+        let secondaryData = [
+            { id: 1, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png', url: '', text: 'General tips' },
+            { id: 2, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
+            { id: 3, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png', url: '', text: 'Quiz' },
+            { id: 4, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png', url: '', text: 'Risk and danger' },
+            { id: 5, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png', url: '', text: 'Video' },
+            { id: 6, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png', url: '', text: 'Game' },
+            { id: 6, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
         ]
 
         return (
@@ -81,21 +140,20 @@ class PrimarySchoolHome extends Component {
                                         <Tab eventKey={1} title=" Primary School (aged 6-12) ">
                                             <div className="inner">
                                                 <Grid container spacing={16}>
-
                                                     {(primaryData.map(
-                                                        (data, i) => {
-                                                            return (
-                                                                <Grid item xs={6} key={data.id}>
-                                                                    <div className="grid">
-                                                                        <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
-                                                                        <div className="text">
-                                                                            <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
+                                                            (data, i) => {
+                                                                return (
+                                                                    <Grid item xs={6} key={data.id}>
+                                                                        <div className="grid">
+                                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
+                                                                            <div className="text">
+                                                                                <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                </Grid>
-                                                            )
-                                                        }
-                                                    ))}
+                                                                    </Grid>
+                                                                )
+                                                            }
+                                                        ))}
 
                                                     {/* <Grid item xs={6}>
                                                         <div className="grid">
@@ -163,6 +221,24 @@ class PrimarySchoolHome extends Component {
                                         <Tab eventKey={2} title=" Secondary School (aged 12-18) ">
                                             <div className="inner">
                                                 <Grid container spacing={16}>
+                                                    {(secondaryData.map(
+                                                        (data, i) => {
+                                                            return (
+                                                                <Grid item xs={6} key={data.id}>
+                                                                    <div className="grid">
+                                                                        <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
+                                                                        <div className="text">
+                                                                            <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
+                                                                        </div>
+                                                                    </div>
+                                                                </Grid>
+                                                            )
+                                                        }
+                                                    ))}
+                                                </Grid>
+                                            </div>
+                                            {/* <div className="inner">
+                                                <Grid container spacing={16}>
                                                     <Grid item xs={6}>
                                                         <div className="grid">
                                                             <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png')} alt="" />
@@ -223,7 +299,7 @@ class PrimarySchoolHome extends Component {
                                                         </div>
                                                     </Grid>
                                                 </Grid>
-                                            </div>
+                                            </div> */}
                                         </Tab>
                                     </Tabs>
                                 </div>
