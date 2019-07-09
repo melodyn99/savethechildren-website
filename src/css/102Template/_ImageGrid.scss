@@ -13,31 +13,35 @@
     }
 }
 
-.ImageGridPrimary {  
+.ImageGrid {  
     .upper { 
         img { width:100%; }
     }
-    .bottom {
-        padding:20px; background:$majorGreenYellow; 
-        .grid { position:relative; 
-            img { width:100%; }
-            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
-                a {color:white; font-size:20px; }
+
+    &.Primary { 
+        .inner { background:$majorGreenYellow;  }
+    }
+    &.Secondary { 
+        .inner { background:$majorGreenBlue; }
+    }
+
+    .bottom { 
+        ul { background:yellow; 
+            li { background:green; 
+                &.active { background:blue;
+                    a { background:purple; }
+                }
+
+                a { background:pink; }
             }
         }
-    }
-}
 
-.ImageGridSecondary {  
-    .upper { 
-        img { width:100%; }
-    }
-    .bottom {
-        padding:20px; background:$majorGreenBlue; 
-        .grid { position:relative; 
-            img { width:100%; }
-            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
-                a {color:white; font-size:20px; }
+        .inner { padding:20px; 
+            .grid { position:relative; 
+                img { width:100%; }
+                .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
+                    a {color:white; font-size:20px; }
+                }
             }
         }
     }
