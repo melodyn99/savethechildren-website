@@ -9,7 +9,7 @@
 // HEADER
 .wrapper-header { position:fixed; top:0; width:100%; height:75px; z-index:1000; background:#f8f9fa; left:0; @include transition(0.1s); min-width:1004px; border-bottom: solid 5px $corporateRedColor;
 
-	.header { width:100%; max-width:1240px; height:100px; margin:0 auto; padding:0 20px; position:relative;
+	.header { width:100%; max-width:1200px; height:100px; margin:0 auto; padding:0 20px; position:relative;
 
 		.logo-NA-top { width:150px; position:relative; display:inline-block; margin:9px 0 0 0; padding:0; 
 			a { display:block; 
@@ -56,7 +56,7 @@
 	text-align: center;
 
 	.footer {
-		max-width: 1240px;
+		max-width: 1200px;
 		margin: auto;
 		padding: 10px 0;
 	}
@@ -268,9 +268,7 @@
 		}
 
 		.wrapper-content { position:relative; padding:20px;
-			.content { padding:0; min-height:200px; max-width:1020px;margin: 0 auto; 
-				&.lavender-background { background-color:$lavender; }
-			}
+			.content { padding:0; min-height:200px; max-width:1020px;margin: 0 auto; }
 		}
 	}
 }
