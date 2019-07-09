@@ -43,7 +43,7 @@ import PrimaryGame from './containers/02ResourcesForYou/PrimarySchool/PrimaryGam
 import PrimaryNetizenPledge from './containers/02ResourcesForYou/PrimarySchool/PrimaryNetizenPledge';
 
 // Secondary School
-import SecondarySchoolHome from './containers/02ResourcesForYou/SecondarySchool/SecondarySchoolHome';
+// import SecondarySchoolHome from './containers/02ResourcesForYou/SecondarySchool/SecondarySchoolHome';
 import SecondaryGeneralTips from './containers/02ResourcesForYou/SecondarySchool/SecondaryGeneralTips';
 import SecondaryGame from './containers/02ResourcesForYou/SecondarySchool/SecondaryGame';
 import SecondaryQuiz from './containers/02ResourcesForYou/SecondarySchool/SecondaryQuiz';

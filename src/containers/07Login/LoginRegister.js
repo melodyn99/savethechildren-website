@@ -71,9 +71,9 @@ class LoginRegister extends Component {
     }
 
     form = ({ values, errors, touched, handleChange }) => {
-        const { classes
-            //, t, i18n 
-        } = this.props;
+        // const { classes
+        //     //, t, i18n 
+        // } = this.props;
 
         if (this.state.tabIndex===1) {
             return (
