@@ -140,7 +140,9 @@ class App extends Component {
 
                 // Primary School
                 case 'primary-school-home': {
-                    return <PrimarySchoolHome />;
+                    return <PrimarySchoolHome
+                        tabIndex={1}
+                    />;
                 }
                 case 'primary-general-tips': {
                     return <PrimaryGeneralTips />;
@@ -163,7 +165,10 @@ class App extends Component {
 
                 // Secondary School
                 case 'secondary-school-home': {
-                    return <SecondarySchoolHome />;
+                    // return <SecondarySchoolHome />;
+                    return <PrimarySchoolHome
+                        tabIndex={2}
+                    />;
                 }
                 case 'secondary-general-tips': {
                     return <SecondaryGeneralTips />;
