@@ -44,11 +44,11 @@
     .bottom { 
         ul {
             li { width:50%; text-align:center; 
-                &.active { 
-                    a { border-top:8px solid red; border-radius:0px; margin:0px; }
+                &.active {
+                    a { border-top:8px solid red; border-radius:0px; margin:0px; font-size:14px; border-bottom:8px solid transparent }
                 }
 
-                a { border-top:8px solid transparent; border-radius:0px; margin:0px; }
+                a { border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:14px; border-bottom:8px solid transparent }
             }
         }
 
