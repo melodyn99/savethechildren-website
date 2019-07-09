@@ -20,6 +20,8 @@ import FooterSitemap from './components/100Include/FooterSitemap';
 // import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
 // import * as HelperPopup from './utils/00JqueryControl/Popup';
 
+import LoginRegister from './containers/07Login/LoginRegister';
+
 // Home
 import Home from './containers/00Home/Home';
 
@@ -120,6 +122,9 @@ class App extends Component {
 
                 case 'home': {
                     return <Home />;
+                }
+                case 'login-register': {
+                    return <LoginRegister />;
                 }
 
                 /*** ABOUT US ***/
