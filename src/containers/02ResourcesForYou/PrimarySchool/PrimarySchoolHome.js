@@ -106,23 +106,23 @@ class PrimarySchoolHome extends Component {
         const { i18n } = this.props;
 
         let primaryData = [
-            { id: 1, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png', url: '', text: 'General tips' },
-            { id: 2, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
-            { id: 3, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png', url: '', text: 'Quiz' },
-            { id: 4, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png', url: '', text: 'Risk and danger' },
-            { id: 5, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png', url: '', text: 'Video' },
-            { id: 6, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png', url: '', text: 'Game' },
-            { id: 6, image: '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
+            { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: '', text: 'General tips' },
+            { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
+            { id: 3, image: 'btn_primaryschool_03_quiz.png', url: '', text: 'Quiz' },
+            { id: 4, image: 'btn_primaryschool_04_onlinegrooming.png', url: '', text: 'Risk and danger' },
+            { id: 5, image: 'btn_primaryschool_05_video.png', url: '', text: 'Video' },
+            { id: 6, image: 'btn_primaryschool_06_game.png', url: '', text: 'Game' },
+            { id: 6, image: 'btn_primaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
         ]
 
         let secondaryData = [
-            { id: 1, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png', url: '', text: 'General tips' },
-            { id: 2, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
-            { id: 3, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png', url: '', text: 'Quiz' },
-            { id: 4, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png', url: '', text: 'Risk and danger' },
-            { id: 5, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png', url: '', text: 'Video' },
-            { id: 6, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png', url: '', text: 'Game' },
-            { id: 6, image: '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
+            { id: 1, image: 'btn_secondaryschool_01_Generaltips.png', url: '', text: 'General tips' },
+            { id: 2, image: 'btn_secondaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
+            { id: 3, image: 'btn_secondaryschool_03_quiz.png', url: '', text: 'Quiz' },
+            { id: 4, image: 'btn_secondaryschool_04_Riskanddanger.png', url: '', text: 'Risk and danger' },
+            { id: 5, image: 'btn_secondaryschool_05_video.png', url: '', text: 'Video' },
+            { id: 6, image: 'btn_secondaryschool_06_game.png', url: '', text: 'Game' },
+            { id: 6, image: 'btn_secondaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
         ]
 
         return (
@@ -145,7 +145,7 @@ class PrimarySchoolHome extends Component {
                                                                 return (
                                                                     <Grid item xs={6} key={data.id}>
                                                                         <div className="grid">
-                                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
+                                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/'+data.image)} alt="" />
                                                                             <div className="text">
                                                                                 <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
                                                                             </div>
@@ -226,7 +226,7 @@ class PrimarySchoolHome extends Component {
                                                             return (
                                                                 <Grid item xs={6} key={data.id}>
                                                                     <div className="grid">
-                                                                        <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
+                                                                        <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/'+data.image)} alt="" />
                                                                         <div className="text">
                                                                             <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
                                                                         </div>
