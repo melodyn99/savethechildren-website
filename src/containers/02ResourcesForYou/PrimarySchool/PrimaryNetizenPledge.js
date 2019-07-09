@@ -48,15 +48,17 @@ class PrimaryNetizenPledge extends Component {
                             <h2 style={{'color':'#b30000', 'font-size':'30px', 'padding':'30px', 'backgroundColor':'white'}}>The Netizen Pledge</h2>
                             <Grid container spacing={16} style={{'paddingBottom':'40px'}}>
                                 <Grid item xs={2}>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_print.png')} alt="" width="100%"/>
-                                    </Button>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_share.png')} alt="" width="100%"/>
-                                    </Button>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_download.png')} alt="" width="100%"/>
-                                    </Button>
+                                    <div className="button-wrapper lavender">
+                                        <Button className="button">
+                                            <img src={require('../../../images/btn_print.png')} alt=""/>
+                                        </Button>
+                                        <Button className="button">
+                                            <img src={require('../../../images/btn_share.png')} alt=""/>
+                                        </Button>
+                                        <Button className="button">
+                                            <img src={require('../../../images/btn_download.png')} alt=""/>
+                                        </Button>
+                                    </div>
                                 </Grid>
                                 <Grid item xs={10}>
                                     <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="90%"/>

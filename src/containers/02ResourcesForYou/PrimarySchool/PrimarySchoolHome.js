@@ -4,15 +4,15 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import { Tabs, Tab } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
+// import { Tabs, Tab } from 'react-bootstrap';
 
 // Styling
 import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 
 // Api
@@ -27,8 +27,8 @@ import { login, verifyToken } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
-import ImageGridPrimary from '../../../components/102Grids/ImageGridPrimary';
-import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
+import ImageGrid from '../../../components/102Grids/ImageGrid';
+// import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
 
 // function Block(props) {
 //     return (
@@ -54,7 +54,7 @@ class PrimarySchoolHome extends Component {
     }
 
     render() {
-        const { i18n } = this.props;
+        // const { i18n } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -62,17 +62,25 @@ class PrimarySchoolHome extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="reacttabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
+                            <div className="ImageGridPrimary">
+                                <div className="upper">
+                                    <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School.png')} alt="" />
+                                </div>
+                                <div className="bottom">
+                                    <ImageGrid />
+                                </div>
+
+                            {/* <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="reacttabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                                 <Tab eventKey={1} title="ImageGridPrimary">
                                     <ImageGridPrimary />
                                 </Tab>
                                 <Tab eventKey={2} title="ImageGridSecondary">
                                     <ImageGridSecondary />
                                 </Tab>
-                            </Tabs>
+                            </Tabs> */}
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );
