@@ -41,6 +41,8 @@ import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary'
 //     )
 // }
 
+
+
 class PrimarySchoolHome extends Component {
     constructor(props) {
         super(props);
@@ -62,10 +64,10 @@ class PrimarySchoolHome extends Component {
                         <div className="content">
                             <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="reacttabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
                                 <Tab eventKey={1} title="ImageGridPrimary">
-                                    <ImageGridPrimary/>
+                                    <ImageGridPrimary />
                                 </Tab>
                                 <Tab eventKey={2} title="ImageGridSecondary">
-                                    <ImageGridSecondary/>
+                                    <ImageGridSecondary />
                                 </Tab>
                             </Tabs>
                         </div>
