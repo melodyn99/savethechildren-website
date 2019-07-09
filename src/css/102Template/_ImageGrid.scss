@@ -19,20 +19,36 @@
     }
 
     &.Primary { 
-        .inner { background:$majorGreenYellow;  }
+        ul {
+            li {
+                &.active { 
+                    a {background:$majorGreenYellow; }
+                }
+                a { background:$majorGreenBlue; }
+            }
+        }
+        .inner { background:$majorGreenYellow; }
     }
     &.Secondary { 
+        ul {
+            li {
+                &.active { 
+                    a {background:$majorGreenBlue; }
+                }
+                a { background:$majorGreenYellow; }
+            }
+        }
         .inner { background:$majorGreenBlue; }
     }
 
     .bottom { 
-        ul { background:yellow; 
-            li { background:green; 
-                &.active { background:blue;
-                    a { background:purple; }
+        ul {
+            li { width:50%; text-align:center; 
+                &.active { 
+                    a { border-top:8px solid red; border-radius:0px; margin:0px; }
                 }
 
-                a { background:pink; }
+                a { border-top:8px solid transparent; border-radius:0px; margin:0px; }
             }
         }
 
