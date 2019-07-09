@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import Modal from 'react-bootstrap/Modal';
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
+// import Tabs from 'react-bootstrap/Tabs';
+// import Tab from 'react-bootstrap/Tab';
+// import { Form } from 'react-bootstrap/Form';
+import { Button, Form, Tab, Tabs, Modal } from 'react-bootstrap';
 
 let nextInstanceId = 1;
 
@@ -37,7 +37,7 @@ class LoginPopup extends Component {
                         <Button variant="primary" type="submit" block>
                             LOGIN
                         </Button>
-                        <a class="text-center forget-your-password" href="#">FORGET_YOUR_PASSWORD</a>
+                        <a class="text-center forget-your-password" href="/">FORGET_YOUR_PASSWORD</a>
                     </Form>
                 </Tab>
                 <Tab eventKey="register" title="REGISTER">

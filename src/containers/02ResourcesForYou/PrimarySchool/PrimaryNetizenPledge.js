@@ -31,7 +31,8 @@ class PrimaryNetizenPledge extends Component {
         super(props);
 
         this.state = {
-            formSubmitted: false
+            formSubmitted: false,
+            lavender: true
         }
     }
 
@@ -52,7 +53,7 @@ class PrimaryNetizenPledge extends Component {
                                     </Button>
                                     <Button style={{'maxWidth':'150px'}}>
                                         <img src={require('../../../images/btn_share.png')} alt="" width="100%"/>
-                                    </Button>"
+                                    </Button>
                                     <Button style={{'maxWidth':'150px'}}>
                                         <img src={require('../../../images/btn_download.png')} alt="" width="100%"/>
                                     </Button>

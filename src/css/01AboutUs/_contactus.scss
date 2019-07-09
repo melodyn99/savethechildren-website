@@ -2,42 +2,72 @@
     .narrow{ max-width:440px; margin:0 auto; }
 
     p { padding:0 0 0 60px; position:relative; 
-        &:before { content:''; width:30px; height:30px; position:absolute; top:0; left:0; }
+        &:before { content:''; width:30px; height:30px; position:absolute; top:-3px; left:0; }
 
         &.facebook { 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-01FB.png') left top no-repeat; background-size:100%; 
             } 
+            a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
+            }
+            a {color:#484848;}
         }
 
         &.instagram { 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-02IG.png') left top no-repeat; background-size:100%; 
             } 
+            a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
+            }
+            a {color:#484848;}
         }
 
         &.tel { 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-03Tel.png') left top no-repeat; background-size:100%; 
             } 
+            a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
+            }
+            a {color:#484848;}
         }
 
         &.fax { 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-04Fax.png') left top no-repeat; background-size:100%; 
             } 
+            a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
+            }
+            a {color:#484848;}
         }
 
         &.email { 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-05Email.png') left top no-repeat; background-size:100%; 
             } 
+            a:hover,
+			a:focus,
+			a:active {
+				text-decoration: underline;
+            }
+            a {color:#484848;}
         }
 
         &.address { padding-bottom:40px; 
             &:before {
                 background: url('../images/AboutUs/ContactUs/ic_contactus-06Address.png') left top no-repeat; background-size:100%; 
-            } 
+            }
         }
     }
 }

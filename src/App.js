@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import querySearch from "stringquery";
 
 import Header from './components/100Include/Header';
+// import MainMenuBar from './components/100Include/MainMenuBar';
 import Footer from './components/100Include/Footer';
 import HeroMenu from './components/100Include/HeroMenu';
 import MainMenu from './components/100Include/MainMenu';

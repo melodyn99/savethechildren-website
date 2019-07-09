@@ -10,7 +10,6 @@ import { CommonStyles } from '../../utils/01MaterialJsStyles/00Common/common'
 import { HeaderStyles } from '../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -24,6 +23,7 @@ import { login, verifyToken } from '../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../components/100Include/BreadCrumb';
+import Buttons from '../../components/100Include/Buttons';
 
 class Sexting extends Component {
     constructor(props) {
@@ -48,17 +48,7 @@ class Sexting extends Component {
                                     <img src={require('../../images/FeaturedIssues/Sexting/banner_featured Issues-Sexting (1).png')} alt="" />
                                     <img src={require('../../images/FeaturedIssues/Sexting/img_featuredissues-sexting.png')} alt="" />
                                 </div>
-                                <div style={{'backgroundColor':'white', 'paddingBottom':'30px'}}>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../images/btn_print.png')} alt="" width="100%"/>
-                                    </Button>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../images/btn_share.png')} alt="" width="100%"/>
-                                    </Button>"
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../images/btn_download.png')} alt="" width="100%"/>
-                                    </Button>
-                                </div>
+                                <Buttons/>
                             </div>
                         </div>
                     </div>

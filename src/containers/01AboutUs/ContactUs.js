@@ -48,11 +48,11 @@ class ContactUs extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-03Contact_us.png')} alt="" />
                                 </div>
                                 <div className="narrow">
-                                    <p className="facebook">https://www.facebook.com/savethechildrenhk/</p>
-                                    <p className="instagram">https://www.instagram.com/savethechildrenhk/</p>
-                                    <p className="tel">(852) 2112-5640</p>
-                                    <p className="fax">(852 3160-8685</p>
-                                    <p className="email">hk.program@savethechildren.org</p>
+                                    <p className="facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/savethechildrenhk">https://www.facebook.com/savethechildrenhk</a></p>
+                                    <p className="instagram"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/savethechildrenhk">https://www.instagram.com/savethechildrenhk</a></p>
+                                    <p className="tel"><a target="_blank" rel="noopener noreferrer" href="tel:tel:+852-2112-5640">(852) 2112-5640</a></p>
+                                    <p className="fax"><a target="_blank" rel="noopener noreferrer" href="tel:tel:+852-3160-8685">(852) 3160-8685</a></p>
+                                    <p className="email"><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">hk.program@savethechildren.org</a></p>
                                     <p className="address">8/F Pacific Plaza, 410-418 Des Voeux Road West, Sai Wan, Hong Kong</p>
                                 </div>
                             </div>

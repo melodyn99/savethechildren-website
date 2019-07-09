@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Navbar } from 'react-bootstrap';
 import LoginPopup from '../101Popup/LoginPopup';
 import netizenLogo from '../../images/img_homepage_logo-NA.png';
 import saveTheChildrenLogo from '../../images/img_homepage_logo-schk.png';

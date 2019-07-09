@@ -11,7 +11,6 @@ import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
 import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -25,7 +24,7 @@ import { login, verifyToken } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
-// import ImageTextGrid from '../../../components/102Grids/ImageTextGrid';
+import Buttons from '../../../components/100Include/Buttons';
 
 // function Block(props) {
 //     return (
@@ -78,17 +77,7 @@ class PrimaryGeneralTips extends Component {
                             <div className="ImageTextGrid">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-general_tips.png')} alt="" />
-                                <div style={{'backgroundColor':'white', 'margin':'10px'}}>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_print.png')} alt="" width="100%"/>
-                                    </Button>
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_share.png')} alt="" width="100%"/>
-                                    </Button>"
-                                    <Button style={{'maxWidth':'150px'}}>
-                                        <img src={require('../../../images/btn_download.png')} alt="" width="100%"/>
-                                    </Button>
-                                </div>
+                                <Buttons />
                                 <h2>General Tips</h2>
                                 </div>
                                 <Grid container spacing={16}>
