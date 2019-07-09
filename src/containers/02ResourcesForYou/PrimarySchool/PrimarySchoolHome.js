@@ -29,33 +29,6 @@ import BreadCrumb from '../../../components/100Include/BreadCrumb';
 import ImageGrid from '../../../components/102Grids/ImageGrid';
 // import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
 
-function Block(props) {
-    return (
-        <Grid item xs={6}>
-            <div className="grid">
-                <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
-                <div className="text">
-                    <Link to={"/primary-general-tips"}>General Tips</Link>
-                </div>
-            </div>
-        </Grid>
-    )
-}
-
-function Cluster(props) {
-    let rows = [];
-    for (let i = 0; i < 5; i++) {
-        rows.push(
-            <Grid container spacing={16}>
-                <Block
-                    key={i}
-                />
-            </Grid>
-        )
-    }
-    return (rows);
-}
-
 class PrimarySchoolHome extends Component {
     constructor(props) {
         super(props);
@@ -87,6 +60,12 @@ class PrimarySchoolHome extends Component {
     render() {
         const { i18n } = this.props;
 
+        let primaryData = [
+            { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: '', text: 'red' },
+            { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: '', text: 'blue' },
+            { id: 3, image: 'btn_primaryschool_04_onlinegrooming.png', url: '', text: 'black' },
+        ]
+
         return (
             <div className="wrapper-container-main">
                 <div className="container-main">
@@ -102,7 +81,23 @@ class PrimarySchoolHome extends Component {
                                         <Tab eventKey={1} title=" Primary School (aged 6-12) ">
                                             <div className="inner">
                                                 <Grid container spacing={16}>
-                                                    <Grid item xs={6}>
+
+                                                    {(primaryData.map(
+                                                        (data, i) => {
+                                                            return (
+                                                                <Grid item xs={6} key={data.id}>
+                                                                    <div className="grid">
+                                                                        <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
+                                                                        <div className="text">
+                                                                            <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
+                                                                        </div>
+                                                                    </div>
+                                                                </Grid>
+                                                            )
+                                                        }
+                                                    ))}
+
+                                                    {/* <Grid item xs={6}>
                                                         <div className="grid">
                                                             <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
                                                             <div className="text">
@@ -160,7 +155,7 @@ class PrimarySchoolHome extends Component {
                                                                 <div><Link to={"/" + i18n.language + "/primary-netizen-pledge"}>The Netizen Pledge</Link></div>
                                                             </div>
                                                         </div>
-                                                    </Grid>
+                                                    </Grid> */}
                                                 </Grid>
                                             </div>
                                         </Tab>
