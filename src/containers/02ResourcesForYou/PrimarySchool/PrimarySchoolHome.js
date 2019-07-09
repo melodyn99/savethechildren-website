@@ -26,7 +26,7 @@ import { login, verifyToken } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
-import ImageGrid from '../../../components/102Grids/ImageGrid';
+// import ImageGrid from '../../../components/102Grids/ImageGrid';
 // import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
 
 class PrimarySchoolHome extends Component {
