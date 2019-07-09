@@ -62,12 +62,26 @@ class PrimarySchoolHome extends Component {
 
         this.state = {
             formSubmitted: false,
-            tabIndex: 0
+            tabIndex: 1
         }
     }
 
-    _handleTabChange = () => {
+    componentDidMount = () => {
+        if (this.props.tabIndex === 1) {
+            this.setState({
+                tabIndex: 1
+            })
+        } else if (this.props.tabIndex === 2) {
+            this.setState({
+                tabIndex: 2
+            })
+        }
+    }
 
+    _handleTabChange = (e) => {
+        this.setState({
+            tabIndex: e
+        })
     }
 
     render() {
@@ -84,7 +98,7 @@ class PrimarySchoolHome extends Component {
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onClick={this._handleTabChange}>
+                                    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
                                         <Tab eventKey={1} title=" Primary School (aged 6-12) ">
                                             <div className="inner">
                                                 <Grid container spacing={16}>
