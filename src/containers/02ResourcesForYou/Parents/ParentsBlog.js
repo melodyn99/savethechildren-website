@@ -8,7 +8,6 @@ import { withTranslation } from 'react-i18next';
 // Styling
 import Grid from '@material-ui/core/Grid';
 
-
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
 
