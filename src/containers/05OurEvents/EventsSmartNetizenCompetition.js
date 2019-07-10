@@ -41,9 +41,8 @@ class SmartNetizenCompetition extends Component {
                         <div className="content">
                             {/* ImageText */}
                             "The Smart Netizen" Character Design Competition
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

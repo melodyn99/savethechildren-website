@@ -48,7 +48,6 @@ class Sexting extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

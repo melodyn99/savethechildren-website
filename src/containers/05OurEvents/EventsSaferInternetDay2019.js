@@ -77,7 +77,6 @@ class SaferInternetDay2019 extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

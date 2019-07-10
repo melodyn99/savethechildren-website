@@ -41,9 +41,8 @@ class SecondaryGeneralTips extends Component {
                         <div className="content">
                             {/* Grid */}
                             Secondary School General Tips
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

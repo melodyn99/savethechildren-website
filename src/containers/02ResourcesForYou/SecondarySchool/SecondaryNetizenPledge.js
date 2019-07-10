@@ -41,9 +41,8 @@ class SecondaryNetizenPledge extends Component {
                         <div className="content">
                             {/* Game */}
                             The Netizen Pledge
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

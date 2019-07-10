@@ -41,9 +41,8 @@ class SecondaryRiskAndDanger extends Component {
                         <div className="content">
                             {/* Quiz */}
                             Secondary School Risk and Danger
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

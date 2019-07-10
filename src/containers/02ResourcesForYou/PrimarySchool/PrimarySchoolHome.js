@@ -23,34 +23,6 @@ import { login } from '../../../Redux/Action/authAction';
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
 // import ImageGrid from '../../../components/102Grids/ImageGrid';
-// import ImageGridSecondary from '../../../components/102Grids/ImageGridSecondary';
-
-// function Block(props) {
-//     return (
-//         <ImageGrid
-//             url={props.url}
-//             text={props.text}
-//             image={props.image}
-//         />
-//     )
-// }
-
-// function ClusterP(props) {
-//     let rows = [];
-//     for (let i = 0; i < 7; i++) {
-//         rows.push(
-//             <div key={i}>
-//                 <Block
-//                     key={i}
-//                     url={props.urlP}
-//                     text={props.textP}
-//                     image={props.imageP}
-//                 />
-//             </div>
-//         )
-//     }
-//     return (rows);
-// }
 
 class PrimarySchoolHome extends Component {
     constructor(props) {

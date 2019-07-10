@@ -41,9 +41,8 @@ class PrimaryGame extends Component {
                         <div className="content">
                             {/* Game */}
                             Netizen Adventure
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

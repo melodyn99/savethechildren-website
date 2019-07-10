@@ -50,7 +50,6 @@ class PrimaryRiskAndDanger extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );

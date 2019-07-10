@@ -41,9 +41,8 @@ class SecondarySocialMediaUserGuide extends Component {
                         <div className="content">
                             {/* Grid */}
                             Secondary School Social Media User Guide
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

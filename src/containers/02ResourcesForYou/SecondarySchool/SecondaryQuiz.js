@@ -41,9 +41,8 @@ class SecondaryQuiz extends Component {
                         <div className="content">
                             {/* Quiz */}
                             Secondary School Quiz
-                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

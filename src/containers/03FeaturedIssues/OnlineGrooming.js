@@ -47,7 +47,6 @@ class OnlineGrooming extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         );
