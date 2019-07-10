@@ -102,8 +102,8 @@ class Header extends Component {
 
 const mapStateToProps = (state) => (
     {
-        members: state.auth,
-        route: state.router
+        route: state.router,
+        members: state.auth
     }
 );
 

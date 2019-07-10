@@ -1,11 +1,17 @@
 .loginRegister { background:white; 
-    ul {
+    .nav-tabs { border:none; 
         li { width:50%; text-align:center; 
-            &.active {
-                a { color:$corporateRedColor !important; background:white; border-top:8px solid $corporateRedColor !important; border-radius:0px; margin:0px; font-size:20px; padding-bottom:18px !important; border-left:0px !important; border-right:0px !important; 
-                }
+            &.active{
+                a { cursor:inherit; border:none; border-top:solid 8px $corporateRedColor; background:#fff;  }
             }
+
+            a { border-radius:0; border:none; background:#eee; cursor:inherit; margin:0; padding:12px 20px 20px; font-size:20px; border-top:solid 8px transparent; 
+                &:focus { outline:none; }
+            }
+<<<<<<< HEAD
             a { background:$majorGreyBlue; color:white; border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:20px; padding-bottom:18px !important; border-left:0px !important; border-right:0px !important; }
+=======
+>>>>>>> fc513835232f13ea35d25d46d862e37134d83cd4
         }
     }
 }
