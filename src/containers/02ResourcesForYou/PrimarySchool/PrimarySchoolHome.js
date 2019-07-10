@@ -20,7 +20,6 @@ import { login } from '../../../Redux/Action/authAction';
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
-// import ImageGrid from '../../../components/102Grids/ImageGrid';
 
 class PrimarySchoolHome extends Component {
     constructor(props) {
@@ -28,25 +27,7 @@ class PrimarySchoolHome extends Component {
 
         this.state = {
             formSubmitted: false,
-            tabIndex: 1,
-            imageP: ['../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png',
-                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png'],
-            urlP: [''],
-            textP: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
-            imageS: ['../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png',
-                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png'],
-            urlS: [''],
-            textS: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
+            tabIndex: 1
         }
     }
 
@@ -203,69 +184,6 @@ class PrimarySchoolHome extends Component {
                                                     ))}
                                                 </Grid>
                                             </div>
-                                            {/* <div className="inner">
-                                                <Grid container spacing={16}>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/secondary-general-tips"}>General Tips</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/secondary-social-media-user-guide"}>Social Media User Guide</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/secondary-quiz"}>Quiz</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_Riskanddanger.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/secondary-risk-and-danger"}>Risk and Danger</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/secondary-video"}>Video</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/secondary-game"}>Game</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/secondary-netizen-pledge"}>The Netizen Pledge</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                </Grid>
-                                            </div> */}
                                         </Tab>
                                     </Tabs>
                                 </div>
