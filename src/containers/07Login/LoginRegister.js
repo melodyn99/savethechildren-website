@@ -77,7 +77,7 @@ class LoginRegister extends Component {
 
         if (this.state.tabIndex===1) {
             return (
-                <Form className="content">    
+                <Form className="form-wrapper">    
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
                             <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{'width':'100%'}}/>
@@ -107,7 +107,7 @@ class LoginRegister extends Component {
         }
         else {
             return (
-                <Form className="content">    
+                <Form className="form-wrapper">    
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
                             <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{'width':'100%'}}/>
