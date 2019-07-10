@@ -1,0 +1,9 @@
+{
+    "footer": {
+        "1": "Resources for you",
+        "2": "Primary-school"
+    },
+    "page": {
+        "blocks": ["Blog", "Parenting tips", "", "", "", "More resources on parenting"]
+    }
+}

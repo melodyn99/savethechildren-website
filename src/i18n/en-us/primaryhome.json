@@ -1,0 +1,10 @@
+{
+    "footer": {
+        "1": "Resources for you",
+        "2": "Primary-school"
+    },
+    "page": {
+        "tabs": ["Primary school (Aged 6-12)", ""],
+        "blocks": ["General tips", "Social media user guide", "", "", "", "", "The Netizen Pledge"]
+    }
+}

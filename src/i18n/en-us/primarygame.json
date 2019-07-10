@@ -1,0 +1,38 @@
+{
+    "footer": {
+        "1": "",
+        "2": "",
+        "3": ""
+    },
+    "page": {
+        "welcome": "Wecome, Mary!",
+        "content": {
+            "game": "Netizen Adventure",
+            "start": "Start",
+            "leaderboard": "Leaderboard",
+            "store": "Store",
+            "welcomeMessage": "",
+            "tools": {
+                "name": "",
+                "types": ["", "", "", "", "", ""]
+            },
+            "questions": [""],
+            "levels": ["Level: 1"],
+            "answers": ["A: ", "B. ", "C. "],
+            "answerMessage": ""
+        },
+        "finish": {
+            "text": "",
+            "completed": "Level Completed",
+            "score": "score 300",
+            "buttons": ["Replay", "Store", "Next Level"],
+            "message": ""
+        },
+        "store": {
+            "text": "Please select your Energy Ball",
+            "title": "Netizen Adventure",
+            "message": ""
+        },
+        "score": "300"
+    }
+}
