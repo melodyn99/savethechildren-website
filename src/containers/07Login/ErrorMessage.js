@@ -6,9 +6,9 @@ function ErrorMessage(props) {
 	// const { t, i18n } = props;
 
 	return (
-		<span className="errorMessage">
+		<div className="errorMessage">
 			{props.message}
-		</span>
+		</div>
 	);
 }
 

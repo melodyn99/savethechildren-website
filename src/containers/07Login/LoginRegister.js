@@ -75,56 +75,63 @@ class LoginRegister extends Component {
         //     //, t, i18n 
         // } = this.props;
 
-        if (this.state.tabIndex === 1) {
+        if (this.state.tabIndex===1) {
             return (
-                <Form className="content">
+                <Form className="form-wrapper">    
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{'width':'100%'}}/>
                             {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{'width':'100%'}}/>
                             {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                         </Grid>
-
+    
                         <Grid item xs={12} className="grid">
-                            <Button onClick={() => this.props.history.push()}>Login</Button>
+                            <Button onClick={() =>this.props.history.push()}>Login</Button>
                         </Grid>
                         <Grid item xs={12} className="grid">
                             <Link to={"/"}>Forgot your password?</Link>
                         </Grid>
                     </Grid>
+    
+                    {/* <div className="bottomControl clearfix">
+                        <Button className={classes.greyButton}
+                            onClick={() => this.props.history.push('school-course-note')}
+                        >取消</Button>
+                        <span className="right"><Button type="submit" className={classes.blackButton}>确认</Button></span>
+                    </div> */}
                 </Form>
             )
         }
         else {
             return (
-                <Form className="content">
+                <Form className="form-wrapper">    
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{'width':'100%'}}/>
                             {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{'width':'100%'}}/>
                             {errors.name && touched.name ? <ErrorMessage message={errors.name} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{'width':'100%'}}/>
                             {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
+                            <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{'width':'100%'}}/>
                             {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
                         </Grid>
-
-                        <ul>
-                            <li>Must have at least 8 characters with numbers</li>
-                            <li>Use upper and lower case letters (eg. Aa)</li>
-                        </ul>
+    
+                            <ul>
+                                <li>Must have at least 8 characters with numbers</li>
+                                <li>Use upper and lower case letters (eg. Aa)</li>
+                            </ul>
                         <Grid item xs={12} className="grid">
-                            <Button onClick={() => this.props.history.push()}>Create New Account</Button>
+                            <Button onClick={() =>this.props.history.push()}>Create New Account</Button>
                         </Grid>
                     </Grid>
                 </Form>
@@ -158,31 +165,38 @@ class LoginRegister extends Component {
         })
 
         return (
-            <div className="loginregister">
-                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
-                    <Tab eventKey={1} title="Login">
-                        <Formik
-                            initialValues={{
-                                email: '',
-                                password: '',
-                            }}
-                            validationSchema={Schema}
-                            onSubmit={this.handleSubmit}
-                            component={this.form}
-                        />
-                    </Tab>
-                    <Tab eventKey={2} title="Register">
-                        <Formik
-                            initialValues={{
-                                email: '',
-                                password: '',
-                            }}
-                            validationSchema={Schema}
-                            onSubmit={this.handleSubmit}
-                            component={this.form}
-                        />
-                    </Tab>
-                </Tabs>
+            <div className="wrapper-container-main">
+                <div className="container-main">
+                    <div className="wrapper-content">
+                        <div className="content loginregister">
+                            <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
+                                <Tab eventKey={1} title="Login">
+                                    <Formik
+                                        initialValues={{
+                                            email: '',
+                                            password: '',
+                                        }}
+                                        validationSchema={Schema}
+                                        onSubmit={this.handleSubmit}
+                                        component={this.form}
+                                    />
+                                </Tab>
+                                <Tab eventKey={2} title="Register">
+                                    <Formik
+                                        initialValues={{
+                                            email: '',
+                                            password: '',
+                                        }}
+                                        validationSchema={Schema}
+                                        onSubmit={this.handleSubmit}
+                                        component={this.form}
+                                    />
+                                </Tab>
+                            </Tabs>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         );
     }
