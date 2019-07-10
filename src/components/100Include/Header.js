@@ -53,8 +53,6 @@ class Header extends Component {
             urlArray = pathname.split("/"),
             currentURL = urlArray[2];
 
-        console.log(i18n.language);
-
         return (
             <div className="wrapper-header">
                 <div className="header clearfix">

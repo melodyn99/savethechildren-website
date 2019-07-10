@@ -32,8 +32,8 @@ import {
 import i18n from './i18n/i18n';
 
 // @material-ui
-import { theme } from './utils/01MaterialJsStyles/00Common/theme';
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+// import { theme } from './utils/01MaterialJsStyles/00Common/theme';
+// import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
 // socket.io
 // import socketIoMiddleware from 'redux-socket.io-middleware';
@@ -138,20 +138,20 @@ function WrapperApp() {
 }
 
 ReactDOM.render(
-    <MuiThemeProvider theme={theme}>
-        <Provider store={store}>
-            {/* ConnectedRouter will use the store from Provider automatically */}
-            <PersistGate persistor={persistor}>
-                <I18nextProvider i18n={i18n}>
-                    <ConnectedRouter history={history}>
-                        <div>
-                            <Route path="*" component={WrapperApp} />
-                        </div>
-                    </ConnectedRouter>
-                </I18nextProvider>
-            </PersistGate>
-        </Provider>
-    </MuiThemeProvider>,
+    // <MuiThemeProvider theme={theme}>
+    <Provider store={store}>
+        {/* ConnectedRouter will use the store from Provider automatically */}
+        <PersistGate persistor={persistor}>
+            <I18nextProvider i18n={i18n}>
+                <ConnectedRouter history={history}>
+                    <div>
+                        <Route path="*" component={WrapperApp} />
+                    </div>
+                </ConnectedRouter>
+            </I18nextProvider>
+        </PersistGate>
+    </Provider>,
+    // </MuiThemeProvider>,
     document.getElementById('root')
 )
 
