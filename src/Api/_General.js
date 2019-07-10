@@ -1,84 +1,140 @@
-// Polyfill
-import 'whatwg-fetch';
-
-import { clone, isFunction } from 'lodash-es';
-import qs from 'qs';
-
-import * as Config from '../config';
-
-
-/**
- * Make request to server API using fetch API. See
- * <https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch>
- * for detail of options parameter and return value.
- * 
- * @param endpoint {string} Endpoint of the API (should be relative url)
- * @param options {object} - Option object passed to fetch API.
- * @param token {string=} - Bearer token of Authorization header
- * @return {Promise<Response>} A Promise that resolves to a Response object.
- */
-export function request(endpoint, options, token) {
-    let fetchOptions = options;
-    if (token != null && token !== '') {
-        fetchOptions = clone(options);
-        fetchOptions.headers = options.headers ? new Headers(options.headers) : new Headers();
-        fetchOptions.headers.set('Authorization', 'Bearer ' + token);
-    }
-    return fetch(Config.API_URL + endpoint, fetchOptions);
-}
-
-// order of token parameter is different from apiFetch and other api* functions
-export function apiRequest(method, endpoint, token, params, body, callback, errorCallback) {
-    let url = endpoint;
-    if (params) {
-        url = endpoint + qs.stringify(params, {
-            addQueryPrefix: true,
-            indices: false
-        });
-    }
-
-    const headers = new Headers({
-        'Accept': 'application/json'
-    });
-    if (body != null && body !== '') {
-        headers.set('Content-Type', 'application/json');
-    }
-
-    const fetchResult = request(url, {
-        method: method,
-        headers: headers,
-        body: body
-    }, token);
-    if (isFunction(callback)) {
-        fetchResult.then(r => {
-            return r.json().then(data => {
-                return callback({ status: r.status, body: data });
-            });
-        });
-    }
-    fetchResult.catch(errorCallback);
-    return fetchResult;
-}
-
-export function apiFetch(endpoint, params, token, callback, errorCallback) {
-    apiRequest('GET', endpoint, token, params, undefined, callback, errorCallback);
-}
-
-export function apiDelete(endpoint, params, token, callback, errorCallback) {
-    apiRequest('DELETE', endpoint, token, params, undefined, callback, errorCallback);
-}
-
-export function apiPost(endpoint, body, token, callback, errorCallback) {
-    apiRequest('POST', endpoint, token, undefined, body, callback, errorCallback);
-}
-
-export function apiPut(endpoint,body, token, callback, errorCallback) {
-    apiRequest('PUT', endpoint, token, undefined, body, callback, errorCallback);
-}
+import * as Config from "../config";
 
 export const apiGeneral = {
-    apiFetch,
-    apiDelete,
-    apiPost,
-    apiPut
-};
+
+    apiFetch: (url, params, token, callback, errorCallback) => {
+
+        let fullUrl = Config.API_URL + url;
+
+        if (params)
+            fullUrl += "?" + buildParam(params);
+
+        // console.log('Full URL : ', fullUrl);
+
+        fetch(fullUrl, {
+            method: 'get',
+            headers: new Headers({
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }),
+            body: null
+        })
+            .then(r =>
+                r.json().then(data => ({ status: r.status, body: data }))
+            )
+            .then((obj) => {
+                // console.log(fullUrl, "success", obj);
+                if (typeof (callback) === "function") {
+                    callback(obj);
+                }
+            })
+            .catch(error => {
+                // console.log(fullUrl, "error", error);
+                if (typeof (errorCallback) === "function") {
+                    errorCallback(error);
+                }
+            });
+    },
+
+    apiPost: (url, body, token, callback, errorCallback) => {
+
+        let fullUrl = Config.API_URL + url;
+
+        // console.log('Full URL : ', fullUrl);
+
+        fetch(fullUrl, {
+            method: 'post',
+            headers: new Headers({
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }),
+            body: JSON.stringify(body)
+        })
+            .then(r =>
+                r.json().then(data => ({ status: r.status, body: data }))
+            )
+            .then((obj) => {
+                // console.log(fullUrl, "success", obj);
+                if (typeof (callback) === "function") {
+                    callback(obj);
+                }
+            })
+            .catch(error => {
+                // console.log(fullUrl, "error", error);
+                if (typeof (errorCallback) === "function") {
+                    errorCallback(error);
+                }
+            });
+    },
+
+    apiDelete: (url, params, token, callback, errorCallback) => {
+
+        if (!params) {
+            return;
+        }
+        let fullUrl = Config.API_URL + url + "/" + params;
+
+        fetch(fullUrl, {
+            method: 'delete',
+            headers: new Headers({
+                'Authorization': 'Bearer ' + token,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }),
+            body: null
+        })
+            .then((obj) => {
+                // console.log(fullUrl, "success", obj);
+                if (typeof (callback) === "function") {
+                    callback(obj);
+                }
+            })
+            .catch(error => {
+                // console.log(fullUrl, "error", error);
+                if (typeof (errorCallback) === "function") {
+                    errorCallback(error);
+                }
+            });
+    },
+
+    apiPostRefreshToken: (url, options, token, callback, errorCallback) => {
+
+        let fullUrl = Config.API_URL + url;
+
+        // console.log('Full URL : ', fullUrl);
+        // console.log('Headers : ', options.headers);
+
+        fetch(fullUrl, {
+            method: 'post',
+            // headers: new Headers({
+            headers: options.headers,
+            // }),
+            body: new URLSearchParams({
+                'grant_type': 'refresh_token',
+                'refresh_token': token
+            })
+        })
+            .then(r =>
+                r.json().then(data => ({ status: r.status, body: data }))
+            )
+            .then((obj) => {
+                // console.log(fullUrl, "success", obj);
+                if (typeof (callback) === "function") {
+                    callback(obj);
+                }
+            })
+            .catch(error => {
+                // console.log(fullUrl, "error", error);
+                if (typeof (errorCallback) === "function") {
+                    errorCallback(error);
+                }
+            });
+    },
+
+}
+
+export const buildParam = (params) => {
+    return Object.keys(params).map(k => k + "=" + params[k]).join("&");
+}

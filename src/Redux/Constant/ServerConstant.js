@@ -1,4 +1,3 @@
-// import Base64 from '../../utilsBase64';
 import btoa from 'btoa';
 
 const WEB_CLIENT_ID = '3tTftq0Qig88unYH';
