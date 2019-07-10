@@ -1,7 +1,9 @@
 // Essential for all components
 import React from 'react';
-import { Button } from '@material-ui/core';
 import { withTranslation } from 'react-i18next';
+
+// Styling
+import { Button } from '@material-ui/core';
 
 function Buttons(props) {
     return (

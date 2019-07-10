@@ -126,7 +126,6 @@ class MainMenu extends Component {
                             onMouseLeave={() => this._handleMouseLeave('external')}
                         ><Link to={"/" + i18n.language + "/external-resources"} className="external"><span>External<br />Resources</span></Link>
                         </li>
-
                     </ul>
                 </div>
             </div>

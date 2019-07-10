@@ -101,66 +101,6 @@ class PrimarySchoolHome extends Component {
                                                             )
                                                         }
                                                     ))}
-
-                                                    {/* <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/primary-general-tips"}>General Tips</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/primary-social-media-user-guide"}>Social Media User Guide</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/primary-quiz"}>Quiz</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/primary-risk-and-danger"}>Risk and Danger</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png')} alt="" />
-                                                            <div className="text">
-                                                                <Link to={"/" + i18n.language + "/primary-video"}>Video</Link>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/primary-game"}>Game</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid>
-
-                                                    <Grid item xs={6}>
-                                                        <div className="grid">
-                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png')} alt="" />
-                                                            <div className="text">
-                                                                <div><Link to={"/" + i18n.language + "/primary-netizen-pledge"}>The Netizen Pledge</Link></div>
-                                                            </div>
-                                                        </div>
-                                                    </Grid> */}
                                                 </Grid>
                                             </div>
                                         </Tab>
