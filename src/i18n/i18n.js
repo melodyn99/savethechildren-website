@@ -26,6 +26,7 @@ import en_us_ParentsMore from "./en-us/ParentsMore.json";
 import en_us_FeaturedIssues from "./en-us/FeaturedIssues.json";
 import en_us_ResearchFindings from "./en-us/ResearchFindings.json";
 import en_us_OurEvents from "./en-us/OurEvents.json";
+import en_us_ExternalResources from "./en-us/ExternalResources.json";
 
 import zh_hk_Common from "./zh-hk/Common.json";
 import zh_hk_Home from "./zh-hk/Home.json";
@@ -51,6 +52,7 @@ import zh_hk_ParentsMore from "./zh-hk/ParentsMore.json";
 import zh_hk_FeaturedIssues from "./zh-hk/FeaturedIssues.json";
 import zh_hk_ResearchFindings from "./zh-hk/ResearchFindings.json";
 import zh_hk_OurEvents from "./zh-hk/OurEvents.json";
+import zh_hk_ExternalResources from "./zh-hk/ExternalResources.json";
 
 i18n
 // load translation using xhr -> see /public/locales
@@ -100,6 +102,7 @@ i18n
                 FeaturedIssues: en_us_FeaturedIssues,
                 ResearchFindings: en_us_ResearchFindings,
                 OurEvents: en_us_OurEvents,
+                ExternalResources: en_us_ExternalResources,
             },
             'zh-HK': {
                 Common: zh_hk_Common,
@@ -126,6 +129,7 @@ i18n
                 FeaturedIssues: zh_hk_FeaturedIssues,
                 ResearchFindings: zh_hk_ResearchFindings,
                 OurEvents: zh_hk_OurEvents,
+                ExternalResources: zh_hk_ExternalResources,
             }
         }
     });

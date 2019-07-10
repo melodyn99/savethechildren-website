@@ -1,0 +1,27 @@
+{
+    "footer": {
+        "1": "External Resources"
+    },
+    "page": {
+        "block1": {
+            "title": "E-Help",
+            "subtitle": "E-Help",
+            "content": "____________________"
+        },
+        "block2": {
+            "title": "ACA",
+            "subtitle": "ACA",
+            "content": "____________________"
+        },
+        "block3": {
+            "title": "INHOPE",
+            "subtitle": "INHOPE",
+            "content": "____________________"
+        },
+        "block4": {
+            "title": "Other Resource",
+            "subtitle": "Other Resource",
+            "content": "____________________"
+        }
+    }
+}
