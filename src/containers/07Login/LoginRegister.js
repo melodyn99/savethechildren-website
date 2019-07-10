@@ -165,38 +165,31 @@ class LoginRegister extends Component {
         })
 
         return (
-            <div className="wrapper-container-main">
-                <div className="container-main">
-                    <div className="wrapper-content">
-                        <div className="content loginregister">
-                            <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
-                                <Tab eventKey={1} title="Login">
-                                    <Formik
-                                        initialValues={{
-                                            email: '',
-                                            password: '',
-                                        }}
-                                        validationSchema={Schema}
-                                        onSubmit={this.handleSubmit}
-                                        component={this.form}
-                                    />
-                                </Tab>
-                                <Tab eventKey={2} title="Register">
-                                    <Formik
-                                        initialValues={{
-                                            email: '',
-                                            password: '',
-                                        }}
-                                        validationSchema={Schema}
-                                        onSubmit={this.handleSubmit}
-                                        component={this.form}
-                                    />
-                                </Tab>
-                            </Tabs>
-                        </div>
-                    </div>
-
-                </div>
+            <div className="loginregister">
+                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
+                    <Tab eventKey={1} title="Login">
+                        <Formik
+                            initialValues={{
+                                email: '',
+                                password: '',
+                            }}
+                            validationSchema={Schema}
+                            onSubmit={this.handleSubmit}
+                            component={this.form}
+                        />
+                    </Tab>
+                    <Tab eventKey={2} title="Register">
+                        <Formik
+                            initialValues={{
+                                email: '',
+                                password: '',
+                            }}
+                            validationSchema={Schema}
+                            onSubmit={this.handleSubmit}
+                            component={this.form}
+                        />
+                    </Tab>
+                </Tabs>
             </div>
         );
     }

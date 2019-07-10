@@ -79,6 +79,7 @@ class Header extends Component {
                         open={this.state.open}
                         closeOnDocumentClick
                         onClose={this.closeModal}
+                        className="popup"
                     >
                         <LoginRegister />
 
