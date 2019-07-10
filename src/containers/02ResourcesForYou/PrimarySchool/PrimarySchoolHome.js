@@ -7,7 +7,6 @@ import { withTranslation } from 'react-i18next';
 import { Tabs, Tab } from 'react-bootstrap';
 
 // Styling
-
 import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 

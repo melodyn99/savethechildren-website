@@ -7,7 +7,6 @@ import { withTranslation } from 'react-i18next';
 import Slider from "react-slick";
 
 // Styling
-
 // import { Button } from '@material-ui/core';
 
 // Api

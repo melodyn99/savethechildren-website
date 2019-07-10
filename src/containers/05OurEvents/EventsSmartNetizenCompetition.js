@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-
 // import { Button } from '@material-ui/core';
 
 // Api

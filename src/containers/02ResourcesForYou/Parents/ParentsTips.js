@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-
 // import { Button } from '@material-ui/core';
 
 // Api

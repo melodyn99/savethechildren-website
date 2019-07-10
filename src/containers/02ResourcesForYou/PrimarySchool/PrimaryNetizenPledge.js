@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 
