@@ -1,44 +1,51 @@
 {
-	"about": {
-		"title": "About"
-	},
-	"memberCreateAccount": {
-		"title": "Welcome"
-	},
 	"General": {
-		"LetsPark": "Lets Park",
-		"Others": "Others",
-		"ForParkers": "For Parkers",
-		"ForOwners": "For Owners",
-		"Register": "Register",
+		"LanguageText": "中 EN",
 		"Login": "Login",
-		"Logout": "Logout",
-		"MyAccount": "My Account",
-		"AllRightsReserved": "Lets Park. All rights reserved.",
-		"NowAvailableAt": "Now available at :",
-		"LanguageText": "繁",
-		"ListYourSpace": "List Your Space"
+		"SeekHelp": "Seek Help"
 	},
 	"Menu": {
-		"Discover": "Discover",
-		"MediaCoverage": "Media Coverage",
-		"HelpCentre": "Help Centre",
-		"ContactUs": "Contact us",
-		"TermsAndConditions": "Terms and Conditions",
-		"CancellationPolicy": "Cancellation Policy",
-		"PrivacyPolicy": "Privacy Policy",
-		"Disclaimer": "Disclaimer",
-		"HowItWork": "How it work",
-		"LetsParkEnterprise": "Lets Park Enterprise"
+		"AboutUs": "About us",
+		"ResourcesForYou": "Resources For You",
+		"FeaturedIssues": "Featured Issues",
+		"ResearchFindings": "Research Findings",
+		"OurEvents": "Our Events",
+		"ExternalResources": "External Resources"
 	},
-	"Days": {
-		"day_1" : "Monday",
-		"day_2" : "Tuesday",
-		"day_3" : "Wednesday",
-		"day_4" : "Thursday",
-		"day_5" : "Friday",
-		"day_6" : "Saturday",
-		"day_7" : "Sunday",
-		"day_8" : "Public Holiday"
+	"SubMenu-AboutUs": {
+		"WhyWeMustAct" : "Why we must act",
+		"OurMissionAndStrategy" : "Our mission and strategy",
+		"ContactUs" : "Contact us",
+		"Sitemap" : "Sitemap"
+	},
+	"SubMenu-ResourcesForYou": {
+		"Primary" : "",
+		"Secondary" : "",
+		"Parents" : ""
+	},
+	"SubMenu-FeaturedIssues": {
+		"OnlineGrooming" : "",
+		"Sexting" : "",
+		"PersonalPrivacy" : "",
+		"Legislations" : ""
+	},
+	"SubMenu-ResearchFindings": {
+	},
+	"SubMenu-OurEvents": {
+	},
+	"SubMenu-ExternalResources": {
+	},
+	"Subscribe": {
+		"Signup": "Signup for exclusive Netizen Academy news and events",
+		"Email": "Email",
+		"Subscribe": "Subscribe"
+	},
+	"Contact": {
+		"Email": "hk.program@savethechildren.org",
+		"Phone": "(852) 2112-5640",
+		"Fax": "(852) 3160-8685"
+	},
+	"Address": {
+		"Address": "8/F......."
 	}
 }

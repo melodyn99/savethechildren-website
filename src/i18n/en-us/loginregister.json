@@ -1,0 +1,18 @@
+{
+    "login": {
+        "Email": "Enter your email",
+        "Password": "Enter your password",
+        "Remember": "Remember me next time",
+        "Login": "Login",
+        "Forgot": "Forgot your password?"
+    },
+    "register": {
+        "Email": "Your email",
+        "Name": "Display name",
+        "Password": "",
+        "Confirm": "",
+        "Condition1": "Must have ......",
+        "Condition2": "Use upper......",
+        "Create": "Create New Account"
+    }
+}
