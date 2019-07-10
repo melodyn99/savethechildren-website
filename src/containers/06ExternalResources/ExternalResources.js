@@ -20,7 +20,7 @@ import Grid from '@material-ui/core/Grid';
 
 // Redux
 import { connect } from 'react-redux';
-import { login, verifyToken } from '../../Redux/Action/authAction';
+import { login } from '../../Redux/Action/authAction';
 
 // Utils
 
@@ -124,8 +124,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    loginP: data => dispatch(login(data)),
-    verifyT: token => dispatch(verifyToken(token)),
+    loginP: data => dispatch(login(data))
 });
 
 const combinedStyles = combineStyles(CommonStyles, HeaderStyles);

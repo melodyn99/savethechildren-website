@@ -20,7 +20,7 @@ import { Button } from '@material-ui/core';
 
 // Redux
 import { connect } from 'react-redux';
-import { login, verifyToken } from '../../Redux/Action/authAction';
+import { login } from '../../Redux/Action/authAction';
 
 // Utils
 import { Formik, Form, Field } from 'formik';
@@ -204,8 +204,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    loginP: data => dispatch(login(data)),
-    verifyT: token => dispatch(verifyToken(token)),
+    loginP: data => dispatch(login(data))
 });
 
 const combinedStyles = combineStyles(CommonStyles, HeaderStyles);
