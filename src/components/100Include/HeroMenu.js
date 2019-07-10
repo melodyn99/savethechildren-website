@@ -1,10 +1,10 @@
+// Essential for all components
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
-// import { bindActionCreators } from 'redux';
+// Redux
 import { connect } from 'react-redux';
-// import * as AnimationsActionCreators from '../../actions/animations';
 
 // Utils
 import Slider from "react-slick";

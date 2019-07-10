@@ -1,11 +1,11 @@
+// Essential for all components
 import React, { Component } from 'react';
 // import {Redirect} from 'react-router';
 import './css/App.scss';
 import { withTranslation } from 'react-i18next';
 
-// import { bindActionCreators } from 'redux';
+// Redux
 import { connect } from 'react-redux';
-// import * as AnimationsActionCreators from './actions/animations';
 
 import querySearch from "stringquery";
 
