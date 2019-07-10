@@ -86,6 +86,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-const combinedStyles = combineStyles(CommonStyles, HeaderStyles);
-
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withStyles(combinedStyles)(Home)));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Home));
