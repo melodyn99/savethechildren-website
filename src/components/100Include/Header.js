@@ -30,6 +30,7 @@ class Header extends Component {
     }
 
     changeLanguage = (param) => {
+
         switch (param) {
             case 'zh-HK':
                 param = 'zh-HK';
@@ -52,6 +53,8 @@ class Header extends Component {
             urlArray = pathname.split("/"),
             currentURL = urlArray[2];
 
+        console.log(i18n.language);
+
         return (
             <div className="wrapper-header">
                 <div className="header clearfix">
@@ -67,8 +70,8 @@ class Header extends Component {
                     <span className="desktop-login" onClick={this.openModal}>Login</span>
 
                     <ul className="desktop-language clearfix">
-                        <li><Link to={"/" + i18n.language + '/'}>中</Link></li>
-                        <li><Link to={"/" + i18n.language + '/'} className="active">EN</Link></li>
+                        <li><Link to={"/zh-HK" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('zh-HK')} className={i18n.language === 'zh-HK' ? 'active' : ''}>中</Link></li>
+                        <li><Link to={"/en-US" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('en-US')} className={i18n.language === 'en-US' ? 'active' : ''}>EN</Link></li>
                     </ul>
 
                     <h1 className="logo-schk">
