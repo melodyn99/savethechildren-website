@@ -43,7 +43,7 @@ class Header extends Component {
                         </h1>
                     }
 
-                    <Link to={"/" + i18n.language + '/'} className="desktop-login">Login</Link>
+                    <Link to={"/" + i18n.language + '/login-register'} className="desktop-login">Login</Link>
 
                     <ul className="desktop-language clearfix">
                         <li><Link to={"/" + i18n.language + '/'}>中</Link></li>

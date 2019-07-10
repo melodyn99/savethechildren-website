@@ -104,7 +104,7 @@ class PrimarySchoolHome extends Component {
 
     render() {
         const { i18n } = this.props;
-
+        
         let primaryData = [
             { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: 'primary-general-tips', text: 'General tips' },
             { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: 'primary-social-media-user-guide', text: 'Social media user guide' },

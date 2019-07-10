@@ -126,12 +126,10 @@ class LoginRegister extends Component {
                             {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
                         </Grid>
     
-                        <Grid item xs={12} className="grid">
                             <ul>
                                 <li>Must have at least 8 characters with numbers</li>
                                 <li>Use upper and lower case letters (eg. Aa)</li>
                             </ul>
-                        </Grid>
                         <Grid item xs={12} className="grid">
                             <Button onClick={() =>this.props.history.push()}>Create New Account</Button>
                         </Grid>

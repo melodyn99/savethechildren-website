@@ -11,6 +11,9 @@ function FooterSitemap(props) {
         <div className="wrapper-sitemap">
             <div className="sitemap clearfix">
                 <ul>
+                    <h2>Login-Register</h2>
+                    <li><Link to={'/' + i18n.language + '/login-register'}>Login Register Page (done)</Link></li>
+
                     <h2>About us</h2>
                     <li><Link to={'/' + i18n.language + '/why-we-must-act'}>Why We Must Act (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/our-mission-and-strategy'}>Our Mission and Strategy (done)</Link></li>
