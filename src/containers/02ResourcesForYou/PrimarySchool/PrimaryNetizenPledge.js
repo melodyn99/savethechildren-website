@@ -11,7 +11,6 @@ import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
-// import { apiConferences } from '../../Api/ApiConferences';
 
 // Redux
 import { connect } from 'react-redux';

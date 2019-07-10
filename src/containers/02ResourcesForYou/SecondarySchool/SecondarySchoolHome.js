@@ -8,11 +8,10 @@ import { Link } from 'react-router-dom';
 
 // Styling
 import Grid from '@material-ui/core/Grid';
-// import { Button } from '@material-ui/core';
+
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
-// import { apiConferences } from '../../Api/ApiConferences';
 
 // Redux
 import { connect } from 'react-redux';

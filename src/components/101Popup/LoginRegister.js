@@ -1,10 +1,9 @@
 // Essential for all components
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
-import { Tabs, Tab } from 'react-bootstrap';
 
 // Styling
 import Grid from '@material-ui/core/Grid';
@@ -12,7 +11,6 @@ import { Button } from '@material-ui/core';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
-// import { apiConferences } from '../../Api/ApiConferences';
 
 // Redux
 import { connect } from 'react-redux';
@@ -21,10 +19,10 @@ import { login } from '../../Redux/Action/authAction';
 // Utils
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import { Tabs, Tab } from 'react-bootstrap';
 
 // Children components
 import ErrorMessage from './ErrorMessage';
-// import BreadCrumb from '../../../components/100Include/BreadCrumb';
 
 class LoginRegister extends Component {
     constructor(props) {
@@ -91,13 +89,6 @@ class LoginRegister extends Component {
                             <Link to={"/"}>Forgot your password?</Link>
                         </Grid>
                     </Grid>
-
-                    {/* <div className="bottomControl clearfix">
-                        <Button className={classes.greyButton}
-                            onClick={() => this.props.history.push('school-course-note')}
-                        >取消</Button>
-                        <span className="right"><Button type="submit" className={classes.blackButton}>确认</Button></span>
-                    </div> */}
                 </Form>
             )
         }
@@ -190,10 +181,6 @@ class LoginRegister extends Component {
         );
     }
 }
-
-LoginRegister.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
 
 const mapStateToProps = (state) => ({
     auth: state.auth

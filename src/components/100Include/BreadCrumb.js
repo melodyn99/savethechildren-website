@@ -11,7 +11,6 @@ class Breadcrumb extends Component {
     renderSwitch = (currentPath) => {
         const { //t, 
             i18n } = this.props;
-        // console.log('hello', currentPath);
 
         switch (currentPath) {
 
@@ -149,13 +148,9 @@ class Breadcrumb extends Component {
     render() {
         // const { t, i18n } = props;
 
-        // console.log('hi', this.props.route.location.pathname);
-
         let pathname = this.props.route.location.pathname,
             urlArray = pathname.split("/"),
             currentPath = urlArray[2];
-
-        // console.log(currentPath);
 
         return (
             <div className="Breadcrumb">
