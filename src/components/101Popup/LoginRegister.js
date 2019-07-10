@@ -64,66 +64,65 @@ class LoginRegister extends Component {
 
     }
 
-    form = ({ values, errors, touched, handleChange }) => {
+    formLogin = ({ values, errors, touched, handleChange }) => {
         // const { classes
         //     //, t, i18n 
         // } = this.props;
 
-        if (this.state.tabIndex === 1) {
-            return (
-                <Form className="form-wrapper">
-                    <Grid container spacing={16}>
-                        <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
-                        </Grid>
-                        <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
-                        </Grid>
-
-                        <Grid item xs={12} className="grid">
-                            <Button onClick={() => this.props.history.push()}>Login</Button>
-                        </Grid>
-                        <Grid item xs={12} className="grid">
-                            <Link to={"/"}>Forgot your password?</Link>
-                        </Grid>
+        return (
+            <Form className="form-wrapper">
+                <Grid container spacing={16}>
+                    <Grid item xs={12} className="grid">
+                        <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                     </Grid>
-                </Form>
-            )
-        }
-        else {
-            return (
-                <Form className="form-wrapper">
-                    <Grid container spacing={16}>
-                        <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
-                        </Grid>
-                        <Grid item xs={12} className="grid">
-                            <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.name && touched.name ? <ErrorMessage message={errors.name} /> : null}
-                        </Grid>
-                        <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
-                        </Grid>
-                        <Grid item xs={12} className="grid">
-                            <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
-                            {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
-                        </Grid>
-
-                        <ul>
-                            <li>Must have at least 8 characters with numbers</li>
-                            <li>Use upper and lower case letters (eg. Aa)</li>
-                        </ul>
-                        <Grid item xs={12} className="grid">
-                            <Button onClick={() => this.props.history.push()}>Create New Account</Button>
-                        </Grid>
+                    <Grid item xs={12} className="grid">
+                        <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                     </Grid>
-                </Form>
-            )
-        }
+
+                    <Grid item xs={12} className="grid">
+                        <Button type="submit">Login</Button>
+                    </Grid>
+                    <Grid item xs={12} className="grid">
+                        <Link to={"/"}>Forgot your password?</Link>
+                    </Grid>
+                </Grid>
+            </Form>
+        )
+    }
+
+    formRegister = ({ values, errors, touched, handleChange }) => {
+        return (
+            <Form className="form-wrapper">
+                <Grid container spacing={16}>
+                    <Grid item xs={12} className="grid">
+                        <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
+                    </Grid>
+                    <Grid item xs={12} className="grid">
+                        <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.name && touched.name ? <ErrorMessage message={errors.name} /> : null}
+                    </Grid>
+                    <Grid item xs={12} className="grid">
+                        <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
+                    </Grid>
+                    <Grid item xs={12} className="grid">
+                        <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
+                        {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
+                    </Grid>
+
+                    <ul>
+                        <li>Must have at least 8 characters with numbers</li>
+                        <li>Use upper and lower case letters (eg. Aa)</li>
+                    </ul>
+                    <Grid item xs={12} className="grid">
+                        <Button type="submit">Create New Account</Button>
+                    </Grid>
+                </Grid>
+            </Form >
+        )
     }
 
     handleSubmit = (values, { setFieldError }) => {
@@ -162,18 +161,20 @@ class LoginRegister extends Component {
                             }}
                             validationSchema={Schema}
                             onSubmit={this.handleSubmit}
-                            component={this.form}
+                            component={this.formLogin}
                         />
                     </Tab>
                     <Tab eventKey={2} title="Register">
                         <Formik
                             initialValues={{
                                 email: '',
+                                name: '',
                                 password: '',
+                                confirmPassword: ''
                             }}
                             validationSchema={Schema}
                             onSubmit={this.handleSubmit}
-                            component={this.form}
+                            component={this.formRegister}
                         />
                     </Tab>
                 </Tabs>
