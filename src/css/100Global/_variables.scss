@@ -1,5 +1,5 @@
 // // Body
-$bodyBgColor: white;
+$bodyBgColor: #fff;
 
 // Typography
 $font-family-body: 'Palanquin Dark', sans-serif;
@@ -32,9 +32,23 @@ $majorYellowGreen :#c0d032;
 
 $corporateRedColor:#da291c;
 $majorBlueGreen: rgb(66,169,176); 
+$majorBlue:#289bf7;
 $majorGreenYellow: rgb(193,254,1); 
 $majorGreenBlue: rgb(0,226,225);
-$lavender: rgb(237,236,250); 
+$torquoise:#1dbeb9;;
+$lavender: rgb(230,230,250);
+$transparentGrey:rgba(128,128,128,0.2);
+$darkTransparentGrey:rgba(128,128,128,0.6);
+$lightGrey:rgb(211,211,211);
+$dimGrey:rgb(105,105,105);
+$errorGrey:rgb(162,161,169);
+$darkGrey:#484848;
+$menuGrey:#747474;
+$majorGreyBlue:rgb(135,135,145);
+$darkBlue:rgb(0,0,139);
+$majorBlue:#003399;
+$red:#b30000;
+$brightRed:#d40000;
 
 // SLICK
 $slick-font-path: "./fonts/" !default;

@@ -49,7 +49,7 @@ class SaferInternetDay2019 extends Component {
                     <div className="wrapper-content">
                         <div className="content no-background">
                             <div className="ImageText">
-                                <div className="upper" style={{ padding: '40px 200px', backgroundColor: 'rgb(237,236,250)' }}>
+                                <div className="upper lavender" style={{ padding: '40px 200px'}}>
                                     <Slider {...settings}>
                                         <div>
                                             <img src={require('../../images/OurEvents/SaferInternetDay/img_Safer_Internet_Day-01.png')} alt="" />

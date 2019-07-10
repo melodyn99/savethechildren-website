@@ -22,7 +22,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 8px;
-    color: white;
+    color: #fff;
     box-sizing: border-box;
     .icon {
       background: url(../images/mobile/03_find_parking_space/icon_letspark.png)
@@ -36,8 +36,8 @@
     }
     &.active {
       background: white;
-      border: 2px solid #1dbeb9;
-      color: #1dbeb9;
+      border: 2px solid $torqoise;
+      color: $torqoise;
       .icon {
         background-position: bottom;
       }

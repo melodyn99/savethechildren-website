@@ -52,16 +52,16 @@ class EventsTrainingWorkshops extends Component {
                                 <div className="upper">
                                     <Slider {...settings}>
                                         <div>
-                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                            <img src={require('../../images/OurEvents/banner_ourevents_03.png')} alt="" />
                                         </div>
                                         <div>
-                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                            <img src={require('../../images/OurEvents/banner_ourevents_03.png')} alt="" />
                                         </div>
                                         <div>
-                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                            <img src={require('../../images/OurEvents/banner_ourevents_03.png')} alt="" />
                                         </div>
                                         <div>
-                                            <img src={require('../../images/FeaturedIssues/banner_featured issues-Sexting.png')} alt="" />
+                                            <img src={require('../../images/OurEvents/banner_ourevents_03.png')} alt="" />
                                         </div>
                                     </Slider>
                                 </div>

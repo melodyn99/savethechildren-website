@@ -29,7 +29,7 @@
 
 				a { display:block; line-height:1em; padding: 0 15px; font-size:20px; color:#DEDDDF; font-size:20px;
 					&:hover,
-					&.active { color:#289bf7; }
+					&.active { color:$majorBlue; }
 				}
 			}
 		}
@@ -83,18 +83,18 @@
 		}
 		input {
 			background: dimgray;
-			color: white;
+			color:#fff;
 			&::placeholder {
-				color: scale-color(lightgray, $lightness: 66%);
+				color: scale-color($lightGrey, $lightness: 66%);
 			}
-			border-color: dimgray;
+			border-color:$dimGrey;
 			border-radius: 0;
 		}
 		.input-group-btn,
 		button {
 			cursor: unset;
 			background-color: $corporateRedColor;
-			color: white;
+			color:#fff;
 			&:hover {
 				background-color: scale-color($corporateRedColor, $lightness: -20%);
 				border-color: scale-color($corporateRedColor, $lightness: -20%);
@@ -102,7 +102,7 @@
 			&:active {
 				background-color: scale-color($corporateRedColor, $lightness: -30%);
 				border-color: scale-color($corporateRedColor, $lightness: -30%);
-				color: white;
+				color: #fff;
 			}
 			border-color: $corporateRedColor;
 			border-radius: 0;
@@ -206,7 +206,7 @@
 					
 					span { display:table-cell; height:69px; vertical-align:middle; position:relative; }
 				}
-				&:hover >a span { color:#d40000; background:url('../images/Menu/btn_mene_select.png') center center no-repeat; background-size: 100% 100%; }
+				&:hover >a span { color:$brightRed; background:url('../images/Menu/btn_mene_select.png') center center no-repeat; background-size: 100% 100%; }
 
 				ul { list-style:none; display:none; margin:0; padding:0; position:absolute; top:100%; left:50%; margin-left:-197px; width:394px;
 					&.leftOne { margin-left:-76px; 
