@@ -6,10 +6,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
-import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
-import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
-import { withStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 
 // Api
@@ -77,8 +74,8 @@ class PrimaryGeneralTips extends Component {
                             <div className="ImageTextGrid">
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-general_tips.png')} alt="" />
-                                <Buttons />
-                                <h2>General Tips</h2>
+                                    <Buttons />
+                                    <h2>General Tips</h2>
                                 </div>
                                 <Grid container spacing={16}>
                                     <Grid item xs={6}>

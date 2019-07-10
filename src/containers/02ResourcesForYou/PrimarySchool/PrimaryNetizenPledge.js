@@ -6,10 +6,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
-import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
-import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
-import { withStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 
@@ -45,23 +42,23 @@ class PrimaryNetizenPledge extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content lavender-background">
-                            <h2 style={{'color':'#b30000', 'font-size':'30px', 'padding':'30px', 'backgroundColor':'white'}}>The Netizen Pledge</h2>
-                            <Grid container spacing={16} style={{'paddingBottom':'40px'}}>
+                            <h2 style={{ 'color': '#b30000', 'font-size': '30px', 'padding': '30px', 'backgroundColor': 'white' }}>The Netizen Pledge</h2>
+                            <Grid container spacing={16} style={{ 'paddingBottom': '40px' }}>
                                 <Grid item xs={2}>
                                     <div className="button-wrapper lavender">
                                         <Button className="button">
-                                            <img src={require('../../../images/btn_print.png')} alt=""/>
+                                            <img src={require('../../../images/btn_print.png')} alt="" />
                                         </Button>
                                         <Button className="button">
-                                            <img src={require('../../../images/btn_share.png')} alt=""/>
+                                            <img src={require('../../../images/btn_share.png')} alt="" />
                                         </Button>
                                         <Button className="button">
-                                            <img src={require('../../../images/btn_download.png')} alt=""/>
+                                            <img src={require('../../../images/btn_download.png')} alt="" />
                                         </Button>
                                     </div>
                                 </Grid>
                                 <Grid item xs={10}>
-                                    <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="90%"/>
+                                    <img src={require('../../../images/ResourcesForYou/NetizenPledge/img_netizenpledge-Samplepledge.png')} alt="" width="90%" />
                                 </Grid>
                             </Grid>
                         </div>

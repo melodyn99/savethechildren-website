@@ -7,10 +7,7 @@ import { withTranslation } from 'react-i18next';
 import { Tabs, Tab } from 'react-bootstrap';
 
 // Styling
-import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
-import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
-import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
-import { withStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 

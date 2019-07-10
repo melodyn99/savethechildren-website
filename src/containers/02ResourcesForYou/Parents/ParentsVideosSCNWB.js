@@ -6,10 +6,7 @@ import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
-import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
-import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
-import { withStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 
@@ -43,7 +40,7 @@ class ParentsVideosSCNWB extends Component {
                 <div className="container-main">
                     <BreadCrumb />
                     <div className="wrapper-content">
-                    <div className="content no-background">
+                        <div className="content no-background">
                             <Grid container spacing={16}>
                                 <Grid item xs={6}>
                                     <div className="ImageGrid2 left">

@@ -7,10 +7,7 @@ import { withTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 // Styling
-import { CommonStyles } from '../../../utils/01MaterialJsStyles/00Common/common'
-import { HeaderStyles } from '../../../utils/01MaterialJsStyles/00Common/header'
-import combineStyles from '../../../utils/01MaterialJsStyles/00Common/combineStyles';
-import { withStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 // import { Button } from '@material-ui/core';
 
@@ -49,7 +46,7 @@ class SecondarySchoolHome extends Component {
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School.png')} alt="" />
                                 </div>
-                                <div className="bottom" style={{backgroundColor:'$majorGreenYellow'}}>
+                                <div className="bottom" style={{ backgroundColor: '$majorGreenYellow' }}>
                                     <Grid container spacing={16}>
                                         <Grid item xs={6}>
                                             <div className="grid">
