@@ -1,0 +1,27 @@
+{
+    "footer": {
+        "1": ""
+    },
+    "page": {
+        "block1": {
+            "title": "",
+            "subtitle": "",
+            "content": "____________________"
+        },
+        "block2": {
+            "title": "",
+            "subtitle": "",
+            "content": "____________________"
+        },
+        "block3": {
+            "title": "",
+            "subtitle": "",
+            "content": "____________________"
+        },
+        "block4": {
+            "title": "",
+            "subtitle": "",
+            "content": "____________________"
+        }
+    }
+}

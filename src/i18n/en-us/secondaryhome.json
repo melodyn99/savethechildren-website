@@ -1,0 +1,10 @@
+{
+    "footer": {
+        "1": "Resources for you",
+        "2": "Secondary-school"
+    },
+    "page": {
+        "tabs": ["Secondary school (Aged 12-18)", ""],
+        "blocks": ["General tips", "Social media user guide", "", "", "", "", "The Netizen Pledge"]
+    }
+}

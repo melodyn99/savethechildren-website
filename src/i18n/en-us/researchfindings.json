@@ -1,0 +1,22 @@
+{
+    "OurResearch": {
+        "footer": {
+            "1": "Research findings",
+            "2": ""
+        },
+        "page": {
+            "title": "Our research",
+            "content": ""
+        }
+    },
+    "OtherFindings": {
+        "footer": {
+            "1": "Research findings",
+            "2": ""
+        },
+        "page": {
+            "title": "Other findings",
+            "content": ""
+        }
+    }
+}

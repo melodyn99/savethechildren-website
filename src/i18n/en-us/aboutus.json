@@ -1,0 +1,46 @@
+{
+    "whyWeMustAct": {
+        "footer": {
+            "1": "About us",
+            "2": ""
+        },
+        "page": {
+            "title": "Why we must act",
+            "content": ""
+        }
+    },
+    "ourMissionAndStrategy": {
+        "footer": {
+            "1": "About us",
+            "2": ""
+        },
+        "page": {
+            "title": "Our mission and strategy",
+            "content": ""
+        }
+    },
+    "contactUs": {
+        "footer": {
+            "1": "",
+            "2": ""
+        },
+        "page": {
+            "fb": "",
+            "ig": "",
+            "phone": "",
+            "fax": "",
+            "email": "",
+            "address": ""
+        }
+    },
+    "sitemap": {
+        "footer": {
+            "1": "About us",
+            "2": "Sitemap"
+        },
+        "page": {
+            "title": "Sitemap",
+            "content": ""
+        }
+    }
+}

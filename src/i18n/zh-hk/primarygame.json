@@ -1,0 +1,38 @@
+{
+    "footer": {
+        "1": "",
+        "2": "",
+        "3": ""
+    },
+    "page": {
+        "welcome": "",
+        "content": {
+            "game": "",
+            "start": "",
+            "leaderboard": "",
+            "store": "",
+            "welcomeMessage": "",
+            "tools": {
+                "name": "",
+                "types": ["", "", "", "", "", ""]
+            },
+            "questions": [""],
+            "levels": [""],
+            "answers": ["A: ", "B. ", "C. "],
+            "answerMessage": ""
+        },
+        "finish": {
+            "text": "",
+            "completed": "",
+            "score": "",
+            "buttons": ["", "", ""],
+            "message": ""
+        },
+        "store": {
+            "text": "",
+            "title": "",
+            "message": ""
+        },
+        "score": "300"
+    }
+}

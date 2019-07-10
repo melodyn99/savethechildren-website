@@ -1,0 +1,21 @@
+{
+    "footer": {
+        "1": "",
+        "2": "",
+        "3": ""
+    },
+    "page": {
+        "title": "",
+        "description": "",
+        "questions": ["", ""],
+        "answers": ["", "", ""],
+        "correct": ["", ""],
+        "page": ["", "", ""],
+        "results": {
+            "title": "",
+            "description": "",
+            "percentage": "",
+            "answers": ["", "", ""]
+        }
+    }
+}

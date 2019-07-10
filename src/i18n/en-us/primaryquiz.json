@@ -1,0 +1,21 @@
+{
+    "footer": {
+        "1": "",
+        "2": "",
+        "3": ""
+    },
+    "page": {
+        "title": "Quiz",
+        "description": "Aims: to test how well.....",
+        "questions": ["Facebook has two-factor authentication", ""],
+        "answers": ["True", "False", "Don't know"],
+        "correct": ["Correct!!", "Incorrect: The correct answer is 'True'"],
+        "page": ["1/11", "2/11", "Retry Quiz"],
+        "results": {
+            "title": "Quiz",
+            "description": "Results",
+            "percentage": "70%",
+            "answers": ["6 Correct Answers(s)", "2 Incorrect Answer(s)", "1 Don't know"]
+        }
+    }
+}
