@@ -2,55 +2,55 @@ import i18n from 'i18next';
 // import LanguageDetector from 'i18next-browser-languagedetector';
 import {initReactI18next} from 'react-i18next';
 
-import en_us_common from "./en-us/common.json";
-import en_us_home from "./en-us/home.json";
-import en_us_benefits from "./en-us/benefits.json";
-import en_us_seekhelp from "./en-us/seekhelp.json";
-import en_us_loginregister from "./en-us/loginregister.json";
-import en_us_aboutus from "./en-us/aboutus.json";
-import en_us_primaryhome from "./en-us/primaryhome.json";
-import en_us_primarytips from "./en-us/primarytips.json";
-import en_us_primarysocialmedia from "./en-us/primarysocialmedia.json";
-import en_us_primaryquiz from "./en-us/primaryquiz.json";
-import en_us_primaryrisk from "./en-us/primaryrisk.json";
-import en_us_primarygame from "./en-us/primarygame.json";
-import en_us_primarynetizenpledge from "./en-us/primarynetizenpledge.json";
-import en_us_secondaryhome from "./en-us/secondaryhome.json";
-import en_us_parentshome from "./en-us/parentshome.json";
-import en_us_parentstips from "./en-us/parentstips.json";
-import en_us_parentsblog from "./en-us/parentsblog.json";
-import en_us_parentsblogdetail from "./en-us/parentsblogdetail.json";
-import en_us_parentsvideosSC from "./en-us/parentsvideosSC.json";
-import en_us_parentsvideosSCdetail from "./en-us/parentsvideosSCdetail.json";
-import en_us_parentstraining from "./en-us/parentstraining.json";
-import en_us_parentsmore from "./en-us/parentsmore.json";
-import en_us_featuredissues from "./en-us/featuredissues.json";
-import en_us_researchfindings from "./en-us/researchfindings.json";
+import en_us_Common from "./en-us/Common.json";
+import en_us_Home from "./en-us/Home.json";
+import en_us_SeekHelp from "./en-us/SeekHelp.json";
+import en_us_LoginRegister from "./en-us/LoginRegister.json";
+import en_us_AboutUs from "./en-us/AboutUs.json";
+import en_us_PrimaryHome from "./en-us/PrimaryHome.json";
+import en_us_PrimaryTips from "./en-us/PrimaryTips.json";
+import en_us_PrimarySocialMedia from "./en-us/PrimarySocialMedia.json";
+import en_us_PrimaryQuiz from "./en-us/PrimaryQuiz.json";
+import en_us_PrimaryRisk from "./en-us/PrimaryRisk.json";
+import en_us_PrimaryGame from "./en-us/PrimaryGame.json";
+import en_us_PrimaryNetizenPledge from "./en-us/PrimaryNetizenPledge.json";
+import en_us_SecondaryHome from "./en-us/SecondaryHome.json";
+import en_us_ParentsHome from "./en-us/ParentsHome.json";
+import en_us_ParentsTips from "./en-us/ParentsTips.json";
+import en_us_ParentsBlog from "./en-us/ParentsBlog.json";
+import en_us_ParentsBlogDetail from "./en-us/ParentsBlogDetail.json";
+import en_us_ParentsVideosSC from "./en-us/ParentsVideosSC.json";
+import en_us_ParentsVideosSCDetail from "./en-us/ParentsVideosSCDetail.json";
+import en_us_ParentsTraining from "./en-us/ParentsTraining.json";
+import en_us_ParentsMore from "./en-us/ParentsMore.json";
+import en_us_FeaturedIssues from "./en-us/FeaturedIssues.json";
+import en_us_ResearchFindings from "./en-us/ResearchFindings.json";
+import en_us_OurEvents from "./en-us/OurEvents.json";
 
-import zh_hk_common from "./zh-hk/common.json";
-import zh_hk_home from "./zh-hk/home.json";
-import zh_hk_benefits from "./zh-hk/benefits.json";
-import zh_hk_seekhelp from "./zh-hk/seekhelp.json";
-import zh_hk_loginregister from "./zh-hk/loginregister.json";
-import zh_hk_aboutus from "./zh-hk/aboutus.json";
-import zh_hk_primaryhome from "./zh-hk/primaryhome.json";
-import zh_hk_primarytips from "./zh-hk/primarytips.json";
-import zh_hk_primarysocialmedia from "./zh-hk/primarysocialmedia.json";
-import zh_hk_primaryquiz from "./zh-hk/primaryquiz.json";
-import zh_hk_primaryrisk from "./zh-hk/primaryrisk.json";
-import zh_hk_primarygame from "./zh-hk/primarygame.json";
-import zh_hk_primarynetizenpledge from "./zh-hk/primarynetizenpledge.json";
-import zh_hk_secondaryhome from "./zh-hk/secondaryhome.json";
-import zh_hk_parentshome from "./zh-hk/parentshome.json";
-import zh_hk_parentstips from "./zh-hk/parentstips.json";
-import zh_hk_parentsblog from "./zh-hk/parentsblog.json";
-import zh_hk_parentsblogdetail from "./zh-hk/parentsblogdetail.json";
-import zh_hk_parentsvideosSC from "./zh-hk/parentsvideosSC.json";
-import zh_hk_parentsvideosSCdetail from "./zh-hk/parentsvideosSCdetail.json";
-import zh_hk_parentstraining from "./zh-hk/parentstraining.json";
-import zh_hk_parentsmore from "./zh-hk/parentsmore.json";
-import zh_hk_featuredissues from "./zh-hk/featuredissues.json";
-import zh_hk_researchfindings from "./zh-hk/researchfindings.json";
+import zh_hk_Common from "./zh-hk/Common.json";
+import zh_hk_Home from "./zh-hk/Home.json";
+import zh_hk_SeekHelp from "./zh-hk/SeekHelp.json";
+import zh_hk_LoginRegister from "./zh-hk/LoginRegister.json";
+import zh_hk_AboutUs from "./zh-hk/AboutUs.json";
+import zh_hk_PrimaryHome from "./zh-hk/PrimaryHome.json";
+import zh_hk_PrimaryTips from "./zh-hk/PrimaryTips.json";
+import zh_hk_PrimarySocialMedia from "./zh-hk/PrimarySocialMedia.json";
+import zh_hk_PrimaryQuiz from "./zh-hk/PrimaryQuiz.json";
+import zh_hk_PrimaryRisk from "./zh-hk/PrimaryRisk.json";
+import zh_hk_PrimaryGame from "./zh-hk/PrimaryGame.json";
+import zh_hk_PrimaryNetizenPledge from "./zh-hk/PrimaryNetizenPledge.json";
+import zh_hk_SecondaryHome from "./zh-hk/SecondaryHome.json";
+import zh_hk_ParentsHome from "./zh-hk/ParentsHome.json";
+import zh_hk_ParentsTips from "./zh-hk/ParentsTips.json";
+import zh_hk_ParentsBlog from "./zh-hk/ParentsBlog.json";
+import zh_hk_ParentsBlogDetail from "./zh-hk/ParentsBlogDetail.json";
+import zh_hk_ParentsVideosSC from "./zh-hk/ParentsVideosSC.json";
+import zh_hk_ParentsVideosSCDetail from "./zh-hk/ParentsVideosSCDetail.json";
+import zh_hk_ParentsTraining from "./zh-hk/ParentsTraining.json";
+import zh_hk_ParentsMore from "./zh-hk/ParentsMore.json";
+import zh_hk_FeaturedIssues from "./zh-hk/FeaturedIssues.json";
+import zh_hk_ResearchFindings from "./zh-hk/ResearchFindings.json";
+import zh_hk_OurEvents from "./zh-hk/OurEvents.json";
 
 i18n
 // load translation using xhr -> see /public/locales
@@ -76,56 +76,56 @@ i18n
         defaultNS: 'common',
         resources: {
             'en-US': {
-                common: en_us_common,
-                home: en_us_home,
-                benefits: en_us_benefits,
-                seekhelp: en_us_seekhelp,
-                loginregister: en_us_loginregister,
-                aboutus: en_us_aboutus,
-                primaryhome: en_us_primaryhome,
-                primarytips: en_us_primarytips,
-                primarysocialmedia: en_us_primarysocialmedia,
-                primaryquiz: en_us_primaryquiz,
-                primaryrisk: en_us_primaryrisk,
-                primarygame: en_us_primarygame,
-                primarynetizenpledge: en_us_primarynetizenpledge,
-                secondaryhome: en_us_secondaryhome,
-                parentshome: en_us_parentshome,
-                parentstips: en_us_parentstips,
-                parentsblog: en_us_parentsblog,
-                parentsblogdetail: en_us_parentsblogdetail,
-                parentsvideosSC: en_us_parentsvideosSC,
-                parentsvideosSCdetail: en_us_parentsvideosSCdetail,
-                parentstraining: en_us_parentstraining,
-                parentsmore: en_us_parentsmore,
-                featuredissues: en_us_featuredissues,
-                researchfindings: en_us_researchfindings,
+                Common: en_us_Common,
+                Home: en_us_Home,
+                SeekHelp: en_us_SeekHelp,
+                LoginRegister: en_us_LoginRegister,
+                AboutUs: en_us_AboutUs,
+                PrimaryHome: en_us_PrimaryHome,
+                PrimaryTips: en_us_PrimaryTips,
+                PrimarySocialMedia: en_us_PrimarySocialMedia,
+                PrimaryQuiz: en_us_PrimaryQuiz,
+                PrimaryRisk: en_us_PrimaryRisk,
+                PrimaryGame: en_us_PrimaryGame,
+                PrimaryNetizenPledge: en_us_PrimaryNetizenPledge,
+                SecondaryHome: en_us_SecondaryHome,
+                ParentsHome: en_us_ParentsHome,
+                ParentsTips: en_us_ParentsTips,
+                ParentsBlog: en_us_ParentsBlog,
+                ParentsBlogDetail: en_us_ParentsBlogDetail,
+                ParentsVideosSC: en_us_ParentsVideosSC,
+                ParentsVideosSCDetail: en_us_ParentsVideosSCDetail,
+                ParentsTraining: en_us_ParentsTraining,
+                ParentsMore: en_us_ParentsMore,
+                FeaturedIssues: en_us_FeaturedIssues,
+                ResearchFindings: en_us_ResearchFindings,
+                OurEvents: en_us_OurEvents,
             },
             'zh-HK': {
-                common: zh_hk_common,
-                home: zh_hk_home,
-                benefits: zh_hk_benefits,
-                seekhelp: zh_hk_seekhelp,
-                loginregister: zh_hk_loginregister,
-                aboutus: zh_hk_aboutus,
-                primaryhome: zh_hk_primaryhome,
-                primarytips: zh_hk_primarytips,
-                primarysocialmedia: zh_hk_primarysocialmedia,
-                primaryquiz: zh_hk_primaryquiz,
-                primaryrisk: zh_hk_primaryrisk,
-                primarygame: zh_hk_primarygame,
-                primarynetizenpledge: zh_hk_primarynetizenpledge,
-                secondaryhome: zh_hk_secondaryhome,
-                parentshome: zh_hk_parentshome,
-                parentstips: zh_hk_parentstips,
-                parentsblog: zh_hk_parentsblog,
-                parentsblogdetail: zh_hk_parentsblogdetail,
-                parentsvideosSC: zh_hk_parentsvideosSC,
-                parentsvideosSCdetail: zh_hk_parentsvideosSCdetail,
-                parentstraining: zh_hk_parentstraining,
-                parentsmore: zh_hk_parentsmore,
-                featuredissues: zh_hk_featuredissues,
-                researchfindings: zh_hk_researchfindings,
+                Common: zh_hk_Common,
+                Home: zh_hk_Home,
+                SeekHelp: zh_hk_SeekHelp,
+                LoginRegister: zh_hk_LoginRegister,
+                AboutUs: zh_hk_AboutUs,
+                PrimaryHome: zh_hk_PrimaryHome,
+                PrimaryTips: zh_hk_PrimaryTips,
+                PrimarySocialMedia: zh_hk_PrimarySocialMedia,
+                PrimaryQuiz: zh_hk_PrimaryQuiz,
+                PrimaryRisk: zh_hk_PrimaryRisk,
+                PrimaryGame: zh_hk_PrimaryGame,
+                PrimaryNetizenPledge: zh_hk_PrimaryNetizenPledge,
+                SecondaryHome: zh_hk_SecondaryHome,
+                ParentsHome: zh_hk_ParentsHome,
+                ParentsTips: zh_hk_ParentsTips,
+                ParentsBlog: zh_hk_ParentsBlog,
+                ParentsBlogDetail: zh_hk_ParentsBlogDetail,
+                ParentsVideosSC: zh_hk_ParentsVideosSC,
+                ParentsVideosSCDetail: zh_hk_ParentsVideosSCDetail,
+                ParentsTraining: zh_hk_ParentsTraining,
+                ParentsMore: zh_hk_ParentsMore,
+                FeaturedIssues: zh_hk_FeaturedIssues,
+                ResearchFindings: zh_hk_ResearchFindings,
+                OurEvents: zh_hk_OurEvents,
             }
         }
     });
