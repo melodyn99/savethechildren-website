@@ -45,10 +45,11 @@
         ul {
             li { width:50%; text-align:center; 
                 &.active {
-                    a { border-top:8px solid red; border-radius:0px; margin:0px; font-size:14px; border-bottom:8px solid transparent }
+                    a { border-top:8px solid $corporateRedColor; border-radius:0px; margin:0px; font-size:14px; padding-bottom:16px !important; border-left:0px !important; border-right:0px !important; }
                 }
+                &:hover { border: none !important; }
 
-                a { border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:14px; border-bottom:8px solid transparent }
+                a { border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:14px; padding-bottom:16px !important; border-left:0px !important; border-right:0px !important;  }
             }
         }
 

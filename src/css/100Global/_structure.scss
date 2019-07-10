@@ -273,16 +273,16 @@
 					ul {
 						li { width:50%; text-align:center; 
 							&.active {
-								a { background:white; color:red; border-top:8px solid red; border-radius:0px; margin:0px; font-size:20px; border-bottom:8px solid transparent }
+								a { background:white; color:$corporateRedColor; border-top:8px solid $corporateRedColor; border-radius:0px; margin:0px; font-size:20px; padding-bottom:16px !important; border-left:0px !important; border-right:0px !important; }
 							}
 			
-							a { background:rgb(135,135,145); color:white; border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:20px; border-bottom:8px solid transparent }
+							a { background:rgb(135,135,145); color:white; border-top:8px solid transparent; border-radius:0px; margin:0px; font-size:20px; padding-bottom:16px !important; border-left:0px !important; border-right:0px !important; }
 						}
 					}
 					.content { padding:40px; text-align:center; font-size:20px; 
 						.grid { padding:20px;
-							button { width:100%; background-color:red; color:white; font-size:20px; text-transform:none; }
-							a { text-align:center; font-size:20px; color:red; }
+							button { width:100%; background-color:$corporateRedColor; color:white; font-size:20px; text-transform:none; }
+							a { text-align:center; font-size:20px; color:$corporateRedColor; }
 						}
 						ul { width:100%; 
 							li { text-align:left; padding:5px; color: rgb(162,161,169); width:100%; }
