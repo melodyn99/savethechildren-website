@@ -31,7 +31,7 @@
         }
 
         .quiz-content {
-            color: white;
+            color:#fff;
         }
 
         .quiz-footer {
@@ -46,7 +46,7 @@
             h3 {
                 font-size: 2.25rem;
                 font-weight: normal;
-                color: white;
+                color:#fff;
                 display: block;
                 min-height: 10rem;
                 margin-top: 2rem;
@@ -137,7 +137,7 @@
 
                 border-radius: 50%;
                 border: medium solid #99e5ff;
-                background-color: #003399;
+                background-color:$majorBlue;
 
                 .score-value {
                     font-size: 5rem;
@@ -214,8 +214,8 @@
             height: $radio-size;
             width: $radio-size;
             border-radius: 50%;
-            border: white solid thin;
-            background-color: white;
+            border:#fff solid thin;
+            background-color:#fff;
         }
 
         &:hover {
@@ -224,7 +224,7 @@
     }
 
     input[type=radio]:checked + label::before {
-        border-color: darkblue;
-        background-color: darkblue;
+        border-color:$darkBlue;
+        background-color:$darkBlue;
     }
 }

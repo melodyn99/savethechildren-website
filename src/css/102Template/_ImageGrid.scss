@@ -6,8 +6,8 @@
         padding:20px; background:$corporateRedColor; 
         .grid { position:relative; 
             img { width:100%; }
-            .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
-                a {color:white; font-size:20px; }
+            .text { position:absolute; bottom:0px; background-color:$darkTransparentGrey; width:100%; padding: 20px; 
+                a {color:#fff; font-size:20px; }
             }
         }
     }
@@ -58,8 +58,8 @@
         .inner { padding:20px; 
             .grid { position:relative; 
                 img { width:100%; }
-                .text { position:absolute; bottom:0px; background-color:rgba(128,128,128,0.6); width:100%; padding: 20px; 
-                    a {color:white; font-size:20px; }
+                .text { position:absolute; bottom:0px; background-color:$darkTransparentGrey; width:100%; padding: 20px; 
+                    a {color:#fff; font-size:20px; }
                 }
             }
         }

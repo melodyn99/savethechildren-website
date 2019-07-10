@@ -81,7 +81,7 @@ class ExternalResources extends Component {
                                                 <div className="grid">
                                                     <div className="top">
                                                         <img src={require('../../images/ExternalResources/btn_externalresources_03_INHOPE.png')} alt="" />
-                                                        <div className="text" style={{ backgroundColor: 'rgba(128,128,128,0.2)' }}>
+                                                        <div className="text light-background">
                                                             <Link to={"/" + i18n.language + "/"}>INHOPE</Link>
                                                         </div>
                                                     </div>
