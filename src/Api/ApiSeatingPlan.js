@@ -1,6 +1,6 @@
 // import { sortBy } from 'lodash-es';
 import { api } from './_ApiFactoryWithHeader';
-// import { getLowerCaseIteratee } from '../Util/CommonUtils';
+// import { getLowerCaseIteratee } from '../utilsCommonUtils';
 
 import { apiFetch } from './_General';
 

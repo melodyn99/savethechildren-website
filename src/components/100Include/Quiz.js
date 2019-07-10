@@ -104,9 +104,9 @@ class Quiz extends Component {
                         <img src={correctRobotImage} alt="" width="150" />
                         <span className="answer-text">Correct!!</span>
                     </div> : <div className="answer">
-                        <img src={incorrectRobotImage} alt="" width="150" />
-                        <span className="answer-text">Incorrect: The correct answer is "{capitalize(correctAnswer)}"</span>
-                    </div>}
+                            <img src={incorrectRobotImage} alt="" width="150" />
+                            <span className="answer-text">Incorrect: The correct answer is "{capitalize(correctAnswer)}"</span>
+                        </div>}
                     <div className="next-question-button-div">
                         <img
                             className="next-question-button"
@@ -135,10 +135,10 @@ class Quiz extends Component {
             }
             return breakdown;
         }, {
-            correctAnswerCount: 0,
-            incorrectAnswerCount: 0,
-            doNotKnowCount: 0
-        });
+                correctAnswerCount: 0,
+                incorrectAnswerCount: 0,
+                doNotKnowCount: 0
+            });
 
         const { correctAnswerCount, incorrectAnswerCount, doNotKnowCount } = scoreBreakdown;
         const score = correctAnswerCount / (correctAnswerCount + incorrectAnswerCount + doNotKnowCount) * 100;

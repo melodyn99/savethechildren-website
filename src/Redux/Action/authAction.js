@@ -1,5 +1,5 @@
 import * as AuthActionTypes from '../Constant/ActionType';
-// import { refreshTokenInterval } from '../../Util/AuthService';
+// import { refreshTokenInterval } from '../../utilsAuthService';
 
 export const getToken = ({
   type: AuthActionTypes.GET_TOKEN,

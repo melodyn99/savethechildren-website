@@ -125,9 +125,6 @@ class MainMenu extends Component {
                             onMouseOver={() => this._handleMouseOver('external')}
                             onMouseLeave={() => this._handleMouseLeave('external')}
                         ><Link to={"/" + i18n.language + "/external-resources"} className="external"><span>External<br />Resources</span></Link>
-                            {/* <ul>
-                            <li><Link to={"/" + i18n.language + "/external-resources"}>External Resources</Link></li>
-                        </ul> */}
                         </li>
 
                     </ul>

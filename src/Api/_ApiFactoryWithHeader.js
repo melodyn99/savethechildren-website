@@ -2,7 +2,7 @@ import axios from 'axios';
 import qs from 'querystringify';
 import { assign, clone, forIn } from 'lodash-es';
 import { BASE_URL, WEB_CLIENT_CREDENTIAL_TOKEN } from '../Redux/Constant/ServerConstant';
-import { refreshToken } from '../Util/AuthService';
+import { refreshToken } from '../utils/AuthService';
 
 const urlModifier = url => `${BASE_URL}/${url}`;
 

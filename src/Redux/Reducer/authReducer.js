@@ -1,5 +1,5 @@
 import * as AuthActionTypes from '../Constant/ActionType';
-import { clearLoginData } from '../../Util/AuthService';
+import { clearLoginData } from '../../utils/AuthService';
 
 const initialState = {
 	auth: false,

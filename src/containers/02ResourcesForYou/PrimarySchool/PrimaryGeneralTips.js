@@ -22,42 +22,12 @@ import { login } from '../../../Redux/Action/authAction';
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
 import Buttons from '../../../components/100Include/Buttons';
 
-// function Block(props) {
-//     return (
-//         <ImageTextGrid
-//             img={props.img}
-//             title={props.title}
-//             p={props.p}
-//         />
-//     )
-// }
-
-// function Cluster(props) {
-//     let rows = [];
-//     for (let i = 0; i < 7; i++) {
-//         rows.push(
-//             <div key={i}>
-//                 <Block
-//                     key={i}
-//                     img={props.img}
-//                     title={props.title}
-//                     p={props.p}
-//                 />
-//             </div>
-//         )
-//     }
-//     return (rows);
-// }
-
 class PrimaryGeneralTips extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             formSubmitted: false,
-            // img: ['../../../images/ResourcesForYou/PrimarySchool/square_sample.jpg'],
-            // title: ['YOU HAVE RIGHTS', 'YOUR VOICE IS IMPORTANT', 'BULLYING IS WRONG', 'KNOW YOUR MEDIA', 'AVOID ADDICTION', 'PROTECT YOURSELF', 'LEARN APPROPRIATE TOOLS AND TAKE PRECAUTIONS'],
-            // p: ['Hold on to your rights and behave responsibly online', 'You are entitled to share your opinions and ideas', 'Dont tolerate bullying and report when necessary', 'Dont believe everythign you read online', 'Be a responsible user and avoid internet addiction', 'Protect yourself from sickening and distressing materials', 'Click on Read More o seek help if you run into problems online and woul dlike the assistance of an adult or professional']
         }
     }
 
