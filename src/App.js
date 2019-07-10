@@ -20,7 +20,7 @@ import FooterSitemap from './components/100Include/FooterSitemap';
 // import * as HelperMobileHandle from './utils/00JqueryControl/MobileHandle';
 // import * as HelperPopup from './utils/00JqueryControl/Popup';
 
-import LoginRegister from './containers/07Login/LoginRegister';
+import LoginRegister from './components/101Popup/LoginRegister';
 
 // Home
 import Home from './containers/00Home/Home';
@@ -306,7 +306,10 @@ class App extends Component {
                     {this.getComponent(currentURL, params)}
 
                     <Footer />
-                    <FooterSitemap />
+
+                    {this.state.debug &&
+                        <FooterSitemap />
+                    }
                 </div>
             </div>
         );

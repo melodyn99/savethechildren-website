@@ -27,7 +27,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
 // Children components
-import ErrorMessage from '../07Login/ErrorMessage';
+import ErrorMessage from './ErrorMessage';
 // import BreadCrumb from '../../../components/100Include/BreadCrumb';
 
 class LoginRegister extends Component {
@@ -75,27 +75,27 @@ class LoginRegister extends Component {
         //     //, t, i18n 
         // } = this.props;
 
-        if (this.state.tabIndex===1) {
+        if (this.state.tabIndex === 1) {
             return (
-                <Form className="form-wrapper">    
+                <Form className="form-wrapper">
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                         </Grid>
-    
+
                         <Grid item xs={12} className="grid">
-                            <Button onClick={() =>this.props.history.push()}>Login</Button>
+                            <Button onClick={() => this.props.history.push()}>Login</Button>
                         </Grid>
                         <Grid item xs={12} className="grid">
                             <Link to={"/"}>Forgot your password?</Link>
                         </Grid>
                     </Grid>
-    
+
                     {/* <div className="bottomControl clearfix">
                         <Button className={classes.greyButton}
                             onClick={() => this.props.history.push('school-course-note')}
@@ -107,31 +107,31 @@ class LoginRegister extends Component {
         }
         else {
             return (
-                <Form className="form-wrapper">    
+                <Form className="form-wrapper">
                     <Grid container spacing={16}>
                         <Grid item xs={12} className="grid">
-                            <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.name && touched.name ? <ErrorMessage message={errors.name} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                         </Grid>
                         <Grid item xs={12} className="grid">
-                            <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{'width':'100%'}}/>
+                            <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
                             {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
                         </Grid>
-    
-                            <ul>
-                                <li>Must have at least 8 characters with numbers</li>
-                                <li>Use upper and lower case letters (eg. Aa)</li>
-                            </ul>
+
+                        <ul>
+                            <li>Must have at least 8 characters with numbers</li>
+                            <li>Use upper and lower case letters (eg. Aa)</li>
+                        </ul>
                         <Grid item xs={12} className="grid">
-                            <Button onClick={() =>this.props.history.push()}>Create New Account</Button>
+                            <Button onClick={() => this.props.history.push()}>Create New Account</Button>
                         </Grid>
                     </Grid>
                 </Form>
@@ -165,7 +165,7 @@ class LoginRegister extends Component {
         })
 
         return (
-            <div className="loginregister">
+            <div className="loginRegister">
                 <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
                     <Tab eventKey={1} title="Login">
                         <Formik

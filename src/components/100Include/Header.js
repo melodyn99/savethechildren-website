@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import Popup from "reactjs-popup";
 
 // Children components
-import LoginRegister from '../..//containers/07Login/LoginRegister';
+import LoginRegister from '../101Popup/LoginRegister';
 
 class Header extends Component {
 
@@ -79,7 +79,7 @@ class Header extends Component {
                         open={this.state.open}
                         closeOnDocumentClick
                         onClose={this.closeModal}
-                        contentStyle={{ padding:"0px", border:"none"}}
+                        contentStyle={{ padding: "0px", border: "none" }}
                     >
                         <LoginRegister />
 

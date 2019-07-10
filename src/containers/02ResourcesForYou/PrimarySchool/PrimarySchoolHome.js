@@ -62,23 +62,23 @@ class PrimarySchoolHome extends Component {
 
         this.state = {
             formSubmitted: false,
-            tabIndex: 1, 
-            imageP: ['../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png', 
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png',
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png',
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png', 
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png',
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png',
-            '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png'],
+            tabIndex: 1,
+            imageP: ['../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_01_Generaltips.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_02_Socialmediauserguide.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_03_quiz.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_04_onlinegrooming.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_05_video.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_06_game.png',
+                '../../../images/ResourcesForYou/PrimarySchool/Button/btn_primaryschool_07_TheNetizenPledge.png'],
             urlP: [''],
             textP: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
-            imageS: ['../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png', 
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png',
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png',
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png', 
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png',
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png',
-            '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png'],
+            imageS: ['../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_01_Generaltips.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_02_Socialmediauserguide.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_03_quiz.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_04_onlinegrooming.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_05_video.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_06_game.png',
+                '../../../images/ResourcesForYou/SecondarySchool/Button/btn_secondaryschool_07_TheNetizenPledge.png'],
             urlS: [''],
             textS: ['General tips', 'Social media user guide', 'Quiz', 'Risk and danger', 'Video', 'Game', 'The Netizen Pledge'],
         }
@@ -104,7 +104,7 @@ class PrimarySchoolHome extends Component {
 
     render() {
         const { i18n } = this.props;
-        
+
         let primaryData = [
             { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: 'primary-general-tips', text: 'General tips' },
             { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: 'primary-social-media-user-guide', text: 'Social media user guide' },
@@ -141,19 +141,19 @@ class PrimarySchoolHome extends Component {
                                             <div className="inner">
                                                 <Grid container spacing={16}>
                                                     {(primaryData.map(
-                                                            (data, i) => {
-                                                                return (
-                                                                    <Grid item xs={6} key={data.id}>
-                                                                        <div className="grid">
-                                                                            <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/'+data.image)} alt="" />
-                                                                            <div className="text">
-                                                                                <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
-                                                                            </div>
+                                                        (data, i) => {
+                                                            return (
+                                                                <Grid item xs={6} key={data.id}>
+                                                                    <div className="grid">
+                                                                        <img src={require('../../../images/ResourcesForYou/PrimarySchool/Button/' + data.image)} alt="" />
+                                                                        <div className="text">
+                                                                            <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
                                                                         </div>
-                                                                    </Grid>
-                                                                )
-                                                            }
-                                                        ))}
+                                                                    </div>
+                                                                </Grid>
+                                                            )
+                                                        }
+                                                    ))}
 
                                                     {/* <Grid item xs={6}>
                                                         <div className="grid">
@@ -226,7 +226,7 @@ class PrimarySchoolHome extends Component {
                                                             return (
                                                                 <Grid item xs={6} key={data.id}>
                                                                     <div className="grid">
-                                                                        <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/'+data.image)} alt="" />
+                                                                        <img src={require('../../../images/ResourcesForYou/SecondarySchool/Button/' + data.image)} alt="" />
                                                                         <div className="text">
                                                                             <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
                                                                         </div>
@@ -303,15 +303,6 @@ class PrimarySchoolHome extends Component {
                                         </Tab>
                                     </Tabs>
                                 </div>
-
-                                {/* <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="reacttabs" selectedIndex={this.state.tabIndex} onSelect={tabIndex => this.setState({ tabIndex })}>
-                                <Tab eventKey={1} title="ImageGridPrimary">
-                                    <ImageGridPrimary />
-                                </Tab>
-                                <Tab eventKey={2} title="ImageGridSecondary">
-                                    <ImageGridSecondary />
-                                </Tab>
-                            </Tabs> */}
                             </div>
                         </div>
                     </div>
