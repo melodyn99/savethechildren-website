@@ -56,7 +56,7 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/sexting'}>Sexting (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/personal-privacy'}>Personal Privacy (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/legislations'}>Legislations (done)</Link></li>
-                    
+
                     <h2>Research Findings</h2>
                     <li><Link to={'/' + i18n.language + '/our-research'}>Our Research (done)</Link></li>
                     <li><Link to={'/' + i18n.language + '/other-findings'}>Other Findings (done)</Link></li>
@@ -70,7 +70,7 @@ function FooterSitemap(props) {
                     <li><Link to={'/' + i18n.language + '/external-resources'}>External Resources (done)</Link></li>
                 </ul>
             </div>
-        </div >
+        </div>
     );
 }
 

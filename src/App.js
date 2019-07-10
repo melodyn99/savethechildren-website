@@ -308,7 +308,7 @@ class App extends Component {
                     <Footer />
                     <FooterSitemap />
                 </div>
-            </div >
+            </div>
         );
     }
 }
