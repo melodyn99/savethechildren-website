@@ -22,9 +22,11 @@
         ul {
             li {
                 &.active { 
-                    a {background:$majorGreenYellow; }
+                    a { background:$majorGreenYellow; }
                 }
-                a { background:$majorGreenBlue; }
+                a { background:$majorGreenBlue; 
+                    &:focus{ outline:none; }
+                }
             }
         }
         .inner { background:$majorGreenYellow; }
@@ -33,9 +35,11 @@
         ul {
             li {
                 &.active { 
-                    a {background:$majorGreenBlue; }
+                    a { background:$majorGreenBlue; }
                 }
-                a { background:$majorGreenYellow; }
+                a { background:$majorGreenYellow; 
+                    &:focus{ outline:none; }
+                }
             }
         }
         .inner { background:$majorGreenBlue; }
