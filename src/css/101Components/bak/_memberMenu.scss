@@ -29,7 +29,7 @@
                     &.credit { background:url('../images/mobile/02_membership/sub_nav/btn_wishlist.png')}
                     &.setting { background:url('../images/mobile/02_membership/sub_nav/btn_setting.png')}
                 }
-                >h5 { color:$menuGrey; font-size:14px; margin:0; 
+                >h5 { color:$darkGrey; font-size:14px; margin:0; 
                     @media (max-width: 640px) { font-size:12px; }
                 }
             }
@@ -71,7 +71,7 @@
                     &.credit { background:url('../images/mobile/02_membership/sub_nav/btn_wishlist.png')}
                     &.setting { background:url('../images/mobile/02_membership/sub_nav/btn_setting.png')}
                 }
-                >h5 { color:$menuGrey; font-size:14px; margin:0; 
+                >h5 { color:$darkGrey; font-size:14px; margin:0; 
                     @media (max-width: 640px) { font-size:12px; }
                 }
             }

@@ -5,7 +5,7 @@
                 a { cursor:inherit; border:none; border-top:solid 8px $corporateRedColor; background:#fff; color:$corporateRedColor;  }
             }
 
-            a { border-radius:0; border:none; background:$majorGreyBlue; color:#fff; cursor:inherit; margin:0; padding:12px 20px 20px; font-size:18px; border-top:solid 8px transparent; 
+            a { border-radius:0; border:none; background:$darkGrey; color:#fff; cursor:inherit; margin:0; padding:12px 20px 20px; font-size:18px; border-top:solid 8px transparent; 
                 &:focus { outline:none; }
             }
         }

@@ -5,10 +5,10 @@
         &.lavender { background-color:$lavender;}
     }
     .bottom { padding:10px 30px; background:#fff; min-height:1000px; 
-        h3 { color:$red; font-size:30px;}
-        h4 { color:$red; font-size:16px; padding:20px 0px; margin:0px; }
+        h3 { color:$corporateRedColor; font-size:30px;}
+        h4 { color:$corporateRedColor; font-size:16px; padding:20px 0px; margin:0px; }
         ul { list-style:none; position:relative; 
-            li::before {content: "•"; color: $brightRed; font-size:300%; display: inline-block; width:30px; height:30px; position:absolute; top:-3px; left:-30px; 
+            li::before {content: "•"; color: $corporateRedColor; font-size:300%; display: inline-block; width:30px; height:30px; position:absolute; top:-3px; left:-30px; 
             }
             li { padding-bottom:20px; position:relative;}
         }
