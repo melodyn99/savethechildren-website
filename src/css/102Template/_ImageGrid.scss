@@ -7,7 +7,7 @@
         .grid { position:relative; 
             img { width:100%; }
             .text { position:absolute; bottom:0px; background-color:$textBoxBgDark; width:100%; padding: 20px; 
-                a {color:#fff; font-size:20px; }
+                a { color:#fff; font-size:20px; }
             }
         }
     }
@@ -24,7 +24,9 @@
                 &.active { 
                     a {background:$bgGreenYellow; }
                 }
-                a { background:$bgGreenBlue; }
+                a { background:$bgGreenBlue; 
+                    &:focus{ outline:none; }
+                }
             }
         }
         .inner { background:$bgGreenYellow; }
@@ -35,7 +37,9 @@
                 &.active { 
                     a {background:$bgGreenBlue; }
                 }
-                a { background:$bgGreenYellow; }
+                a { background:$bgGreenYellow; 
+                    &:focus{ outline:none; }
+                }
             }
         }
         .inner { background:$bgGreenBlue; }
