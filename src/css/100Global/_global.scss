@@ -31,10 +31,10 @@ h5 { font-size:16px; margin:0 0 10px 0; }
 h6 { font-size:12px; margin:0 0 4px 0; }
 
 p { line-height:1.6em; margin:0 0 20px 0; font-size:14px; 
-    a { color:$majorGreen; text-decoration:none; font-size:15px; }
+    a { color:$aColor; text-decoration:none; font-size:15px; }
 }
 
-hr { height:1px; margin:0; padding:0; border:0; background:$lightGrey; }
+hr { height:1px; margin:0; padding:0; border:0; background:$majorLightGrey; }
 
 ol { }
 ul { }
@@ -67,6 +67,3 @@ em { font-style:italic; }
 }
 
 .color-white { color:#fff!important; }
-
-.color-green { color: $majorGreen !important; }
-.border-green { border-color: $majorGreen !important; }

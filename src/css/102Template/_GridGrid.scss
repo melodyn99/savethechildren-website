@@ -3,12 +3,12 @@
         img { width:100%; }
     }
     .lower {
-        padding:20px; background:$majorBlueGreen; 
+        padding:20px; background:$bgBlueGreen; 
         .grid { position:relative; 
             .top { position:relative; 
                 img { width:100%; }
-                .text { position:absolute; bottom:0px; background-color:$darkTransparentGrey; width:100%; padding: 20px; 
-                    &.light-background { background-color:$transparentGrey; }
+                .text { position:absolute; bottom:0px; background-color:$textBoxBgDark; width:100%; padding: 20px; 
+                    &.light-background { background-color:$textBoxBg; }
                     a {color:#fff; font-size:20px; }
                 }
             }

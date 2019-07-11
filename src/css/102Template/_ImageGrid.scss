@@ -6,7 +6,7 @@
         padding:20px; background:$corporateRedColor; 
         .grid { position:relative; 
             img { width:100%; }
-            .text { position:absolute; bottom:0px; background-color:$darkTransparentGrey; width:100%; padding: 20px; 
+            .text { position:absolute; bottom:0px; background-color:$textBoxBgDark; width:100%; padding: 20px; 
                 a {color:#fff; font-size:20px; }
             }
         }
@@ -22,23 +22,23 @@
         ul {
             li {
                 &.active { 
-                    a {background:$majorGreenYellow; }
+                    a {background:$bgGreenYellow; }
                 }
-                a { background:$majorGreenBlue; }
+                a { background:$bgGreenBlue; }
             }
         }
-        .inner { background:$majorGreenYellow; }
+        .inner { background:$bgGreenYellow; }
     }
     &.Secondary { 
         ul {
             li {
                 &.active { 
-                    a {background:$majorGreenBlue; }
+                    a {background:$bgGreenBlue; }
                 }
-                a { background:$majorGreenYellow; }
+                a { background:$bgGreenYellow; }
             }
         }
-        .inner { background:$majorGreenBlue; }
+        .inner { background:$bgGreenBlue; }
     }
 
     .bottom { 
@@ -58,7 +58,7 @@
         .inner { padding:20px; 
             .grid { position:relative; 
                 img { width:100%; }
-                .text { position:absolute; bottom:0px; background-color:$darkTransparentGrey; width:100%; padding: 20px; 
+                .text { position:absolute; bottom:0px; background-color:$textBoxBgDark; width:100%; padding: 20px; 
                     a {color:#fff; font-size:20px; }
                 }
             }

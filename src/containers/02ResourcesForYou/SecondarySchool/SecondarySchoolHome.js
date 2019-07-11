@@ -43,7 +43,7 @@ class SecondarySchoolHome extends Component {
                                 <div className="upper">
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School.png')} alt="" />
                                 </div>
-                                <div className="bottom" style={{ backgroundColor: '$majorGreenYellow' }}>
+                                <div className="bottom" style={{ backgroundColor: '$bgGreenYellow' }}>
                                     <Grid container spacing={16}>
                                         <Grid item xs={6}>
                                             <div className="grid">

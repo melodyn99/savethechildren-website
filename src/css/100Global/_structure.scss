@@ -29,7 +29,7 @@
 
 				a { display:block; line-height:1em; padding: 0 15px; font-size:20px; color:#DEDDDF; font-size:20px;
 					&:hover,
-					&.active { color:$majorBlue; }
+					&.active { color:$aColor; }
 				}
 			}
 		}
@@ -85,7 +85,7 @@
 			background: $bodyColor;
 			color:#fff;
 			&::placeholder {
-				color: scale-color($lightGrey, $lightness: 66%);
+				color: scale-color($majorLightGrey, $lightness: 66%);
 			}
 			border-color:$bodyColor;
 			border-radius: 0;
@@ -182,7 +182,7 @@
 
 // MainMenu
 .wrapper-MainMenu { position:relative; width:100%; z-index:100;
-	.MainMenu { position:relative; max-width:1200px; margin:0 auto;background:$majorGreenBlue; 
+	.MainMenu { position:relative; max-width:1200px; margin:0 auto;background:$bgGreenBlue; 
 		>ul { list-style:none; display:block; margin:0; padding: 0; 
 			>li { display:block; float:left; width: calc(100% / 6); position:relative;
 				>a { display:table; text-align:center; width:100%; padding:21px 0 0; color:#fff; font-size:20px; line-height:1.3em; height:90px; 
@@ -244,7 +244,7 @@
 						&:first-child > a { border:none; }
 						>a { display:block; padding: 15px 0; text-align:center; border-top: solid 2px $bodyColor; font-size:18px; line-height:1.3em; 
 							span { padding: 2px 10px; display:inline-block; }
-							&:hover span { background:$majorYellow; }
+							&:hover span { background:$mainMenuHoverYellow; }
 						}
 					}
 				}
@@ -269,7 +269,7 @@
 
 		.wrapper-content { position:relative; padding:20px;
 			.content { padding:0; min-height:200px; max-width:1020px;margin: 0 auto; 
-				&.lavender-background { background-color:$lavender; }
+				&.lavender-background { background-color:$bgLavender; }
 			}
 		}
 	}

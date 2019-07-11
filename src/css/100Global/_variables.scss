@@ -1,26 +1,28 @@
-// // Body
-$bodyBgColor: #fff;
-
 // Typography
 $font-family-body: 'Palanquin Dark', sans-serif;
 $font-family-titles: 'Mitr', sans-serif;
 
-$font-size-base: 15px;
-$line-height-base: 1.2em;
-
 $font-family-body-chinese: 'Microsoft JhengHei','Palanquin Dark', sans-serif;
 $font-family-titles-chinese: 'Microsoft JhengHei','Mitr', sans-serif;
 
-// Define website basic styles
-$bodyColor:#484848;
-$aHoverColor:#484848;
+$font-size-base: 15px;
+$line-height-base: 1.2em;
 
-// REAL
-$majorGreen :#1dbeb9;
-$majorYellowGreen :#c0d032;
-$majorYellow: #fffeaf;
 
-// MENU
+
+// Body
+$bodyColor:#000;
+$bodyBgColor: #fff;
+$corporateRedColor:#da291c;
+$majorLightGrey:#e0e0e0;
+$majorDarkGrey:#717171;
+
+// Hyperlink
+$aColor:#0a95ea;
+$aHoverColor:#0a95ea;
+
+// Menu
+$mainMenuHoverYellow: #fffeaf;
 // #153568 #4b689a
 // #d40000 #fe5353
 // #c45502 #e67e00
@@ -28,18 +30,19 @@ $majorYellow: #fffeaf;
 // #be9500 #efa007
 // #018d96 #42a8b0
 
-$corporateRedColor:#da291c;
-$majorBlueGreen: #42A9B0;
-$majorBlue:#289bf7;
-$majorGreenYellow: #C1FE01; 
-$majorGreenBlue: #00E2E1;
-$lavender: #E6E6FA;
-$transparentGrey:rgba(128,128,128,0.2);
-$darkTransparentGrey:rgba(128,128,128,0.6);
-$lightGrey:#D3D3D3;
-$loginGrey:#878694;
-$darkBlue:#00008B;
-$majorBlue:#003399;
+// Page background colors
+$bgGreenYellow: #C1FE01; 
+$bgGreenBlue: #00E2E1;
+$bgBlueGreen: #42A9B0;
+$bgLavender: #E6E6FA;
+
+// Text box background colors
+$textBoxBg:rgba(128,128,128,0.2);     
+$textBoxBgDark:rgba(128,128,128,0.6);
+
+// Quiz
+$majorBlue:#0a95ea;
+$majorDarkBlue:#00008B;
 
 // SLICK
 $slick-font-path: "./fonts/" !default;
