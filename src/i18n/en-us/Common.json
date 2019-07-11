@@ -41,8 +41,11 @@
 		"Subscribe": "Subscribe"
 	},
 	"Contact": {
+		"EmailTitle": "Email",
 		"Email": "hk.program@savethechildren.org",
+		"PhoneTitle": "Tel",
 		"Phone": "(852) 2112-5640",
+		"FaxTitle": "Fax",
 		"Fax": "(852) 3160-8685"
 	},
 	"Address": {

@@ -41,8 +41,11 @@
 		"Subscribe": ""
 	},
 	"Contact": {
+		"EmailTitle": "電郵",
 		"Email": "hk.program@savethechildren.org",
+		"PhoneTitle": "電話",
 		"Phone": "(852) 2112-5640",
+		"FaxTitle": "傳真",
 		"Fax": "(852) 3160-8685"
 	},
 	"Address": {
