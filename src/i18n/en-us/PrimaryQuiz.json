@@ -7,9 +7,14 @@
     "page": {
         "title": "Quiz",
         "description": "Aims: to test how well.....",
-        "questions": ["Facebook has two-factor authentication", ""],
+        "questions": [
+        "Facebook has two-factor authentication.", 
+        "Instagram won’t have two-factor authentication."
+        ],
         "answers": ["True", "False", "Don't know"],
-        "correct": ["Correct!!", "Incorrect: The correct answer is 'True'"],
+        "correct": ["True. Two-factor authentication helps protect your Facebook account in addition to your password.", 
+                    "False. You can set up the two-factor authentication at “Security” in Setting."
+                   ],
         "page": ["1/11", "2/11", "Retry Quiz"],
         "results": {
             "title": "Quiz",

@@ -9,21 +9,6 @@
             "content": ""
         }
     },
-    "whatIsNetizenAcademy": {
-        "footer": {
-            "1": "About us",
-            "2": ""
-        },
-        "page": {
-            "title1": "Why we should act?",
-            "content1-1": "",
-            "content1-2": "",
-            "content1-3": "",
-            "title2": "What is Netizen Academy?",
-            "content2-1": "",
-            "content2-2": ""
-        }
-    },
     "ourMissionAndStrategy": {
         "footer": {
             "1": "About us",
@@ -58,6 +43,19 @@
         "page": {
             "title": "Sitemap",
             "content": ""
+        }
+    },
+    "whatIsNetizenAcademy": {
+        "page": {
+            "title1": "中文Why we should act?",
+            "content1-1": "",
+            "content1-2": "",
+            "content1-3": "",
+            "title2": "中文What is Netizen Academy?",
+            "content2-1": "",
+            "content2-2": "",
+            "title3": "中文The character",
+            "content3-1": ""
         }
     }
 }

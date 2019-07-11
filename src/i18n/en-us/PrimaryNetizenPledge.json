@@ -8,8 +8,15 @@
         "title": "The Netizen Pledge",
         "content": {
             "headings": ["Be a kind & respectful internet user",
-                "Be my privacy protector", "", ""],
-            "paragraphs": ["","","",""],
+                "Be my privacy protector", 
+                "Be my time controller", 
+                "Be a brave reporter"],
+            "paragraphs": [
+                "I respect each other for their rights in expressing themselves via internet. I will be very careful in sharing images and messages with others online. Internet should not be served as a platform for embarrassing, hurting and harassing others.",
+                "I will think twice before I post. I will protect my personal privacy including address, contact phone number and identification number address and disclose these information to those I trust.",
+                "I will manage the time on using internet properly and smartly. A daily time limit will be set for using screen devices if necessary.",
+                "If I see something receive something from the web which make me feel uncomfortable, I will ignore those messages, share with my parents or other trusted adult, and report the incident to the authority concerned when necessary."
+            ],
             "name": "Your name is"
         }
     }

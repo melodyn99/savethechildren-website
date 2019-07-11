@@ -1,12 +1,24 @@
 {
-    "SaferInternetDay2019": {
+    "SaferInternetDay": {
         "footer": {
             "1": "Our Events",
             "2": ""
         },
         "page": {
-            "title": "Safer Internet Day 2019 was on 5th Feb 2019!",
-            "content": ""
+            "title": "Safer Internet Day",
+            "content": "Safer Internet Day (SID) is celebrated around the world in February of each year, with Safer Internet Centres, SID Committees and other supporters in each of the countries coming together to plan and organise events.",
+            "subtitles": [
+                "SID 2020 (11 February 2020)",
+                "SID 2019",
+                "SID 2017 and 2018"
+            ],
+            "subcontents": [
+                "Details will be announced later",
+                ["Save the Children posted a social media message for its first time on 5 Feb 2019 and the message was:",
+                 "“Safer Internet Day is coming on 5th Feb 2019! It is a day to promote the safer and more responsible use of online technology and mobile devices, especially among children and young people. Together for a better internet. Bear in mind that online life is real life!”"
+                ],
+                "On the safer internet day in 2017 and 2018, Save the Children, being invited by eHelp Association, participated in a roundtable meeting with other stakeholders coming from the internet industry, non-governmental organizations and scholar of local universities, for discussing the matters related to online child sexual abuse. An online platform for combating child protection concerns had been established and launched by eHelp Association in September 2018 while Save the Children is one of the founding members."
+            ]
         }
     },
     "SmartNetizenCompetition": {

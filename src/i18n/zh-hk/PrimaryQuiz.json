@@ -7,9 +7,14 @@
     "page": {
         "title": "",
         "description": "",
-        "questions": ["", ""],
-        "answers": ["", "", ""],
-        "correct": ["", ""],
+        "questions": [
+        "Facebook用戶能設定雙重驗證", 
+        "Instagram用戶不能設定雙重驗證。"
+        ],
+        "answers": ["是", "否", "不知道"],
+        "correct": ["是。Facebook用戶可在設定雙重驗證，以保護Facebook用戶的個人資料。", 
+                    "否。Instragram用戶可在「設定」中尋找「帳戶安全」，並設定雙重驗證。"
+        ],
         "page": ["", "", ""],
         "results": {
             "title": "",

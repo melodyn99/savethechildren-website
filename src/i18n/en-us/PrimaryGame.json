@@ -16,10 +16,23 @@
                 "name": "",
                 "types": ["", "", "", "", "", ""]
             },
-            "questions": [""],
+            "questions": [
+            "Select the strongest password",
+            "What should be done when I see the content that makes me feel uncomfortable?"
+            ],
             "levels": ["Level: 1"],
-            "answers": ["A: ", "B. ", "C. "],
-            "answerMessage": ""
+            "answers": [
+            ["A. happypuppy", "B. Kay2001", "C. Tr3849best"],
+            ["A. Pretend nothing has happened.", "B. Tell someone who is reliable and report it.", "C. Share it with my friends."]
+            ],
+            "answerMessage": [
+                ["Strongest password requires:",
+                "At least 8 characters",
+                "Combination of uppercase and lowercase, numbers and symbols.",
+                "Do not use personal information: name, birthday or telephone number etc.",
+                "DO NOT let others to know your password easily!"],
+                ["If you see something inappropriate online, you should seek help immediately! You are strong enough to help stopping bad content to spread widely!"]
+            ]
         },
         "finish": {
             "text": "",

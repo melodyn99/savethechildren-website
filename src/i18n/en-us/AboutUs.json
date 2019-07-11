@@ -9,19 +9,6 @@
             "content": ""
         }
     },
-    "whatIsNetizenAcademy": {
-        "page": {
-            "title1": "Why we should act?",
-            "content1-1": "Online world is real world. One can benefit from surfing the web and equally can be harmed for lacking awareness and knowledge",
-            "content1-2": "Connecting to the digital world becomes an integral part of cosmopolitan life. Rights of children and young people in accessing to the digital world for sharing opinions and ideas, searching for information and connecting with friends need to be ensured.",
-            "content1-3": "Rights of children to be protected in the physical world, as well as the digital world should be safeguarded",
-            "title2": "What is Netizen Academy?",
-            "content2-1": "Netizen Academy is established by Save the Children Hong Kong for providing preventive measures towards the uprising concern of online child protection issues in the digital world",
-            "content2-2": "Netizen Academy is a web-based awareness centre for hosting child friendly resources for combating the problem of online child sexual abuse",
-            "title3": "The character",
-            "content3-1": ""
-        }
-    },
     "ourMissionAndStrategy": {
         "footer": {
             "1": "About us",
@@ -56,6 +43,19 @@
         "page": {
             "title": "Sitemap",
             "content": ""
+        }
+    },
+    "whatIsNetizenAcademy": {
+        "page": {
+            "title1": "Why we should act?",
+            "content1-1": "Online world is real world. One can benefit from surfing the web and equally can be harmed for lacking awareness and knowledge",
+            "content1-2": "Connecting to the digital world becomes an integral part of cosmopolitan life. Rights of children and young people in accessing to the digital world for sharing opinions and ideas, searching for information and connecting with friends need to be ensured.",
+            "content1-3": "Rights of children to be protected in the physical world, as well as the digital world should be safeguarded",
+            "title2": "What is Netizen Academy?",
+            "content2-1": "Netizen Academy is established by Save the Children Hong Kong for providing preventive measures towards the uprising concern of online child protection issues in the digital world",
+            "content2-2": "Netizen Academy is a web-based awareness centre for hosting child friendly resources for combating the problem of online child sexual abuse",
+            "title3": "The character",
+            "content3-1": "The character representing Netizen Academy is designed by a student in Hong Kong, whose design adapts from the logo of Save the Children. It aims at protecting children from online threats and risks. Its body, in the form of a tablet, and right arm are specifically designed for analysing and monitoring any threats in the digital world"
         }
     }
 }
