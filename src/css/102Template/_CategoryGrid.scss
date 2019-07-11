@@ -1,0 +1,8 @@
+.CategoryGrid { position:relative; margin-top:60px; 
+    .Title { 
+        background-color:$corporateRedColor; 
+        h2 { font-size:30px; color:$bodyBgColor; text-align:center; padding:10px;
+            &.left-align { text-align:left; }
+        }
+    }
+}

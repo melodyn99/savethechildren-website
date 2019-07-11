@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
+import Grid from '@material-ui/core/Grid';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -37,8 +38,34 @@ class SmartNetizenCompetition extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content">
-                            {/* ImageText */}
-                            "The Smart Netizen" Character Design Competition
+                            <div className="ImageText">
+                                <div className="upper">
+                                    <img src={require('../../images/OurEvents/banner-ourevents_Ch_design.png')} alt="" />
+                                </div>
+                                <div className="bottom short">
+                                    <h3>"The Smart Netizen" Character Design Competition</h3>
+                                    <p>Training workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshops</p>
+                                </div>
+                            </div>
+                            <div className="CategoryGrid">
+                                <Grid container spacing={40}>
+                                    <Grid item xs={6}>
+                                        <div className="Title">
+                                            <h2>Group - Junior</h2>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <div className="Title">
+                                            <h2>Group - Senior</h2>
+                                        </div>
+                                    </Grid>
+                                    <Grid item xs={12}>
+                                        <div className="Title">
+                                            <h2 className="left-align">Group - Junior</h2>
+                                        </div>
+                                    </Grid>
+                                </Grid>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -82,7 +82,7 @@
 			font-weight: normal;
 		}
 		input {
-			background: $bodyColor;
+			background: $majorDarkGrey; border-color:$majorDarkGrey !important;
 			color:#fff;
 			&::placeholder {
 				color: scale-color($majorLightGrey, $lightness: 66%);

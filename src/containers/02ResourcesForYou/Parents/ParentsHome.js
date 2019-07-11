@@ -83,7 +83,7 @@ class ParentsHome extends Component {
                                             <div className="grid">
                                                 <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_05_training_workshop.png')} alt="" />
                                                 <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-training-workshop"}>Training Workshop</Link>
+                                                    <Link to={"/" + i18n.language + "/parents-training-workshop"}>Training Workshops</Link>
                                                 </div>
                                             </div>
                                         </Grid>

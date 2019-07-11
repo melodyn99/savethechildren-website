@@ -25,7 +25,7 @@ function Footer(props) {
 					</form>
 				</div>
 				<div className="col-xs-4 footer-column footer-contact">
-					<h2>Contact</h2>
+					<h2 style={{'paddingLeft':'36px'}}>Contact</h2>
 					<ul>
 						<li className="email"><span className="sr-only">Email: </span><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">hk.program@savethchildren.org</a></li>
 						<li className="tel"><span className="sr-only">Phone: </span><a target="_blank" rel="noopener noreferrer" href="tel:+852-2122-5640">(852) 2122-5640</a></li>
