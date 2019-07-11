@@ -65,6 +65,17 @@ class SmartNetizenCompetition extends Component {
                                         </div>
                                     </Grid>
                                 </Grid>
+                                <Grid container spacing={16}>
+                                    <Grid item xs={4}>
+                                        <div className="Contestor">
+                                            <h3>Champion</h3>
+                                            <img src={require('../../images/OurEvents/CharacterDesignCompetition/img_Characterdesign-Junior-01Champion_J07.png')} alt="" />
+                                            <h5>Competitor Name</h5>
+                                            <h4>Character Name</h4>
+                                            <p>Description Description DescriptionDescription Description DescriptionDescriptionDescriptionDescriptionDescriptionDescription</p>
+                                        </div>
+                                    </Grid>
+                                </Grid>
                             </div>
                         </div>
                     </div>
