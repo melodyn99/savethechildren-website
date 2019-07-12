@@ -3,10 +3,10 @@
         background-color:$corporateRedColor; 
         h2 { font-size:30px; color:$bodyBgColor; text-align:center; padding:10px; margin:0px;
             &.left-align { text-align:left; }
-            &.spacing { margin-bottom:20px; margin-top:40px; }
+            &.spacing { margin-bottom:20px; margin-top:30px; }
         }
     }
-    .Contestor { background:$bodyBgColor; 
+    .Contestor { background:$bodyBgColor; margin:0px;
         h3 { color:$corporateRedColor; font-size:24px; text-align:center; padding:10px; margin:0px; }
         .img { line-height:400px; 
             img { padding:0px 30px; width:100%; vertical-align:middle;}
