@@ -1,12 +1,13 @@
-.CategoryGrid { position:relative; margin-top:60px; 
+.CategoryGrid { position:relative; padding-top:140px; 
     .Title { 
         background-color:$corporateRedColor; 
-        h2 { font-size:30px; color:$bodyBgColor; text-align:center; padding:10px;
+        h2 { font-size:30px; color:$bodyBgColor; text-align:center; padding:10px; margin:0px;
             &.left-align { text-align:left; }
+            &.spacing { margin-bottom:20px; margin-top:40px; }
         }
     }
     .Contestor { background:$bodyBgColor; 
-        h3 { color:$corporateRedColor; font-size:24px; text-align:center; padding:20px; margin:0px; }
+        h3 { color:$corporateRedColor; font-size:24px; text-align:center; padding:10px; margin:0px; }
         .img { line-height:400px; 
             img { padding:0px 30px; width:100%; vertical-align:middle;}
         }

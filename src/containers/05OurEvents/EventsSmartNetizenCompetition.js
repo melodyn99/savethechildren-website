@@ -79,7 +79,7 @@ class SmartNetizenCompetition extends Component {
                                     </Grid>
                                     <Grid item xs={12}>
                                         <div className="Title">
-                                            <h2 className="left-align">Group - Junior</h2>
+                                            <h2 className="left-align spacing">Group - Junior</h2>
                                         </div>
                                     </Grid>
                                 </Grid>
@@ -105,7 +105,7 @@ class SmartNetizenCompetition extends Component {
                                 <Grid container spacing={40}>
                                     <Grid item xs={12}>
                                         <div className="Title">
-                                            <h2 className="left-align">Group - Senior</h2>
+                                            <h2 className="left-align spacing">Group - Senior</h2>
                                         </div>
                                     </Grid>
                                 </Grid>
