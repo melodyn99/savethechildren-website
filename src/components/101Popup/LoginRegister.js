@@ -10,11 +10,11 @@ import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 
 // Api
-// import { apiAuth } from '../../Api/ApiAuth';
+import { apiAuth } from '../../Api/ApiAuth';
 
 // Redux
 import { connect } from 'react-redux';
-import { login } from '../../Redux/Action/authAction';
+import { login, verifyToken } from '../../Redux/Action/authAction';
 
 // Utils
 import { Formik, Form, Field } from 'formik';
@@ -82,7 +82,7 @@ class LoginRegister extends Component {
                     </Grid>
 
                     <Grid item xs={12} className="grid">
-                        <Button type="submit">Login</Button>
+                        <Button type="submit" onClick={() => { this._signInAsync() }}>Login</Button>
                     </Grid>
                     <Grid item xs={12} className="grid">
                         <Link to={"/"}>Forgot your password?</Link>
@@ -131,6 +131,19 @@ class LoginRegister extends Component {
         console.log('GREAT!');
     }
 
+    _signInAsync = (values) => {
+        if (typeof (values) !== 'undefined') {
+            let submitEmail = values.email;
+            let submitPassword = values.password;
+
+            apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
+                this.props.loginP(res.access_token);
+                // this._getUserInformation(res.access_token);
+                // this._getSimpleSubject(res.access_token);
+            })
+        }
+    };
+
     render() {
         // const { classes, t, i18n } = this.props;
 
@@ -142,7 +155,7 @@ class LoginRegister extends Component {
                 .required('Name is required'),
             password: Yup.string()
                 .typeError('Password must be a valid string')
-                .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
+                // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
                 .required('Password is required'),
             confirmPassword: Yup.string()
                 .typeError('Confirm Password must be a valid string')
@@ -156,11 +169,11 @@ class LoginRegister extends Component {
                     <Tab eventKey={1} title="Login">
                         <Formik
                             initialValues={{
-                                email: '',
-                                password: '',
+                                email: 'admin@joyaether.test',
+                                password: '123456qwerty',
                             }}
                             validationSchema={Schema}
-                            onSubmit={this.handleSubmit}
+                            onSubmit={this._signInAsync}
                             component={this.formLogin}
                         />
                     </Tab>
@@ -188,7 +201,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    loginP: data => dispatch(login(data))
+    loginP: data => dispatch(login(data)),
+    verifyT: token => dispatch(verifyToken(token)),
 });
 
 export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(LoginRegister));
