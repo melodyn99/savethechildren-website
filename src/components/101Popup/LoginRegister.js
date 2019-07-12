@@ -14,7 +14,7 @@ import { apiAuth } from '../../Api/ApiAuth';
 
 // Redux
 import { connect } from 'react-redux';
-import { login, verifyToken } from '../../Redux/Action/authAction';
+import { login, verifyToken, getUserInfo } from '../../Redux/Action/authAction';
 
 // Utils
 import { Formik, Form, Field } from 'formik';
@@ -73,11 +73,11 @@ class LoginRegister extends Component {
             <Form className="form-wrapper">
                 <Grid container spacing={16}>
                     <Grid item xs={12} className="grid">
-                        <Field name="email" type="text" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="email" type="email" placeholder="Enter your Email" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                     </Grid>
                     <Grid item xs={12} className="grid">
-                        <Field name="password" type="text" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="password" type="password" placeholder="Enter your password" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                     </Grid>
 
@@ -132,19 +132,34 @@ class LoginRegister extends Component {
     }
 
     _signInAsync = (values) => {
+        console.log('helloo');
         console.log(values);
         if (typeof (values) !== 'undefined') {
-            let submitEmail = values.email;
             console.log('hi');
+            let submitEmail = values.email;
             let submitPassword = values.password;
 
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
                 this.props.loginP(res.access_token);
-                // this._getUserInformation(res.access_token);
+                this._getUserInformation(res.access_token);
                 // this._getSimpleSubject(res.access_token);
             })
         }
     };
+
+    _getUserInformation = (access_token) => {
+
+        const cb = (obj) => {
+            console.log("cb : ", obj);
+            this.props.getUserInfoP(obj.body);
+        }
+        const eCb = (obj) => {
+            console.log("eCb : ", obj);
+        }
+        const params = null;
+
+        apiAuth.getUserInformation(params, access_token, cb, eCb);
+    }
 
     render() {
         // const { classes, t, i18n } = this.props;
@@ -204,7 +219,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data)),
+    getUserInfoP: data => dispatch(getUserInfo(data)),
     verifyT: token => dispatch(verifyToken(token)),
 });
+
 
 export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(LoginRegister));
