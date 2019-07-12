@@ -13,5 +13,6 @@
             li { padding-bottom:20px; position:relative;}
         }
         p { font-size:16px; margin:0px; }
+        &.short { min-height:300px !important; }
     }
 }

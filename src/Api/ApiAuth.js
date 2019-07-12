@@ -9,9 +9,9 @@ export const apiAuth = {
   }, { headers: { Authorization: `Basic ${WEB_CLIENT_CREDENTIAL_TOKEN}` } }),
 
   // REAL
-  getUserInformation: (params, token, cb, eCb) => {
-    apiGeneral.apiFetch('user/me', params, token, cb, eCb);
-  },
+  // getUserInformation: (params, token, cb, eCb) => {
+  //   apiGeneral.apiFetch('user/me', params, token, cb, eCb);
+  // },
 
   refreshTokenByRefreshToken: (token, cb, eCb) => {
     // console.log('refresh_token2 : ', token);
