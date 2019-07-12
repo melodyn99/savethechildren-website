@@ -1,5 +1,5 @@
 import * as AuthActionTypes from '../Constant/ActionType';
-// import { refreshTokenInterval } from '../../utilsAuthService';
+// import { refreshTokenInterval } from '../../Util/AuthService';
 
 export const getToken = ({
   type: AuthActionTypes.GET_TOKEN,
@@ -17,12 +17,6 @@ export const loginSuccess = (data) => ({
 
 export const loginFailure = ({
   type: AuthActionTypes.LOGIN_FAILURE,
-});
-
-
-export const login = (data) => ({
-  type: AuthActionTypes.LOGIN_SUCCESS,
-  data
 });
 
 // export const login = (id, pw) => dispatch => apiAuth.authenticate(id, pw).then((res) => {
@@ -48,4 +42,20 @@ export const login = (data) => ({
 
 export const logout = ({
   type: AuthActionTypes.LOGOUT,
+});
+
+// START FROM HERE
+export const login = (data) => ({
+  type: AuthActionTypes.LOGIN_SUCCESS,
+  data
+});
+
+export const getUserInfo = (data) => ({
+  type: AuthActionTypes.GET_USER_INFO,
+  data
+});
+
+export const refreshTokenByRefreshToken = (data) => ({
+  type: AuthActionTypes.REFRESH_TOKEN_BY_REFRESH_TOKEN,
+  data
 });

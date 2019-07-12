@@ -42,16 +42,16 @@ import i18n from './i18n/i18n';
 // IMPORT REDUCERS
 import authReducer from './Redux/Reducer/authReducer';
 import effectReducer from './Redux/Reducer/effectReducer';
-import profileReducer from './Redux/Reducer/profileReducer';
-import seminarReducer from './Redux/Reducer/seminarReducer';
-import eventReducer from './Redux/Reducer/eventReducer';
-import seatingPlanReducer from './Redux/Reducer/seatingPlanReducer';
+// import profileReducer from './Redux/Reducer/profileReducer';
+// import seminarReducer from './Redux/Reducer/seminarReducer';
+// import eventReducer from './Redux/Reducer/eventReducer';
+// import seatingPlanReducer from './Redux/Reducer/seatingPlanReducer';
 // import studentContainerReducer from './Redux/Reducer/studentContainerReducer';
 // import seatMapReducer from './Redux/Reducer/seatMapReducer';
 // import accountReducer from './Redux/Reducer/accountReducer';
 // import companyReducer from './Redux/Reducer/companyReducer';
 // import studentReducer from './Redux/Reducer/studentReducer';
-import libraryReducer from './Redux/Reducer/libraryReducer';
+// import libraryReducer from './Redux/Reducer/libraryReducer';
 // import reminderReducer from './Redux/Reducer/reminderReducer';
 // import messageReducer from './Redux/Reducer/messageReducer';
 // import viewContentReducer from './Redux/Reducer/viewContentReducer';
@@ -72,13 +72,13 @@ const middleware = routerMiddleware(history)
 // Also apply our middleware for navigating
 const appReducer = combineReducers({
     router: routerReducer,
-    auth: authReducer,
     effect: effectReducer,
-    seminarReducer: seminarReducer,
-    libraryReducer: libraryReducer,
-    eventReducer: eventReducer,
-    profileReducer: profileReducer,
-    seatingPlanReducer: seatingPlanReducer,
+    auth: authReducer,
+    // seminarReducer: seminarReducer,
+    // libraryReducer: libraryReducer,
+    // eventReducer: eventReducer,
+    // profileReducer: profileReducer,
+    // seatingPlanReducer: seatingPlanReducer,
 });
 
 const rootReducer = (state, action) => {

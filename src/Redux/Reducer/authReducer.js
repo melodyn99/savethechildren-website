@@ -1,9 +1,10 @@
 import * as AuthActionTypes from '../Constant/ActionType';
-import { clearLoginData } from '../../utils/AuthService';
 
 const initialState = {
 	auth: false,
-	token: null
+	token: null,
+	refreshToken: null,
+	userInfo: []
 };
 
 const authReducer = (state = initialState, action) => {
@@ -27,13 +28,6 @@ const authReducer = (state = initialState, action) => {
 			}
 		}
 
-		case AuthActionTypes.LOGIN_SUCCESS: {
-			return {
-				auth: true,
-				token: action.data
-			}
-		}
-
 		case AuthActionTypes.LOGIN_FAILURE: {
 			return {
 				auth: false
@@ -41,9 +35,34 @@ const authReducer = (state = initialState, action) => {
 		}
 
 		case AuthActionTypes.LOGOUT: {
-			clearLoginData();
+			// clearLoginData();
 			return {
 				auth: false
+			}
+		}
+
+		// START FROM HERE
+		case AuthActionTypes.LOGIN_SUCCESS: {
+			return {
+				...state,
+				auth: true,
+				token: action.data.access_token,
+				refreshToken: action.data.refresh_token
+			}
+		}
+
+		case AuthActionTypes.GET_USER_INFO: {
+			return {
+				...state,
+				userInfo: action.data
+			}
+		}
+
+		case AuthActionTypes.REFRESH_TOKEN_BY_REFRESH_TOKEN: {
+			return {
+				...state,
+				token: action.data.access_token,
+				refreshToken: action.data.refresh_token
 			}
 		}
 
