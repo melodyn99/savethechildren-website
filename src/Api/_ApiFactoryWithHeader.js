@@ -138,9 +138,6 @@ export const api = {
   },
   postUrlFormEncoded: (url, data, options) => {
     const formData = qs.stringify(data);
-
-    console.log('hello : ', url);
-
     return addHeaders(url, {
       method: 'POST',
       headers: {
