@@ -30,7 +30,7 @@ class SaferInternetDay2019 extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         var settings = {
             dots: true,
@@ -69,8 +69,8 @@ class SaferInternetDay2019 extends Component {
                                     </Slider>
                                 </div>
                                 <div className="bottom">
-                                    <h3 style={{ padding: '20px 0px 0px 0px' }}>Safer Internet Day 2019 was on 5th Feb 2019!</h3>
-                                    <p>Training workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshops</p>
+                                    <h3 style={{ padding: '20px 0px 0px 0px' }}>{t("OurEvents:SaferInternetDay2019.title")}</h3>
+                                    <p>{t("OurEvents:SaferInternetDay2019.content")}</p>
                                 </div>
                             </div>
                         </div>

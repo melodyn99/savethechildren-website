@@ -68,7 +68,7 @@
 			}
 		},
 		"Primary": {
-			"SocialMediaUserGuide": {
+			"PrimarySocialMediaUserGuide": {
 				"1": "",
 				"2": "",
 				"3": ""
@@ -118,6 +118,20 @@
 		},
 		"ExternalResources": {
 			"1": "External Resources"
+		},
+		"OurEvents": {
+			"EventsSaferInternetDay2019": {
+				"1": "",
+				"2": ""
+			},
+			"EventsSmartNetizenCompetition": {
+				"1": "",
+				"2": ""
+			},
+			"EventsTrainingWorkshops": {
+				"1": "",
+				"2": ""
+			}
 		}
 	}
 }
