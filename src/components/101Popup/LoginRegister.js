@@ -132,7 +132,6 @@ class LoginRegister extends Component {
     }
 
     _signInAsync = (values) => {
-        console.log('helloo');
         console.log(values);
         if (typeof (values) !== 'undefined') {
             console.log('hi');
@@ -140,6 +139,7 @@ class LoginRegister extends Component {
             let submitPassword = values.password;
 
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
+                console.log('hello');
                 this.props.loginP(res.access_token);
                 this._getUserInformation(res.access_token);
                 // this._getSimpleSubject(res.access_token);
@@ -168,16 +168,9 @@ class LoginRegister extends Component {
             email: Yup.string()
                 .email('Email has to be a valid email address')
                 .required('Email is required'),
-            // name: Yup.string()
-            //     .required('Name is required'),
             password: Yup.string()
                 .typeError('Password must be a valid string')
-                // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
                 .required('Password is required'),
-            // confirmPassword: Yup.string()
-            //     .typeError('Confirm Password must be a valid string')
-            //     .oneOf([Yup.ref('password'), null], "Does not match with Password!")
-            //     .required('Confirm Password is required'),
         })
 
         const Schema1 = Yup.object().shape({
@@ -188,7 +181,7 @@ class LoginRegister extends Component {
                 .required('Name is required'),
             password: Yup.string()
                 .typeError('Password must be a valid string')
-                // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
+                .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
                 .required('Password is required'),
             confirmPassword: Yup.string()
                 .typeError('Confirm Password must be a valid string')
