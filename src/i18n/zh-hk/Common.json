@@ -47,5 +47,42 @@
 	},
 	"Address": {
 		"Address": ""
+	},
+	"Footer": {
+		"AboutUs": {
+			"ourMissionAndStrategy": {
+				"footer": {
+					"1": "About us",
+					"2": ""
+				}
+			},
+			"whyWeMustAct": {
+				"footer": {
+					"1": "About us",
+					"2": ""
+				}
+			},
+			"contactUs": {
+				"footer": {
+					"1": "",
+					"2": ""
+				}
+			},
+			"sitemap": {
+				"footer": {
+					"1": "About us",
+					"2": "Sitemap"
+				}
+			}
+		},
+		"Primary": {
+			"SocialMediaUserGuide": {
+				"footer": {
+					"1": "",
+					"2": "",
+					"3": ""
+				}
+			}
+		}
 	}
 }

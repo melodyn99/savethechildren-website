@@ -29,7 +29,7 @@ class SiteMap extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,8 +42,8 @@ class SiteMap extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-04Sitemap.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Sitemap</h3>
-                                    <p>_____________________________________________________________________________________________________</p>
+                                    <h3>{t("AboutUs:sitemap.title")}</h3>
+                                    <p>{t("AboutUs:sitemap.content")}</p>
                                 </div>
                             </div>
                         </div>

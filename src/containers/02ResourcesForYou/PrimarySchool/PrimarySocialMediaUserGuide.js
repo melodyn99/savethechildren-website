@@ -29,7 +29,7 @@ class PrimarySocialMediaUserGuide extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,8 +42,8 @@ class PrimarySocialMediaUserGuide extends Component {
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-Social_media_user_guide.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Social media user guide</h3>
-                                    <p>_____________</p>
+                                    <h3>{t("PrimarySocialMedia:title")}</h3>
+                                    <p>{t("PrimarySocialMedia:content")}</p>
                                 </div>
                             </div>
                         </div>
