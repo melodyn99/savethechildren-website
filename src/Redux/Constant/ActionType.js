@@ -11,3 +11,6 @@ export const GET_TOKEN = 'GET_TOKEN';
 export const VERIFY_TOKEN = 'VERIFY_TOKEN';
 export const LOGIN_FAILURE = 'LOGIN_FAILURE';
 export const LOGOUT = 'LOGOUT';
+
+// menu
+export const GET_ALL_MENUS = 'GET_ALL_MENUS';

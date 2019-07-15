@@ -142,6 +142,7 @@ export const api = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*',
         ...options.headers
       },
       data: formData
