@@ -168,6 +168,22 @@ class LoginRegister extends Component {
             email: Yup.string()
                 .email('Email has to be a valid email address')
                 .required('Email is required'),
+            // name: Yup.string()
+            //     .required('Name is required'),
+            password: Yup.string()
+                .typeError('Password must be a valid string')
+                // .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/, "Does not match Password requirements!")
+                .required('Password is required'),
+            // confirmPassword: Yup.string()
+            //     .typeError('Confirm Password must be a valid string')
+            //     .oneOf([Yup.ref('password'), null], "Does not match with Password!")
+            //     .required('Confirm Password is required'),
+        })
+
+        const Schema1 = Yup.object().shape({
+            email: Yup.string()
+                .email('Email has to be a valid email address')
+                .required('Email is required'),
             name: Yup.string()
                 .required('Name is required'),
             password: Yup.string()
@@ -202,7 +218,7 @@ class LoginRegister extends Component {
                                 password: '',
                                 confirmPassword: ''
                             }}
-                            validationSchema={Schema}
+                            validationSchema={Schema1}
                             onSubmit={this.handleSubmit}
                             component={this.formRegister}
                         />
