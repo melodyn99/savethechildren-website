@@ -29,7 +29,7 @@ class ContactUs extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,12 +42,12 @@ class ContactUs extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-03Contact_us.png')} alt="" />
                                 </div>
                                 <div className="narrow">
-                                    <p className="facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/savethechildrenhk">https://www.facebook.com/savethechildrenhk</a></p>
-                                    <p className="instagram"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/savethechildrenhk">https://www.instagram.com/savethechildrenhk</a></p>
-                                    <p className="tel"><a target="_blank" rel="noopener noreferrer" href="tel:+85221125640">(852) 2112-5640</a></p>
-                                    <p className="fax"><a target="_blank" rel="noopener noreferrer" href="tel:+85231608685">(852) 3160-8685</a></p>
-                                    <p className="email"><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">hk.program@savethechildren.org</a></p>
-                                    <p className="address">8/F Pacific Plaza, 410-418 Des Voeux Road West, Sai Wan, Hong Kong</p>
+                                    <p className="facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/savethechildrenhk">{t("AboutUs:contactUs.fb")}</a></p>
+                                    <p className="instagram"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/savethechildrenhk">{t("AboutUs:contactUs.ig")}</a></p>
+                                    <p className="tel"><a target="_blank" rel="noopener noreferrer" href="tel:+85221125640">{t("AboutUs:contactUs.phone")}</a></p>
+                                    <p className="fax"><a target="_blank" rel="noopener noreferrer" href="tel:+85231608685">{t("AboutUs:contactUs.fax")}</a></p>
+                                    <p className="email"><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">{t("AboutUs:contactUs.email")}</a></p>
+                                    <p className="address">{t("AboutUs:contactUs.address")}</p>
                                 </div>
                             </div>
                         </div>
