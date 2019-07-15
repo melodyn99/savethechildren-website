@@ -134,12 +134,15 @@ class LoginRegister extends Component {
     _signInAsync = (values) => {
         console.log(values);
         if (typeof (values) !== 'undefined') {
-            console.log('hi');
+            // console.log('hi');
             let submitEmail = values.email;
             let submitPassword = values.password;
 
+            // console.log('submitEmail : ', submitEmail);
+            // console.log('submitPassword : ', submitPassword);
+
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
-                console.log('hello');
+                console.log(res);
                 this.props.loginP(res.access_token);
                 this._getUserInformation(res.access_token);
                 // this._getSimpleSubject(res.access_token);
