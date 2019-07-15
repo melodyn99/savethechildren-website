@@ -31,7 +31,7 @@ class ExternalResources extends Component {
     }
 
     render() {
-        const { i18n } = this.props;
+        const { i18n, t } = this.props;
         // const { classes } = this.props;
 
         return (
@@ -52,12 +52,12 @@ class ExternalResources extends Component {
                                                     <div className="top">
                                                         <img src={require('../../images/ExternalResources/btn_externalresources_01_EHelp.png')} alt="" />
                                                         <div className="text">
-                                                            <Link to={"/" + i18n.language + "/"}>E-Help</Link>
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block1.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <h3>E-Help</h3>
-                                                        <h4>_____________________________________________________________________________________________________________________________</h4>
+                                                        <h3>{t("ExternalResources:block1.subtitle")}</h3>
+                                                        <h4>{t("ExternalResources:block1.content")}</h4>
                                                     </div>
                                                 </div>
                                             </Grid>
@@ -66,12 +66,13 @@ class ExternalResources extends Component {
                                                     <div className="top">
                                                         <img src={require('../../images/ExternalResources/btn_externalresources_02_ACA.png')} alt="" />
                                                         <div className="text">
-                                                            <Link to={"/" + i18n.language + "/"}>ACA</Link>
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block2.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <h3>ACA</h3>
-                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
+                                                        <h3>{t("ExternalResources:block2.subtitle")}</h3>
+                                                        <h4>{t("ExternalResources:block2.content")}</h4>                                                    
+                                                    </div>
                                                 </div>
                                             </Grid>
 
@@ -80,12 +81,13 @@ class ExternalResources extends Component {
                                                     <div className="top">
                                                         <img src={require('../../images/ExternalResources/btn_externalresources_03_INHOPE.png')} alt="" />
                                                         <div className="text light-background">
-                                                            <Link to={"/" + i18n.language + "/"}>INHOPE</Link>
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block3.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <h3>INHOPE</h3>
-                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
+                                                        <h3>{t("ExternalResources:block3.subtitle")}</h3>
+                                                        <h4>{t("ExternalResources:block3.content")}</h4>                                                    
+                                                    </div>
                                                 </div>
                                             </Grid>
                                             <Grid item xs={6}>
@@ -93,12 +95,13 @@ class ExternalResources extends Component {
                                                     <div className="top">
                                                         <img src={require('../../images/ExternalResources/btn_externalresources_04_Otherresource.png')} alt="" />
                                                         <div className="text">
-                                                            <Link to={"/" + i18n.language + "/"}>Other Resource</Link>
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block4.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
-                                                        <h3>Other Resource</h3>
-                                                        <h4>_____________________________________________________________________________________________________________________________</h4>                                                    </div>
+                                                        <h3>{t("ExternalResources:block4.subtitle")}</h3>
+                                                        <h4>{t("ExternalResources:block4.content")}</h4>                                                    
+                                                    </div>
                                                 </div>
                                             </Grid>
                                         </Grid>

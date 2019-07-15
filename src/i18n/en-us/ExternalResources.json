@@ -1,27 +1,22 @@
 {
-    "footer": {
-        "1": "External Resources"
+    "block1": {
+        "title": "E-Help",
+        "subtitle": "E-Help",
+        "content": "eHelp Association is a newly established organisation addressing the child online protection issues. The initiative is with the joint force of various stakeholders from the community. Reporting mechanism has been set up in disrupting the dissemination of Child Sexual Abusive Materials (CSAM) online, as well as easing the online risks including Cyber Crime and Cyberbullying, that children and youth are facing."
     },
-    "page": {
-        "block1": {
-            "title": "E-Help",
-            "subtitle": "E-Help",
-            "content": "____________________"
-        },
-        "block2": {
-            "title": "ACA",
-            "subtitle": "ACA",
-            "content": "____________________"
-        },
-        "block3": {
-            "title": "INHOPE",
-            "subtitle": "INHOPE",
-            "content": "____________________"
-        },
-        "block4": {
-            "title": "Other Resource",
-            "subtitle": "Other Resource",
-            "content": "____________________"
-        }
+    "block2": {
+        "title": "ACA",
+        "subtitle": "ACA",
+        "content": "_____________________________________________________________________________________________________________________________"
+    },
+    "block3": {
+        "title": "INHOPE",
+        "subtitle": "INHOPE",
+        "content": "_____________________________________________________________________________________________________________________________"
+    },
+    "block4": {
+        "title": "Other Resource",
+        "subtitle": "Other Resource",
+        "content": "_____________________________________________________________________________________________________________________________"
     }
 }
