@@ -49,28 +49,46 @@
 		"Address": "8/F......."
 	},
 	"Footer": {
-		"ourMissionAndStrategy": {
-			"footer": {
+		"AboutUs": {
+			"ourMissionAndStrategy": {
 				"1": "About us",
 				"2": ""
-			}
-		},
-		"whyWeMustAct": {
-			"footer": {
+			},
+			"whyWeMustAct": {
 				"1": "About us",
 				"2": ""
-			}
-		},
-		"contactUs": {
-			"footer": {
+			},
+			"contactUs": {
 				"1": "",
 				"2": ""
-			}
-		},
-		"sitemap": {
-			"footer": {
+			},
+			"sitemap": {
 				"1": "About us",
 				"2": "Sitemap"
+			}
+		},
+		"Primary": {
+			"SocialMediaUserGuide": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryRiskAndDanger": {
+				"1": "",
+				"2": "",
+				"3": ""
+			}
+		},
+		"Parents": {
+			"ParentsTrainingWorkshop": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsMoreResources": {
+				"1": "",
+				"2": "",
+				"3": ""
 			}
 		}
 	}

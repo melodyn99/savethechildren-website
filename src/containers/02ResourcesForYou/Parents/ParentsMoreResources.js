@@ -29,7 +29,7 @@ class ParentsMoreResources extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,7 +42,7 @@ class ParentsMoreResources extends Component {
                                     <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourcesforyou-Parents_More_resource_on_parenting.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>More resources on parenting</h3>
+                                    <h3>{t("ParentsMore:title")}</h3>
                                 </div>
                             </div>
                         </div>

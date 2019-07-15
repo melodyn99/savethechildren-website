@@ -29,7 +29,7 @@ class PrimaryRiskAndDanger extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,8 +42,8 @@ class PrimaryRiskAndDanger extends Component {
                                     <img src={require('../../../images/ResourcesForYou/PrimarySchool/Banner/banner_resourcesforyou-Primary_School-Riskanddanger.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Risk and danger</h3>
-                                    <p>_____________________________________________________________________________________________________</p>
+                                    <h3>{t("PrimaryRisk:title")}</h3>
+                                    <p>{t("PrimaryRisk:content")}</p>
                                 </div>
                             </div>
                         </div>

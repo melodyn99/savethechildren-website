@@ -51,37 +51,44 @@
 	"Footer": {
 		"AboutUs": {
 			"ourMissionAndStrategy": {
-				"footer": {
-					"1": "About us",
-					"2": ""
-				}
+				"1": "About us",
+				"2": ""
 			},
 			"whyWeMustAct": {
-				"footer": {
-					"1": "About us",
-					"2": ""
-				}
+				"1": "About us",
+				"2": ""
 			},
 			"contactUs": {
-				"footer": {
-					"1": "",
-					"2": ""
-				}
+				"1": "",
+				"2": ""
 			},
 			"sitemap": {
-				"footer": {
-					"1": "About us",
-					"2": "Sitemap"
-				}
+				"1": "About us",
+				"2": "Sitemap"
 			}
 		},
 		"Primary": {
 			"SocialMediaUserGuide": {
-				"footer": {
-					"1": "",
-					"2": "",
-					"3": ""
-				}
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryRiskAndDanger": {
+				"1": "",
+				"2": "",
+				"3": ""
+			}
+		},
+		"Parents": {
+			"ParentsTrainingWorkshop": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsMoreResources": {
+				"1": "",
+				"2": "",
+				"3": ""
 			}
 		}
 	}
