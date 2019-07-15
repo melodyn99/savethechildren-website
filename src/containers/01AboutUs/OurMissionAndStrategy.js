@@ -29,7 +29,7 @@ class OurMissionAndStrategy extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,11 +42,11 @@ class OurMissionAndStrategy extends Component {
                                     <img src={require('../../images/AboutUs/banner_boutus-02Our-mission.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Our mission and strategy</h3>
+                                    <h3>{t("AboutUs:ourMissionAndStrategy.title")}</h3>
                                     <ul>
-                                        <li>To enhance public awareness on the potential child protection risks in the digital world</li>
-                                        <li>To equip children and their parents/caregivers, and professionals like teachers and social workers, with knowledge and skills, and practical tips in coping with the challenges being encountered in the digital world</li>
-                                        <li>To promote smart use of internet and screen device, and social media</li>
+                                        <li>{t("AboutUs:ourMissionAndStrategy.content1")}</li>
+                                        <li>{t("AboutUs:ourMissionAndStrategy.content2")}</li>
+                                        <li>{t("AboutUs:ourMissionAndStrategy.content3")}</li>
                                     </ul>
                                 </div>
                             </div>

@@ -29,7 +29,7 @@ class WhyWeMustAct extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,9 +42,10 @@ class WhyWeMustAct extends Component {
                                     <img src={require('../../images/AboutUs/banner_aboutus-01Whymemustact.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Why we must act</h3>
-                                    <p>TBC</p>
-                                    <p>abcabc</p>
+                                    <h3>{t("AboutUs:whyWeMustAct.title")}</h3>
+                                    <p>{t("AboutUs:whyWeMustAct.content1")}</p>
+                                    <p>{t("AboutUs:whyWeMustAct.content2")}</p>
+                                    <p>{t("AboutUs:whyWeMustAct.content3")}</p>
                                 </div>
                             </div>
                         </div>

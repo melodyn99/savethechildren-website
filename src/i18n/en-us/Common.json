@@ -47,5 +47,31 @@
 	},
 	"Address": {
 		"Address": "8/F......."
+	},
+	"Footer": {
+		"ourMissionAndStrategy": {
+			"footer": {
+				"1": "About us",
+				"2": ""
+			}
+		},
+		"whyWeMustAct": {
+			"footer": {
+				"1": "About us",
+				"2": ""
+			}
+		},
+		"contactUs": {
+			"footer": {
+				"1": "",
+				"2": ""
+			}
+		},
+		"sitemap": {
+			"footer": {
+				"1": "About us",
+				"2": "Sitemap"
+			}
+		}
 	}
 }

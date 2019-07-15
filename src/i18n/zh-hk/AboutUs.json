@@ -1,46 +1,26 @@
 {
     "whyWeMustAct": {
-        "footer": {
-            "1": "About us 中文",
-            "2": ""
-        },
-        "page": {
-            "title": "Why we must act",
-            "content": ""
-        }
+        "title": "Why we must act 中文",
+        "content1": "Online world is real world. One can benefit from surfing the web and equally can be harmed for lacking awareness and knowledge. 中文",
+        "content2": "Connecting to the digital world becomes an integral part of cosmopolitan life. Rights of children and young people in accessing to the digital world for sharing opinions and ideas, searching for information and connecting with friends need to be ensured. 中文",
+        "content3": "Rights of children to be protected in the physical world, as well as the digital world should be safeguarded. 中文"
     },
     "ourMissionAndStrategy": {
-        "footer": {
-            "1": "About us",
-            "2": ""
-        },
-        "page": {
-            "title": "Our mission and strategy",
-            "content": ""
-        }
+        "title": "Our mission and strategy 中文",
+        "content1": "To enhance public awareness on the potential child protection risks in the digital world 中文",
+        "content2": "To equip children and their parents/caregivers, and professionals like teachers and social workers, with knowledge and skills, and practical tips in coping with the challenges being encountered in the digital world 中文",
+        "content3": "To promote smart use of internet and screen device, and social media 中文"
     },
     "contactUs": {
-        "footer": {
-            "1": "",
-            "2": ""
-        },
-        "page": {
-            "fb": "",
-            "ig": "",
-            "phone": "",
-            "fax": "",
-            "email": "",
-            "address": ""
-        }
+        "fb": "",
+        "ig": "",
+        "phone": "",
+        "fax": "",
+        "email": "",
+        "address": ""
     },
     "sitemap": {
-        "footer": {
-            "1": "About us",
-            "2": "Sitemap"
-        },
-        "page": {
-            "title": "Sitemap",
-            "content": ""
-        }
+        "title": "Sitemap",
+        "content": ""
     }
 }
