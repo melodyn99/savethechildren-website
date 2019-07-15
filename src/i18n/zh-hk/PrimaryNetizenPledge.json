@@ -1,16 +1,9 @@
 {
-    "footer": {
-        "1": "",
-        "2": "",
-        "3": ""
-    },
-    "page": {
-        "title": "",
-        "content": {
-            "headings": ["",
-                "", "", ""],
-            "paragraphs": ["","","",""],
-            "name": ""
-        }
+    "title": "NET神約章",
+    "content": {
+        "headings": ["Be a kind & respectful internet user",
+            "Be my privacy protector", "", ""],
+        "paragraphs": ["","","",""],
+        "name": "Your name is"
     }
 }

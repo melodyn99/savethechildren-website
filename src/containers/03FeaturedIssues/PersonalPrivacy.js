@@ -29,7 +29,7 @@ class PersonalPrivacy extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,7 +42,7 @@ class PersonalPrivacy extends Component {
                                     <img src={require('../../images/FeaturedIssues/banner_featuredissues-Personalprivacy.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>Personal privacy</h3>
+                                    <h3>{t("FeaturedIssues:personalPrivacy.title")}</h3>
                                     <p>_____________________________________________________________________________________________________</p>
                                 </div>
                             </div>

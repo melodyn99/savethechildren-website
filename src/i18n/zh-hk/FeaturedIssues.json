@@ -1,22 +1,10 @@
 {
     "personalPrivacy": {
-        "footer": {
-            "1": "",
-            "2": ""
-        },
-        "page": {
-            "title": "",
-            "content": ""
-        }
+        "title": "Personal privacy 中文",
+        "content": ""
     },
     "legislations": {
-        "footer": {
-            "1": "",
-            "2": ""
-        },
-        "page": {
-            "title": "",
-            "content": ""
-        }
+        "title": "Legislations 中文",
+        "content": ""
     }
 }

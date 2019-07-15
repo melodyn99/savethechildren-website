@@ -32,7 +32,7 @@ class PrimaryNetizenPledge extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -40,7 +40,7 @@ class PrimaryNetizenPledge extends Component {
                     <BreadCrumb />
                     <div className="wrapper-content">
                         <div className="content lavender-background">
-                            <h2 style={{ 'color': '#b30000', 'font-size': '30px', 'padding': '30px', 'backgroundColor': 'white' }}>The Netizen Pledge</h2>
+                            <h2>{t("PrimaryNetizenPledge:title")}</h2>
                             <Grid container spacing={16} style={{ 'paddingBottom': '40px' }}>
                                 <Grid item xs={2}>
                                     <div className="button-wrapper lavender">

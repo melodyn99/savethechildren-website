@@ -1,16 +1,9 @@
 {
-    "footer": {
-        "1": "",
-        "2": "",
-        "3": ""
-    },
-    "page": {
-        "title": "The Netizen Pledge",
-        "content": {
-            "headings": ["Be a kind & respectful internet user",
-                "Be my privacy protector", "", ""],
-            "paragraphs": ["","","",""],
-            "name": "Your name is"
-        }
+    "title": "The Netizen Pledge",
+    "content": {
+        "headings": ["Be a kind & respectful internet user",
+            "Be my privacy protector", "", ""],
+        "paragraphs": ["","","",""],
+        "name": "Your name is"
     }
 }

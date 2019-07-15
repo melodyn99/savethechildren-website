@@ -77,6 +77,11 @@
 				"1": "",
 				"2": "",
 				"3": ""
+			},
+			"PrimaryNetizenPledge": {
+				"1": "",
+				"2": "",
+				"3": ""
 			}
 		},
 		"Parents": {
@@ -89,6 +94,26 @@
 				"1": "",
 				"2": "",
 				"3": ""
+			}
+		},
+		"FeaturedIssues": {
+			"PersonalPrivacy": {
+				"1": "Featured Issues",
+				"2": ""
+			},
+			"Legislations": {
+				"1": "Featured Issues",
+				"2": ""
+			}
+		},
+		"ResearchFindings": {
+			"OurResearch": {
+				"1": "Research findings",
+				"2": ""
+			},
+			"OtherFindings": {
+				"1": "Research findings",
+				"2": ""
 			}
 		}
 	}
