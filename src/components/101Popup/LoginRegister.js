@@ -15,7 +15,7 @@ import { apiMenus } from '../../Api/ApiMenus';
 
 // Redux
 import { connect } from 'react-redux';
-import { login, verifyToken } from '../../Redux/Action/authAction';
+import { login } from '../../Redux/Action/authAction';
 import { getAllMenus } from '../../Redux/Action/menusAction';
 
 // Utils
@@ -135,13 +135,12 @@ class LoginRegister extends Component {
     _signInAsync = (values) => {
         // console.log(values);
         if (typeof (values) !== 'undefined') {
-            console.log(values);
+            // console.log(values);
             let submitEmail = values.email;
             let submitPassword = values.password;
             this._getAllMenus();
 
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
-                console.log(res);
                 this.props.loginP(res.access_token);
                 this._getAllMenus(res.access_token);
                 // this._getSimpleSubject(res.access_token);
@@ -149,22 +148,20 @@ class LoginRegister extends Component {
         }
     };
 
-    _getAllMenus = () => {
+    _getAllMenus = (token) => {
+        if (typeof token !== 'undefined') {
 
-        const cb = (obj) => {
-            console.log("cb : ", obj);
-            this.props.getAllMenusP(obj.body);
+            const cb = (obj) => {
+                // console.log("cb : ", obj);
+                this.props.getAllMenusP(obj.body);
+            }
+            const eCb = (obj) => {
+                console.log("eCb : ", obj);
+            }
+            const params = null;
+
+            apiMenus.getAllMenus(params, token, cb, eCb);
         }
-        const eCb = (obj) => {
-            console.log("eCb : ", obj);
-        }
-        const params = null;
-
-        const url = "/all_menus";
-
-        const access_token = "eyJhbGciOiJub25lIn0.eyJleHAiOjE1NjMxNjc4MzQsIm1hY19rZXkiOm51bGwsIm5iZiI6MTU2MzE2NDIzNCwiYXVkIjpbInNhdmUtdGhlLWNoaWxkcmVuLmpveWFldGhlci5jb20iXSwiaXNzIjoiam95YWV0aGVyLmNvbSIsImlhdCI6MTU2MzE2NDIzNCwia2lkIjpudWxsfQ.";
-
-        apiMenus.getAllMenus(url, params, access_token, cb, eCb);
     }
 
     render() {
@@ -235,7 +232,6 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data)),
     getAllMenusP: data => dispatch(getAllMenus(data)),
-    verifyT: token => dispatch(verifyToken(token)),
 });
 
 
