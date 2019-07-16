@@ -13,8 +13,8 @@
         "Name": "Display name",
         "Password": "",
         "Confirm": "",
-        "Condition1": "Must have ......",
-        "Condition2": "Use upper......",
+        "Condition1": "Must have at least 8 characters with numbers",
+        "Condition2": "Use upper and lower case letters (eg. Aa)",
         "Create": "Create New Account"
     }
 }

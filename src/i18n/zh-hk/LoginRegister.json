@@ -4,8 +4,8 @@
         "Email": "",
         "Password": "",
         "Remember": "",
-        "Login": "",
-        "Forgot": ""
+        "Login": "登录",
+        "Forgot": "忘记密码？"
     },
     "register": {
         "Title": "注册",
@@ -13,8 +13,8 @@
         "Name": "",
         "Password": "",
         "Confirm": "",
-        "Condition1": "",
-        "Condition2": "",
-        "Create": ""
+        "Condition1": "Must have at least 8 characters with numbers 中文",
+        "Condition2": "Use upper and lower case letters (eg. Aa) 中文",
+        "Create": "注册新账户"
     }
 }

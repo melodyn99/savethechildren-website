@@ -67,7 +67,7 @@ class LoginRegister extends Component {
     }
 
     formLogin = ({ values, errors, touched, handleChange }) => {
-        // const { t } = this.props;
+        const { t } = this.props;
 
         return (
             <Form className="form-wrapper">
@@ -82,10 +82,10 @@ class LoginRegister extends Component {
                     </Grid>
 
                     <Grid item xs={12} className="grid">
-                        <Button type="submit" onClick={() => { this._signInAsync() }}>Login</Button>
+                        <Button type="submit" onClick={() => { this._signInAsync() }}>{t("LoginRegister:login.Login")}</Button>
                     </Grid>
                     <Grid item xs={12} className="grid">
-                        <Link to={"/"}>Forgot your password?</Link>
+                        <Link to={"/"}>{t("LoginRegister:login.Forgot")}</Link>
                     </Grid>
                 </Grid>
             </Form>
@@ -93,6 +93,7 @@ class LoginRegister extends Component {
     }
 
     formRegister = ({ values, errors, touched, handleChange }) => {
+        const { t } = this.props;
         return (
             <Form className="form-wrapper">
                 <Grid container spacing={16}>
@@ -114,11 +115,11 @@ class LoginRegister extends Component {
                     </Grid>
 
                     <ul>
-                        <li>Must have at least 8 characters with numbers</li>
-                        <li>Use upper and lower case letters (eg. Aa)</li>
+                        <li>{t("LoginRegister:register.Condition1")}</li>
+                        <li>{t("LoginRegister:register.Condition2")})</li>
                     </ul>
                     <Grid item xs={12} className="grid">
-                        <Button type="submit">Create New Account</Button>
+                        <Button type="submit">{t("LoginRegister:register.Create")}</Button>
                     </Grid>
                 </Grid>
             </Form >
