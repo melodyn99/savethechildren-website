@@ -46,7 +46,7 @@ class Header extends Component {
 
     render() {
         const {
-            // t, 
+            t, 
             i18n } = this.props;
 
         let pathname = this.props.route.location.pathname,
@@ -65,11 +65,11 @@ class Header extends Component {
                         </h1>
                     }
 
-                    <span className="desktop-login" onClick={this.openModal}>Login</span>
+                    <span className="desktop-login" onClick={this.openModal}>{t("Common:General.Login")}</span>
 
                     <ul className="desktop-language clearfix">
-                        <li><Link to={"/zh-HK" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('zh-HK')} className={i18n.language === 'zh-HK' ? 'active' : ''}>中</Link></li>
-                        <li><Link to={"/en-US" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('en-US')} className={i18n.language === 'en-US' ? 'active' : ''}>EN</Link></li>
+                        <li><Link to={"/zh-HK" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('zh-HK')} className={i18n.language === 'zh-HK' ? 'active' : ''}>{t("Common:General.Language1")}</Link></li>
+                        <li><Link to={"/en-US" + this.props.route.location.pathname.substring(6) + this.props.route.location.search} onClick={() => this.changeLanguage('en-US')} className={i18n.language === 'en-US' ? 'active' : ''}>{t("Common:General.Language2")}</Link></li>
                     </ul>
 
                     <h1 className="logo-schk">
@@ -93,7 +93,7 @@ class Header extends Component {
                         </div> */}
                     </Popup>
 
-                    <Link to={"/" + i18n.language + '/'} className="seekHelp"><span>Seek Help</span></Link>
+                    <Link to={"/" + i18n.language + '/'} className="seekHelp"><span>{t("Common:General.SeekHelp")}</span></Link>
                 </div>
             </div>
         );

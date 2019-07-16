@@ -1,5 +1,6 @@
 {
     "login": {
+        "Title": "Login",
         "Email": "Enter your email",
         "Password": "Enter your password",
         "Remember": "Remember me next time",
@@ -7,6 +8,7 @@
         "Forgot": "Forgot your password?"
     },
     "register": {
+        "Title": "Register",
         "Email": "Your email",
         "Name": "Display name",
         "Password": "",

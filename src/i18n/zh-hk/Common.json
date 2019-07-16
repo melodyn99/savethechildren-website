@@ -1,8 +1,9 @@
 {
 	"General": {
-		"LanguageText": "中 EN",
-		"Login": "",
-		"SeekHelp": ""
+		"Language1": "中",
+		"Language2": "EN",
+		"Login": "登录",
+		"SeekHelp": "Seek Help中文"
 	},
 	"Menu": {
 		"AboutUs": "",
@@ -36,17 +37,22 @@
 	"SubMenu-ExternalResources": {
 	},
 	"Subscribe": {
-		"Signup": "",
-		"Email": "",
-		"Subscribe": ""
+		"Signup": "Signup for exclusive Netizen Academy news and events 中文",
+		"Email": "邮箱",
+		"Subscribe": "Subscribe 中文"
 	},
 	"Contact": {
+		"Title": "联络方式",
 		"Email": "hk.program@savethechildren.org",
 		"Phone": "(852) 2112-5640",
 		"Fax": "(852) 3160-8685"
 	},
 	"Address": {
-		"Address": ""
+		"Title": "地址",
+		"Address1": "香港西環",
+		"Address2": "德輔道西",
+		"Address3": "410-418號",
+		"Address4": "太平洋廣場8樓"
 	},
 	"Footer": {
 		"AboutUs": {
@@ -82,15 +88,65 @@
 				"1": "",
 				"2": "",
 				"3": ""
+			},
+			"PrimaryGame": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryGeneralTips": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryQuiz": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimarySchoolHome": {
+				"1": "",
+				"2": "",
+				"3": ""
 			}
 		},
 		"Parents": {
+			"ParentsBlog": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsBlogDetail": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsHome": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
 			"ParentsTrainingWorkshop": {
 				"1": "",
 				"2": "",
 				"3": ""
 			},
+			"ParentsTips": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
 			"ParentsMoreResources": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsVideosSCNWB": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsVideosSCNWBDetai": {
 				"1": "",
 				"2": "",
 				"3": ""

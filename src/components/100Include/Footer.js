@@ -7,7 +7,7 @@ import facebookLinkIcon from '../../images/Footer/btn_footer_contact_FB.png';
 import instagramLinkIcon from '../../images/Footer/btn_footer_contact_IG.png';
 
 function Footer(props) {
-	// const { i18n } = props;
+	const { t } = props;
 
 	return (
 		<div className="wrapper-footer container-fluid">
@@ -15,21 +15,21 @@ function Footer(props) {
 				<div className="col-xs-4 footer-column footer-subscription">
 					<form>
 						<img className="footer-subscription-logo" src={footerLogo} alt="Logo of Save the Children"/>
-						<label htmlFor="signup_email">Sign-up for exclusive Netizen Academy news and events.</label>
+						<label htmlFor="signup_email">{t("Common:Subscribe.Signup")}</label>
 						<div className="input-group">
-							<input type="email" className="form-control" id="signup_email" placeholder="Email"/>
+							<input type="email" className="form-control" id="signup_email" placeholder={t("Common:Subscribe.Email")}/>
 							<span className="input-group-btn">
-								<button className="btn btn-default" type="submit">Subscribe</button>
+								<button className="btn btn-default" type="submit">{t("Common:Subscribe.Subscribe")}</button>
 							</span>
 						</div>
 					</form>
 				</div>
 				<div className="col-xs-4 footer-column footer-contact">
-					<h2>Contact</h2>
+					<h2>{t("Common:Contact.Title")}</h2>
 					<ul>
-						<li className="email"><span className="sr-only">Email: </span><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">hk.program@savethchildren.org</a></li>
-						<li className="tel"><span className="sr-only">Phone: </span><a target="_blank" rel="noopener noreferrer" href="tel:+852-2122-5640">(852) 2122-5640</a></li>
-						<li className="fax"><span className="sr-only">Fax: </span><a target="_blank" rel="noopener noreferrer" href="tel:tel:+852-3160-8685">(852) 3160-8685</a></li>
+						<li className="email"><span className="sr-only">Email: </span><a target="_blank" rel="noopener noreferrer" href="mailto:hk.program@savethchildren.org">{t("Common:Contact.Email")}</a></li>
+						<li className="tel"><span className="sr-only">Phone: </span><a target="_blank" rel="noopener noreferrer" href="tel:+852-2122-5640">{t("Common:Contact.Phone")}</a></li>
+						<li className="fax"><span className="sr-only">Fax: </span><a target="_blank" rel="noopener noreferrer" href="tel:tel:+852-3160-8685">{t("Common:Contact.Fax")}</a></li>
 					</ul>
 					<div className="footer-social-icon-div">
 						<a href="#facebook_link"><img className="footer-social-icon" src={facebookLinkIcon} alt="Facebook link"/></a>
@@ -37,12 +37,12 @@ function Footer(props) {
 					</div>
 				</div>
 				<div className="col-xs-4 footer-column footer-address">
-					<h2>Address</h2>
+					<h2>{t("Common:Address.Title")}</h2>
 					<p>
-						8/F Pacific Plaza,<br/>
-						410-418 Des Voeux Root West,<br/>
-						Sai Wan,<br/>
-						Hong Kong
+						{t("Common:Address.Address1")}<br/>
+						{t("Common:Address.Address2")}<br/>
+						{t("Common:Address.Address3")}<br/>
+						{t("Common:Address.Address4")}
 					</p>
 				</div>
 			</div>

@@ -1,6 +1,7 @@
 {
 	"General": {
-		"LanguageText": "中 EN",
+		"Language1": "中",
+		"Language2": "EN",
 		"Login": "Login",
 		"SeekHelp": "Seek Help"
 	},
@@ -41,12 +42,17 @@
 		"Subscribe": "Subscribe"
 	},
 	"Contact": {
+		"Title": "Contact",
 		"Email": "hk.program@savethechildren.org",
 		"Phone": "(852) 2112-5640",
 		"Fax": "(852) 3160-8685"
 	},
 	"Address": {
-		"Address": "8/F......."
+		"Title": "Address",
+		"Address1": "8/F Pacific Plaza,",
+		"Address2": "410-418 Des Voeux Root West,",
+		"Address3": "Sai Wan,",
+		"Address4": "Hong Kong"
 	},
 	"Footer": {
 		"AboutUs": {
@@ -82,15 +88,65 @@
 				"1": "",
 				"2": "",
 				"3": ""
+			},
+			"PrimaryGame": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryGeneralTips": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimaryQuiz": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"PrimarySchoolHome": {
+				"1": "",
+				"2": "",
+				"3": ""
 			}
 		},
 		"Parents": {
+			"ParentsBlog": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsBlogDetail": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsHome": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
 			"ParentsTrainingWorkshop": {
 				"1": "",
 				"2": "",
 				"3": ""
 			},
+			"ParentsTips": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
 			"ParentsMoreResources": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsVideosSCNWB": {
+				"1": "",
+				"2": "",
+				"3": ""
+			},
+			"ParentsVideosSCNWBDetai": {
 				"1": "",
 				"2": "",
 				"3": ""

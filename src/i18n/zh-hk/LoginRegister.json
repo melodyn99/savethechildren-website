@@ -1,5 +1,6 @@
 {
     "login": {
+        "Title": "登录",
         "Email": "",
         "Password": "",
         "Remember": "",
@@ -7,6 +8,7 @@
         "Forgot": ""
     },
     "register": {
+        "Title": "注册",
         "Email": "",
         "Name": "",
         "Password": "",

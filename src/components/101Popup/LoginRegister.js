@@ -67,9 +67,7 @@ class LoginRegister extends Component {
     }
 
     formLogin = ({ values, errors, touched, handleChange }) => {
-        // const { classes
-        //     //, t, i18n 
-        // } = this.props;
+        // const { t } = this.props;
 
         return (
             <Form className="form-wrapper">
@@ -169,7 +167,7 @@ class LoginRegister extends Component {
     }
 
     render() {
-        // const { classes, t, i18n } = this.props;
+        const { t } = this.props;
 
         const Schema = Yup.object().shape({
             email: Yup.string()
@@ -199,7 +197,7 @@ class LoginRegister extends Component {
         return (
             <div className="loginRegister">
                 <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
-                    <Tab eventKey={1} title="Login">
+                    <Tab eventKey={1} title={t("LoginRegister:login.Title")}>
                         <Formik
                             initialValues={{
                                 email: 'admin@joyaether.test',
@@ -210,7 +208,7 @@ class LoginRegister extends Component {
                             component={this.formLogin}
                         />
                     </Tab>
-                    <Tab eventKey={2} title="Register">
+                    <Tab eventKey={2} title={t("LoginRegister:register.Title")}>
                         <Formik
                             initialValues={{
                                 email: '',
