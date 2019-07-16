@@ -15,6 +15,7 @@ import { connect } from 'react-redux';
 import { login } from '../../../Redux/Action/authAction';
 
 // Utils
+import Unity, { UnityContent } from "react-unity-webgl";
 
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
@@ -26,6 +27,11 @@ class SecondaryGame extends Component {
         this.state = {
             formSubmitted: false
         }
+
+        this.unityContent = new UnityContent(
+            "Build/Build.json",
+            "Build/UnityLoader.js",
+        );
     }
 
     render() {
@@ -39,6 +45,8 @@ class SecondaryGame extends Component {
                         <div className="content">
                             {/* Game */}
                             Netizen Adventure
+
+                            <Unity unityContent={this.unityContent} />
                         </div>
                     </div>
                 </div>

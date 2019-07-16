@@ -49,6 +49,7 @@
     "react-slick": "^0.23.2",
     "react-streetview": "^1.1.1",
     "react-tabs": "^3.0.0",
+    "react-unity-webgl": "^7.1.7",
     "react-web-tabs": "^1.0.1",
     "reactjs-popup": "^1.4.1",
     "redux": "^4.0.1",
