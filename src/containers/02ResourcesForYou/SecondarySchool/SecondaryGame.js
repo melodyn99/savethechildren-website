@@ -29,8 +29,8 @@ class SecondaryGame extends Component {
         }
 
         this.unityContent = new UnityContent(
-            "Build/Build.json",
-            "Build/UnityLoader.js",
+            "/Build/build.json",
+            "/Build/UnityLoader.js"
         );
     }
 
