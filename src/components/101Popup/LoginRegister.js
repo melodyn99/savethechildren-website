@@ -166,6 +166,14 @@ class LoginRegister extends Component {
                     MessageContent: obj.body.error
                 })
             }
+
+            if (obj.status === 201) {
+                this.setState({
+                    ...this.state,
+                    MessageContent: 'Account has been successfully registered. Please log in to view your account.'
+                })
+                setTimeout(() => {this._switchTabs()}, 5000)
+            }
         }
         const eCb = (obj) => {
             console.log("eCb : ", obj);
@@ -179,6 +187,14 @@ class LoginRegister extends Component {
         }
 
         apiAuth.register(body, access_token, cb, eCb);
+    }
+
+    _switchTabs = () => {
+        this.setState({
+            ...this.state,
+            tabIndex:1,
+            MessageContent: ''
+        })
     }
 
     _getUserInformation = (access_token) => {
