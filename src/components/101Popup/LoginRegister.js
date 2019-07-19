@@ -94,7 +94,7 @@ class LoginRegister extends Component {
     formRegister = ({ values, errors, touched, handleChange }) => {
         const { t } = this.props;
         return (
-            <Form className="form-wrapper">
+            <Form className="form-wrapper" id="register">
                 <Grid container spacing={16}>
                     {(this.state.MessageContent !== '') &&
                         <Grid item xs={12} className="SuccessMessage">
@@ -165,6 +165,7 @@ class LoginRegister extends Component {
                     ...this.state,
                     MessageContent: obj.body.error
                 })
+                document.getElementById("register").reset();
             }
 
             if (obj.status === 201) {
@@ -195,6 +196,7 @@ class LoginRegister extends Component {
             tabIndex:1,
             MessageContent: ''
         })
+        document.getElementById("register").reset();
     }
 
     _getUserInformation = (access_token) => {
