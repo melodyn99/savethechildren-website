@@ -4,7 +4,8 @@ const initialState = {
 	auth: false,
 	token: null,
 	refreshToken: null,
-	userInfo: []
+	userInfo: [],
+	register: false,
 };
 
 const authReducer = (state = initialState, action) => {
@@ -46,8 +47,15 @@ const authReducer = (state = initialState, action) => {
 			return {
 				...state,
 				auth: true,
-				token: action.data.access_token,
-				refreshToken: action.data.refresh_token
+				token: action.data,
+				refreshToken: action.data,
+			}
+		}
+
+		case AuthActionTypes.REGISTER_SUCCESS: {
+			return {
+				...state,
+				register: action.data
 			}
 		}
 

@@ -50,6 +50,11 @@ export const login = (data) => ({
   data
 });
 
+export const register = (data) => ({
+  type: AuthActionTypes.REGISTER_SUCCESS,
+  data
+})
+
 export const getUserInfo = (data) => ({
   type: AuthActionTypes.GET_USER_INFO,
   data

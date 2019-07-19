@@ -42,6 +42,7 @@ import i18n from './i18n/i18n';
 // IMPORT REDUCERS
 import authReducer from './Redux/Reducer/authReducer';
 import effectReducer from './Redux/Reducer/effectReducer';
+import menusReducer from './Redux/Reducer/menusReducer';
 // import profileReducer from './Redux/Reducer/profileReducer';
 // import seminarReducer from './Redux/Reducer/seminarReducer';
 // import eventReducer from './Redux/Reducer/eventReducer';
@@ -74,6 +75,7 @@ const appReducer = combineReducers({
     router: routerReducer,
     effect: effectReducer,
     auth: authReducer,
+    menus: menusReducer,
     // seminarReducer: seminarReducer,
     // libraryReducer: libraryReducer,
     // eventReducer: eventReducer,
