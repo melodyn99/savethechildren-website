@@ -35,7 +35,7 @@ class LoginRegister extends Component {
 
         this.state = {
             tabIndex: 1,
-            MessageContent: ''
+            MessageContent: '',
         }
     }
 
@@ -95,7 +95,7 @@ class LoginRegister extends Component {
         const { t } = this.props;
 
         return (
-            <Form className="form-wrapper" id="register">
+            <Form className="form-wrapper">
                 <Grid container spacing={16}>
                     {(this.state.MessageContent !== '') &&
                         <Grid item xs={12} className="SuccessMessage">
@@ -144,10 +144,11 @@ class LoginRegister extends Component {
                 this.props.loginP(res.access_token);
                 this._getUserInformation(res.access_token);
                 this._getAllMenus(res.access_token);
+                setTimeout(() => { this.props.close() }, 500)
             })
         }
     }
-
+    
     _registerAsync = (values) => {
         if (typeof (values) !== 'undefined') {
             apiAuth.getClientCredentials().then((res) => {
@@ -155,7 +156,6 @@ class LoginRegister extends Component {
             })
         }
     }
-
     _register = (values, access_token) => {
 
         const cb = (obj) => {

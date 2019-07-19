@@ -82,7 +82,7 @@ class Header extends Component {
                         onClose={this.closeModal}
                         contentStyle={{ padding: "0px", border: "none" }}
                     >
-                        <LoginRegister />
+                        <LoginRegister open={this.state.open} close={this.closeModal}/>
 
                         {/* <div className="modalhello">
                             <a className="close" onClick={this.closeModal}>&times;</a>
