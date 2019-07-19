@@ -93,6 +93,7 @@ class LoginRegister extends Component {
 
     formRegister = ({ values, errors, touched, handleChange }) => {
         const { t } = this.props;
+
         return (
             <Form className="form-wrapper" id="register">
                 <Grid container spacing={16}>
@@ -158,14 +159,13 @@ class LoginRegister extends Component {
     _register = (values, access_token) => {
 
         const cb = (obj) => {
-            console.log("cb here : ", obj);
+            // console.log("cb here : ", obj);
 
             if (obj.status === 500) {
                 this.setState({
                     ...this.state,
                     MessageContent: obj.body.error
                 })
-                document.getElementById("register").reset();
             }
 
             if (obj.status === 201) {
@@ -173,7 +173,7 @@ class LoginRegister extends Component {
                     ...this.state,
                     MessageContent: 'Account has been successfully registered. Please log in to view your account.'
                 })
-                setTimeout(() => {this._switchTabs()}, 3000)
+                setTimeout(() => { this._switchTabs() }, 3000)
             }
         }
         const eCb = (obj) => {
@@ -193,10 +193,10 @@ class LoginRegister extends Component {
     _switchTabs = () => {
         this.setState({
             ...this.state,
-            tabIndex:1,
+            tabIndex: 1,
             MessageContent: ''
         })
-        document.getElementById("register").reset();
+        this.formik.resetForm();
     }
 
     _getUserInformation = (access_token) => {
@@ -231,7 +231,7 @@ class LoginRegister extends Component {
 
     render() {
 
-        console.log(this.state);
+        // console.log(this.state);
 
         const { t } = this.props;
 
@@ -285,6 +285,7 @@ class LoginRegister extends Component {
                             validationSchema={Schema1}
                             onSubmit={this._registerAsync}
                             component={this.formRegister}
+                            ref={(ref) => this.formik = ref}
                         />
                     </Tab>
                 </Tabs>
