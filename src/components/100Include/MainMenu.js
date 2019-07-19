@@ -27,9 +27,11 @@ class MainMenu extends Component {
 
         const mainMenu = this.props.menus.allMenus[0];
 
-        // console.log(mainMenu);
+        const i = i18n.language;
+        console.log(i);
+        // console.log(mainMenu.menus[0]);
 
-        console.log(i18n.language);
+        // console.log(i18n.language);
 
         return (
             <div className="wrapper-MainMenu">
@@ -38,7 +40,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('about')}
                             onMouseLeave={() => this._handleMouseLeave('about')}
-                        ><Link to={"/"} className="about" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[0].text_zh_cht}</span></Link>
+                        ><Link to={"/"} className="about" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[0].text_zh_cht : mainMenu.menus[0].text_en )}</span></Link>
                             <ul className="leftOne">
                                 <div className="top"></div>
                                 <div className="middle">
@@ -57,7 +59,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('resource')}
                             onMouseLeave={() => this._handleMouseLeave('resource')}
-                        ><Link to={"/"} className="resource" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[1].text_en}</span></Link>
+                        ><Link to={"/"} className="resource" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[1].text_zh_cht : mainMenu.menus[1].text_en )}</span></Link>
                             <ul className="leftTwo">
                                 <div className="top"></div>
                                 <div className="middle clearfix">
@@ -95,7 +97,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('featured')}
                             onMouseLeave={() => this._handleMouseLeave('featured')}
-                        ><Link to={"/"} className="featured" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[2].text_en}</span></Link>
+                        ><Link to={"/"} className="featured" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[2].text_zh_cht : mainMenu.menus[2].text_en )}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
@@ -111,7 +113,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('research')}
                             onMouseLeave={() => this._handleMouseLeave('research')}
-                        ><Link to={"/"} className="research" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[3].text_en}</span></Link>
+                        ><Link to={"/"} className="research" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[3].text_zh_cht : mainMenu.menus[3].text_en )}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
@@ -126,7 +128,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('event')}
                             onMouseLeave={() => this._handleMouseLeave('event')}
-                        ><Link to={"/"} className="event" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[4].text_en}</span></Link>
+                        ><Link to={"/"} className="event" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[4].text_zh_cht : mainMenu.menus[4].text_en )}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
