@@ -173,7 +173,7 @@ class LoginRegister extends Component {
                     ...this.state,
                     MessageContent: 'Account has been successfully registered. Please log in to view your account.'
                 })
-                setTimeout(() => {this._switchTabs()}, 5000)
+                setTimeout(() => {this._switchTabs()}, 3000)
             }
         }
         const eCb = (obj) => {
