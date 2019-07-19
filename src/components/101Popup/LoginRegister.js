@@ -212,6 +212,9 @@ class LoginRegister extends Component {
     }
 
     render() {
+
+        console.log(this.state);
+
         const { t } = this.props;
 
         const Schema = Yup.object().shape({
@@ -241,7 +244,7 @@ class LoginRegister extends Component {
 
         return (
             <div className="loginRegister">
-                <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
+                <Tabs defaultActiveKey={1} activeKey={this.state.tabIndex} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
                     <Tab eventKey={1} title={t("LoginRegister:login.Title")}>
                         <Formik
                             initialValues={{
