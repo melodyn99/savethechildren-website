@@ -45,7 +45,7 @@ class MainMenu extends Component {
                                 <div className="top"></div>
                                 <div className="middle">
                                     {mainMenu.menus[0].menu_items.map((subMenus) =>
-                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{subMenus.text_en}</span></Link></li>
+                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en )}</span></Link></li>
                                     )}
                                     {/* <li><Link to={"/" + i18n.language + "/why-we-must-act"}><span>Why We Must Act</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}><span>Our Mission and Strategy</span></Link></li>
@@ -67,7 +67,7 @@ class MainMenu extends Component {
                                         <li key={subMenus.menu_item_id}>
                                             <Link to={"/" + i18n.language + "/" + subMenus.dest}>
                                                 <div className={"thumb " + (i === 0 ? "one" : i === 1 ? "two" : i === 2 ? "three" : "one")}></div>
-                                                <span>{subMenus.text_en}</span>
+                                                <span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en )}</span>
                                             </Link>
                                         </li>
                                     )}
@@ -101,10 +101,13 @@ class MainMenu extends Component {
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
-                                    <li><Link to={"/" + i18n.language + "/online-grooming"}><span>Online Grooming</span></Link></li>
+                                    {mainMenu.menus[2].menu_items.map((subMenus) =>
+                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en )}</span></Link></li>
+                                    )}
+                                    {/* <li><Link to={"/" + i18n.language + "/online-grooming"}><span>Online Grooming</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/sexting"}><span>Sexting</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/personal-privacy"}><span>Personal Privacy</span></Link></li>
-                                    <li><Link to={"/" + i18n.language + "/legislations"}><span>Legislations</span></Link></li>
+                                    <li><Link to={"/" + i18n.language + "/legislations"}><span>Legislations</span></Link></li> */}
                                 </div>
                                 <div className="bottom"></div>
                             </ul>
@@ -117,8 +120,11 @@ class MainMenu extends Component {
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
-                                    <li><Link to={"/" + i18n.language + "/our-research"}><span>Our Research</span></Link></li>
-                                    <li><Link to={"/" + i18n.language + "/other-findings"}><span>Other Findings</span></Link></li>
+                                    {mainMenu.menus[3].menu_items.map((subMenus) =>
+                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en )}</span></Link></li>
+                                    )}
+                                    {/* <li><Link to={"/" + i18n.language + "/our-research"}><span>Our Research</span></Link></li>
+                                    <li><Link to={"/" + i18n.language + "/other-findings"}><span>Other Findings</span></Link></li> */}
                                 </div>
                                 <div className="bottom"></div>
                             </ul>
@@ -132,9 +138,12 @@ class MainMenu extends Component {
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
-                                    <li><Link to={"/" + i18n.language + "/events-safer-internet-day-2019"}><span>Safer Internet Day 2019</span></Link></li>
+                                    {mainMenu.menus[4].menu_items.map((subMenus) =>
+                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en )}</span></Link></li>
+                                    )}
+                                    {/* <li><Link to={"/" + i18n.language + "/events-safer-internet-day-2019"}><span>Safer Internet Day 2019</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/events-smart-netizen-competition"}><span>"The Smart Netizen" Character Design Competition</span></Link></li>
-                                    <li><Link to={"/" + i18n.language + "/events-training-workshops"}><span>Training Workshops</span></Link></li>
+                                    <li><Link to={"/" + i18n.language + "/events-training-workshops"}><span>Training Workshops</span></Link></li> */}
                                 </div>
                                 <div className="bottom"></div>
                             </ul>
