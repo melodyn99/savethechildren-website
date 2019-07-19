@@ -28,7 +28,7 @@ class MainMenu extends Component {
         return (
             <div className="wrapper-MainMenu">
                 <div className="MainMenu clearfix">
-                    <ul>
+                    <ul className="clearfix">
                         <li
                             onMouseOver={() => this._handleMouseOver('about')}
                             onMouseLeave={() => this._handleMouseLeave('about')}

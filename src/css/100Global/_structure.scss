@@ -209,7 +209,7 @@
 				}
 				&:hover >a span { color:$corporateRedColor; background:url('../images/Menu/btn_mene_select.png') center center no-repeat; background-size: 100% 100%; }
 
-				ul { list-style:none; display:none; margin:0; padding:0; position:absolute; top:100%; left:50%; margin-left:-197px; width:394px;
+				ul { list-style:none; display:none; margin:0; padding:0; position:absolute; bottom:100%; left:50%; margin-left:-197px; width:394px; padding-bottom:100%;
 					&.leftOne { margin-left:-76px; 
 						.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_1_left.png') center top no-repeat; }
 					}
