@@ -15,7 +15,7 @@ import { apiMenus } from '../../Api/ApiMenus';
 
 // Redux
 import { connect } from 'react-redux';
-import { login } from '../../Redux/Action/authAction';
+import { login, register, getUserInfo } from '../../Redux/Action/authAction';
 import { getAllMenus } from '../../Redux/Action/menusAction';
 
 // Utils
@@ -25,14 +25,17 @@ import { Tabs, Tab } from 'react-bootstrap';
 
 // Children components
 import ErrorMessage from './ErrorMessage';
+// import DupEmailMessage from './DupEmailMessage';
+import GeneralMessage from './GeneralMessage';
 
 class LoginRegister extends Component {
+
     constructor(props) {
         super(props);
 
         this.state = {
-            formSubmitted: false,
-            tabIndex: 1
+            tabIndex: 1,
+            MessageContent: ''
         }
     }
 
@@ -60,10 +63,6 @@ class LoginRegister extends Component {
             ...this.state,
             [key]: value
         })
-    }
-
-    _handleSelect = () => {
-
     }
 
     formLogin = ({ values, errors, touched, handleChange }) => {
@@ -97,20 +96,27 @@ class LoginRegister extends Component {
         return (
             <Form className="form-wrapper">
                 <Grid container spacing={16}>
+                    {(this.state.MessageContent !== '') &&
+                        <Grid item xs={12} className="SuccessMessage">
+                            <GeneralMessage
+                                message={this.state.MessageContent}
+                            />
+                        </Grid>
+                    }
                     <Grid item xs={12} className="grid">
-                        <Field name="email" type="text" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="email" type="email" placeholder="Your email" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.email && touched.email ? <ErrorMessage message={errors.email} /> : null}
                     </Grid>
                     <Grid item xs={12} className="grid">
-                        <Field name="name" type="text" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="name" type="name" placeholder="Display name" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.name && touched.name ? <ErrorMessage message={errors.name} /> : null}
                     </Grid>
                     <Grid item xs={12} className="grid">
-                        <Field name="password" type="text" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="password" type="password" placeholder="Your password" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.password && touched.password ? <ErrorMessage message={errors.password} /> : null}
                     </Grid>
                     <Grid item xs={12} className="grid">
-                        <Field name="confirmPassword" type="text" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
+                        <Field name="confirmPassword" type="password" placeholder="Confirm password" maxLength="100" style={{ 'width': '100%' }} />
                         {errors.confirmPassword && touched.confirmPassword ? <ErrorMessage message={errors.confirmPassword} /> : null}
                     </Grid>
 
@@ -119,34 +125,75 @@ class LoginRegister extends Component {
                         <li>{t("LoginRegister:register.Condition2")})</li>
                     </ul>
                     <Grid item xs={12} className="grid">
-                        <Button type="submit">{t("LoginRegister:register.Create")}</Button>
+                        <Button type="submit" onClick={() => { this._registerAsync() }}>{t("LoginRegister:register.Create")}</Button>
                     </Grid>
                 </Grid>
             </Form >
         )
     }
 
-    handleSubmit = (values, { setFieldError }) => {
-        // call api
-        // TODO
-        console.log('GREAT!');
-    }
-
     _signInAsync = (values) => {
-        // console.log(values);
+
         if (typeof (values) !== 'undefined') {
-            // console.log(values);
+
             let submitEmail = values.email;
             let submitPassword = values.password;
-            this._getAllMenus();
 
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
                 this.props.loginP(res.access_token);
+                this._getUserInformation(res.access_token);
                 this._getAllMenus(res.access_token);
-                // this._getSimpleSubject(res.access_token);
             })
         }
-    };
+    }
+
+    _registerAsync = (values) => {
+        if (typeof (values) !== 'undefined') {
+            apiAuth.getClientCredentials().then((res) => {
+                this._register(values, res.access_token);
+            })
+        }
+    }
+
+    _register = (values, access_token) => {
+
+        const cb = (obj) => {
+            console.log("cb here : ", obj);
+
+            if (obj.status === 500) {
+                this.setState({
+                    ...this.state,
+                    MessageContent: obj.body.error
+                })
+            }
+        }
+        const eCb = (obj) => {
+            console.log("eCb : ", obj);
+        }
+        const body = {
+            username: values.email,
+            password: values.password,
+            email: values.email,
+            display_name: values.name,
+            role: 2,
+        }
+
+        apiAuth.register(body, access_token, cb, eCb);
+    }
+
+    _getUserInformation = (access_token) => {
+
+        const cb = (obj) => {
+            // console.log("cb here : ", obj);
+            this.props.getUserInfoP(obj.body);
+        }
+        const eCb = (obj) => {
+            console.log("eCb : ", obj);
+        }
+        const params = null;
+
+        apiAuth.getUserInformation(params, access_token, cb, eCb);
+    }
 
     _getAllMenus = (token) => {
         if (typeof token !== 'undefined') {
@@ -215,7 +262,7 @@ class LoginRegister extends Component {
                                 confirmPassword: ''
                             }}
                             validationSchema={Schema1}
-                            onSubmit={this.handleSubmit}
+                            onSubmit={this._registerAsync}
                             component={this.formRegister}
                         />
                     </Tab>
@@ -231,7 +278,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data)),
+    getUserInfoP: data => dispatch(getUserInfo(data)),
     getAllMenusP: data => dispatch(getAllMenus(data)),
+    registerP: data => dispatch(register(data))
 });
 
 
