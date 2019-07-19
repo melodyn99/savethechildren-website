@@ -200,6 +200,7 @@ class LoginRegister extends Component {
 
             const cb = (obj) => {
                 // console.log("cb : ", obj);
+                console.log(obj.body);
                 this.props.getAllMenusP(obj.body);
             }
             const eCb = (obj) => {
@@ -212,8 +213,6 @@ class LoginRegister extends Component {
     }
 
     render() {
-
-        console.log(this.state);
 
         const { t } = this.props;
 

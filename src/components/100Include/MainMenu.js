@@ -25,6 +25,12 @@ class MainMenu extends Component {
             e.preventDefault();
         }
 
+        const mainMenu = this.props.menus.allMenus[0];
+
+        // console.log(mainMenu);
+
+        console.log(i18n.language);
+
         return (
             <div className="wrapper-MainMenu">
                 <div className="MainMenu clearfix">
@@ -32,14 +38,17 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('about')}
                             onMouseLeave={() => this._handleMouseLeave('about')}
-                        ><Link to={"/"} className="about" onClick={(e) => this._handleVoid(e)}><span>About Us</span></Link>
+                        ><Link to={"/"} className="about" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[0].text_zh_cht}</span></Link>
                             <ul className="leftOne">
                                 <div className="top"></div>
                                 <div className="middle">
-                                    <li><Link to={"/" + i18n.language + "/why-we-must-act"}><span>Why We Must Act</span></Link></li>
+                                    {mainMenu.menus[0].menu_items.map((subMenus) =>
+                                        <li key={subMenus.menu_item_id}><Link to={"/" + i18n.language + "/" + subMenus.dest}><span>{subMenus.text_en}</span></Link></li>
+                                    )}
+                                    {/* <li><Link to={"/" + i18n.language + "/why-we-must-act"}><span>Why We Must Act</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/our-mission-and-strategy"}><span>Our Mission and Strategy</span></Link></li>
                                     <li><Link to={"/" + i18n.language + "/contact-us"}><span>Contact Us</span></Link></li>
-                                    <li><Link to={"/" + i18n.language + "/sitemap"}><span>Sitemap</span></Link></li>
+                                    <li><Link to={"/" + i18n.language + "/sitemap"}><span>Sitemap</span></Link></li> */}
                                 </div>
                                 <div className="bottom"></div>
                             </ul>
@@ -48,11 +57,19 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('resource')}
                             onMouseLeave={() => this._handleMouseLeave('resource')}
-                        ><Link to={"/"} className="resource" onClick={(e) => this._handleVoid(e)}><span>Resources<br />For You</span></Link>
+                        ><Link to={"/"} className="resource" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[1].text_en}</span></Link>
                             <ul className="leftTwo">
                                 <div className="top"></div>
                                 <div className="middle clearfix">
-                                    <li>
+                                    {mainMenu.menus[1].menu_items.map((subMenus, i) =>
+                                        <li key={subMenus.menu_item_id}>
+                                            <Link to={"/" + i18n.language + "/" + subMenus.dest}>
+                                                <div className={"thumb " + (i === 0 ? "one" : i === 1 ? "two" : i === 2 ? "three" : "one")}></div>
+                                                <span>{subMenus.text_en}</span>
+                                            </Link>
+                                        </li>
+                                    )}
+                                    {/* <li>
                                         <Link to={"/" + i18n.language + "/primary-school-home"}>
                                             <div className="thumb one"></div>
                                             <span>Primary School</span>
@@ -69,7 +86,7 @@ class MainMenu extends Component {
                                             <div className="thumb three"></div>
                                             <span>Parents</span>
                                         </Link>
-                                    </li>
+                                    </li> */}
                                 </div>
                                 <div className="bottom"></div>
                             </ul>
@@ -78,7 +95,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('featured')}
                             onMouseLeave={() => this._handleMouseLeave('featured')}
-                        ><Link to={"/"} className="featured" onClick={(e) => this._handleVoid(e)}><span>Featured<br />Issues</span></Link>
+                        ><Link to={"/"} className="featured" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[2].text_en}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
@@ -94,7 +111,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('research')}
                             onMouseLeave={() => this._handleMouseLeave('research')}
-                        ><Link to={"/"} className="research" onClick={(e) => this._handleVoid(e)}><span>Research<br />Findings</span></Link>
+                        ><Link to={"/"} className="research" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[3].text_en}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
@@ -109,7 +126,7 @@ class MainMenu extends Component {
                         <li
                             onMouseOver={() => this._handleMouseOver('event')}
                             onMouseLeave={() => this._handleMouseLeave('event')}
-                        ><Link to={"/"} className="event" onClick={(e) => this._handleVoid(e)}><span>Our Events</span></Link>
+                        ><Link to={"/"} className="event" onClick={(e) => this._handleVoid(e)}><span>{mainMenu.menus[4].text_en}</span></Link>
                             <ul>
                                 <div className="top"></div>
                                 <div className="middle">
@@ -134,7 +151,8 @@ class MainMenu extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    effect: state.effect
+    effect: state.effect,
+    menus: state.menus
 });
 
 const mapDispatchToProps = dispatch => ({

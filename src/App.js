@@ -340,10 +340,7 @@ class App extends Component {
             <div>
                 <div id="wrap">
                     <Header />
-
-                    {(
-                        (currentURL === '' || typeof currentURL === 'undefined')
-                    ) &&
+                    {(currentURL === '' || typeof currentURL === 'undefined') &&
                         <HeroMenu />
                     }
                     <MainMenu />
