@@ -58,7 +58,7 @@ import SecondaryRiskAndDanger from './containers/02ResourcesForYou/SecondaryScho
 import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/SecondarySchool/SecondarySocialMediaUserGuide';
 
 // Parents
-import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
+// import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
 // import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
 import ParentsBlog from './containers/02ResourcesForYou/Parents/ParentsBlog';
 import ParentsBlogDetail from './containers/02ResourcesForYou/Parents/ParentsBlogDetail';
@@ -87,6 +87,7 @@ import ExternalResources from './containers/06ExternalResources/ExternalResource
 
 /*** Templates ***/
 import ImageText from './containers/10Templates/ImageText';
+import ImageGrid from './containers/10Templates/ImageGrid';
 
 // 404
 import PageNotFound from './containers/PageNotFound';
@@ -274,7 +275,8 @@ class App extends Component {
 
                 // Parents
                 case 'parents-home': {
-                    return <ParentsHome />;
+                    // return <ParentsHome />;
+                    return <ImageGrid />;
                 }
                 case 'parents-tips': {
                     // return <ParentsTips />;

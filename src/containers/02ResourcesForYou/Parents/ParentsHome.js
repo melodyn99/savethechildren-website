@@ -33,6 +33,15 @@ class ParentsHome extends Component {
     render() {
         const { i18n } = this.props;
 
+        let data = [
+            { id: 1, image: '01_blog.png', url: 'blog', text: 'Blog' },
+            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tip' },
+            { id: 3, image: '03_blog_video.png', url: 'videos-sc-nwb', text: 'Videos: SC NWB Parents' },
+            { id: 4, image: '04_blog_video-POPA.png', url: 'videos-popa', text: 'Videos: POPA Channel' },
+            { id: 5, image: '05_training_workshop.png', url: '', text: 'training-workshop' },
+            { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: 'More Resources on Parenting' },
+        ]
+
         return (
             <div className="wrapper-container-main">
                 <div className="container-main">
@@ -45,7 +54,21 @@ class ParentsHome extends Component {
                                 </div>
                                 <div className="bottom">
                                     <Grid container spacing={16}>
-                                        <Grid item xs={6}>
+                                        {(data.map(
+                                            (data, i) => {
+                                                return (
+                                                    <Grid item xs={6} key={data.id}>
+                                                        <div className="grid">
+                                                            <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_' + data.image)} alt="" />
+                                                            <div className="text">
+                                                                <Link to={"/" + i18n.language + "/parents-" + data.url}>{data.text}</Link>
+                                                            </div>
+                                                        </div>
+                                                    </Grid>
+                                                )
+                                            }
+                                        ))}
+                                        {/* <Grid item xs={6}>
                                             <div className="grid">
                                                 <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                                 <div className="text">
@@ -94,7 +117,7 @@ class ParentsHome extends Component {
                                                     <Link to={"/" + i18n.language + "/parents-more-resources"}>More Resources on Parenting</Link>
                                                 </div>
                                             </div>
-                                        </Grid>
+                                        </Grid> */}
                                     </Grid>
                                 </div>
                             </div>
