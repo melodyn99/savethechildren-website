@@ -32,9 +32,9 @@ import LoginRegister from './components/101Popup/LoginRegister';
 import Home from './containers/00Home/Home';
 
 /*** About Us ***/
-import WhyWeMustAct from './containers/01AboutUs/WhyWeMustAct';
-import OurMissionAndStrategy from './containers/01AboutUs/OurMissionAndStrategy';
-import Sitemap from './containers/01AboutUs/Sitemap';
+// import WhyWeMustAct from './containers/01AboutUs/WhyWeMustAct';
+// import OurMissionAndStrategy from './containers/01AboutUs/OurMissionAndStrategy';
+// import Sitemap from './containers/01AboutUs/Sitemap';
 import ContactUs from './containers/01AboutUs/ContactUs';
 
 /** Resources For You ***/
@@ -42,9 +42,9 @@ import ContactUs from './containers/01AboutUs/ContactUs';
 // Primary School
 import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
 import PrimaryGeneralTips from './containers/02ResourcesForYou/PrimarySchool/PrimaryGeneralTips';
-import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
+// import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
 import PrimaryQuiz from './containers/02ResourcesForYou/PrimarySchool/PrimaryQuiz';
-import PrimaryRiskAndDanger from './containers/02ResourcesForYou/PrimarySchool/PrimaryRiskAndDanger';
+// import PrimaryRiskAndDanger from './containers/02ResourcesForYou/PrimarySchool/PrimaryRiskAndDanger';
 import PrimaryGame from './containers/02ResourcesForYou/PrimarySchool/PrimaryGame';
 import PrimaryNetizenPledge from './containers/02ResourcesForYou/PrimarySchool/PrimaryNetizenPledge';
 
@@ -59,19 +59,19 @@ import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/Second
 
 // Parents
 import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
-import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
+// import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
 import ParentsBlog from './containers/02ResourcesForYou/Parents/ParentsBlog';
 import ParentsBlogDetail from './containers/02ResourcesForYou/Parents/ParentsBlogDetail';
 import ParentsVideosSCNWB from './containers/02ResourcesForYou/Parents/ParentsVideosSCNWB';
 import ParentsVideosSCNWBDetail from './containers/02ResourcesForYou/Parents/ParentsVideosSCNWBDetail';
-import ParentsTrainingWorkshop from './containers/02ResourcesForYou/Parents/ParentsTrainingWorkshop';
-import ParentsMoreResources from './containers/02ResourcesForYou/Parents/ParentsMoreResources';
+// import ParentsTrainingWorkshop from './containers/02ResourcesForYou/Parents/ParentsTrainingWorkshop';
+// import ParentsMoreResources from './containers/02ResourcesForYou/Parents/ParentsMoreResources';
 
 /*** Featured Issues ***/
-import OnlineGrooming from './containers/03FeaturedIssues/OnlineGrooming';
-import Sexting from './containers/03FeaturedIssues/Sexting';
-import PersonalPrivacy from './containers/03FeaturedIssues/PersonalPrivacy';
-import Legislations from './containers/03FeaturedIssues/Legislations';
+// import OnlineGrooming from './containers/03FeaturedIssues/OnlineGrooming';
+// import Sexting from './containers/03FeaturedIssues/Sexting';
+// import PersonalPrivacy from './containers/03FeaturedIssues/PersonalPrivacy';
+// import Legislations from './containers/03FeaturedIssues/Legislations';
 
 /*** Research Findings ***/
 // import OurResearch from './containers/04ResearchFindings/OurResearch';
@@ -192,13 +192,22 @@ class App extends Component {
 
                 /*** ABOUT US ***/
                 case 'why-we-must-act': {
-                    return <WhyWeMustAct />;
+                    // return <WhyWeMustAct />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'our-mission-and-strategy': {
-                    return <OurMissionAndStrategy />;
+                    // return <OurMissionAndStrategy />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'sitemap': {
-                    return <Sitemap />;
+                    // return <Sitemap />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'contact-us': {
                     return <ContactUs />;
@@ -216,13 +225,19 @@ class App extends Component {
                     return <PrimaryGeneralTips />;
                 }
                 case 'primary-social-media-user-guide': {
-                    return <PrimarySocialMediaUserGuide />;
+                    // return <PrimarySocialMediaUserGuide />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'primary-quiz': {
                     return <PrimaryQuiz />;
                 }
                 case 'primary-risk-and-danger': {
-                    return <PrimaryRiskAndDanger />;
+                    // return <PrimaryRiskAndDanger />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'primary-game': {
                     return <PrimaryGame />;
@@ -262,7 +277,10 @@ class App extends Component {
                     return <ParentsHome />;
                 }
                 case 'parents-tips': {
-                    return <ParentsTips />;
+                    // return <ParentsTips />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'parents-blog': {
                     return <ParentsBlog />;
@@ -277,24 +295,42 @@ class App extends Component {
                     return <ParentsVideosSCNWBDetail />;
                 }
                 case 'parents-training-workshop': {
-                    return <ParentsTrainingWorkshop />;
+                    // return <ParentsTrainingWorkshop />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'parents-more-resources': {
-                    return <ParentsMoreResources />;
+                    // return <ParentsMoreResources />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
 
                 /*** FEATURED ISSUES ***/
                 case 'online-grooming': {
-                    return <OnlineGrooming />;
+                    // return <OnlineGrooming />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'sexting': {
-                    return <Sexting />;
+                    // return <Sexting />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'personal-privacy': {
-                    return <PersonalPrivacy />;
+                    // return <PersonalPrivacy />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'legislations': {
-                    return <Legislations />;
+                    // return <Legislations />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
 
                 /*** RESEARCH FINDINGS ***/
