@@ -42,6 +42,7 @@ class OurResearch extends Component {
                 ...this.state,
                 title_en_us: obj.body[0].title_en,
                 content_en_us: obj.body[0].html_en,
+
                 title_zh_hk: obj.body[0].title_zh_cht,
                 content_zh_hk: obj.body[0].html_zh_cht,
             })
@@ -51,8 +52,7 @@ class OurResearch extends Component {
         }
         const params = {
             path: 'our-research',
-            $expand: `web_content_item/cover_image`,
-            $expand: `web_page_media/file`
+            $expand: `web_content_item/cover_image,web_page_media/file`
         };
 
         apiPages.getPageByRelativePath(params, this.props.auth.token, cb, eCb);
@@ -78,7 +78,7 @@ class OurResearch extends Component {
                                     <img src={require('../../images/ResearchFindings/banner_researchfindings-Our_Research.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>{i18n.language === 'en-US' ? this.state.title_zh_hk : this.state.title_en_us}</h3>
+                                    <h3>{i18n.language === 'en-US' ? this.state.title_en_us : this.state.title_zh_hk}</h3>
 
                                     {i18n.language === 'en-US' ?
                                         <div dangerouslySetInnerHTML={this.createMarkup(this.state.content_en_us)} /> :

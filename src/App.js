@@ -323,18 +323,6 @@ class App extends Component {
                     return <ExternalResources />;
                 }
 
-                // case 'home': {
-                //     return <CommonPage />;
-                // }
-
-                // case 'game': {
-                //     return <GamePage />;
-                // }
-
-                // case 'quiz': {
-                //     return <QuizPage />;
-                // }
-
                 default: {
                     return <PageNotFound />;
                 }
