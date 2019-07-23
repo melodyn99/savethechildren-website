@@ -8,6 +8,7 @@ import { withTranslation } from 'react-i18next';
 // Styling
 
 // Api
+import { apiAuth } from '../../Api/ApiAuth';
 import { apiPages } from '../../Api/ApiPages';
 
 // Redux
@@ -32,10 +33,12 @@ class ImageText extends Component {
     }
 
     componentDidMount = () => {
-        this._getPageByRelativePath();
+        apiAuth.getClientCredentials().then((res) => {
+            this._getPageByRelativePath(res.access_token);
+        })
     }
 
-    _getPageByRelativePath = () => {
+    _getPageByRelativePath = (token) => {
         const cb = (obj) => {
             console.log("cb : ", obj);
             this.setState({
@@ -55,7 +58,7 @@ class ImageText extends Component {
             $expand: `web_content_item/cover_image,web_page_media/file`
         };
 
-        apiPages.getPageByRelativePath(params, this.props.auth.token, cb, eCb);
+        apiPages.getPageByRelativePath(params, token, cb, eCb);
     }
 
     createMarkup(html) {

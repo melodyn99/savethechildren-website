@@ -20,8 +20,6 @@ export const apiAuth = {
   },
 
   refreshTokenByRefreshToken: (token, cb, eCb) => {
-    // console.log('refresh_token2 : ', token);
-
     apiGeneral.apiPostRefreshToken('auth', {
       headers: {
         'Authorization': `Basic ${WEB_CLIENT_CREDENTIAL_TOKEN}`,
