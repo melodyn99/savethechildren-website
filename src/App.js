@@ -40,7 +40,7 @@ import ContactUs from './containers/01AboutUs/ContactUs';
 /** Resources For You ***/
 
 // Primary School
-import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
+// import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
 import PrimaryGeneralTips from './containers/02ResourcesForYou/PrimarySchool/PrimaryGeneralTips';
 // import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
 import PrimaryQuiz from './containers/02ResourcesForYou/PrimarySchool/PrimaryQuiz';
@@ -88,6 +88,7 @@ import ExternalResources from './containers/06ExternalResources/ExternalResource
 /*** Templates ***/
 import ImageText from './containers/10Templates/ImageText';
 import ImageGrid from './containers/10Templates/ImageGrid';
+import ImageTabGrid from './containers/10Templates/ImageTabGrid';
 
 // 404
 import PageNotFound from './containers/PageNotFound';
@@ -218,7 +219,7 @@ class App extends Component {
 
                 // Primary School
                 case 'primary-school-home': {
-                    return <PrimarySchoolHome
+                    return <ImageTabGrid
                         tabIndex={1}
                     />;
                 }
@@ -250,7 +251,7 @@ class App extends Component {
                 // Secondary School
                 case 'secondary-school-home': {
                     // return <SecondarySchoolHome />;
-                    return <PrimarySchoolHome
+                    return <ImageTabGrid
                         tabIndex={2}
                     />;
                 }
