@@ -33,7 +33,7 @@ class LoginRegister extends Component {
 
         this.state = {
             tabIndex: 1,
-            MessageContent: ''
+            MessageContent: '',
         }
     }
 
@@ -91,6 +91,7 @@ class LoginRegister extends Component {
 
     formRegister = ({ values, errors, touched, handleChange }) => {
         const { t } = this.props;
+
         return (
             <Form className="form-wrapper">
                 <Grid container spacing={16}>
@@ -140,6 +141,7 @@ class LoginRegister extends Component {
             apiAuth.authenticate(submitEmail, submitPassword).then((res) => {
                 this.props.loginP(res.access_token);
                 this._getUserInformation(res.access_token);
+                setTimeout(() => { this.props.close() }, 500)
             })
         }
     }
@@ -151,17 +153,24 @@ class LoginRegister extends Component {
             })
         }
     }
-
     _register = (values, access_token) => {
 
         const cb = (obj) => {
-            console.log("cb here : ", obj);
+            // console.log("cb here : ", obj);
 
             if (obj.status === 500) {
                 this.setState({
                     ...this.state,
                     MessageContent: obj.body.error
                 })
+            }
+
+            if (obj.status === 201) {
+                this.setState({
+                    ...this.state,
+                    MessageContent: 'Account has been successfully registered. Please log in to view your account.'
+                })
+                setTimeout(() => { this._switchTabs() }, 3000)
             }
         }
         const eCb = (obj) => {
@@ -176,6 +185,15 @@ class LoginRegister extends Component {
         }
 
         apiAuth.register(body, access_token, cb, eCb);
+    }
+
+    _switchTabs = () => {
+        this.setState({
+            ...this.state,
+            tabIndex: 1,
+            MessageContent: ''
+        })
+        this.formik.resetForm();
     }
 
     _getUserInformation = (access_token) => {
@@ -246,6 +264,7 @@ class LoginRegister extends Component {
                             validationSchema={Schema1}
                             onSubmit={this._registerAsync}
                             component={this.formRegister}
+                            ref={(ref) => this.formik = ref}
                         />
                     </Tab>
                 </Tabs>
