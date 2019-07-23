@@ -74,7 +74,7 @@ import PersonalPrivacy from './containers/03FeaturedIssues/PersonalPrivacy';
 import Legislations from './containers/03FeaturedIssues/Legislations';
 
 /*** Research Findings ***/
-import OurResearch from './containers/04ResearchFindings/OurResearch';
+// import OurResearch from './containers/04ResearchFindings/OurResearch';
 import OtherFindings from './containers/04ResearchFindings/OtherFindings';
 
 /*** Our Events ***/
@@ -85,9 +85,8 @@ import EventsTrainingWorkshops from './containers/05OurEvents/EventsTrainingWork
 /*** External Resources ***/
 import ExternalResources from './containers/06ExternalResources/ExternalResources';
 
-// import CommonPage from './components/103Pages/CommonPage';
-// import QuizPage from './components/103Pages/QuizPage';
-// import GamePage from './components/103Pages/GamePage';
+/*** Templates ***/
+import ImageText from './containers/10Templates/ImageText';
 
 // 404
 import PageNotFound from './containers/PageNotFound';
@@ -301,7 +300,10 @@ class App extends Component {
 
                 /*** RESEARCH FINDINGS ***/
                 case 'our-research': {
-                    return <OurResearch />;
+                    // return <OurResearch />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'other-findings': {
                     return <OtherFindings />;
