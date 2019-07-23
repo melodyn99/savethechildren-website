@@ -6,10 +6,12 @@ import { withTranslation } from 'react-i18next';
 
 // Api
 import { apiAuth } from './Api/ApiAuth';
+import { apiMenus } from './Api/ApiMenus';
 
 // Redux
 import { connect } from 'react-redux';
 import { refreshTokenByRefreshToken } from './Redux/Action/authAction';
+import { getAllMenus } from './Redux/Action/menusAction';
 
 import querySearch from "stringquery";
 
@@ -107,8 +109,10 @@ class App extends Component {
         // window.addEventListener("resize", this.windowResize);
 
         // check if token has expired
+
         if (this.props.auth.auth) {
             this._getUserInformation(this.props.auth.token);
+            this._getAllMenus(this.props.auth.token);
         }
     }
 
@@ -156,6 +160,22 @@ class App extends Component {
         }
 
         apiAuth.refreshTokenByRefreshToken(refresh_token, cb, eCb);
+    }
+
+    _getAllMenus = (token) => {
+        if (typeof token !== 'undefined') {
+
+            const cb = (obj) => {
+                // console.log("cb : ", obj);
+                this.props.getAllMenusP(obj.body);
+            }
+            const eCb = (obj) => {
+                console.log("eCb : ", obj);
+            }
+            const params = null;
+
+            apiMenus.getAllMenus(params, token, cb, eCb);
+        }
     }
 
     getComponent = (currentURL, params) => {
@@ -365,6 +385,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => ({
     refreshTokenByRefreshTokenP: data => dispatch(refreshTokenByRefreshToken(data)),
+    getAllMenusP: data => dispatch(getAllMenus(data)),
 });
 
 export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(App));
