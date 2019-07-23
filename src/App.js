@@ -75,7 +75,7 @@ import Legislations from './containers/03FeaturedIssues/Legislations';
 
 /*** Research Findings ***/
 // import OurResearch from './containers/04ResearchFindings/OurResearch';
-import OtherFindings from './containers/04ResearchFindings/OtherFindings';
+// import OtherFindings from './containers/04ResearchFindings/OtherFindings';
 
 /*** Our Events ***/
 import EventsSaferInternetDay2019 from './containers/05OurEvents/EventsSaferInternetDay2019';
@@ -108,7 +108,6 @@ class App extends Component {
         // window.addEventListener("resize", this.windowResize);
 
         // check if token has expired
-
         if (this.props.auth.auth) {
             this._getUserInformation(this.props.auth.token);
             this._getAllMenus(this.props.auth.token);
@@ -306,7 +305,10 @@ class App extends Component {
                     />
                 }
                 case 'other-findings': {
-                    return <OtherFindings />;
+                    // return <OtherFindings />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
 
                 /*** OUR EVENTS ***/
