@@ -8,11 +8,10 @@ import { withTranslation } from 'react-i18next';
 // Styling
 
 // Api
-// import { apiAuth } from '../../Api/ApiAuth';
+import { apiPages } from '../../Api/ApiPages';
 
 // Redux
 import { connect } from 'react-redux';
-import { login } from '../../Redux/Action/authAction';
 
 // Utils
 
@@ -20,16 +19,53 @@ import { login } from '../../Redux/Action/authAction';
 import BreadCrumb from '../../components/100Include/BreadCrumb';
 
 class OurResearch extends Component {
+
     constructor(props) {
         super(props);
 
         this.state = {
-            formSubmitted: false
+            title_en_us: '',
+            content_en_us: '',
+            title_zh_hk: '',
+            content_zh_hk: ''
         }
     }
 
+    componentDidMount = () => {
+        this._getPageByRelativePath();
+    }
+
+    _getPageByRelativePath = () => {
+        const cb = (obj) => {
+            console.log("cb : ", obj);
+            this.setState({
+                ...this.state,
+                title_en_us: obj.body[0].title_en,
+                content_en_us: obj.body[0].html_en,
+                title_zh_hk: obj.body[0].title_zh_cht,
+                content_zh_hk: obj.body[0].html_zh_cht,
+            })
+        }
+        const eCb = (obj) => {
+            console.log("eCb : ", obj);
+        }
+        const params = {
+            path: 'our-research',
+            $expand: `web_content_item/cover_image`,
+            $expand: `web_page_media/file`
+        };
+
+        apiPages.getPageByRelativePath(params, this.props.auth.token, cb, eCb);
+    }
+
+    createMarkup(html) {
+        return { __html: html };
+    };
+
     render() {
-        const { t } = this.props;
+        const {
+            //t, 
+            i18n } = this.props;
 
         return (
             <div className="wrapper-container-main">
@@ -42,8 +78,12 @@ class OurResearch extends Component {
                                     <img src={require('../../images/ResearchFindings/banner_researchfindings-Our_Research.png')} alt="" />
                                 </div>
                                 <div className="bottom">
-                                    <h3>{t("ResearchFindings:OurResearch.title")}</h3>
-                                    <p>{t("ResearchFindings:OurResearch.content")}</p>
+                                    <h3>{i18n.language === 'en-US' ? this.state.title_zh_hk : this.state.title_en_us}</h3>
+
+                                    {i18n.language === 'en-US' ?
+                                        <div dangerouslySetInnerHTML={this.createMarkup(this.state.content_en_us)} /> :
+                                        <div dangerouslySetInnerHTML={this.createMarkup(this.state.content_zh_hk)} />
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -59,7 +99,6 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    loginP: data => dispatch(login(data))
 });
 
 export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(OurResearch));
