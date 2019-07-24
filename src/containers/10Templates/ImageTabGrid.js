@@ -21,7 +21,7 @@ import { login } from '../../Redux/Action/authAction';
 // Children components
 import BreadCrumb from '../../components/100Include/BreadCrumb';
 
-class ImageGrid2 extends Component {
+class ImageTabGrid extends Component {
     constructor(props) {
         super(props);
 
@@ -144,4 +144,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ImageGrid2));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ImageTabGrid));
