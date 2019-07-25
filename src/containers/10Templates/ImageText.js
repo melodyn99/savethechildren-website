@@ -40,7 +40,7 @@ class ImageText extends Component {
 
     _getPageByRelativePath = (token) => {
         const cb = (obj) => {
-            console.log("cb : ", obj);
+            // console.log("cb : ", obj);
             this.setState({
                 ...this.state,
                 title_en_us: obj.body[0].title_en,

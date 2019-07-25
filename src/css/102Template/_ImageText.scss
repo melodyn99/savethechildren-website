@@ -4,7 +4,7 @@
         img { width:100%; position:relative; }
         &.lavender { background-color:$bgLavender;}
     }
-    .bottom { padding:10px 30px; background:#fff; min-height:1000px; 
+    .bottom { padding:10px 30px; background:#fff;
         h3 { color:$corporateRedColor; font-size:30px;}
         h4 { color:$corporateRedColor; font-size:16px; padding:20px 0px; margin:0px; }
         ul { list-style:none; position:relative; 
@@ -13,6 +13,8 @@
             li { padding-bottom:20px; position:relative;}
         }
         p { font-size:16px; margin:0px; padding-bottom:20px; }
-        &.short { min-height:300px !important; }
+        &.short { 
+            // min-height:300px !important; 
+        }
     }
 }
