@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 // Styling
@@ -28,6 +29,14 @@ class ImageGrid extends Component {
         this.state = {
             formSubmitted: false
         }
+    }
+
+    _goToDetail = (url) => {
+
+        // const { i18n } = this.props;
+        
+        this.props.history.push(url);
+        
     }
 
     render() {
@@ -58,7 +67,7 @@ class ImageGrid extends Component {
                                             (data, i) => {
                                                 return (
                                                     <Grid item xs={6} key={data.id}>
-                                                        <div className="grid">
+                                                        <div className="grid" onClick={() => this._goToDetail("/" + i18n.language + "/parents-" + data.url)}>
                                                             <img src={require('../../images/ResourcesForYou/Parents/Button/btn_parents_' + data.image)} alt="" />
                                                             <div className="text">
                                                                 <Link to={"/" + i18n.language + "/parents-" + data.url}>{data.text}</Link>
@@ -87,4 +96,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ImageGrid));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withRouter(ImageGrid)));

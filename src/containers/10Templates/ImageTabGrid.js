@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 import { Tabs, Tab } from 'react-bootstrap';
 
 // Styling
@@ -29,6 +30,14 @@ class ImageTabGrid extends Component {
             formSubmitted: false,
             tabIndex: 1
         }
+    }
+
+    _goToDetail = (url) => {
+
+        // const { i18n } = this.props;
+        
+        this.props.history.push(url);
+        
     }
 
     componentDidMount = () => {
@@ -91,7 +100,7 @@ class ImageTabGrid extends Component {
                                                         (data, i) => {
                                                             return (
                                                                 <Grid item xs={6} key={data.id}>
-                                                                    <div className="grid">
+                                                                    <div className="grid" onClick={() => this._goToDetail("/" + i18n.language + "/" + data.url)}>
                                                                         <img src={require('../../images/ResourcesForYou/PrimarySchool/Button/' + data.image)} alt="" />
                                                                         <div className="text">
                                                                             <Link to={"/" + i18n.language + "/" + data.url}>{data.text}</Link>
@@ -144,4 +153,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ImageTabGrid));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withRouter(ImageTabGrid)));
