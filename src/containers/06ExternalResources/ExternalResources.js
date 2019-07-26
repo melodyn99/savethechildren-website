@@ -104,6 +104,20 @@ class ExternalResources extends Component {
                                                     </div>
                                                 </div>
                                             </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_04_Otherresource.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block5.title")}</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <h3>{t("ExternalResources:block5.subtitle")}</h3>
+                                                        <h4>{t("ExternalResources:block5.content")}</h4>                                                    
+                                                    </div>
+                                                </div>
+                                            </Grid>
                                         </Grid>
                                     </div>
                                 </div>
