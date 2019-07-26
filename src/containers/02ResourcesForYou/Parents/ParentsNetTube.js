@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 
 // Styling
 import Grid from '@material-ui/core/Grid';
@@ -20,13 +21,21 @@ import { login } from '../../../Redux/Action/authAction';
 // Children components
 import BreadCrumb from '../../../components/100Include/BreadCrumb';
 
-class ParentsVideosSCNWB extends Component {
+class ParentsNetTube extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             formSubmitted: false
         }
+    }
+
+    _goToDetail = (url) => {
+
+        // const { i18n } = this.props;
+        
+        this.props.history.push(url);
+        
     }
 
     render() {
@@ -40,7 +49,7 @@ class ParentsVideosSCNWB extends Component {
                         <div className="content no-background">
                             <Grid container spacing={16}>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2 left">
+                                    <div className="ImageGrid2 left" onClick={() => this._goToDetail("/" + i18n.language + "/parents-nettube-detail")}>
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -53,7 +62,7 @@ class ParentsVideosSCNWB extends Component {
                                     </div>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2 right">
+                                    <div className="ImageGrid2 right" onClick={() => this._goToDetail("/" + i18n.language + "/parents-nettube-detail")}>
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -67,7 +76,7 @@ class ParentsVideosSCNWB extends Component {
                                 </Grid>
 
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2 left">
+                                    <div className="ImageGrid2 left" onClick={() => this._goToDetail("/" + i18n.language + "/parents-nettube-detail")}>
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -80,7 +89,7 @@ class ParentsVideosSCNWB extends Component {
                                     </div>
                                 </Grid>
                                 <Grid item xs={6}>
-                                    <div className="ImageGrid2 right">
+                                    <div className="ImageGrid2 right" onClick={() => this._goToDetail("/" + i18n.language + "/parents-nettube-detail")}>
                                         <div className="upper">
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
@@ -110,4 +119,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ParentsVideosSCNWB));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withRouter(ParentsNetTube)));

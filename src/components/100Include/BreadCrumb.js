@@ -95,11 +95,11 @@ class Breadcrumb extends Component {
             case 'parents-blog-detail': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-blog"}>Blog</Link></span> > <span>儿童安全上网工具</span></div>);
             }
-            case 'parents-videos-sc-nwb': {
-                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>Videos: SC NWB</span></div>);
+            case 'parents-nettube': {
+                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>NetTube</span></div>);
             }
-            case 'parents-videos-sc-nwb-detail': {
-                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-videos-sc-nwb"}>Videos: SC NWB</Link></span> > <span>生活影片</span></div>);
+            case 'parents-nettube-detail': {
+                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-nettube"}>NetTube</Link></span> > <span>生活影片</span></div>);
             }
             case 'parents-training-workshop': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>Training Workshop</span></div>);
@@ -233,11 +233,11 @@ class Breadcrumb extends Component {
             case 'parents-blog-detail': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-blog"}>Blog</Link></span> > <span>儿童安全上网工具</span></div>);
             }
-            case 'parents-videos-sc-nwb': {
-                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>Videos: SC NWB</span></div>);
+            case 'parents-nettube': {
+                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>NetTube</span></div>);
             }
-            case 'parents-videos-sc-nwb-detail': {
-                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-videos-sc-nwb"}>Videos: SC NWB</Link></span> > <span>生活影片</span></div>);
+            case 'parents-nettube-detail': {
+                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span><Link to={"/" + i18n.language + "/parents-nettube"}>NetTube</Link></span> > <span>生活影片</span></div>);
             }
             case 'parents-training-workshop': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/parents-home"}>Parents</Link></span> > <span>Training Workshop</span></div>);

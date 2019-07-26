@@ -63,8 +63,8 @@ import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/Second
 // import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
 import ParentsBlog from './containers/02ResourcesForYou/Parents/ParentsBlog';
 import ParentsBlogDetail from './containers/02ResourcesForYou/Parents/ParentsBlogDetail';
-import ParentsVideosSCNWB from './containers/02ResourcesForYou/Parents/ParentsVideosSCNWB';
-import ParentsVideosSCNWBDetail from './containers/02ResourcesForYou/Parents/ParentsVideosSCNWBDetail';
+import ParentsNetTube from './containers/02ResourcesForYou/Parents/ParentsNetTube';
+import ParentsNetTubeDetail from './containers/02ResourcesForYou/Parents/ParentsNetTubeDetail';
 // import ParentsTrainingWorkshop from './containers/02ResourcesForYou/Parents/ParentsTrainingWorkshop';
 // import ParentsMoreResources from './containers/02ResourcesForYou/Parents/ParentsMoreResources';
 
@@ -298,11 +298,11 @@ class App extends Component {
                 case 'parents-blog-detail': {
                     return <ParentsBlogDetail />;
                 }
-                case 'parents-videos-sc-nwb': {
-                    return <ParentsVideosSCNWB />;
+                case 'parents-nettube': {
+                    return <ParentsNetTube />;
                 }
-                case 'parents-videos-sc-nwb-detail': {
-                    return <ParentsVideosSCNWBDetail />;
+                case 'parents-nettube-detail': {
+                    return <ParentsNetTubeDetail />;
                 }
                 case 'parents-training-workshop': {
                     // return <ParentsTrainingWorkshop />;
