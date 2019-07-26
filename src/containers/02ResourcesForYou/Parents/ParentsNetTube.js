@@ -54,7 +54,7 @@ class ParentsNetTube extends Component {
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
                                         <div className="bottom">
-                                            <h3>生活影片</h3>
+                                            <h3>POPA</h3>
                                             <h5>Hilary Yip (article and videos under production by SCHK)</h5>
                                             <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
                                             <p>官方网站: http://www.kidzui.com</p>
@@ -67,7 +67,7 @@ class ParentsNetTube extends Component {
                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
                                         </div>
                                         <div className="bottom">
-                                            <h3>生活影片</h3>
+                                            <h3>SC NWB</h3>
                                             <h5>Hilary Yip (article and videos under production by SCHK)</h5>
                                             <p>KidZu是适用健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
                                             <p>官方网站: http://www.kidzui.com</p>

@@ -39,10 +39,12 @@ class ParentsNetTubeDetail extends Component {
                         <div className="content">
                             <div className="VideoDetail">
                                 <div className="upper">
-                                    <img src={require('../../../images/ResourcesForYou/Parents/Banner/banner_resourceforyou-Parents.png')} alt="" />
+                                    <iframe width="800" height="480" title="POPA"
+                                        src="https://www.youtube.com/embed/7rTNaeZZW4w">
+                                    </iframe> 
                                 </div>
                                 <div className="bottom">
-                                    <h3>生活影片</h3>
+                                    <h3>POPA</h3>
                                     <h5>Hilary Yip (article and videos under production by SCHK)</h5>
                                     <p>健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活健康生活</p>
                                 </div>

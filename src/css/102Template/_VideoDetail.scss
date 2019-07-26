@@ -1,6 +1,6 @@
 .VideoDetail { background-color:#fff;
-    .upper {
-        img { width:100%; }
+    .upper { position:relative;
+        iframe { width:100%; position:relative; }
     }
     .bottom { padding:40px 50px; position:relative; background:#fff; 
         h3 { font-size:24px; }
