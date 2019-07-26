@@ -1,10 +1,9 @@
 {
-    "footer": {
-        "1": "Resources for you",
-        "2": "Primary-school"
-    },
-    "page": {
-        "tabs": ["Primary school (Aged 6-12)", ""],
-        "blocks": ["General tips", "Social media user guide", "", "", "", "", "The Netizen Pledge"]
-    }
+    "block1": "General tips",
+    "block2": "Social media user guide",
+    "block3": "Quiz",
+    "block4": "Risks and dangers",
+    "block5": "NetTube",
+    "block6": "Game: Netizen Adventure",
+    "block7": "The Netizen Pledge"
 }

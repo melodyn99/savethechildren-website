@@ -59,26 +59,26 @@ class PrimarySchoolHome extends Component {
     }
 
     render() {
-        const { i18n } = this.props;
+        const { i18n, t } = this.props;
 
         let primaryData = [
-            { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: 'primary-general-tips', text: 'General tips' },
-            { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: 'primary-social-media-user-guide', text: 'Social media user guide' },
-            { id: 3, image: 'btn_primaryschool_03_quiz.png', url: 'primary-quiz', text: 'Quiz' },
-            { id: 4, image: 'btn_primaryschool_04_onlinegrooming.png', url: 'primary-risk-and-danger', text: 'Risks and dangers' },
-            { id: 5, image: 'btn_primaryschool_05_video.png', url: 'primary-video', text: 'NetTube' },
-            { id: 6, image: 'btn_primaryschool_06_game.png', url: 'primary-game', text: 'Game: Netizen Adventure' },
-            { id: 7, image: 'btn_primaryschool_07_TheNetizenPledge.png', url: 'primary-netizen-pledge', text: 'The Netizen Pledge' },
+            { id: 1, image: 'btn_primaryschool_01_Generaltips.png', url: 'primary-general-tips', text: t("PrimaryHome:block1") },
+            { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: 'primary-social-media-user-guide', text: t("PrimaryHome:block2") },
+            { id: 3, image: 'btn_primaryschool_03_quiz.png', url: 'primary-quiz', text: t("PrimaryHome:block3") },
+            { id: 4, image: 'btn_primaryschool_04_onlinegrooming.png', url: 'primary-risk-and-danger', text: t("PrimaryHome:block4") },
+            { id: 5, image: 'btn_primaryschool_05_video.png', url: 'primary-video', text: t("PrimaryHome:block5") },
+            { id: 6, image: 'btn_primaryschool_06_game.png', url: 'primary-game', text: t("PrimaryHome:block6") },
+            { id: 7, image: 'btn_primaryschool_07_TheNetizenPledge.png', url: 'primary-netizen-pledge', text: t("PrimaryHome:block7") },
         ]
 
         let secondaryData = [
-            { id: 1, image: 'btn_secondaryschool_01_Generaltips.png', url: 'secondary-general-tips', text: 'General tips' },
-            { id: 2, image: 'btn_secondaryschool_02_Socialmediauserguide.png', url: 'secondary-social-media-user-guide', text: 'Social media user guide' },
-            { id: 3, image: 'btn_secondaryschool_03_quiz.png', url: 'secondary-quiz', text: 'Quiz' },
-            { id: 4, image: 'btn_secondaryschool_04_Riskanddanger.png', url: 'secondary-risk-and-danger', text: 'Risks and dangers' },
-            { id: 5, image: 'btn_secondaryschool_05_video.png', url: 'secondary-video', text: 'NetTube' },
-            { id: 6, image: 'btn_secondaryschool_06_game.png', url: 'secondary-game', text: 'Game: Spiral Jumping Netizen' },
-            { id: 7, image: 'btn_secondaryschool_07_TheNetizenPledge.png', url: 'secondary-netizen-pledge', text: 'The Netizen Pledge' },
+            { id: 1, image: 'btn_secondaryschool_01_Generaltips.png', url: 'secondary-general-tips', text: t("SecondaryHome:block1") },
+            { id: 2, image: 'btn_secondaryschool_02_Socialmediauserguide.png', url: 'secondary-social-media-user-guide', text: t("SecondaryHome:block2") },
+            { id: 3, image: 'btn_secondaryschool_03_quiz.png', url: 'secondary-quiz', text: t("SecondaryHome:block3") },
+            { id: 4, image: 'btn_secondaryschool_04_Riskanddanger.png', url: 'secondary-risk-and-danger', text: t("SecondaryHome:block4") },
+            { id: 5, image: 'btn_secondaryschool_05_video.png', url: 'secondary-video', text: t("SecondaryHome:block5") },
+            { id: 6, image: 'btn_secondaryschool_06_game.png', url: 'secondary-game', text: t("SecondaryHome:block6") },
+            { id: 7, image: 'btn_secondaryschool_07_TheNetizenPledge.png', url: 'secondary-netizen-pledge', text: t("SecondaryHome:block7") },
         ]
 
         return (
