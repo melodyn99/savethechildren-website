@@ -15,8 +15,8 @@ class Breadcrumb extends Component {
         if (i18n.language === "en-US") switch (currentPath) {
 
             /*** ABOUT US ***/
-            case 'why-we-must-act': {
-                return (<div><span><Link to="/">About Us</Link></span> > <span>Why we must act</span></div>);
+            case 'what-is-netizen-academy': {
+                return (<div><span><Link to="/">About Us</Link></span> > <span>What is Netizen Academy</span></div>);
             }
             case 'our-mission-and-strategy': {
                 return (<div><span><Link to="/">About Us</Link></span> > <span>Our mission and strategy</span></div>);
@@ -153,7 +153,7 @@ class Breadcrumb extends Component {
         else switch (currentPath) {
 
             /*** ABOUT US ***/
-            case 'why-we-must-act': {
+            case 'what-is-netizen-academy': {
                 return (<div><span><Link to="/">Chinese About Us</Link></span> > <span>我們為甚麼會回應？</span></div>);
             }
             case 'our-mission-and-strategy': {

@@ -43,11 +43,11 @@ class ImageGrid extends Component {
         const { i18n } = this.props;
 
         let data = [
-            { id: 1, image: '01_blog.png', url: 'blog', text: 'Blog' },
-            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tip' },
+            { id: 1, image: '01_blog.png', url: 'blog', text: 'The Netizen Blog' },
+            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tips' },
             { id: 3, image: '03_blog_video.png', url: 'nettube', text: 'NetTube' },
             // { id: 4, image: '04_blog_video-POPA.png', url: 'videos-popa', text: 'Videos: POPA Channel' },
-            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: 'Training Workshop' },
+            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: 'Training Workshops' },
             { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: 'More Resources on Parenting' },
         ]
 

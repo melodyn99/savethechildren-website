@@ -194,7 +194,7 @@ class App extends Component {
                 }
 
                 /*** ABOUT US ***/
-                case 'why-we-must-act': {
+                case 'what-is-netizen-academy': {
                     // return <WhyWeMustAct />;
                     return <ImageText
                         relativePath={currentURL}
