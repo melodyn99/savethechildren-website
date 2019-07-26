@@ -57,7 +57,7 @@ class PrimarySchoolHome extends Component {
             { id: 2, image: 'btn_primaryschool_02_Socialmediauserguide.png', url: 'primary-social-media-user-guide', text: 'Social media user guide' },
             { id: 3, image: 'btn_primaryschool_03_quiz.png', url: 'primary-quiz', text: 'Quiz' },
             { id: 4, image: 'btn_primaryschool_04_onlinegrooming.png', url: 'primary-risk-and-danger', text: 'Risk and danger' },
-            { id: 5, image: 'btn_primaryschool_05_video.png', url: '', text: 'Video' },
+            { id: 5, image: 'btn_primaryschool_05_video.png', url: 'primary-video', text: 'Video' },
             { id: 6, image: 'btn_primaryschool_06_game.png', url: 'primary-game', text: 'Game' },
             { id: 7, image: 'btn_primaryschool_07_TheNetizenPledge.png', url: 'primary-netizen-pledge', text: 'The Netizen Pledge' },
         ]
