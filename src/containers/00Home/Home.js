@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 
 // Styling
 import Grid from '@material-ui/core/Grid';
@@ -29,6 +30,14 @@ class Home extends Component {
         }
     }
 
+    _goToDetail = (url) => {
+
+        const { i18n } = this.props;
+        
+        this.props.history.push('/' + i18n.language + '/' + url);
+        
+        }
+
     render() {
         const { t } = this.props;
 
@@ -43,19 +52,19 @@ class Home extends Component {
                                 <div className="bottom">
                                     <Grid container spacing={16}>
                                         <Grid item xs={4}>
-                                            <div className="section">
+                                            <div className="section" onClick={() => this._goToDetail('primary-school-home')}>
                                                 <img src={require('../../images/Homepage/img_homepage_content_Resourcefoyou-02_Primary-School.png')} alt="" />
                                                 <h6>{t("Home:primary")}</h6>
                                             </div>
                                         </Grid>
                                         <Grid item xs={4}>
-                                            <div className="section">
+                                            <div className="section" onClick={() => this._goToDetail('secondary-school-home')}>
                                                 <img src={require('../../images/Homepage/img_homepage_content_Resourcefoyou-03_Secondry-School.png')} alt="" />
                                                 <h6>{t("Home:secondary")}</h6>
                                             </div>
                                         </Grid>
                                         <Grid item xs={4}>
-                                            <div className="section">
+                                            <div className="section" onClick={() => this._goToDetail('parents-home')}>
                                                 <img src={require('../../images/Homepage/img_homepage_content_Resourcefoyou-04_Parents.png')} alt="" />
                                                 <h6>{t("Home:parents")}</h6>
                                             </div>
@@ -79,4 +88,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(Home));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withRouter(Home)));
