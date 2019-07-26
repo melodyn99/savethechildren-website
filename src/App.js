@@ -32,20 +32,20 @@ import LoginRegister from './components/101Popup/LoginRegister';
 import Home from './containers/00Home/Home';
 
 /*** About Us ***/
-// import WhyWeMustAct from './containers/01AboutUs/WhyWeMustAct';
-// import OurMissionAndStrategy from './containers/01AboutUs/OurMissionAndStrategy';
-// import Sitemap from './containers/01AboutUs/Sitemap';
+import WhatIsNetizenAcademy from './containers/01AboutUs/WhatIsNetizenAcademy';
+import OurMissionAndStrategy from './containers/01AboutUs/OurMissionAndStrategy';
+import Sitemap from './containers/01AboutUs/Sitemap';
 import ContactUs from './containers/01AboutUs/ContactUs';
 
 /** Resources For You ***/
 
 // Primary School
-// import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
+import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
 import PrimaryGeneralTips from './containers/02ResourcesForYou/PrimarySchool/PrimaryGeneralTips';
 import PrimaryVideo from './containers/02ResourcesForYou/PrimarySchool/PrimaryVideo';
-// import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
+import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
 import PrimaryQuiz from './containers/02ResourcesForYou/PrimarySchool/PrimaryQuiz';
-// import PrimaryRiskAndDanger from './containers/02ResourcesForYou/PrimarySchool/PrimaryRiskAndDanger';
+import PrimaryRiskAndDanger from './containers/02ResourcesForYou/PrimarySchool/PrimaryRiskAndDanger';
 import PrimaryGame from './containers/02ResourcesForYou/PrimarySchool/PrimaryGame';
 import PrimaryNetizenPledge from './containers/02ResourcesForYou/PrimarySchool/PrimaryNetizenPledge';
 
@@ -59,24 +59,24 @@ import SecondaryQuiz from './containers/02ResourcesForYou/SecondarySchool/Second
 // import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/SecondarySchool/SecondarySocialMediaUserGuide';
 
 // Parents
-// import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
-// import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
+import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
+import ParentsTips from './containers/02ResourcesForYou/Parents/ParentsTips';
 import ParentsBlog from './containers/02ResourcesForYou/Parents/ParentsBlog';
 import ParentsBlogDetail from './containers/02ResourcesForYou/Parents/ParentsBlogDetail';
 import ParentsNetTube from './containers/02ResourcesForYou/Parents/ParentsNetTube';
 import ParentsNetTubeDetail from './containers/02ResourcesForYou/Parents/ParentsNetTubeDetail';
-// import ParentsTrainingWorkshop from './containers/02ResourcesForYou/Parents/ParentsTrainingWorkshop';
-// import ParentsMoreResources from './containers/02ResourcesForYou/Parents/ParentsMoreResources';
+import ParentsTrainingWorkshop from './containers/02ResourcesForYou/Parents/ParentsTrainingWorkshop';
+import ParentsMoreResources from './containers/02ResourcesForYou/Parents/ParentsMoreResources';
 
 /*** Featured Issues ***/
-// import OnlineGrooming from './containers/03FeaturedIssues/OnlineGrooming';
-// import Sexting from './containers/03FeaturedIssues/Sexting';
-// import PersonalPrivacy from './containers/03FeaturedIssues/PersonalPrivacy';
-// import Legislations from './containers/03FeaturedIssues/Legislations';
+import OnlineGrooming from './containers/03FeaturedIssues/OnlineGrooming';
+import Sexting from './containers/03FeaturedIssues/Sexting';
+import PersonalPrivacy from './containers/03FeaturedIssues/PersonalPrivacy';
+import Legislations from './containers/03FeaturedIssues/Legislations';
 
 /*** Research Findings ***/
-// import OurResearch from './containers/04ResearchFindings/OurResearch';
-// import OtherFindings from './containers/04ResearchFindings/OtherFindings';
+import OurResearch from './containers/04ResearchFindings/OurResearch';
+import OtherFindings from './containers/04ResearchFindings/OtherFindings';
 
 /*** Our Events ***/
 import EventsSaferInternetDay2019 from './containers/05OurEvents/EventsSaferInternetDay2019';
@@ -87,9 +87,9 @@ import EventsTrainingWorkshops from './containers/05OurEvents/EventsTrainingWork
 import ExternalResources from './containers/06ExternalResources/ExternalResources';
 
 /*** Templates ***/
-import ImageText from './containers/10Templates/ImageText';
-import ImageGrid from './containers/10Templates/ImageGrid';
-import ImageTabGrid from './containers/10Templates/ImageTabGrid';
+// import ImageText from './containers/10Templates/ImageText';
+// import ImageGrid from './containers/10Templates/ImageGrid';
+// import ImageTabGrid from './containers/10Templates/ImageTabGrid';
 
 // 404
 import PageNotFound from './containers/PageNotFound';
@@ -195,22 +195,22 @@ class App extends Component {
 
                 /*** ABOUT US ***/
                 case 'what-is-netizen-academy': {
-                    // return <WhyWeMustAct />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <WhatIsNetizenAcademy />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'our-mission-and-strategy': {
-                    // return <OurMissionAndStrategy />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <OurMissionAndStrategy />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'sitemap': {
-                    // return <Sitemap />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <Sitemap />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'contact-us': {
                     return <ContactUs />;
@@ -220,18 +220,21 @@ class App extends Component {
 
                 // Primary School
                 case 'primary-school-home': {
-                    return <ImageTabGrid
+                    return <PrimarySchoolHome 
                         tabIndex={1}
-                    />;
+                    />
+                    // return <ImageTabGrid
+                    //     tabIndex={1}
+                    // />;
                 }
                 case 'primary-general-tips': {
                     return <PrimaryGeneralTips />;
                 }
                 case 'primary-social-media-user-guide': {
-                    // return <PrimarySocialMediaUserGuide />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <PrimarySocialMediaUserGuide />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'primary-quiz': {
                     return <PrimaryQuiz />;
@@ -240,10 +243,10 @@ class App extends Component {
                     return <PrimaryVideo />;
                 }
                 case 'primary-risk-and-danger': {
-                    // return <PrimaryRiskAndDanger />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <PrimaryRiskAndDanger />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'primary-game': {
                     return <PrimaryGame />;
@@ -254,26 +257,30 @@ class App extends Component {
 
                 // Secondary School
                 case 'secondary-school-home': {
-                    // return <SecondarySchoolHome />;
-                    return <ImageTabGrid
+                    return <PrimarySchoolHome 
                         tabIndex={2}
                     />;
+                    // return <ImageTabGrid
+                    //     tabIndex={2}
+                    // />;
                 }
                 case 'secondary-general-tips': {
                     return <PrimaryGeneralTips />;
                 }
                 case 'secondary-social-media-user-guide': {
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <PrimarySocialMediaUserGuide />
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'secondary-quiz': {
                     return <SecondaryQuiz />;
                 }
                 case 'secondary-risk-and-danger': {
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <PrimaryRiskAndDanger />
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'secondary-game': {
                     return <SecondaryGame />;
@@ -287,14 +294,14 @@ class App extends Component {
 
                 // Parents
                 case 'parents-home': {
-                    // return <ParentsHome />;
-                    return <ImageGrid />;
+                    return <ParentsHome />;
+                    // return <ImageGrid />;
                 }
                 case 'parents-tips': {
-                    // return <ParentsTips />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <ParentsTips />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'parents-blog': {
                     return <ParentsBlog />;
@@ -309,56 +316,56 @@ class App extends Component {
                     return <ParentsNetTubeDetail />;
                 }
                 case 'parents-training-workshop': {
-                    // return <ParentsTrainingWorkshop />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <ParentsTrainingWorkshop />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'parents-more-resources': {
-                    // return <ParentsMoreResources />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <ParentsMoreResources />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
 
                 /*** FEATURED ISSUES ***/
                 case 'online-grooming': {
-                    // return <OnlineGrooming />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <OnlineGrooming />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'sexting': {
-                    // return <Sexting />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <Sexting />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'personal-privacy': {
-                    // return <PersonalPrivacy />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <PersonalPrivacy />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'legislations': {
-                    // return <Legislations />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <Legislations />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
 
                 /*** RESEARCH FINDINGS ***/
                 case 'our-research': {
-                    // return <OurResearch />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <OurResearch />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
                 case 'other-findings': {
-                    // return <OtherFindings />;
-                    return <ImageText
-                        relativePath={currentURL}
-                    />
+                    return <OtherFindings />;
+                    // return <ImageText
+                    //     relativePath={currentURL}
+                    // />
                 }
 
                 /*** OUR EVENTS ***/
