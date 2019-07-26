@@ -1,9 +1,14 @@
 {
-    "whyWeMustAct": {
-        "title": "Why we must act 中文",
-        "content1": "Online world is real world. One can benefit from surfing the web and equally can be harmed for lacking awareness and knowledge. 中文",
-        "content2": "Connecting to the digital world becomes an integral part of cosmopolitan life. Rights of children and young people in accessing to the digital world for sharing opinions and ideas, searching for information and connecting with friends need to be ensured. 中文",
-        "content3": "Rights of children to be protected in the physical world, as well as the digital world should be safeguarded. 中文"
+    "whatIsNetizenAcademy": {
+        "title1": "Net神研究所是…",
+        "content1": "Net神研究所乃香港救助兒童會所成立的，旨在預防兒童在網絡世界所面臨的威脅。",
+        "content2": "Net神研究所是一所建於互聯網上的資源中心，研究所內收藏了有關打擊網上兒童性侵的相關資源。",
+        "title2": "我們為甚麼會回應？",
+        "content3": "互聯網世界也是真實的世界。互聯網為我們的生活帶來很多便利，但同時，也有可能因為我們缺乏網絡安全意識和知識而帶來傷害。",
+        "content4": "連結到網絡世界漸漸成為現代人生活其中一個環節。兒童和青年享有使用互聯網的權利，並且可以透過互聯網分享意見及想法、搜尋所需的資訊和與朋友連繫。",
+        "content5": "不管在現實的世界以及網絡世界，兒童有權受到保護。",
+        "title3": "Net神研究所的代表角色",
+        "content6": "由一位香港的學生所設計，其設計參考了救助兒童會的標誌。這個角色的志願是救助網絡上受威脅的兒童，其身體由平版電腦所構成，可以分析和監察網絡的各種威脅。"
     },
     "ourMissionAndStrategy": {
         "title": "Our mission and strategy 中文",
