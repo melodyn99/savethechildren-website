@@ -40,16 +40,24 @@ class ParentsHome extends Component {
     }
 
     render() {
-        const { i18n } = this.props;
+        const { i18n, t } = this.props;
 
         let data = [
-            { id: 1, image: '01_blog.png', url: 'blog', text: 'The Netizen Blog' },
-            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tips' },
-            { id: 3, image: '03_blog_video.png', url: 'nettube', text: 'NetTube' },
+            { id: 1, image: '01_blog.png', url: 'blog', text: t("ParentsHome:block1") },
+            { id: 2, image: '02_parentstis.png', url: 'tips', text: t("ParentsHome:block2") },
+            { id: 3, image: '03_blog_video.png', url: 'nettube', text: t("ParentsHome:block3") },
             // { id: 4, image: '04_blog_video-POPA.png', url: 'videos-popa', text: 'Videos: POPA Channel' },
-            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: 'Training Workshops' },
-            { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: 'More Resources on Parenting' },
+            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: t("ParentsHome:block4") },
+            { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: t("ParentsHome:block5") },
         ]
+        // let data = [
+        //     { id: 1, image: '01_blog.png', url: 'blog', text: 'Net神網誌' },
+        //     { id: 2, image: '02_parentstis.png', url: 'tips', text: '家長小貼士' },
+        //     { id: 3, image: '03_blog_video.png', url: 'nettube', text: 'NetTube影院' },
+        //     // { id: 4, image: '04_blog_video-POPA.png', url: 'videos-popa', text: 'Videos: POPA Channel' },
+        //     { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: '保護兒童網絡安全工作坊' },
+        //     { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: '其他親子資源' },
+        // ]
 
         return (
             <div className="wrapper-container-main">

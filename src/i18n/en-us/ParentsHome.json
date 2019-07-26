@@ -1,9 +1,7 @@
 {
-    "footer": {
-        "1": "Resources for you",
-        "2": "Primary-school"
-    },
-    "page": {
-        "blocks": ["Blog", "Parenting tips", "", "", "", "More resources on parenting"]
-    }
+    "block1": "The Netizen Blog",
+    "block2": "Parenting Tips",
+    "block3": "NetTube",
+    "block4": "Training Workshop",
+    "block5": "More Resources on Parenting"
 }
