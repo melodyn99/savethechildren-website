@@ -1,0 +1,10 @@
+.Video { background:#fff; padding:20px;
+    .upper { 
+        h3 { color:$corporateRedColor; font-size:30px;}
+        img { width:100%; position:relative; }
+        &.lavender { background-color:$bgLavender;}
+    }
+    .bottom { padding:10px 30px;
+        video { width:100%; position:relative; }
+    }
+}

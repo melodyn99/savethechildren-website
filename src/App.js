@@ -42,6 +42,7 @@ import ContactUs from './containers/01AboutUs/ContactUs';
 // Primary School
 // import PrimarySchoolHome from './containers/02ResourcesForYou/PrimarySchool/PrimarySchoolHome';
 import PrimaryGeneralTips from './containers/02ResourcesForYou/PrimarySchool/PrimaryGeneralTips';
+import PrimaryVideo from './containers/02ResourcesForYou/PrimarySchool/PrimaryVideo';
 // import PrimarySocialMediaUserGuide from './containers/02ResourcesForYou/PrimarySchool/PrimarySocialMediaUserGuide';
 import PrimaryQuiz from './containers/02ResourcesForYou/PrimarySchool/PrimaryQuiz';
 // import PrimaryRiskAndDanger from './containers/02ResourcesForYou/PrimarySchool/PrimaryRiskAndDanger';
@@ -235,6 +236,9 @@ class App extends Component {
                 case 'primary-quiz': {
                     return <PrimaryQuiz />;
                 }
+                case 'primary-video': {
+                    return <PrimaryVideo />;
+                }
                 case 'primary-risk-and-danger': {
                     // return <PrimaryRiskAndDanger />;
                     return <ImageText
@@ -269,6 +273,9 @@ class App extends Component {
                 }
                 case 'secondary-game': {
                     return <SecondaryGame />;
+                }
+                case 'secondary-video': {
+                    return <PrimaryVideo />;
                 }
                 case 'secondary-netizen-pledge': {
                     return <SecondaryNetizenPledge />;

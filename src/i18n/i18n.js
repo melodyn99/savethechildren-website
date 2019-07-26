@@ -13,6 +13,7 @@ import en_us_PrimarySocialMedia from "./en-us/PrimarySocialMedia.json";
 import en_us_PrimaryQuiz from "./en-us/PrimaryQuiz.json";
 import en_us_PrimaryRisk from "./en-us/PrimaryRisk.json";
 import en_us_PrimaryGame from "./en-us/PrimaryGame.json";
+import en_us_PrimaryVideo from "./en-us/PrimaryVideo.json";
 import en_us_PrimaryNetizenPledge from "./en-us/PrimaryNetizenPledge.json";
 import en_us_SecondaryHome from "./en-us/SecondaryHome.json";
 import en_us_ParentsHome from "./en-us/ParentsHome.json";
@@ -39,6 +40,7 @@ import zh_hk_PrimarySocialMedia from "./zh-hk/PrimarySocialMedia.json";
 import zh_hk_PrimaryQuiz from "./zh-hk/PrimaryQuiz.json";
 import zh_hk_PrimaryRisk from "./zh-hk/PrimaryRisk.json";
 import zh_hk_PrimaryGame from "./zh-hk/PrimaryGame.json";
+import zh_hk_PrimaryVideo from "./zh-hk/PrimaryVideo.json";
 import zh_hk_PrimaryNetizenPledge from "./zh-hk/PrimaryNetizenPledge.json";
 import zh_hk_SecondaryHome from "./zh-hk/SecondaryHome.json";
 import zh_hk_ParentsHome from "./zh-hk/ParentsHome.json";
@@ -89,6 +91,7 @@ i18n
                 PrimaryQuiz: en_us_PrimaryQuiz,
                 PrimaryRisk: en_us_PrimaryRisk,
                 PrimaryGame: en_us_PrimaryGame,
+                PrimaryVideo: en_us_PrimaryVideo,
                 PrimaryNetizenPledge: en_us_PrimaryNetizenPledge,
                 SecondaryHome: en_us_SecondaryHome,
                 ParentsHome: en_us_ParentsHome,
@@ -115,6 +118,7 @@ i18n
                 PrimarySocialMedia: zh_hk_PrimarySocialMedia,
                 PrimaryQuiz: zh_hk_PrimaryQuiz,
                 PrimaryRisk: zh_hk_PrimaryRisk,
+                PrimaryVideo: zh_hk_PrimaryVideo,
                 PrimaryGame: zh_hk_PrimaryGame,
                 PrimaryNetizenPledge: zh_hk_PrimaryNetizenPledge,
                 SecondaryHome: zh_hk_SecondaryHome,

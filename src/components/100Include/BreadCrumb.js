@@ -43,6 +43,9 @@ class Breadcrumb extends Component {
             case 'primary-quiz': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Quiz</span></div>);
             }
+            case 'primary-video': {
+                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Video</span></div>);
+            }
             case 'primary-risk-and-danger': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Risk and danger</span></div>);
             }
@@ -65,6 +68,9 @@ class Breadcrumb extends Component {
             }
             case 'secondary-quiz': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Quiz</span></div>);
+            }
+            case 'secondary-video': {
+                return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Video</span></div>);
             }
             case 'secondary-risk-and-danger': {
                 return (<div><span><Link to="/">Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Risk and danger</span></div>);
@@ -175,6 +181,9 @@ class Breadcrumb extends Component {
             case 'primary-quiz': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Quiz</span></div>);
             }
+            case 'primary-video': {
+                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Video</span></div>);
+            }
             case 'primary-risk-and-danger': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/primary-school-home"}>Primary school</Link></span> > <span>Risk and danger</span></div>);
             }
@@ -197,6 +206,9 @@ class Breadcrumb extends Component {
             }
             case 'secondary-quiz': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Quiz</span></div>);
+            }
+            case 'secondary-video': {
+                return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Video</span></div>);
             }
             case 'secondary-risk-and-danger': {
                 return (<div><span><Link to="/">Chinese Resources for you</Link></span> > <span><Link to={"/" + i18n.language + "/secondary-school-home"}>Secondary school</Link></span> > <span>Risk and danger</span></div>);
