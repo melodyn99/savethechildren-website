@@ -154,7 +154,7 @@ class Breadcrumb extends Component {
 
             /*** ABOUT US ***/
             case 'what-is-netizen-academy': {
-                return (<div><span><Link to="/">Chinese About Us</Link></span> > <span>我們為甚麼會回應？</span></div>);
+                return (<div><span><Link to="/">Chinese About Us</Link></span> > <span>Net神研究所是…</span></div>);
             }
             case 'our-mission-and-strategy': {
                 return (<div><span><Link to="/">Chinese About Us</Link></span> > <span>Net神研究所的目標</span></div>);
