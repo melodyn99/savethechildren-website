@@ -51,12 +51,12 @@ import PrimaryNetizenPledge from './containers/02ResourcesForYou/PrimarySchool/P
 
 // Secondary School
 // import SecondarySchoolHome from './containers/02ResourcesForYou/SecondarySchool/SecondarySchoolHome';
-import SecondaryGeneralTips from './containers/02ResourcesForYou/SecondarySchool/SecondaryGeneralTips';
+// import SecondaryGeneralTips from './containers/02ResourcesForYou/SecondarySchool/SecondaryGeneralTips';
 import SecondaryGame from './containers/02ResourcesForYou/SecondarySchool/SecondaryGame';
 import SecondaryQuiz from './containers/02ResourcesForYou/SecondarySchool/SecondaryQuiz';
-import SecondaryNetizenPledge from './containers/02ResourcesForYou/SecondarySchool/SecondaryNetizenPledge';
-import SecondaryRiskAndDanger from './containers/02ResourcesForYou/SecondarySchool/SecondaryRiskAndDanger';
-import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/SecondarySchool/SecondarySocialMediaUserGuide';
+// import SecondaryNetizenPledge from './containers/02ResourcesForYou/SecondarySchool/SecondaryNetizenPledge';
+// import SecondaryRiskAndDanger from './containers/02ResourcesForYou/SecondarySchool/SecondaryRiskAndDanger';
+// import SecondarySocialMediaUserGuide from './containers/02ResourcesForYou/SecondarySchool/SecondarySocialMediaUserGuide';
 
 // Parents
 // import ParentsHome from './containers/02ResourcesForYou/Parents/ParentsHome';
@@ -260,16 +260,20 @@ class App extends Component {
                     />;
                 }
                 case 'secondary-general-tips': {
-                    return <SecondaryGeneralTips />;
+                    return <PrimaryGeneralTips />;
                 }
                 case 'secondary-social-media-user-guide': {
-                    return <SecondarySocialMediaUserGuide />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'secondary-quiz': {
                     return <SecondaryQuiz />;
                 }
                 case 'secondary-risk-and-danger': {
-                    return <SecondaryRiskAndDanger />;
+                    return <ImageText
+                        relativePath={currentURL}
+                    />
                 }
                 case 'secondary-game': {
                     return <SecondaryGame />;
@@ -278,7 +282,7 @@ class App extends Component {
                     return <PrimaryVideo />;
                 }
                 case 'secondary-netizen-pledge': {
-                    return <SecondaryNetizenPledge />;
+                    return <PrimaryNetizenPledge />;
                 }
 
                 // Parents

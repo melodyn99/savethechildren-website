@@ -72,13 +72,13 @@ class ImageTabGrid extends Component {
         ]
 
         let secondaryData = [
-            { id: 1, image: 'btn_secondaryschool_01_Generaltips.png', url: '', text: 'General tips' },
-            { id: 2, image: 'btn_secondaryschool_02_Socialmediauserguide.png', url: '', text: 'Social media user guide' },
-            { id: 3, image: 'btn_secondaryschool_03_quiz.png', url: '', text: 'Quiz' },
-            { id: 4, image: 'btn_secondaryschool_04_Riskanddanger.png', url: '', text: 'Risks and dangers' },
+            { id: 1, image: 'btn_secondaryschool_01_Generaltips.png', url: 'secondary-general-tips', text: 'General tips' },
+            { id: 2, image: 'btn_secondaryschool_02_Socialmediauserguide.png', url: 'secondary-social-media-user-guide', text: 'Social media user guide' },
+            { id: 3, image: 'btn_secondaryschool_03_quiz.png', url: 'secondary-quiz', text: 'Quiz' },
+            { id: 4, image: 'btn_secondaryschool_04_Riskanddanger.png', url: 'secondary-risk-and-danger', text: 'Risks and dangers' },
             { id: 5, image: 'btn_secondaryschool_05_video.png', url: 'secondary-video', text: 'NetTube' },
-            { id: 6, image: 'btn_secondaryschool_06_game.png', url: '', text: 'Game: Spiral Jumping Netizen' },
-            { id: 7, image: 'btn_secondaryschool_07_TheNetizenPledge.png', url: '', text: 'The Netizen Pledge' },
+            { id: 6, image: 'btn_secondaryschool_06_game.png', url: 'secondary-game', text: 'Game: Spiral Jumping Netizen' },
+            { id: 7, image: 'btn_secondaryschool_07_TheNetizenPledge.png', url: 'secondary-netizen-pledge', text: 'The Netizen Pledge' },
         ]
 
         return (
