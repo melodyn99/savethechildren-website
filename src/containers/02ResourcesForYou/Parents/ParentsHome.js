@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // import { Redirect } from 'react-router';
 // import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 // Styling
@@ -30,15 +31,23 @@ class ParentsHome extends Component {
         }
     }
 
+    _goToDetail = (url) => {
+
+        // const { i18n } = this.props;
+        
+        this.props.history.push(url);
+        
+    }
+
     render() {
         const { i18n } = this.props;
 
         let data = [
-            { id: 1, image: '01_blog.png', url: 'blog', text: 'Blog' },
-            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tip' },
-            { id: 3, image: '03_blog_video.png', url: 'videos-sc-nwb', text: 'NetTube (SC NWB Parents & POPA videos)' },
+            { id: 1, image: '01_blog.png', url: 'blog', text: 'The Netizen Blog' },
+            { id: 2, image: '02_parentstis.png', url: 'tips', text: 'Parenting Tips' },
+            { id: 3, image: '03_blog_video.png', url: 'nettube', text: 'NetTube' },
             // { id: 4, image: '04_blog_video-POPA.png', url: 'videos-popa', text: 'Videos: POPA Channel' },
-            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: 'Training Workshop' },
+            { id: 5, image: '05_training_workshop.png', url: 'training-workshop', text: 'Training Workshops' },
             { id: 6, image: '06_more_resources_on_parenting.png', url: 'more-resources', text: 'More Resources on Parenting' },
         ]
 
@@ -58,7 +67,7 @@ class ParentsHome extends Component {
                                             (data, i) => {
                                                 return (
                                                     <Grid item xs={6} key={data.id}>
-                                                        <div className="grid">
+                                                        <div className="grid" onClick={() => this._goToDetail("/" + i18n.language + "/parents-" + data.url)}>
                                                             <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_' + data.image)} alt="" />
                                                             <div className="text">
                                                                 <Link to={"/" + i18n.language + "/parents-" + data.url}>{data.text}</Link>
@@ -68,56 +77,6 @@ class ParentsHome extends Component {
                                                 )
                                             }
                                         ))}
-                                        {/* <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_01_blog.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-blog"}>Blog</Link>
-                                                </div>
-                                            </div>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_02_parentstis.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-tips"}>Parenting Tips</Link>
-                                                </div>
-                                            </div>
-                                        </Grid>
-
-                                        <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_03_blog_video.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-videos-sc-nwb"}>Videos: SC NWB Parents</Link>
-                                                </div>
-                                            </div>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_04_blog_video-POPA.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-videos-popa"}>Videos: POPA Channel</Link>
-                                                </div>
-                                            </div>
-                                        </Grid>
-
-                                        <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_05_training_workshop.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-training-workshop"}>Training Workshops</Link>
-                                                </div>
-                                            </div>
-                                        </Grid>
-                                        <Grid item xs={6}>
-                                            <div className="grid">
-                                                <img src={require('../../../images/ResourcesForYou/Parents/Button/btn_parents_06_more_resources_on_parenting.png')} alt="" />
-                                                <div className="text">
-                                                    <Link to={"/" + i18n.language + "/parents-more-resources"}>More Resources on Parenting</Link>
-                                                </div>
-                                            </div>
-                                        </Grid> */}
                                     </Grid>
                                 </div>
                             </div>
@@ -137,4 +96,4 @@ const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
 });
 
-export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(ParentsHome));
+export default withTranslation()(connect(mapStateToProps, mapDispatchToProps)(withRouter(ParentsHome)));
