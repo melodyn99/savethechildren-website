@@ -30,7 +30,7 @@ class EventsTrainingWorkshops extends Component {
     }
 
     render() {
-        // const { classes } = this.props;
+        const { t } = this.props;
 
         var settings = {
             dots: true,
@@ -66,7 +66,7 @@ class EventsTrainingWorkshops extends Component {
                                     </Slider>
                                 </div>
                                 <div className="bottom">
-                                    <h3>Training workshops</h3>
+                                    <h3>{t("OurEvents:TrainingWorkshops.title")}</h3>
                                     <p>Training workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshopsTraining workshops</p>
                                 </div>
                             </div>
