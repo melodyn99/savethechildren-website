@@ -33,33 +33,24 @@ class SeekHelp extends Component {
         // const { classes } = this.props;
 
         return (
-            <div className="helpBoard">
-                <div className="icon">
-                    hello
-                </div>
-                <h3>Seek Help</h3>
-                <Grid container spacing={16}>
-                    <Grid item xs={4}>
-                        {/* <div className="text1">
-                            <p>Report sexual images</p>
-                            <p>of children online</p>
-                        </div>
-                        <div className="text2">
+            <div className="wrapper-helpBoard">
+                <div className="helpBoard">
+                    <div className="icon">
+                        hello
+                    </div>
+                    <h3>Seek Help</h3>
+                    <Grid container spacing={16}>
+                        <Grid item xs={4}>
+                            <p>Report sexual images of children online</p>
+                        </Grid>
+                        <Grid item xs={4}>
                             <p>Talk to a social worker</p>
-                        </div>
-                        <div className="text3">
-                            <p>Report sexual images</p>
-                            <p>of children online</p>
-                        </div> */}
-                        <p>Report sexual images of children online</p>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <p>Connect to Save the Children Hong Kong</p>
+                        </Grid>
                     </Grid>
-                    <Grid item xs={4}>
-                        <p>Talk to a social worker</p>
-                    </Grid>
-                    <Grid item xs={4}>
-                        <p>Connect to Save the Children Hong Kong</p>
-                    </Grid>
-                </Grid>
+                </div>
             </div>
         );
     }
