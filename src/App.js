@@ -419,7 +419,9 @@ class App extends Component {
                     {(currentURL === '' || typeof currentURL === 'undefined') &&
                         <HeroMenu />
                     }
-                    <MainMenu />
+                    <MainMenu
+                        currentURL={currentURL}
+                    />
 
                     {this.getComponent(currentURL, params)}
 

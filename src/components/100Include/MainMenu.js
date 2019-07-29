@@ -10,7 +10,7 @@ import { mainMenuMouseOver, mainMenuMouseLeave } from '../../Redux/Action/effect
 class MainMenu extends Component {
 
     render() {
-        const { t, 
+        const { t,
             i18n } = this.props;
 
         this._handleMouseOver = (data) => {
@@ -41,7 +41,7 @@ class MainMenu extends Component {
                                 onMouseOver={() => this._handleMouseOver('about')}
                                 onMouseLeave={() => this._handleMouseLeave('about')}
                             ><Link to={"/"} className="about" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[0].text_zh_cht : mainMenu.menus[0].text_en)}</span></Link>
-                                <ul className="leftOne">
+                                <ul className={"leftOne " + (this.props.currentURL === '' || typeof this.props.currentURL === 'undefined' ? 'atHome' : '')}>
                                     <div className="top"></div>
                                     <div className="middle">
                                         {mainMenu.menus[0].menu_items.map((subMenus) =>
@@ -60,7 +60,7 @@ class MainMenu extends Component {
                                 onMouseOver={() => this._handleMouseOver('resource')}
                                 onMouseLeave={() => this._handleMouseLeave('resource')}
                             ><Link to={"/"} className="resource" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[1].text_zh_cht : mainMenu.menus[1].text_en)}</span></Link>
-                                <ul className="leftTwo">
+                                <ul className={"leftTwo " + (this.props.currentURL === '' || typeof this.props.currentURL === 'undefined' ? 'atHome' : '')}>
                                     <div className="top"></div>
                                     <div className="middle clearfix">
                                         {/* {mainMenu.menus[1].menu_items.map((subMenus, i) =>
@@ -71,24 +71,24 @@ class MainMenu extends Component {
                                                 </Link>
                                             </li>
                                         )} */}
-                                    <li>
-                                        <Link to={"/" + i18n.language + "/primary-school-home"}>
-                                            <div className="thumb one"></div>
-                                            <span>{t("Common:SubMenu-ResourcesForYou.Primary")}</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to={"/" + i18n.language + "/secondary-school-home"}>
-                                            <div className="thumb two"></div>
-                                            <span>{t("Common:SubMenu-ResourcesForYou.Secondary")}</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link to={"/" + i18n.language + "/parents-home"}>
-                                            <div className="thumb three"></div>
-                                            <span>{t("Common:SubMenu-ResourcesForYou.Parents")}</span>
-                                        </Link>
-                                    </li>
+                                        <li>
+                                            <Link to={"/" + i18n.language + "/primary-school-home"}>
+                                                <div className="thumb one"></div>
+                                                <span>{t("Common:SubMenu-ResourcesForYou.Primary")}</span>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={"/" + i18n.language + "/secondary-school-home"}>
+                                                <div className="thumb two"></div>
+                                                <span>{t("Common:SubMenu-ResourcesForYou.Secondary")}</span>
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to={"/" + i18n.language + "/parents-home"}>
+                                                <div className="thumb three"></div>
+                                                <span>{t("Common:SubMenu-ResourcesForYou.Parents")}</span>
+                                            </Link>
+                                        </li>
                                     </div>
                                     <div className="bottom"></div>
                                 </ul>
@@ -98,7 +98,7 @@ class MainMenu extends Component {
                                 onMouseOver={() => this._handleMouseOver('featured')}
                                 onMouseLeave={() => this._handleMouseLeave('featured')}
                             ><Link to={"/"} className="featured" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[2].text_zh_cht : mainMenu.menus[2].text_en)}</span></Link>
-                                <ul>
+                                <ul className={(this.props.currentURL === '' || typeof this.props.currentURL === 'undefined' ? 'atHome' : '')}>
                                     <div className="top"></div>
                                     <div className="middle">
                                         {mainMenu.menus[2].menu_items.map((subMenus) =>
@@ -117,7 +117,7 @@ class MainMenu extends Component {
                                 onMouseOver={() => this._handleMouseOver('research')}
                                 onMouseLeave={() => this._handleMouseLeave('research')}
                             ><Link to={"/"} className="research" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[3].text_zh_cht : mainMenu.menus[3].text_en)}</span></Link>
-                                <ul>
+                                <ul className={(this.props.currentURL === '' || typeof this.props.currentURL === 'undefined' ? 'atHome' : '')}>
                                     <div className="top"></div>
                                     <div className="middle">
                                         {mainMenu.menus[3].menu_items.map((subMenus) =>
@@ -135,7 +135,7 @@ class MainMenu extends Component {
                                 onMouseOver={() => this._handleMouseOver('event')}
                                 onMouseLeave={() => this._handleMouseLeave('event')}
                             ><Link to={"/"} className="event" onClick={(e) => this._handleVoid(e)}><span>{(i === "zh-HK" ? mainMenu.menus[4].text_zh_cht : mainMenu.menus[4].text_en)}</span></Link>
-                                <ul>
+                                <ul className={(this.props.currentURL === '' || typeof this.props.currentURL === 'undefined' ? 'atHome' : '')}>
                                     <div className="top"></div>
                                     <div className="middle">
                                         {mainMenu.menus[4].menu_items.map((subMenus) =>

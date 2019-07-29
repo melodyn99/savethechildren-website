@@ -50,7 +50,7 @@
 			}
 		}
 
-		.helpBoard { width: calc(100% - 100px); height:100px; background:cyan; top:100px; left:60px; position:absolute; opacity:0.8; display:block; 
+		.helpBoard { width: calc(100% - 100px); height:100px; background:cyan; top:100px; left:60px; position:absolute; opacity:0.8; display:none; 
 			.icon { width:66px; height:66px; background:pink; margin:-5px 0 0 -20px;
 
 			}
@@ -220,8 +220,6 @@
 				&:hover >a span { color:$corporateRedColor; background:url('../images/Menu/btn_mene_select.png') center center no-repeat; background-size: 100% 100%; }
 
 				ul { list-style:none; display:none; margin:0; padding:0; position:absolute; top:100%; left:50%; margin-left:-197px; width:394px; 
-					
-					.home { bottom:100%;padding-bottom:100%; }
 
 					&.leftOne { margin-left:-76px; 
 						.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_1_left.png') center top no-repeat; }
@@ -253,6 +251,21 @@
 					.top { height:58px; background:url('../images/Menu/bubble_sub_menu-01top_2_center.png') center top no-repeat;}
 					.middle { background:url('../images/Menu/bubble_sub_menu-02center.png') center top repeat-y; padding:0 40px; }
 					.bottom { height:58px; background:url('../images/Menu/bubble_sub_menu-03bottom.png') center top no-repeat; }
+
+					// variation at homepage start
+					&.atHome { top:auto; bottom:100%; padding-bottom:100%; 
+						&.leftOne { 
+							.top { background:green; }
+							.bottom { background:purple; }
+						}
+						&.leftTwo {
+							.top { background:orange; }
+							.bottom { background:grey; }
+						}
+						.top { background:yellow;}
+						.bottom { background:red; }
+					}
+					// variation at homepage end
 
 					li { display:block; 
 						&:first-child > a { border:none; }
