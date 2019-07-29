@@ -50,10 +50,8 @@
 			}
 		}
 
-		.helpBoard { width: calc(100% - 100px); height:100px; background:cyan; top:100px; left:60px; position:absolute; opacity:0.8; display:block; 
-			.icon { width:66px; height:66px; background:pink; margin:-5px 0 0 -20px;
-
-			}
+		.helpBoard { height:100px; top:-155px; left:-230px; right:-230px; position:absolute; opacity:0.8; background:cyan; 
+			.icon { width:66px; height:66px; background:pink; margin:-5px 0 0 -20px;} 
 		}
 	}
 }
