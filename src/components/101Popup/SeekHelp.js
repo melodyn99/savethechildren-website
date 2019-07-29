@@ -40,7 +40,7 @@ class SeekHelp extends Component {
                     </div>
                     <h3>Seek Help</h3>
                     <Grid container spacing={16}>
-                        <Grid item xs={4}>
+                        <Grid item xs={4} className="firstChild">
                             <p>Report sexual images of children online</p>
                         </Grid>
                         <Grid item xs={4}>
