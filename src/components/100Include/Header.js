@@ -46,7 +46,7 @@ class Header extends Component {
 
     render() {
         const {
-            t, 
+            t,
             i18n } = this.props;
 
         let pathname = this.props.route.location.pathname,
@@ -82,7 +82,7 @@ class Header extends Component {
                         onClose={this.closeModal}
                         contentStyle={{ padding: "0px", border: "none" }}
                     >
-                        <LoginRegister open={this.state.open} close={this.closeModal}/>
+                        <LoginRegister open={this.state.open} close={this.closeModal} />
 
                         {/* <div className="modalhello">
                             <a className="close" onClick={this.closeModal}>&times;</a>
@@ -93,7 +93,7 @@ class Header extends Component {
                         </div> */}
                     </Popup>
 
-                    <Link to={"/" + i18n.language + '/'} className="seekHelp"><span>{t("Common:General.SeekHelp")}</span></Link>
+                    <Link to={"/" + i18n.language + '/'} className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')}><span>{t("Common:General.SeekHelp")}</span></Link>
                 </div>
             </div>
         );
