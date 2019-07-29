@@ -40,7 +40,7 @@ class PrimaryVideo extends Component {
                                 </div>
                                 <div className="bottom">
                                     <video controls="controls" autoplay="true"> 
-                                        <source src={require('../../../videos/Animation_savethechildren_NewVersion_V3_1920x1080.mp4')} type='video/mp4'/>
+                                        <source src={require('../../../videos/Animation_savethechildren_NewVersion_V4-190726_1920x1080.mp4')} type='video/mp4'/>
                                     </video>
                                     {/* <video source src={require('../../../videos/Animation_savethechildren_NewVersion_V3_1920x1080.mp4')} alt="" /> */}
                                 </div>
