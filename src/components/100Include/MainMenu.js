@@ -10,7 +10,7 @@ import { mainMenuMouseOver, mainMenuMouseLeave } from '../../Redux/Action/effect
 class MainMenu extends Component {
 
     render() {
-        const { // t, 
+        const { t, 
             i18n } = this.props;
 
         this._handleMouseOver = (data) => {
@@ -63,32 +63,32 @@ class MainMenu extends Component {
                                 <ul className="leftTwo">
                                     <div className="top"></div>
                                     <div className="middle clearfix">
-                                        {mainMenu.menus[1].menu_items.map((subMenus, i) =>
+                                        {/* {mainMenu.menus[1].menu_items.map((subMenus, i) =>
                                             <li key={subMenus.menu_item_id}>
                                                 <Link to={"/" + i18n.language + "/" + subMenus.dest}>
                                                     <div className={"thumb " + (i === 0 ? "one" : i === 1 ? "two" : i === 2 ? "three" : "one")}></div>
                                                     <span>{(i === "zh-HK" ? subMenus.text_zh_cht : subMenus.text_en)}</span>
                                                 </Link>
                                             </li>
-                                        )}
-                                        {/* <li>
+                                        )} */}
+                                    <li>
                                         <Link to={"/" + i18n.language + "/primary-school-home"}>
                                             <div className="thumb one"></div>
-                                            <span>Primary School</span>
+                                            <span>{t("Common:SubMenu-ResourcesForYou.Primary")}</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to={"/" + i18n.language + "/secondary-school-home"}>
                                             <div className="thumb two"></div>
-                                            <span>Secondary School</span>
+                                            <span>{t("Common:SubMenu-ResourcesForYou.Secondary")}</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to={"/" + i18n.language + "/parents-home"}>
                                             <div className="thumb three"></div>
-                                            <span>Parents</span>
+                                            <span>{t("Common:SubMenu-ResourcesForYou.Parents")}</span>
                                         </Link>
-                                    </li> */}
+                                    </li>
                                     </div>
                                     <div className="bottom"></div>
                                 </ul>

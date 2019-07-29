@@ -6,12 +6,12 @@
 		"SeekHelp": "Seek Help中文"
 	},
 	"Menu": {
-		"AboutUs": "",
-		"ResourcesForYou": "",
-		"FeaturedIssues": "",
-		"ResearchFindings": "",
-		"OurEvents": "",
-		"ExternalResources": ""
+		"AboutUs": "關於Net神研究所",
+		"ResourcesForYou": "你是...",
+		"FeaturedIssues": "專題",
+		"ResearchFindings": "研究報告",
+		"OurEvents": "我們的活動",
+		"ExternalResources": "有用連結"
 	},
 	"SubMenu-AboutUs": {
 		"WhyWeMustAct" : "",
@@ -20,9 +20,9 @@
 		"Sitemap" : ""
 	},
 	"SubMenu-ResourcesForYou": {
-		"Primary" : "",
-		"Secondary" : "",
-		"Parents" : ""
+		"Primary" : "小學生",
+		"Secondary" : "中學生",
+		"Parents" : "家長及照顧者"
 	},
 	"SubMenu-FeaturedIssues": {
 		"OnlineGrooming" : "",
