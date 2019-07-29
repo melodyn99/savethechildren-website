@@ -94,6 +94,12 @@ class Header extends Component {
                     </Popup>
 
                     <Link to={"/" + i18n.language + '/'} className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')}><span>{t("Common:General.SeekHelp")}</span></Link>
+
+                    <div className="helpBoard">
+                        <div className="icon">
+                            hello
+                        </div>
+                    </div>
                 </div>
             </div>
         );

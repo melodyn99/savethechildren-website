@@ -45,8 +45,14 @@
 				 @media (max-width: 1200px ) { font-size:20px;}
 			}
 
-			&.small { width:120px; height:120px; background:url('../images/btn-SeekHelp.png') center top no-repeat; background-size:100%; text-indent:-9999px; position:fixed; right:10px; top:170px;
-				&:hover { background:url('../images/btn-SeekHelp_02.png') center top no-repeat; background-size:100%; }
+			&.small { width:66px; height:66px; background:url('../images/btn-SeekHelp_right.png') center top no-repeat; background-size:100%; text-indent:-9999px; padding:0; position:fixed; right:10px; top:170px;
+				&:hover { background:url('../images/btn-SeekHelp_right.png') center bottom no-repeat; background-size:100%; }
+			}
+		}
+
+		.helpBoard { width: calc(100% - 100px); height:100px; background:cyan; top:100px; left:60px; position:absolute; opacity:0.8; display:block; 
+			.icon { width:66px; height:66px; background:pink; margin:-5px 0 0 -20px;
+
 			}
 		}
 	}
