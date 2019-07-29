@@ -39,7 +39,7 @@ class PrimaryVideo extends Component {
                                     <h3>{t("PrimaryVideo:title")}</h3>
                                 </div>
                                 <div className="bottom">
-                                    <video controls="controls"> 
+                                    <video controls="controls" autoplay="true"> 
                                         <source src={require('../../../videos/Animation_savethechildren_NewVersion_V3_1920x1080.mp4')} type='video/mp4'/>
                                     </video>
                                     {/* <video source src={require('../../../videos/Animation_savethechildren_NewVersion_V3_1920x1080.mp4')} alt="" /> */}
