@@ -93,7 +93,7 @@ class PrimarySchoolHome extends Component {
                                 </div>
                                 <div className="bottom">
                                     <Tabs defaultActiveKey={1} id="uncontrolled-tab-example" onSelect={(e) => this._handleTabChange(e)}>
-                                        <Tab eventKey={1} title=" Primary School (aged 6-12) ">
+                                        <Tab eventKey={1} title={t("PrimaryHome:tab1")}>
                                             <div className="inner">
                                                 <Grid container spacing={16}>
                                                     {(primaryData.map(
@@ -114,7 +114,7 @@ class PrimarySchoolHome extends Component {
                                             </div>
                                         </Tab>
 
-                                        <Tab eventKey={2} title=" Secondary School (aged 12-18) ">
+                                        <Tab eventKey={2} title={t("PrimaryHome:tab2")}>
                                             <div className="inner">
                                                 <Grid container spacing={16}>
                                                     {(secondaryData.map(
