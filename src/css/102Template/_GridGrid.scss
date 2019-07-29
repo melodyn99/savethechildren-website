@@ -6,14 +6,14 @@
         padding:20px; background:$bgBlueGreen; 
         .grid { position:relative; 
             .top { position:relative; 
-                img { width:100%; }
+                img { width:100%; min-height:305px; max-height:305px; }
                 .text { position:absolute; bottom:0px; background-color:$textBoxBgDark; width:100%; padding: 20px; 
                     &.light-background { background-color:$textBoxBg; }
                     a {color:#fff; font-size:20px; }
                 }
             }
-            .bottom { background:#fff; padding:20px;
-                h3 { font-size:16px; padding:0px; margin:0px; } 
+            .bottom { background:#fff; padding:20px; 
+                h3 { font-size:16px; padding:0px; margin:0px; min-height:100px; } 
                 h4 { font-size:12px; margin:0px; }
             }
         }
