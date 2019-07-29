@@ -110,10 +110,16 @@ class App extends Component {
         // HelperMobileHandle.MobileHandle.containersSize();
         // window.addEventListener("resize", this.windowResize);
 
+        // get all menus from Credentials
+        if (this.props.menus.allMenus.length === 0) {
+            apiAuth.getClientCredentials().then((res) => {
+                this._getAllMenus(res.access_token);
+            })
+        }
+
         // check if token has expired
         if (this.props.auth.auth) {
             this._getUserInformation(this.props.auth.token);
-            this._getAllMenus(this.props.auth.token);
         }
     }
 
@@ -164,10 +170,11 @@ class App extends Component {
     }
 
     _getAllMenus = (token) => {
+
         if (typeof token !== 'undefined') {
 
             const cb = (obj) => {
-                // console.log("cb : ", obj);
+                console.log("cb : ", obj);
                 this.props.getAllMenusP(obj.body);
             }
             const eCb = (obj) => {
@@ -220,7 +227,7 @@ class App extends Component {
 
                 // Primary School
                 case 'primary-school-home': {
-                    return <PrimarySchoolHome 
+                    return <PrimarySchoolHome
                         tabIndex={1}
                     />
                     // return <ImageTabGrid
@@ -257,7 +264,7 @@ class App extends Component {
 
                 // Secondary School
                 case 'secondary-school-home': {
-                    return <PrimarySchoolHome 
+                    return <PrimarySchoolHome
                         tabIndex={2}
                     />;
                     // return <ImageTabGrid
@@ -430,6 +437,7 @@ class App extends Component {
 const mapStateToProps = (state) => ({
     route: state.router,
     auth: state.auth,
+    menus: state.menus
 });
 
 const mapDispatchToProps = dispatch => ({
