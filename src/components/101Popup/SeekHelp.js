@@ -36,7 +36,6 @@ class SeekHelp extends Component {
             <div className="wrapper-helpBoard">
                 <div className="helpBoard">
                     <div className="icon">
-                        hello
                     </div>
                     <h3>Seek Help</h3>
                     <Grid container spacing={16}>
