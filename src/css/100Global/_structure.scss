@@ -255,15 +255,16 @@
 					// variation at homepage start
 					&.atHome { top:auto; bottom:100%; padding-bottom:100%; 
 						&.leftOne { 
-							.top { background:green; }
-							.bottom { background:purple; }
+							.bottom{ height:58px; background:url('../images/Menu/bubble_2-sub_menu-01top_1_left.png') center top no-repeat; }
 						}
-						&.leftTwo {
-							.top { background:orange; }
-							.bottom { background:grey; }
+						&.leftTwo { margin-left:-76px; width:585px;
+							.top { height:54px; background:url('../images/Menu/bubble_sub_menu-resourcesforyou_01_top.png') center top no-repeat; }
+							.middle { background:url('../images/Menu/bubble_sub_menu-resourcesforyou_02_center.png') center top repeat-y;padding:0; }
+							.bottom { height:58px; background:url('../images/Menu/bubble_2-sub_menu-01top_1_left.png') center top no-repeat; width:585px;}
 						}
-						.top { background:yellow;}
-						.bottom { background:red; }
+						.top { height:28px; background:url('../images/Menu/bubble_2-sub_menu-03bottom.png') center top no-repeat;}
+						.middle { background:url('../images/Menu/bubble_sub_menu-02center.png') center top repeat-y; padding:0 40px; }
+						.bottom { height:58px; background:url('../images/Menu/bubble_2-sub_menu-01top_2_center.png') center top no-repeat; }
 					}
 					// variation at homepage end
 
