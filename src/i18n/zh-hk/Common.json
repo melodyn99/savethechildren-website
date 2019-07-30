@@ -34,7 +34,9 @@
 	},
 	"SubMenu-OurEvents": {
 	},
-	"SubMenu-ExternalResources": {
+	"ExternalResources": {
+		"1":"有用连接",
+		"2":""
 	},
 	"Subscribe": {
 		"Signup": "Signup for exclusive Netizen Academy news and events 中文",
