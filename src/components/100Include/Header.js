@@ -109,6 +109,7 @@ class Header extends Component {
                         closeOnDocumentClick
                         onClose={this.closeHelp}
                         contentStyle={{ padding: "0px", border: "none" }}
+                        closeHelp={this.closeHelp}
                         >
                             <SeekHelp open={this.state.open} close={this.closeHelp} />
                     </Popup>
