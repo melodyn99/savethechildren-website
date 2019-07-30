@@ -1,27 +1,42 @@
 {
     "block1": {
-        "title": "E-Help",
-        "subtitle": "E-Help",
-        "content": "eHelp Association is a newly established organisation addressing the child online protection issues. The initiative is with the joint force of various stakeholders from the community. Reporting mechanism has been set up in disrupting the dissemination of Child Sexual Abusive Materials (CSAM) online, as well as easing the online risks including Cyber Crime and Cyberbullying, that children and youth are facing."
+        "title": "Hong Kong Education City",
+        "subtitle": "To enable better adaptation to change curriculum initiatives through technology.",
+        "content": "Visit website"
     },
     "block2": {
         "title": "ACA",
-        "subtitle": "ACA",
-        "content": "_____________________________________________________________________________________________________________________________"
+        "subtitle": "To promote a caring and non-violent environment for the optimal growth and development of our children.",
+        "content": "Visit website"
     },
     "block3": {
-        "title": "INHOPE",
-        "subtitle": "INHOPE",
-        "content": "_____________________________________________________________________________________________________________________________"
+        "title": "e-Help Association",
+        "subtitle": "Establish a mechanism with the cooperation of various stakeholders both in local and global level to combat the dissemination of Child Sexual Abusive Materials (CSAM) online",
+        "content": "Visit website"
     },
     "block4": {
         "title": "End Child Sexual Abuse Foundation",
-        "subtitle": "End Child Sexual Abuse Foundation",
-        "content": "_____________________________________________________________________________________________________________________________"
+        "subtitle": "To protect youngsters under 18 from sexual abuse",
+        "content": "Visit website"
     },
     "block5": {
-        "title": "Other Resource",
-        "subtitle": "Other Resource",
-        "content": "_____________________________________________________________________________________________________________________________"
+        "title": "Google Safety Center",
+        "subtitle": "As the Internet evolves, this means continuously advancing Google’s security technologies and privacy tools to help keep Google users safe online.",
+        "content": "Visit website"
+    },
+    "block6": {
+        "title": "Facebook Safety Center",
+        "subtitle": "Facebook work with external experts, including a Safety Advisory Board, and gather feedback from our community to develop policies, tools and resources to keep users safe. ",
+        "content": "Visit website"
+    },
+    "block7": {
+        "title": "INHOPE Association",
+        "subtitle": "INHOPE is an active and collaborative global network of Hotlines, dealing with illegal content online and committed to stamping out child sexual abuse from the Internet.",
+        "content": "Visit website"
+    },
+    "block8": {
+        "title": "UK Safer Internet Centre",
+        "subtitle": "To promote the safe and responsible use of technology for young people.",
+        "content": "Visit website"
     }
 }

@@ -50,14 +50,14 @@ class ExternalResources extends Component {
                                             <Grid item xs={6}>
                                                 <div className="grid">
                                                     <div className="top">
-                                                        <img src={require('../../images/ExternalResources/btn_externalresources_01_EHelp.png')} alt="" />
+                                                        <img src={require('../../images/ExternalResources/HKedCity.png')} alt="" />
                                                         <div className="text">
                                                             <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block1.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
                                                         <h3>{t("ExternalResources:block1.subtitle")}</h3>
-                                                        <h4>{t("ExternalResources:block1.content")}</h4>
+                                                        <a href="https://www.hkedcity.net/home/">{t("ExternalResources:block1.content")}</a>
                                                     </div>
                                                 </div>
                                             </Grid>
@@ -71,7 +71,7 @@ class ExternalResources extends Component {
                                                     </div>
                                                     <div className="bottom">
                                                         <h3>{t("ExternalResources:block2.subtitle")}</h3>
-                                                        <h4>{t("ExternalResources:block2.content")}</h4>                                                    
+                                                        <a href="https://www.aca.org.hk/index-en.php#.XT6HiY2QzzA">{t("ExternalResources:block2.content")}</a>                                                 
                                                     </div>
                                                 </div>
                                             </Grid>
@@ -79,14 +79,14 @@ class ExternalResources extends Component {
                                             <Grid item xs={6}>
                                                 <div className="grid">
                                                     <div className="top">
-                                                        <img src={require('../../images/ExternalResources/btn_externalresources_03_INHOPE.png')} alt="" />
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_01_EHelp.png')} alt="" />
                                                         <div className="text light-background">
                                                             <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block3.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
                                                         <h3>{t("ExternalResources:block3.subtitle")}</h3>
-                                                        <h4>{t("ExternalResources:block3.content")}</h4>                                                    
+                                                        <a href="http://www.ehelp.org.hk/web/subpage.php?mid=64">{t("ExternalResources:block3.content")}</a>                                                   
                                                     </div>
                                                 </div>
                                             </Grid>
@@ -100,21 +100,63 @@ class ExternalResources extends Component {
                                                     </div>
                                                     <div className="bottom">
                                                         <h3>{t("ExternalResources:block4.subtitle")}</h3>
-                                                        <h4>{t("ExternalResources:block4.content")}</h4>                                                    
+                                                        <a href="http://www.ecsaf.org.hk/English/index.php">{t("ExternalResources:block4.content")}</a>                                                 
                                                     </div>
                                                 </div>
                                             </Grid>
                                             <Grid item xs={6}>
                                                 <div className="grid">
                                                     <div className="top">
-                                                        <img src={require('../../images/ExternalResources/btn_externalresources_04_Otherresource.png')} alt="" />
+                                                        <img src={require('../../images/ExternalResources/Google Safety-Center-for-Families.png')} alt="" />
                                                         <div className="text">
                                                             <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block5.title")}</Link>
                                                         </div>
                                                     </div>
                                                     <div className="bottom">
                                                         <h3>{t("ExternalResources:block5.subtitle")}</h3>
-                                                        <h4>{t("ExternalResources:block5.content")}</h4>                                                    
+                                                        <a href="https://safety.google/">{t("ExternalResources:block5.content")}</a>                                                     
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/Facebook Safety Center 1.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block6.title")}</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <h3>{t("ExternalResources:block6.subtitle")}</h3>
+                                                        <a href="https://www.facebook.com/safety">{t("ExternalResources:block6.content")}</a>                                                     
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/btn_externalresources_03_INHOPE.png')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block7.title")}</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <h3>{t("ExternalResources:block7.subtitle")}</h3>
+                                                        <a href="http://88.208.218.79/">{t("ExternalResources:block7.content")}</a>                                                     
+                                                    </div>
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={6}>
+                                                <div className="grid">
+                                                    <div className="top">
+                                                        <img src={require('../../images/ExternalResources/uk-safer-internet-centre.jpg')} alt="" />
+                                                        <div className="text">
+                                                            <Link to={"/" + i18n.language + "/"}>{t("ExternalResources:block8.title")}</Link>
+                                                        </div>
+                                                    </div>
+                                                    <div className="bottom">
+                                                        <h3>{t("ExternalResources:block8.subtitle")}</h3>
+                                                        <a href="https://www.saferinternet.org.uk/">{t("ExternalResources:block8.content")}</a>                                                     
                                                     </div>
                                                 </div>
                                             </Grid>

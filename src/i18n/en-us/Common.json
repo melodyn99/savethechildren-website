@@ -34,7 +34,9 @@
 	},
 	"SubMenu-OurEvents": {
 	},
-	"SubMenu-ExternalResources": {
+	"ExternalResources": {
+		"1": "External",
+		"2":"Resources"
 	},
 	"Subscribe": {
 		"Signup": "Signup for exclusive Netizen Academy news and events",

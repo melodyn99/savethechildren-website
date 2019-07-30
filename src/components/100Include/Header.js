@@ -11,12 +11,13 @@ import Popup from "reactjs-popup";
 
 // Children components
 import LoginRegister from '../101Popup/LoginRegister';
+import SeekHelp from '../101Popup/SeekHelp';
 
 class Header extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { open: false };
+        this.state = { open: false, display:false };
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     }
@@ -27,6 +28,14 @@ class Header extends Component {
 
     closeModal = () => {
         this.setState({ open: false });
+    }
+
+    openHelp = () => {
+        this.setState({ display:true });
+    }
+
+    closeHelp = () => {
+        this.setState({ display:false });
     }
 
     changeLanguage = (param) => {
@@ -93,13 +102,16 @@ class Header extends Component {
                         </div> */}
                     </Popup>
 
-                    <Link to={"/" + i18n.language + '/'} className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')}><span>{t("Common:General.SeekHelp")}</span></Link>
+                    <div className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')} onClick={this.openHelp}><span>{t("Common:General.SeekHelp")}</span></div>
 
-                    <div className="helpBoard">
-                        <div className="icon">
-                            hello
-                        </div>
-                    </div>
+                    <Popup className="seekHelp"
+                        open={this.state.display}
+                        closeOnDocumentClick
+                        onClose={this.closeHelp}
+                        contentStyle={{ padding: "0px", border: "none" }}
+                        >
+                            <SeekHelp open={this.state.open} close={this.closeHelp} />
+                    </Popup>
                 </div>
             </div>
         );

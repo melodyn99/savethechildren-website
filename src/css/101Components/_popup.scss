@@ -1,3 +1,6 @@
-.popup-content {
-    width:500px!important;
+.popup-overlay { 
+    &.seekHelp-overlay {background:rgba(0,0,0,0)!important;}
+    .popup-content {
+        width:500px!important;
+    }
 }
