@@ -35,7 +35,7 @@ class SeekHelp extends Component {
         return (
             <div className="wrapper-helpBoard">
                 <div className="helpBoard">
-                    <div className="icon">
+                    <div className="icon" onclick={this.props.closeHelp}>
                     </div>
                     <h3>Seek Help</h3>
                     <Grid container spacing={16}>
