@@ -102,7 +102,7 @@ class Header extends Component {
                         </div> */}
                     </Popup>
 
-                    <Link to={"/" + i18n.language + '/'} className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')} onClick={this.openHelp}><span>{t("Common:General.SeekHelp")}</span></Link>
+                    <div className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '')} onClick={this.openHelp}><span>{t("Common:General.SeekHelp")}</span></div>
 
                     <Popup className="seekHelp"
                         open={this.state.display}
