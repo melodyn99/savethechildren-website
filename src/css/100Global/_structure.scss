@@ -49,12 +49,6 @@
 				&:hover { background:url('../images/btn-SeekHelp_right.png') center bottom no-repeat; background-size:100%; }
 			}
 		}
-<<<<<<< HEAD
-
-		.helpBoard { width: calc(100% - 100px); height:100px; background:cyan; top:100px; left:60px; position:absolute; opacity:0.8; display:none; 
-			.icon { width:66px; height:66px; background:pink; margin:-5px 0 0 -20px;
-
-=======
 		.wrapper-helpBoard { background:$majorLightGrey; position:absolute; height:150px; top:-290px; left:-230px; right:-230px;
 			.helpBoard { position:relative; height:140px; border:5px solid $corporateRedColor; margin:5px 5px 5px 5px; 
 				h3 { position:relative; text-align:center; margin-top:-50px; color:$corporateRedColor; }
@@ -67,7 +61,6 @@
 						}  
 					}
 				}
->>>>>>> dev_melody
 			}
 		}
 	}
