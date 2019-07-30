@@ -47,6 +47,8 @@
 
 			&.small { width:66px; height:66px; background:url('../images/btn-SeekHelp_right.png') center top no-repeat; background-size:100%; text-indent:-9999px; padding:0; position:fixed; right:10px; top:170px;
 				&:hover { background:url('../images/btn-SeekHelp_right.png') center bottom no-repeat; background-size:100%; }
+				&.yes { display:block; }
+				&.no { display:none; }
 			}
 		}
 		.wrapper-helpBoard { background:$majorLightGrey; position:absolute; height:150px; top:-290px; left:-230px; right:-230px;
