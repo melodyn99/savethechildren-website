@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -23,6 +23,7 @@ import { login } from '../../Redux/Action/authAction';
 class SeekHelp extends Component {
     // constructor(props) {
     //     super(props);
+    // }
 
     //     // this.state = {
     //     //     formSubmitted: false
@@ -30,15 +31,31 @@ class SeekHelp extends Component {
     // }
 
     render() {
-        // const { classes } = this.props;
 
-        return (
-            <div className="wrapper-helpBoard">
+        const { i18n } = this.props;
+
+        let pathname = this.props.route.location.pathname,
+            urlArray = pathname.split("/"),
+            currentURL = urlArray[2];
+
+            console.log(currentURL);
+
+        if (currentURL === '' || typeof currentURL === 'undefined') return (
+            <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
-                    <div className="icon" onclick={()=>this.props.closeHelp()}>>
+                    <div className="icon" onClick={()=>this.props.close()}>
                     </div>
                     <h3>Seek Help</h3>
-                    <Grid container spacing={16}>
+                    <div className="text firstChild">
+                        <a href={"/" + i18n.language + "/"}>Report sexual images of children online</a>
+                    </div>
+                    <div className="text">
+                        <a href={"/" + i18n.language + "/"}>Talk to a social worker</a>
+                    </div>
+                    <div className="text">
+                        <a href={"/" + i18n.language + "/"}>Connect to Save the Children Hong Kong</a>
+                    </div>
+                    {/* <Grid container spacing={16}>
                         <Grid item xs={4} className="firstChild">
                             <p>Report sexual images of children online</p>
                         </Grid>
@@ -48,16 +65,37 @@ class SeekHelp extends Component {
                         <Grid item xs={4}>
                             <p>Connect to Save the Children Hong Kong</p>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
+                </div>
+            </div>
+        );
+
+        else return (
+            <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
+                <div className="helpBoard">
+                    <div className="icon" onClick={()=>this.props.close()}></div>
+                    <h3>Seek Help</h3>
+                    <div className="text1 firstChild">
+                        <a href={"/" + i18n.language + "/"}>Report sexual images of children online</a>
+                    </div>
+                    <div className="text1">
+                        <a href={"/" + i18n.language + "/"}>Talk to a social worker</a>
+                    </div>
+                    <div className="text1">
+                        <a href={"/" + i18n.language + "/"}>Connect to Save the Children Hong Kong</a>
+                    </div>
                 </div>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => ({
-    auth: state.auth
-});
+const mapStateToProps = (state) => (
+    {
+        route: state.router,
+        members: state.auth
+    }
+);
 
 const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))

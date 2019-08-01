@@ -104,7 +104,7 @@ class Header extends Component {
 
                     <div className={"seekHelp " + (currentURL !== '' && typeof currentURL !== 'undefined' ? 'small' : '') + (this.state.display === false ? ' yes' : ' no')} onClick={this.openHelp}><span>{t("Common:General.SeekHelp")}</span></div>
 
-                    <Popup className="seekHelp"
+                    <Popup className="seekHelp" 
                         open={this.state.display}
                         closeOnDocumentClick
                         onClose={this.closeHelp}

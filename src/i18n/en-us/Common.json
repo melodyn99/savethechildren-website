@@ -20,9 +20,9 @@
 		"Sitemap" : "Sitemap"
 	},
 	"SubMenu-ResourcesForYou": {
-		"Primary" : "",
-		"Secondary" : "",
-		"Parents" : ""
+		"Primary" : "Primary school",
+		"Secondary" : "Secondary school",
+		"Parents" : "Parents"
 	},
 	"SubMenu-FeaturedIssues": {
 		"OnlineGrooming" : "",
