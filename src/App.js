@@ -116,15 +116,15 @@ class App extends Component {
                 this._getAllMenus(res.access_token);
             })
         }
-    }
-
-    componentDidUpdate = () => {
-        window.scrollTo(0, 0);
 
         // check if token has expired
         if (this.props.auth.auth) {
             this._getUserInformation(this.props.auth.token);
         }
+    }
+
+    componentDidUpdate = () => {
+        window.scrollTo(0, 0);
     }
 
     // windowResize = () => {
