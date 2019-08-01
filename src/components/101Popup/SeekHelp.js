@@ -41,7 +41,7 @@ class SeekHelp extends Component {
         if (currentURL === '') return (
             <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
-                    <div className="icon" onclick={()=>this.props.closeHelp()}>
+                    <div className="icon" onClick={()=>this.props.close()}>
                     </div>
                     <h3>Seek Help</h3>
                     <div className="text firstChild">
@@ -71,7 +71,7 @@ class SeekHelp extends Component {
         else return (
             <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
-                    <div className="icon" onclick={()=>this.props.closeHelp()}></div>
+                    <div className="icon" onClick={()=>this.props.close()}></div>
                     <h3>Seek Help</h3>
                     <div className="text1 firstChild">
                         <a href={"/" + i18n.language + "/"}>Report sexual images of children online</a>
