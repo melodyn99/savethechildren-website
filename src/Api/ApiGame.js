@@ -16,7 +16,7 @@ export const apiGame = {
         }
     },
 
-    getLeaderBoardData: (token, cb, eCb) => {
-        apiGeneral.apiFetch('leader_board', null, token, cb, eCb);
+    getLeaderBoardData: (gameId, token, cb, eCb) => {
+        apiGeneral.apiFetch(`leader_board/${gameId}`, null, token, cb, eCb);
     }
 };

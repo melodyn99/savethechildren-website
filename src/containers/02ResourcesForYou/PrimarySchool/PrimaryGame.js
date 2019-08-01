@@ -82,9 +82,9 @@ class PrimaryGame extends Component {
         unityContent.on('GetLanguage', () => {
             return get(this, 'props.i18n.language') || 'zh-HK';
         });
-        unityContent.on('RequestLeaderBoardData', () => {
+        unityContent.on('RequestLeaderBoardData', (gameId) => {
             const token = get(this, 'props.auth.token');
-            apiGame.getLeaderBoardData(token, (data) => {
+            apiGame.getLeaderBoardData(gameId, token, (data) => {
                 let result = createUnityCallbackJsonObject(data, 'Cannot retrieve leader board data');
                 this.unityContent.send(gameObjectName, 'OnLeaderBoardDataReady', JSON.stringify(result));
             }, (error) => {
