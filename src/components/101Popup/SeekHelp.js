@@ -71,13 +71,13 @@ class SeekHelp extends Component {
                 <div className="helpBoard">
                     <div className="icon" onclick={()=>this.props.closeHelp()}></div>
                     <h3>Seek Help</h3>
-                    <div className="text firstChild">
+                    <div className="text1 firstChild">
                         <p>Report sexual images of children online</p>
                     </div>
-                    <div className="text">
+                    <div className="text1">
                         <p>Talk to a social worker</p>
                     </div>
-                    <div className="text">
+                    <div className="text1">
                         <p>Connect to Save the Children Hong Kong</p>
                     </div>
                 </div>
