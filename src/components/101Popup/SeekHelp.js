@@ -36,10 +36,10 @@ class SeekHelp extends Component {
             urlArray = pathname.split("/"),
             currentURL = urlArray[2];
 
-        if (currentURL === '' && typeof currentURL === 'undefined') return (
+        if (currentURL === '') return (
             <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
-                    <div className="icon" onclick={()=>this.props.closeHelp()}>>
+                    <div className="icon" onclick={()=>this.props.closeHelp()}>
                     </div>
                     <h3>Seek Help</h3>
                     <Grid container spacing={16}>
@@ -60,20 +60,17 @@ class SeekHelp extends Component {
         else return (
             <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
-                    <div className="icon" onclick={()=>this.props.closeHelp()}>>
-                    </div>
+                    <div className="icon" onclick={()=>this.props.closeHelp()}></div>
                     <h3>Seek Help</h3>
-                    <Grid container spacing={16}>
-                        <Grid item xs={12} className="firstChild">
-                            <p>Report sexual images of children online</p>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <p>Talk to a social worker</p>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <p>Connect to Save the Children Hong Kong</p>
-                        </Grid>
-                    </Grid>
+                    <div className="text firstChild">
+                        <p>Report sexual images of children online</p>
+                    </div>
+                    <div className="text">
+                        <p>Talk to a social worker</p>
+                    </div>
+                    <div className="text">
+                        <p>Connect to Save the Children Hong Kong</p>
+                    </div>
                 </div>
             </div>
         );
