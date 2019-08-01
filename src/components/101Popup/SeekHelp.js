@@ -38,7 +38,9 @@ class SeekHelp extends Component {
             urlArray = pathname.split("/"),
             currentURL = urlArray[2];
 
-        if (currentURL === '') return (
+            console.log(currentURL);
+
+        if (currentURL === '' || typeof currentURL === 'undefined') return (
             <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
                     <div className="icon" onClick={()=>this.props.close()}>
