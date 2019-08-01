@@ -32,6 +32,8 @@ class SeekHelp extends Component {
 
     render() {
 
+        const { i18n } = this.props;
+
         let pathname = this.props.route.location.pathname,
             urlArray = pathname.split("/"),
             currentURL = urlArray[2];
@@ -43,13 +45,13 @@ class SeekHelp extends Component {
                     </div>
                     <h3>Seek Help</h3>
                     <div className="text firstChild">
-                        <p>Report sexual images of children online</p>
+                        <a href={"/" + i18n.language + "/"}>Report sexual images of children online</a>
                     </div>
                     <div className="text">
-                        <p>Talk to a social worker</p>
+                        <a href={"/" + i18n.language + "/"}>Talk to a social worker</a>
                     </div>
                     <div className="text">
-                        <p>Connect to Save the Children Hong Kong</p>
+                        <a href={"/" + i18n.language + "/"}>Connect to Save the Children Hong Kong</a>
                     </div>
                     {/* <Grid container spacing={16}>
                         <Grid item xs={4} className="firstChild">
@@ -72,13 +74,13 @@ class SeekHelp extends Component {
                     <div className="icon" onclick={()=>this.props.closeHelp()}></div>
                     <h3>Seek Help</h3>
                     <div className="text1 firstChild">
-                        <p>Report sexual images of children online</p>
+                        <a href={"/" + i18n.language + "/"}>Report sexual images of children online</a>
                     </div>
                     <div className="text1">
-                        <p>Talk to a social worker</p>
+                        <a href={"/" + i18n.language + "/"}>Talk to a social worker</a>
                     </div>
                     <div className="text1">
-                        <p>Connect to Save the Children Hong Kong</p>
+                        <a href={"/" + i18n.language + "/"}>Connect to Save the Children Hong Kong</a>
                     </div>
                 </div>
             </div>

@@ -64,18 +64,18 @@
 				// 		}  
 				// 	}
 				// }
-				.text{ padding:10px 50px 20px 50px; border-left:2px dotted $majorDarkGrey; margin-top:10px; width:33%; display:inline-block; vertical-align:middle; height:60px; 
+				.text{ padding:10px 50px 20px 50px; border-left:2px dotted $majorDarkGrey; margin-top:10px; width:33%; display:inline-block; vertical-align:middle; height:60px; text-align:center;
 					&.firstChild { border-left:none!important; } 
-					p { text-align:center; padding:0px!important; margin:0px!important; }
+					a { padding:0px!important; margin:0px!important; }
 				}
 			}
 			&.small { background:$majorLightGrey; position:absolute; height:350px; top:-290px; left:600px; right:-400px;
 				.helpBoard { position:relative; height:340px; border:5px solid $corporateRedColor; margin:5px 5px 5px 5px; 
 					h3 { position:relative; text-align:center; margin-top:-35px; color:$corporateRedColor; }
 					.icon { width:66px; height:66px; background:url('../images/btn-SeekHelp_right.png') center bottom no-repeat; background-size:100%; margin:-20px 0 0 -50px;} 
-					.text1{ padding:30px 50px 30px 50px; border-top:2px dotted $majorDarkGrey; border-left:none!important; margin:0px 20px;
+					.text1{ padding:30px 50px 30px 50px; border-top:2px dotted $majorDarkGrey; border-left:none!important; margin:0px 20px; text-align:center;
 						&.firstChild { border-top:none!important; } 
-						p { text-align:center; padding:0px!important; margin:0px!important;}
+						a { padding:0px!important; margin:0px!important;}
 					}
 				}
 			}
