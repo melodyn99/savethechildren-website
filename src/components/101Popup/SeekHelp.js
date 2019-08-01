@@ -23,6 +23,7 @@ import { login } from '../../Redux/Action/authAction';
 class SeekHelp extends Component {
     // constructor(props) {
     //     super(props);
+    // }
 
     //     // this.state = {
     //     //     formSubmitted: false
@@ -30,10 +31,13 @@ class SeekHelp extends Component {
     // }
 
     render() {
-        // const { classes } = this.props;
+
+        let pathname = this.props.route.location.pathname,
+            urlArray = pathname.split("/"),
+            currentURL = urlArray[2];
 
         return (
-            <div className="wrapper-helpBoard">
+            <div className={"wrapper-helpBoard" + (currentURL !== '' && typeof currentURL !== 'undefined' ? ' small' : '')}>
                 <div className="helpBoard">
                     <div className="icon" onclick={()=>this.props.closeHelp()}>>
                     </div>
@@ -55,9 +59,12 @@ class SeekHelp extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    auth: state.auth
-});
+const mapStateToProps = (state) => (
+    {
+        route: state.router,
+        members: state.auth
+    }
+);
 
 const mapDispatchToProps = dispatch => ({
     loginP: data => dispatch(login(data))
