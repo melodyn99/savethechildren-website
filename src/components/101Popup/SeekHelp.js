@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 
 // Styling
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
 
 // Api
 // import { apiAuth } from '../../Api/ApiAuth';
@@ -42,7 +42,16 @@ class SeekHelp extends Component {
                     <div className="icon" onclick={()=>this.props.closeHelp()}>
                     </div>
                     <h3>Seek Help</h3>
-                    <Grid container spacing={16}>
+                    <div className="text firstChild">
+                        <p>Report sexual images of children online</p>
+                    </div>
+                    <div className="text">
+                        <p>Talk to a social worker</p>
+                    </div>
+                    <div className="text">
+                        <p>Connect to Save the Children Hong Kong</p>
+                    </div>
+                    {/* <Grid container spacing={16}>
                         <Grid item xs={4} className="firstChild">
                             <p>Report sexual images of children online</p>
                         </Grid>
@@ -52,7 +61,7 @@ class SeekHelp extends Component {
                         <Grid item xs={4}>
                             <p>Connect to Save the Children Hong Kong</p>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                 </div>
             </div>
         );
